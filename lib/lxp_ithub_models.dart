@@ -1,7 +1,5 @@
 library lxp_ithub_models;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:lxp_ithub_models/lxp_ithub_models.dart';
+
+export 'utils/string_html_extension.dart';
