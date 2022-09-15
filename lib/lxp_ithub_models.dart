@@ -3,5 +3,4 @@ library lxp_ithub_models;
 export 'package:lxp_ithub_models/lxp_ithub_models.dart';
 
 export 'models/models.dart';
-export 'models/models.mapper.g.dart';
 export 'utils/string_html_extension.dart';
