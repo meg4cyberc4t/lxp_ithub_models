@@ -1,6 +1,6 @@
 name: lxp_ithub_models
 description: Package of data models for the LXP IThub
-version: 1.0.0
+version: 1.0.1+2
 homepage: https://github.com/meg4cyberc4t/lxp_ithub_models
 
 environment:
