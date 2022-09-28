@@ -5,6 +5,7 @@ import 'answer_models.dart';
 import 'attendance_models.dart';
 import 'chapter_models.dart';
 import 'dto/auth_dto.dart';
+import 'dto/change_password_request.dart';
 import 'dto/progress_dto.dart';
 import 'dto/schedule_dto.dart';
 import 'file_models.dart';
@@ -43,6 +44,7 @@ var _mappers = <BaseMapper>{
   CallPasswordRequestMapper._(),
   CallPasswordCodeRequestMapper._(),
   CallPasswordCodeResourceMapper._(),
+  ChangePasswordRequestMapper._(),
   StudentProgressResponseMapper._(),
   MainScheduleResponseMapper._(),
   ScheduleLessonResponseMapper._(),
@@ -673,6 +675,42 @@ class _CallPasswordCodeResourceCopyWithImpl<$R> extends BaseCopyWith<CallPasswor
 
   @override BaseUserResourceCopyWith<$R> get data => BaseUserResourceCopyWith($value.data, (v) => call(data: v));
   @override $R call({BaseUserResource? data, String? token}) => $then(CallPasswordCodeResource(data: data ?? $value.data, token: token ?? $value.token));
+}
+
+class ChangePasswordRequestMapper extends BaseMapper<ChangePasswordRequest> {
+  ChangePasswordRequestMapper._();
+
+  @override Function get decoder => decode;
+  ChangePasswordRequest decode(dynamic v) => checked(v, (Map<String, dynamic> map) => fromMap(map));
+  ChangePasswordRequest fromMap(Map<String, dynamic> map) => ChangePasswordRequest(newPassword: Mapper.i.$get(map, 'new_password'));
+
+  @override Function get encoder => (ChangePasswordRequest v) => encode(v);
+  dynamic encode(ChangePasswordRequest v) => toMap(v);
+  Map<String, dynamic> toMap(ChangePasswordRequest c) => {'new_password': Mapper.i.$enc(c.newPassword, 'newPassword')};
+
+  @override String stringify(ChangePasswordRequest self) => 'ChangePasswordRequest(newPassword: ${Mapper.asString(self.newPassword)})';
+  @override int hash(ChangePasswordRequest self) => Mapper.hash(self.newPassword);
+  @override bool equals(ChangePasswordRequest self, ChangePasswordRequest other) => Mapper.isEqual(self.newPassword, other.newPassword);
+
+  @override Function get typeFactory => (f) => f<ChangePasswordRequest>();
+}
+
+extension ChangePasswordRequestMapperExtension  on ChangePasswordRequest {
+  String toJson() => Mapper.toJson(this);
+  Map<String, dynamic> toMap() => Mapper.toMap(this);
+  ChangePasswordRequestCopyWith<ChangePasswordRequest> get copyWith => ChangePasswordRequestCopyWith(this, $identity);
+}
+
+abstract class ChangePasswordRequestCopyWith<$R> {
+  factory ChangePasswordRequestCopyWith(ChangePasswordRequest value, Then<ChangePasswordRequest, $R> then) = _ChangePasswordRequestCopyWithImpl<$R>;
+  $R call({String? newPassword});
+  $R apply(ChangePasswordRequest Function(ChangePasswordRequest) transform);
+}
+
+class _ChangePasswordRequestCopyWithImpl<$R> extends BaseCopyWith<ChangePasswordRequest, $R> implements ChangePasswordRequestCopyWith<$R> {
+  _ChangePasswordRequestCopyWithImpl(ChangePasswordRequest value, Then<ChangePasswordRequest, $R> then) : super(value, then);
+
+  @override $R call({String? newPassword}) => $then(ChangePasswordRequest(newPassword: newPassword ?? $value.newPassword));
 }
 
 class StudentProgressResponseMapper extends BaseMapper<StudentProgressResponse> {

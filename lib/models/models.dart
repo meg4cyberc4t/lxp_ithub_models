@@ -9,6 +9,7 @@ export 'answer_models.dart';
 export 'attendance_models.dart';
 export 'chapter_models.dart';
 export 'dto/auth_dto.dart';
+export 'dto/change_password_request.dart';
 export 'dto/progress_dto.dart';
 export 'dto/schedule_dto.dart';
 export 'file_models.dart';
