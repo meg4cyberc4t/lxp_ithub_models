@@ -1,6 +1,7 @@
 targets:
   $default:
     builders:
-      dart_mappable_builder:
-        generate_for:
-          - lib/models/models.dart
+      json_serializable:
+        options:
+          field_rename: snake
+          

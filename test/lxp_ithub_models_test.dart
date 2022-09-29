@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lxp_ithub_models/models/user_models.dart';
+import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
+import 'package:lxp_ithub_models/utils/user_extension.dart';
 
 void main() {
   test('test user models', () {
