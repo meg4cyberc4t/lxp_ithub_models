@@ -13,9 +13,9 @@ part 'subject_show_resource.freezed.dart';
 part 'subject_show_resource.g.dart';
 
 @freezed
-class SubjectShowResourse with _$SubjectShowResourse {
+class SubjectShowResource with _$SubjectShowResourse {
   @Implements<BaseSubjectResourceInterface>()
-  factory SubjectShowResourse({
+  factory SubjectShowResource({
     required int id,
     required String title,
     @Default('') String code,
@@ -38,6 +38,6 @@ class SubjectShowResourse with _$SubjectShowResourse {
     required BaseSubjectResource? masterSubject,
   }) = _SubjectShowResourse;
 
-  factory SubjectShowResourse.fromJson(Map<String, dynamic> json) =>
+  factory SubjectShowResource.fromJson(Map<String, dynamic> json) =>
       _$SubjectShowResourseFromJson(json);
 }
