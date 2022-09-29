@@ -2,9 +2,9 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 import 'package:lxp_ithub_models/utils/string_html_extension.dart';
 
 extension UserExtension on BaseUserResource {
-  String get title => ('$firstName $lastName').withoutHTML;
+  String title() => ('$firstName $lastName').withoutHTML;
 
-  String get shortTitle {
+  String shortTitle() {
     StringBuffer sb = StringBuffer();
     if (firstName.isNotEmpty) {
       sb.write(firstName[0]);
@@ -15,7 +15,7 @@ extension UserExtension on BaseUserResource {
     return sb.toString();
   }
 
-  List<String> get statuses => RegExp(r'\((.*?)\)')
+  List<String> statuses() => RegExp(r'\((.*?)\)')
       .allMatches(('$lastName $firstName $middleName'))
       .map((e) => e.group(1)!)
       .toList();

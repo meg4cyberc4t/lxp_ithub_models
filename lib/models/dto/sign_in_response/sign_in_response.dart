@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/user/user_resource/user_resource.dart';
 import 'package:lxp_ithub_models/models/user/user_resource/user_resource_interface.dart';
 
 part 'sign_in_response.freezed.dart';

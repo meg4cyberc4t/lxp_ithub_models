@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
-import 'package:lxp_ithub_models/utils/user_extension.dart';
+import 'package:lxp_ithub_models/utils/user_utils.dart';
 
 void main() {
   test('test user models', () {
@@ -19,8 +19,10 @@ void main() {
       photoSrcSmall: "",
       updatedAt: DateTime.now(),
     );
-    expect(user.shortTitle, "ИМ");
-    expect(user.statuses, ["ИУП"]);
-    expect(user.title, "Игорь Молчанов");
+
+    expect(UserUtils.shortTitle(user.firstName, user.lastName), "ИМ");
+    expect(UserUtils.statuses(user.firstName, user.lastName, user.middleName),
+        ["ИУП"]);
+    expect(UserUtils.title(user.firstName, user.lastName), "Игорь Молчанов");
   });
 }
