@@ -2,6 +2,7 @@ import 'package:dart_mappable/dart_mappable.dart';
 import 'package:lxp_ithub_models/models/models.dart';
 import 'package:lxp_ithub_models/models/models.mapper.g.dart';
 
+@Deprecated("use another model with freezed codegen")
 @MappableClass()
 class SignInRequest with Mappable {
   const SignInRequest({

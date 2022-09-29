@@ -11,6 +11,8 @@ dependencies:
   dart_mappable: ^1.2.0
   flutter:
     sdk: flutter
+  freezed: ^2.1.0+1
+  json_annotation: ^4.7.0
 
 dev_dependencies:
   flutter_test:
@@ -18,3 +20,5 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner: ^2.1.10
   dart_mappable_builder: ^1.1.0
+  freezed_annotation: ^2.1.0
+  json_serializable: ^6.4.1
