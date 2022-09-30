@@ -247,7 +247,8 @@ class _$_UserResource extends _UserResource {
   }
 }
 
-abstract class _UserResource extends UserResource {
+abstract class _UserResource extends UserResource
+    implements UserResourceInterface {
   factory _UserResource(
       {required final int id,
       required final String firstName,
