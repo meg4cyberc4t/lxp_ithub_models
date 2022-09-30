@@ -358,7 +358,10 @@ class _$_BaseUserResource implements _BaseUserResource {
 }
 
 abstract class _BaseUserResource
-    implements BaseUserResource, BaseUserResourceInterface {
+    implements
+        BaseUserResource,
+        BaseUserResourceInterface,
+        UserResourceInterface {
   factory _BaseUserResource(
       {required final int id,
       required final String firstName,
