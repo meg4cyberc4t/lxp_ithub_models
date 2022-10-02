@@ -10,7 +10,7 @@ _$_BaseUgcPatternResource _$$_BaseUgcPatternResourceFromJson(
         Map<String, dynamic> json) =>
     _$_BaseUgcPatternResource(
       id: json['id'] as int,
-      stepId: json['step_id'] as String,
+      stepId: json['step_id'] as int,
       number: json['number'] as int,
       required: json['required'] as bool,
       title: json['title'] as String,

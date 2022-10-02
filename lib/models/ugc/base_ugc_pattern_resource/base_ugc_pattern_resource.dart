@@ -8,7 +8,7 @@ part 'base_ugc_pattern_resource.g.dart';
 class BaseUgcPatternResource with _$BaseUgcPatternResource {
   factory BaseUgcPatternResource({
     required int id,
-    required String stepId,
+    required int stepId,
     required int number,
     required bool required,
     required String title,

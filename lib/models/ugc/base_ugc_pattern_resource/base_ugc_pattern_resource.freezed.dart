@@ -22,7 +22,7 @@ BaseUgcPatternResource _$BaseUgcPatternResourceFromJson(
 /// @nodoc
 mixin _$BaseUgcPatternResource {
   int get id => throw _privateConstructorUsedError;
-  String get stepId => throw _privateConstructorUsedError;
+  int get stepId => throw _privateConstructorUsedError;
   int get number => throw _privateConstructorUsedError;
   bool get required => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
@@ -42,7 +42,7 @@ abstract class $BaseUgcPatternResourceCopyWith<$Res> {
       _$BaseUgcPatternResourceCopyWithImpl<$Res>;
   $Res call(
       {int id,
-      String stepId,
+      int stepId,
       int number,
       bool required,
       String title,
@@ -77,7 +77,7 @@ class _$BaseUgcPatternResourceCopyWithImpl<$Res>
       stepId: stepId == freezed
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       number: number == freezed
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
@@ -111,7 +111,7 @@ abstract class _$$_BaseUgcPatternResourceCopyWith<$Res>
   @override
   $Res call(
       {int id,
-      String stepId,
+      int stepId,
       int number,
       bool required,
       String title,
@@ -149,7 +149,7 @@ class __$$_BaseUgcPatternResourceCopyWithImpl<$Res>
       stepId: stepId == freezed
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       number: number == freezed
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
@@ -193,7 +193,7 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
   @override
   final int id;
   @override
-  final String stepId;
+  final int stepId;
   @override
   final int number;
   @override
@@ -259,7 +259,7 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
 abstract class _BaseUgcPatternResource implements BaseUgcPatternResource {
   factory _BaseUgcPatternResource(
           {required final int id,
-          required final String stepId,
+          required final int stepId,
           required final int number,
           required final bool required,
           required final String title,
@@ -273,7 +273,7 @@ abstract class _BaseUgcPatternResource implements BaseUgcPatternResource {
   @override
   int get id;
   @override
-  String get stepId;
+  int get stepId;
   @override
   int get number;
   @override
