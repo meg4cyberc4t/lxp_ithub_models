@@ -13,7 +13,7 @@ class BaseGroupResource with _$BaseGroupResource {
     required String description,
     required int companyId,
     required int? halfId,
-    required String labelId,
+    required int labelId,
     required String? externalLink,
     required DateTime? createdAt,
     required DateTime? updatedAt,

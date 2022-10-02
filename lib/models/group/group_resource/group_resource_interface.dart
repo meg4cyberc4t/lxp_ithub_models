@@ -13,7 +13,7 @@ abstract class GroupResourceInterface implements BaseGroupResourceInterface {
   @override
   int? get halfId;
   @override
-  String get labelId;
+  int get labelId;
   @override
   String? get externalLink;
   @override

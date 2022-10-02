@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/group/base_group_resource/base_group_resource.dart';
 import 'package:lxp_ithub_models/models/group/base_group_resource/base_group_resource_interface.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
 
@@ -15,7 +14,7 @@ class SubjectJounralGroupResource with _$SubjectJounralGroupResource {
     required String description,
     required int companyId,
     required int? halfId,
-    required String labelId,
+    required int labelId,
     required String? externalLink,
     required DateTime? createdAt,
     required DateTime? updatedAt,

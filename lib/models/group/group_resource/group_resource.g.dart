@@ -13,7 +13,7 @@ _$_GroupResource _$$_GroupResourceFromJson(Map<String, dynamic> json) =>
       description: json['description'] as String,
       companyId: json['company_id'] as int,
       halfId: json['half_id'] as int?,
-      labelId: json['label_id'] as String,
+      labelId: json['label_id'] as int,
       externalLink: json['external_link'] as String?,
       createdAt: json['created_at'] == null
           ? null

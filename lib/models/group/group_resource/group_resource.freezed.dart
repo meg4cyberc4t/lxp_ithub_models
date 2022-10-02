@@ -25,7 +25,7 @@ mixin _$GroupResource {
   String get description => throw _privateConstructorUsedError;
   int get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
-  String get labelId => throw _privateConstructorUsedError;
+  int get labelId => throw _privateConstructorUsedError;
   String? get externalLink => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -48,7 +48,7 @@ abstract class $GroupResourceCopyWith<$Res> {
       String description,
       int companyId,
       int? halfId,
-      String labelId,
+      int labelId,
       String? externalLink,
       DateTime? createdAt,
       DateTime? updatedAt,
@@ -101,7 +101,7 @@ class _$GroupResourceCopyWithImpl<$Res>
       labelId: labelId == freezed
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       externalLink: externalLink == freezed
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
@@ -135,7 +135,7 @@ abstract class _$$_GroupResourceCopyWith<$Res>
       String description,
       int companyId,
       int? halfId,
-      String labelId,
+      int labelId,
       String? externalLink,
       DateTime? createdAt,
       DateTime? updatedAt,
@@ -190,7 +190,7 @@ class __$$_GroupResourceCopyWithImpl<$Res>
       labelId: labelId == freezed
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       externalLink: externalLink == freezed
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
@@ -241,7 +241,7 @@ class _$_GroupResource implements _GroupResource {
   @override
   final int? halfId;
   @override
-  final String labelId;
+  final int labelId;
   @override
   final String? externalLink;
   @override
@@ -314,7 +314,7 @@ abstract class _GroupResource implements GroupResource, GroupResourceInterface {
       required final String description,
       required final int companyId,
       required final int? halfId,
-      required final String labelId,
+      required final int labelId,
       required final String? externalLink,
       required final DateTime? createdAt,
       required final DateTime? updatedAt,
@@ -334,7 +334,7 @@ abstract class _GroupResource implements GroupResource, GroupResourceInterface {
   @override
   int? get halfId;
   @override
-  String get labelId;
+  int get labelId;
   @override
   String? get externalLink;
   @override

@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/group/group_resource/group_resource.dart';
 import 'package:lxp_ithub_models/models/group/group_resource/group_resource_interface.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
 
@@ -16,7 +15,7 @@ class GroupListForSubjectTimeStatisticsResource
     required String description,
     required int companyId,
     required int? halfId,
-    required String labelId,
+    required int labelId,
     required String? externalLink,
     required DateTime? createdAt,
     required DateTime? updatedAt,

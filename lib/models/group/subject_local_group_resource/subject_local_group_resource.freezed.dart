@@ -26,7 +26,7 @@ mixin _$SubjectLocalGroupResource {
   String get description => throw _privateConstructorUsedError;
   int get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
-  String get labelId => throw _privateConstructorUsedError;
+  int get labelId => throw _privateConstructorUsedError;
   String? get externalLink => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -49,7 +49,7 @@ abstract class $SubjectLocalGroupResourceCopyWith<$Res> {
       String description,
       int companyId,
       int? halfId,
-      String labelId,
+      int labelId,
       String? externalLink,
       DateTime? createdAt,
       DateTime? updatedAt,
@@ -102,7 +102,7 @@ class _$SubjectLocalGroupResourceCopyWithImpl<$Res>
       labelId: labelId == freezed
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       externalLink: externalLink == freezed
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
@@ -137,7 +137,7 @@ abstract class _$$_SubjectLocalGroupResourceCopyWith<$Res>
       String description,
       int companyId,
       int? halfId,
-      String labelId,
+      int labelId,
       String? externalLink,
       DateTime? createdAt,
       DateTime? updatedAt,
@@ -194,7 +194,7 @@ class __$$_SubjectLocalGroupResourceCopyWithImpl<$Res>
       labelId: labelId == freezed
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       externalLink: externalLink == freezed
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
@@ -245,7 +245,7 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
   @override
   final int? halfId;
   @override
-  final String labelId;
+  final int labelId;
   @override
   final String? externalLink;
   @override
@@ -320,7 +320,7 @@ abstract class _SubjectLocalGroupResource
       required final String description,
       required final int companyId,
       required final int? halfId,
-      required final String labelId,
+      required final int labelId,
       required final String? externalLink,
       required final DateTime? createdAt,
       required final DateTime? updatedAt,
@@ -340,7 +340,7 @@ abstract class _SubjectLocalGroupResource
   @override
   int? get halfId;
   @override
-  String get labelId;
+  int get labelId;
   @override
   String? get externalLink;
   @override
