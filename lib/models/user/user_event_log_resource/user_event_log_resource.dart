@@ -14,7 +14,6 @@ class UserEventLogResourse with _$UserEventLogResourse {
     required String middleName,
     required String? email,
     required String photoSrc,
-    required int lastVisit,
     required dynamic phone,
     required String photoSrcSmall,
     required bool isSkillfolioReg,

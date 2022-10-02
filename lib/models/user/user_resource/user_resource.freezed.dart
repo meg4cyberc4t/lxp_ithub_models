@@ -26,7 +26,7 @@ mixin _$UserResource {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String get photoSrc => throw _privateConstructorUsedError;
-  int get lastVisit => throw _privateConstructorUsedError;
+  String get lastVisit => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -46,7 +46,7 @@ abstract class $UserResourceCopyWith<$Res> {
       String middleName,
       String? email,
       String photoSrc,
-      int lastVisit});
+      String lastVisit});
 }
 
 /// @nodoc
@@ -95,7 +95,7 @@ class _$UserResourceCopyWithImpl<$Res> implements $UserResourceCopyWith<$Res> {
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -114,7 +114,7 @@ abstract class _$$_UserResourceCopyWith<$Res>
       String middleName,
       String? email,
       String photoSrc,
-      int lastVisit});
+      String lastVisit});
 }
 
 /// @nodoc
@@ -166,7 +166,7 @@ class __$$_UserResourceCopyWithImpl<$Res>
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
+              as String,
     ));
   }
 }
@@ -200,7 +200,7 @@ class _$_UserResource extends _UserResource {
   @override
   final String photoSrc;
   @override
-  final int lastVisit;
+  final String lastVisit;
 
   @override
   String toString() {
@@ -256,7 +256,7 @@ abstract class _UserResource extends UserResource
       required final String middleName,
       required final String? email,
       required final String photoSrc,
-      required final int lastVisit}) = _$_UserResource;
+      required final String lastVisit}) = _$_UserResource;
   _UserResource._() : super._();
 
   factory _UserResource.fromJson(Map<String, dynamic> json) =
@@ -275,7 +275,7 @@ abstract class _UserResource extends UserResource
   @override
   String get photoSrc;
   @override
-  int get lastVisit;
+  String get lastVisit;
   @override
   @JsonKey(ignore: true)
   _$$_UserResourceCopyWith<_$_UserResource> get copyWith =>

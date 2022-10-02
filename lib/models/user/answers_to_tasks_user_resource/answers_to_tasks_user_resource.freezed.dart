@@ -27,7 +27,6 @@ mixin _$AnswersToTasksUserResource {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String get photoSrc => throw _privateConstructorUsedError;
-  int get lastVisit => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
   bool get isSkillfolioReg => throw _privateConstructorUsedError;
@@ -55,7 +54,6 @@ abstract class $AnswersToTasksUserResourceCopyWith<$Res> {
       String middleName,
       String? email,
       String photoSrc,
-      int lastVisit,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -83,7 +81,6 @@ class _$AnswersToTasksUserResourceCopyWithImpl<$Res>
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
     Object? phone = freezed,
     Object? photoSrcSmall = freezed,
     Object? isSkillfolioReg = freezed,
@@ -118,10 +115,6 @@ class _$AnswersToTasksUserResourceCopyWithImpl<$Res>
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -173,7 +166,6 @@ abstract class _$$_AnswersToTasksUserResourceCopyWith<$Res>
       String middleName,
       String? email,
       String photoSrc,
-      int lastVisit,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -205,7 +197,6 @@ class __$$_AnswersToTasksUserResourceCopyWithImpl<$Res>
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
     Object? phone = freezed,
     Object? photoSrcSmall = freezed,
     Object? isSkillfolioReg = freezed,
@@ -240,10 +231,6 @@ class __$$_AnswersToTasksUserResourceCopyWithImpl<$Res>
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -290,7 +277,6 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
       required this.middleName,
       required this.email,
       required this.photoSrc,
-      required this.lastVisit,
       required this.phone,
       required this.photoSrcSmall,
       required this.isSkillfolioReg,
@@ -317,8 +303,6 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
   final String? email;
   @override
   final String photoSrc;
-  @override
-  final int lastVisit;
   @override
   final dynamic phone;
   @override
@@ -347,7 +331,7 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
 
   @override
   String toString() {
-    return 'AnswersToTasksUserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, lastVisit: $lastVisit, phone: $phone, photoSrcSmall: $photoSrcSmall, isSkillfolioReg: $isSkillfolioReg, isOnline: $isOnline, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups, lessons: $lessons)';
+    return 'AnswersToTasksUserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, phone: $phone, photoSrcSmall: $photoSrcSmall, isSkillfolioReg: $isSkillfolioReg, isOnline: $isOnline, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups, lessons: $lessons)';
   }
 
   @override
@@ -362,7 +346,6 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
                 .equals(other.middleName, middleName) &&
             const DeepCollectionEquality().equals(other.email, email) &&
             const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
-            const DeepCollectionEquality().equals(other.lastVisit, lastVisit) &&
             const DeepCollectionEquality().equals(other.phone, phone) &&
             const DeepCollectionEquality()
                 .equals(other.photoSrcSmall, photoSrcSmall) &&
@@ -385,7 +368,6 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
       const DeepCollectionEquality().hash(middleName),
       const DeepCollectionEquality().hash(email),
       const DeepCollectionEquality().hash(photoSrc),
-      const DeepCollectionEquality().hash(lastVisit),
       const DeepCollectionEquality().hash(phone),
       const DeepCollectionEquality().hash(photoSrcSmall),
       const DeepCollectionEquality().hash(isSkillfolioReg),
@@ -418,7 +400,6 @@ abstract class _AnswersToTasksUserResource
           required final String middleName,
           required final String? email,
           required final String photoSrc,
-          required final int lastVisit,
           required final dynamic phone,
           required final String photoSrcSmall,
           required final bool isSkillfolioReg,
@@ -444,8 +425,6 @@ abstract class _AnswersToTasksUserResource
   String? get email;
   @override
   String get photoSrc;
-  @override
-  int get lastVisit;
   @override
   dynamic get phone;
   @override

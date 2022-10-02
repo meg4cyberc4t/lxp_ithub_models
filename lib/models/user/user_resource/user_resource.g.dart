@@ -14,7 +14,7 @@ _$_UserResource _$$_UserResourceFromJson(Map<String, dynamic> json) =>
       middleName: json['middle_name'] as String,
       email: json['email'] as String?,
       photoSrc: json['photo_src'] as String,
-      lastVisit: json['last_visit'] as int,
+      lastVisit: json['last_visit'] as String,
     );
 
 Map<String, dynamic> _$$_UserResourceToJson(_$_UserResource instance) =>

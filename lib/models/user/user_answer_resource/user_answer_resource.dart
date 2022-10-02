@@ -15,7 +15,6 @@ class UserAnswerResource with _$UserAnswerResource {
     required String middleName,
     required String? email,
     required String photoSrc,
-    required int lastVisit,
     required dynamic phone,
     required String photoSrcSmall,
     required bool isSkillfolioReg,
