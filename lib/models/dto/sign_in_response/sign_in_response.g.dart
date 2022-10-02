@@ -15,7 +15,6 @@ _$_SignInResponse _$$_SignInResponseFromJson(Map<String, dynamic> json) =>
       middleName: json['middle_name'] as String,
       email: json['email'] as String?,
       photoSrc: json['photo_src'] as String,
-      lastVisit: json['last_visit'] as int,
     );
 
 Map<String, dynamic> _$$_SignInResponseToJson(_$_SignInResponse instance) =>
@@ -27,5 +26,4 @@ Map<String, dynamic> _$$_SignInResponseToJson(_$_SignInResponse instance) =>
       'middle_name': instance.middleName,
       'email': instance.email,
       'photo_src': instance.photoSrc,
-      'last_visit': instance.lastVisit,
     };

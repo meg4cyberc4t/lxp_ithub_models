@@ -27,7 +27,6 @@ mixin _$SignInResponse {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String get photoSrc => throw _privateConstructorUsedError;
-  int get lastVisit => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -47,8 +46,7 @@ abstract class $SignInResponseCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
-      int lastVisit});
+      String photoSrc});
 }
 
 /// @nodoc
@@ -69,7 +67,6 @@ class _$SignInResponseCopyWithImpl<$Res>
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
   }) {
     return _then(_value.copyWith(
       token: token == freezed
@@ -100,10 +97,6 @@ class _$SignInResponseCopyWithImpl<$Res>
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
     ));
   }
 }
@@ -122,8 +115,7 @@ abstract class _$$_SignInResponseCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
-      int lastVisit});
+      String photoSrc});
 }
 
 /// @nodoc
@@ -146,7 +138,6 @@ class __$$_SignInResponseCopyWithImpl<$Res>
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
   }) {
     return _then(_$_SignInResponse(
       token: token == freezed
@@ -177,10 +168,6 @@ class __$$_SignInResponseCopyWithImpl<$Res>
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
     ));
   }
 }
@@ -195,8 +182,7 @@ class _$_SignInResponse implements _SignInResponse {
       required this.lastName,
       required this.middleName,
       required this.email,
-      required this.photoSrc,
-      required this.lastVisit});
+      required this.photoSrc});
 
   factory _$_SignInResponse.fromJson(Map<String, dynamic> json) =>
       _$$_SignInResponseFromJson(json);
@@ -215,12 +201,10 @@ class _$_SignInResponse implements _SignInResponse {
   final String? email;
   @override
   final String photoSrc;
-  @override
-  final int lastVisit;
 
   @override
   String toString() {
-    return 'SignInResponse(token: $token, id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, lastVisit: $lastVisit)';
+    return 'SignInResponse(token: $token, id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc)';
   }
 
   @override
@@ -235,8 +219,7 @@ class _$_SignInResponse implements _SignInResponse {
             const DeepCollectionEquality()
                 .equals(other.middleName, middleName) &&
             const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
-            const DeepCollectionEquality().equals(other.lastVisit, lastVisit));
+            const DeepCollectionEquality().equals(other.photoSrc, photoSrc));
   }
 
   @JsonKey(ignore: true)
@@ -249,8 +232,7 @@ class _$_SignInResponse implements _SignInResponse {
       const DeepCollectionEquality().hash(lastName),
       const DeepCollectionEquality().hash(middleName),
       const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrc),
-      const DeepCollectionEquality().hash(lastVisit));
+      const DeepCollectionEquality().hash(photoSrc));
 
   @JsonKey(ignore: true)
   @override
@@ -274,8 +256,7 @@ abstract class _SignInResponse
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String photoSrc,
-      required final int lastVisit}) = _$_SignInResponse;
+      required final String photoSrc}) = _$_SignInResponse;
 
   factory _SignInResponse.fromJson(Map<String, dynamic> json) =
       _$_SignInResponse.fromJson;
@@ -294,8 +275,6 @@ abstract class _SignInResponse
   String? get email;
   @override
   String get photoSrc;
-  @override
-  int get lastVisit;
   @override
   @JsonKey(ignore: true)
   _$$_SignInResponseCopyWith<_$_SignInResponse> get copyWith =>
