@@ -5,7 +5,7 @@ abstract class BaseSubjectResourceInterface {
   String get type;
   String get description;
   bool get privacy;
-  bool get hidden;
+  int get hidden;
   DateTime? get createdAt;
   DateTime? get updatedAt;
   DateTime? get deletedAt;

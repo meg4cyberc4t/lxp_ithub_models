@@ -15,7 +15,7 @@ _$_AnswerSubjectResource _$$_AnswerSubjectResourceFromJson(
       type: json['type'] as String,
       description: json['description'] as String,
       privacy: json['privacy'] as bool,
-      hidden: json['hidden'] as bool,
+      hidden: json['hidden'] as int,
       createdAt: json['created_at'] == null
           ? null
           : DateTime.parse(json['created_at'] as String),

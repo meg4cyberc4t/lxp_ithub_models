@@ -22,7 +22,7 @@ class SubjectShowResource with _$SubjectShowResource {
     required String type,
     required String description,
     required bool privacy,
-    required bool hidden,
+    required int hidden,
     required DateTime? createdAt,
     required DateTime? updatedAt,
     required DateTime? deletedAt,

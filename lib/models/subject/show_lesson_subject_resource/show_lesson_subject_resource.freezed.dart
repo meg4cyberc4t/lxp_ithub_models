@@ -30,7 +30,7 @@ mixin _$ShowLessonSubjectResource {
   String get type => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
   bool get privacy => throw _privateConstructorUsedError;
-  bool get hidden => throw _privateConstructorUsedError;
+  int get hidden => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
   DateTime? get deletedAt => throw _privateConstructorUsedError;
@@ -57,7 +57,7 @@ abstract class $ShowLessonSubjectResourceCopyWith<$Res> {
       String type,
       String description,
       bool privacy,
-      bool hidden,
+      int hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -132,7 +132,7 @@ class _$ShowLessonSubjectResourceCopyWithImpl<$Res>
       hidden: hidden == freezed
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as int,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -182,7 +182,7 @@ abstract class _$$_ShowLessonSubjectResourceCopyWith<$Res>
       String type,
       String description,
       bool privacy,
-      bool hidden,
+      int hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -262,7 +262,7 @@ class __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>
       hidden: hidden == freezed
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as int,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -337,7 +337,7 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
   @override
   final bool privacy;
   @override
-  final bool hidden;
+  final int hidden;
   @override
   final DateTime? createdAt;
   @override
@@ -420,7 +420,7 @@ abstract class _ShowLessonSubjectResource
           required final String type,
           required final String description,
           required final bool privacy,
-          required final bool hidden,
+          required final int hidden,
           required final DateTime? createdAt,
           required final DateTime? updatedAt,
           required final DateTime? deletedAt,
@@ -449,7 +449,7 @@ abstract class _ShowLessonSubjectResource
   @override
   bool get privacy;
   @override
-  bool get hidden;
+  int get hidden;
   @override
   DateTime? get createdAt;
   @override

@@ -1,5 +1,4 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/subject/base_subject_resource/base_subject_resource.dart';
 import 'package:lxp_ithub_models/models/subject/base_subject_resource/base_subject_resource_interface.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
 
@@ -16,7 +15,7 @@ class AnswerSubjectResource with _$AnswerSubjectResource {
     required String type,
     required String description,
     required bool privacy,
-    required bool hidden,
+    required int hidden,
     required DateTime? createdAt,
     required DateTime? updatedAt,
     required DateTime? deletedAt,
