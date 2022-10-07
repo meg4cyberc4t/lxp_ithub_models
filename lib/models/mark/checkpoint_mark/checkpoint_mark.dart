@@ -14,7 +14,6 @@ class CheckpointMark with _$CheckpointMark {
     required int maxPoints,
     required int grade,
     required String? comment,
-    required int? passedStatusId,
     required DateTime? createdAt,
     required DateTime? updatedAt,
   }) = _CheckpointMark;

@@ -16,7 +16,6 @@ _$_CheckpointMark _$$_CheckpointMarkFromJson(Map<String, dynamic> json) =>
       maxPoints: json['max_points'] as int,
       grade: json['grade'] as int,
       comment: json['comment'] as String?,
-      passedStatusId: json['passed_status_id'] as int?,
       createdAt: json['created_at'] == null
           ? null
           : DateTime.parse(json['created_at'] as String),
@@ -35,7 +34,6 @@ Map<String, dynamic> _$$_CheckpointMarkToJson(_$_CheckpointMark instance) =>
       'max_points': instance.maxPoints,
       'grade': instance.grade,
       'comment': instance.comment,
-      'passed_status_id': instance.passedStatusId,
       'created_at': instance.createdAt?.toIso8601String(),
       'updated_at': instance.updatedAt?.toIso8601String(),
     };

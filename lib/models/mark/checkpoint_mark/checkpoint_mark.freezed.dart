@@ -28,7 +28,6 @@ mixin _$CheckpointMark {
   int get maxPoints => throw _privateConstructorUsedError;
   int get grade => throw _privateConstructorUsedError;
   String? get comment => throw _privateConstructorUsedError;
-  int? get passedStatusId => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
 
@@ -52,7 +51,6 @@ abstract class $CheckpointMarkCopyWith<$Res> {
       int maxPoints,
       int grade,
       String? comment,
-      int? passedStatusId,
       DateTime? createdAt,
       DateTime? updatedAt});
 }
@@ -76,7 +74,6 @@ class _$CheckpointMarkCopyWithImpl<$Res>
     Object? maxPoints = freezed,
     Object? grade = freezed,
     Object? comment = freezed,
-    Object? passedStatusId = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
@@ -113,10 +110,6 @@ class _$CheckpointMarkCopyWithImpl<$Res>
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String?,
-      passedStatusId: passedStatusId == freezed
-          ? _value.passedStatusId
-          : passedStatusId // ignore: cast_nullable_to_non_nullable
-              as int?,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -145,7 +138,6 @@ abstract class _$$_CheckpointMarkCopyWith<$Res>
       int maxPoints,
       int grade,
       String? comment,
-      int? passedStatusId,
       DateTime? createdAt,
       DateTime? updatedAt});
 }
@@ -171,7 +163,6 @@ class __$$_CheckpointMarkCopyWithImpl<$Res>
     Object? maxPoints = freezed,
     Object? grade = freezed,
     Object? comment = freezed,
-    Object? passedStatusId = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
@@ -208,10 +199,6 @@ class __$$_CheckpointMarkCopyWithImpl<$Res>
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String?,
-      passedStatusId: passedStatusId == freezed
-          ? _value.passedStatusId
-          : passedStatusId // ignore: cast_nullable_to_non_nullable
-              as int?,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -236,7 +223,6 @@ class _$_CheckpointMark implements _CheckpointMark {
       required this.maxPoints,
       required this.grade,
       required this.comment,
-      required this.passedStatusId,
       required this.createdAt,
       required this.updatedAt});
 
@@ -260,15 +246,13 @@ class _$_CheckpointMark implements _CheckpointMark {
   @override
   final String? comment;
   @override
-  final int? passedStatusId;
-  @override
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
 
   @override
   String toString() {
-    return 'CheckpointMark(id: $id, teacherId: $teacherId, studentId: $studentId, topicId: $topicId, points: $points, maxPoints: $maxPoints, grade: $grade, comment: $comment, passedStatusId: $passedStatusId, createdAt: $createdAt, updatedAt: $updatedAt)';
+    return 'CheckpointMark(id: $id, teacherId: $teacherId, studentId: $studentId, topicId: $topicId, points: $points, maxPoints: $maxPoints, grade: $grade, comment: $comment, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -284,8 +268,6 @@ class _$_CheckpointMark implements _CheckpointMark {
             const DeepCollectionEquality().equals(other.maxPoints, maxPoints) &&
             const DeepCollectionEquality().equals(other.grade, grade) &&
             const DeepCollectionEquality().equals(other.comment, comment) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatusId, passedStatusId) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
   }
@@ -302,7 +284,6 @@ class _$_CheckpointMark implements _CheckpointMark {
       const DeepCollectionEquality().hash(maxPoints),
       const DeepCollectionEquality().hash(grade),
       const DeepCollectionEquality().hash(comment),
-      const DeepCollectionEquality().hash(passedStatusId),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt));
 
@@ -329,7 +310,6 @@ abstract class _CheckpointMark implements CheckpointMark {
       required final int maxPoints,
       required final int grade,
       required final String? comment,
-      required final int? passedStatusId,
       required final DateTime? createdAt,
       required final DateTime? updatedAt}) = _$_CheckpointMark;
 
@@ -352,8 +332,6 @@ abstract class _CheckpointMark implements CheckpointMark {
   int get grade;
   @override
   String? get comment;
-  @override
-  int? get passedStatusId;
   @override
   DateTime? get createdAt;
   @override
