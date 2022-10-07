@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/attendance/statistics_attendance_resourc
 part 'statistics_attendance_resource.freezed.dart';
 part 'statistics_attendance_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class StatisticsAttendanceResource with _$StatisticsAttendanceResource {
   factory StatisticsAttendanceResource({
     required StatisticsAttendanceResourceStats attendanceStats,

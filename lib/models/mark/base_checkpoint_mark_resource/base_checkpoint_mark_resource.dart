@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_checkpoint_mark_resource.freezed.dart';
 part 'base_checkpoint_mark_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseCheckpointMarkResource with _$BaseCheckpointMarkResource {
   factory BaseCheckpointMarkResource({
     required int id,

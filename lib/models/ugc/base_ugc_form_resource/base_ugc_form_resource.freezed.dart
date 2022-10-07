@@ -220,19 +220,19 @@ class __$$_BaseUgcFormResourceCopyWithImpl<$Res>
           : link // ignore: cast_nullable_to_non_nullable
               as String,
       links: links == freezed
-          ? _value._links
+          ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
       documents: documents == freezed
-          ? _value._documents
+          ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
       videos: videos == freezed
-          ? _value._videos
+          ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       photos: photos == freezed
-          ? _value._photos
+          ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
     ));
@@ -251,14 +251,10 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
       required this.title,
       @JsonKey(name: "default") required this.defaultField,
       required this.link,
-      required final List<BaseLinkResource> links,
-      required final List<BaseDocumentResource> documents,
-      required final List<BaseVideoResource> videos,
-      required final List<BasePhotoResource> photos})
-      : _links = links,
-        _documents = documents,
-        _videos = videos,
-        _photos = photos;
+      required this.links,
+      required this.documents,
+      required this.videos,
+      required this.photos});
 
   factory _$_BaseUgcFormResource.fromJson(Map<String, dynamic> json) =>
       _$$_BaseUgcFormResourceFromJson(json);
@@ -280,33 +276,14 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
   final String defaultField;
   @override
   final String link;
-  final List<BaseLinkResource> _links;
   @override
-  List<BaseLinkResource> get links {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_links);
-  }
-
-  final List<BaseDocumentResource> _documents;
+  final List<BaseLinkResource> links;
   @override
-  List<BaseDocumentResource> get documents {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_documents);
-  }
-
-  final List<BaseVideoResource> _videos;
+  final List<BaseDocumentResource> documents;
   @override
-  List<BaseVideoResource> get videos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_videos);
-  }
-
-  final List<BasePhotoResource> _photos;
+  final List<BaseVideoResource> videos;
   @override
-  List<BasePhotoResource> get photos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_photos);
-  }
+  final List<BasePhotoResource> photos;
 
   @override
   String toString() {
@@ -327,11 +304,10 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
             const DeepCollectionEquality()
                 .equals(other.defaultField, defaultField) &&
             const DeepCollectionEquality().equals(other.link, link) &&
-            const DeepCollectionEquality().equals(other._links, _links) &&
-            const DeepCollectionEquality()
-                .equals(other._documents, _documents) &&
-            const DeepCollectionEquality().equals(other._videos, _videos) &&
-            const DeepCollectionEquality().equals(other._photos, _photos));
+            const DeepCollectionEquality().equals(other.links, links) &&
+            const DeepCollectionEquality().equals(other.documents, documents) &&
+            const DeepCollectionEquality().equals(other.videos, videos) &&
+            const DeepCollectionEquality().equals(other.photos, photos));
   }
 
   @JsonKey(ignore: true)
@@ -346,10 +322,10 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(defaultField),
       const DeepCollectionEquality().hash(link),
-      const DeepCollectionEquality().hash(_links),
-      const DeepCollectionEquality().hash(_documents),
-      const DeepCollectionEquality().hash(_videos),
-      const DeepCollectionEquality().hash(_photos));
+      const DeepCollectionEquality().hash(links),
+      const DeepCollectionEquality().hash(documents),
+      const DeepCollectionEquality().hash(videos),
+      const DeepCollectionEquality().hash(photos));
 
   @JsonKey(ignore: true)
   @override

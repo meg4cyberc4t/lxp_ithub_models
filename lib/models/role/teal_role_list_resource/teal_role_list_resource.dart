@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/role/teal_role_list_resource/teal_role_l
 part 'teal_role_list_resource.freezed.dart';
 part 'teal_role_list_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class TealRoleListResource with _$TealRoleListResource {
   @Implements<TealRoleListResourceInterface>()
   factory TealRoleListResource({

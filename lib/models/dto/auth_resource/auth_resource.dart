@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/auth_user_resource/auth_user_resour
 part 'auth_resource.freezed.dart';
 part 'auth_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class AuthResource with _$AuthResource {
   factory AuthResource({
     required AuthUserResource user,

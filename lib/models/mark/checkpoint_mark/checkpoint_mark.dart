@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'checkpoint_mark.freezed.dart';
 part 'checkpoint_mark.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class CheckpointMark with _$CheckpointMark {
   factory CheckpointMark({
     required int id,

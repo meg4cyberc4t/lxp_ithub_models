@@ -232,7 +232,7 @@ class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -254,8 +254,7 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
       required this.updatedAt,
       required this.deletedAt,
       required this.deletePermanentlyAt,
-      required final List<BaseUserResource> teachers})
-      : _teachers = teachers;
+      required this.teachers});
 
   factory _$_AnswerSubjectResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswerSubjectResourceFromJson(json);
@@ -283,12 +282,8 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
   final DateTime? deletedAt;
   @override
   final DateTime? deletePermanentlyAt;
-  final List<BaseUserResource> _teachers;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
+  final List<BaseUserResource> teachers;
 
   @override
   String toString() {
@@ -313,7 +308,7 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
             const DeepCollectionEquality()
                 .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers));
+            const DeepCollectionEquality().equals(other.teachers, teachers));
   }
 
   @JsonKey(ignore: true)
@@ -331,7 +326,7 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(deletedAt),
       const DeepCollectionEquality().hash(deletePermanentlyAt),
-      const DeepCollectionEquality().hash(_teachers));
+      const DeepCollectionEquality().hash(teachers));
 
   @JsonKey(ignore: true)
   @override

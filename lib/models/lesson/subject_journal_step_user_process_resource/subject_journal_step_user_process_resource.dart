@@ -1,11 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/lesson/base_step_user_process_resource/base_step_user_process_resource.dart';
 import 'package:lxp_ithub_models/models/lesson/base_step_user_process_resource/base_step_user_process_resource_interface.dart';
 
 part 'subject_journal_step_user_process_resource.freezed.dart';
 part 'subject_journal_step_user_process_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SubjectJournalStepUserProcessResource
     with _$SubjectJournalStepUserProcessResource {
   @Implements<BaseStepUserProcessResourceInterface>()

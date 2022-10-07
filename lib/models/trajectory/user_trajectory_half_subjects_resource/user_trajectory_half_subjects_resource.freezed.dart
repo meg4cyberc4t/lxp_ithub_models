@@ -185,7 +185,7 @@ class __$$_UserTrajectoryHalfSubjectsResourceCopyWithImpl<$Res>
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -204,8 +204,7 @@ class _$_UserTrajectoryHalfSubjectsResource
       required this.createdAt,
       required this.updatedAt,
       required this.deletedAt,
-      required final List<BaseUserResource> teachers})
-      : _teachers = teachers;
+      required this.teachers});
 
   factory _$_UserTrajectoryHalfSubjectsResource.fromJson(
           Map<String, dynamic> json) =>
@@ -226,12 +225,8 @@ class _$_UserTrajectoryHalfSubjectsResource
   final DateTime? updatedAt;
   @override
   final DateTime? deletedAt;
-  final List<BaseUserResource> _teachers;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
+  final List<BaseUserResource> teachers;
 
   @override
   String toString() {
@@ -252,7 +247,7 @@ class _$_UserTrajectoryHalfSubjectsResource
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers));
+            const DeepCollectionEquality().equals(other.teachers, teachers));
   }
 
   @JsonKey(ignore: true)
@@ -266,7 +261,7 @@ class _$_UserTrajectoryHalfSubjectsResource
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(_teachers));
+      const DeepCollectionEquality().hash(teachers));
 
   @JsonKey(ignore: true)
   @override

@@ -1,11 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/trajectory/base_trajectory_resource.dart/base_trajectory_resource.dart';
 import 'package:lxp_ithub_models/models/trajectory/base_trajectory_resource.dart/base_trajectory_resource_interface.dart';
 
 part 'trajectory_list_resource.freezed.dart';
 part 'trajectory_list_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class TrajectoryListResource with _$TrajectoryListResource {
   @Implements<BaseTrajectoryResourceInterface>()
   factory TrajectoryListResource({

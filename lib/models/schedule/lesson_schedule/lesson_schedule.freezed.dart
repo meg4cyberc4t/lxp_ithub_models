@@ -250,15 +250,15 @@ class __$$_LessonScheduleCopyWithImpl<$Res>
           : studentAttendance // ignore: cast_nullable_to_non_nullable
               as BaseAttendanceResource?,
       subjects: subjects == freezed
-          ? _value._subjects
+          ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<SubjectLessonScheduleResource>,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<GroupLessonScheduleResource>,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -277,12 +277,9 @@ class _$_LessonSchedule implements _LessonSchedule {
       required this.subjectText,
       required this.teacherText,
       required this.studentAttendance,
-      required final List<SubjectLessonScheduleResource> subjects,
-      required final List<GroupLessonScheduleResource> groups,
-      required final List<BaseUserResource> teachers})
-      : _subjects = subjects,
-        _groups = groups,
-        _teachers = teachers;
+      required this.subjects,
+      required this.groups,
+      required this.teachers});
 
   factory _$_LessonSchedule.fromJson(Map<String, dynamic> json) =>
       _$$_LessonScheduleFromJson(json);
@@ -304,26 +301,12 @@ class _$_LessonSchedule implements _LessonSchedule {
   final String? teacherText;
   @override
   final BaseAttendanceResource? studentAttendance;
-  final List<SubjectLessonScheduleResource> _subjects;
   @override
-  List<SubjectLessonScheduleResource> get subjects {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_subjects);
-  }
-
-  final List<GroupLessonScheduleResource> _groups;
+  final List<SubjectLessonScheduleResource> subjects;
   @override
-  List<GroupLessonScheduleResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
-  final List<BaseUserResource> _teachers;
+  final List<GroupLessonScheduleResource> groups;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
+  final List<BaseUserResource> teachers;
 
   @override
   String toString() {
@@ -347,9 +330,9 @@ class _$_LessonSchedule implements _LessonSchedule {
                 .equals(other.teacherText, teacherText) &&
             const DeepCollectionEquality()
                 .equals(other.studentAttendance, studentAttendance) &&
-            const DeepCollectionEquality().equals(other._subjects, _subjects) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers));
+            const DeepCollectionEquality().equals(other.subjects, subjects) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
+            const DeepCollectionEquality().equals(other.teachers, teachers));
   }
 
   @JsonKey(ignore: true)
@@ -364,9 +347,9 @@ class _$_LessonSchedule implements _LessonSchedule {
       const DeepCollectionEquality().hash(subjectText),
       const DeepCollectionEquality().hash(teacherText),
       const DeepCollectionEquality().hash(studentAttendance),
-      const DeepCollectionEquality().hash(_subjects),
-      const DeepCollectionEquality().hash(_groups),
-      const DeepCollectionEquality().hash(_teachers));
+      const DeepCollectionEquality().hash(subjects),
+      const DeepCollectionEquality().hash(groups),
+      const DeepCollectionEquality().hash(teachers));
 
   @JsonKey(ignore: true)
   @override

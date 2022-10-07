@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'mark_student_resource.freezed.dart';
 part 'mark_student_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class MarkStudentResource with _$MarkStudentResource {
   factory MarkStudentResource({
     required int id,

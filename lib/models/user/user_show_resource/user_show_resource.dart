@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/user_show_resource/user_show_resour
 part 'user_show_resource.freezed.dart';
 part 'user_show_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserShowResource with _$UserShowResource {
   @Implements<UserShowResourceInterface>()
   factory UserShowResource({

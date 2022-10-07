@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'mark_types.freezed.dart';
 part 'mark_types.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class MarkTypes with _$MarkTypes {
   factory MarkTypes({
     required int id,

@@ -213,7 +213,7 @@ class __$$_GroupListForSubjectTimeStatisticsResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       students: students == freezed
-          ? _value._students
+          ? _value.students
           : students // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -234,8 +234,7 @@ class _$_GroupListForSubjectTimeStatisticsResource
       required this.externalLink,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseUserResource> students})
-      : _students = students;
+      required this.students});
 
   factory _$_GroupListForSubjectTimeStatisticsResource.fromJson(
           Map<String, dynamic> json) =>
@@ -259,12 +258,8 @@ class _$_GroupListForSubjectTimeStatisticsResource
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseUserResource> _students;
   @override
-  List<BaseUserResource> get students {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_students);
-  }
+  final List<BaseUserResource> students;
 
   @override
   String toString() {
@@ -287,7 +282,7 @@ class _$_GroupListForSubjectTimeStatisticsResource
                 .equals(other.externalLink, externalLink) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._students, _students));
+            const DeepCollectionEquality().equals(other.students, students));
   }
 
   @JsonKey(ignore: true)
@@ -303,7 +298,7 @@ class _$_GroupListForSubjectTimeStatisticsResource
       const DeepCollectionEquality().hash(externalLink),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_students));
+      const DeepCollectionEquality().hash(students));
 
   @JsonKey(ignore: true)
   @override

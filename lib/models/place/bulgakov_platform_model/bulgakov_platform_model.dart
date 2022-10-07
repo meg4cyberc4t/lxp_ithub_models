@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'bulgakov_platform_model.freezed.dart';
 part 'bulgakov_platform_model.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BulgakovPlatformModel with _$BulgakovPlatformModel {
   factory BulgakovPlatformModel({
     required int id,

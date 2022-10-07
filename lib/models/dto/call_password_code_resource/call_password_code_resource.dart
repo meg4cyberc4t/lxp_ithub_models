@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'call_password_code_resource.freezed.dart';
 part 'call_password_code_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class CallPasswordCodeResource with _$CallPasswordCodeResource {
   factory CallPasswordCodeResource({
     required String token,

@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/file/base_video_resource/base_video_reso
 part 'base_section_resource.freezed.dart';
 part 'base_section_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseSectionResource with _$BaseSectionResource {
   factory BaseSectionResource({
     required int id,

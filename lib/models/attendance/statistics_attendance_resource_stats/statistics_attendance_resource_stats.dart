@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'statistics_attendance_resource_stats.freezed.dart';
 part 'statistics_attendance_resource_stats.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class StatisticsAttendanceResourceStats
     with _$StatisticsAttendanceResourceStats {
   factory StatisticsAttendanceResourceStats({

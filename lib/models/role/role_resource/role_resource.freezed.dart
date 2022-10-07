@@ -152,7 +152,7 @@ class __$$_RoleResourceCopyWithImpl<$Res>
           : description // ignore: cast_nullable_to_non_nullable
               as String,
       permissions: permissions == freezed
-          ? _value._permissions
+          ? _value.permissions
           : permissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
       createdAt: createdAt == freezed
@@ -164,7 +164,7 @@ class __$$_RoleResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       users: users == freezed
-          ? _value._users
+          ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -178,12 +178,10 @@ class _$_RoleResource implements _RoleResource {
       {required this.id,
       required this.name,
       required this.description,
-      required final List<String> permissions,
+      required this.permissions,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseUserResource> users})
-      : _permissions = permissions,
-        _users = users;
+      required this.users});
 
   factory _$_RoleResource.fromJson(Map<String, dynamic> json) =>
       _$$_RoleResourceFromJson(json);
@@ -194,23 +192,14 @@ class _$_RoleResource implements _RoleResource {
   final String name;
   @override
   final String description;
-  final List<String> _permissions;
   @override
-  List<String> get permissions {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_permissions);
-  }
-
+  final List<String> permissions;
   @override
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseUserResource> _users;
   @override
-  List<BaseUserResource> get users {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_users);
-  }
+  final List<BaseUserResource> users;
 
   @override
   String toString() {
@@ -227,10 +216,10 @@ class _$_RoleResource implements _RoleResource {
             const DeepCollectionEquality()
                 .equals(other.description, description) &&
             const DeepCollectionEquality()
-                .equals(other._permissions, _permissions) &&
+                .equals(other.permissions, permissions) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._users, _users));
+            const DeepCollectionEquality().equals(other.users, users));
   }
 
   @JsonKey(ignore: true)
@@ -240,10 +229,10 @@ class _$_RoleResource implements _RoleResource {
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(_permissions),
+      const DeepCollectionEquality().hash(permissions),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_users));
+      const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override

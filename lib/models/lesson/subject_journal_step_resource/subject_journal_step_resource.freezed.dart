@@ -352,7 +352,7 @@ class __$$_SubjectJournalStepResourceCopyWithImpl<$Res>
           : havePatterns // ignore: cast_nullable_to_non_nullable
               as bool,
       answers: answers == freezed
-          ? _value._answers
+          ? _value.answers
           : answers // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcAnswerResource>,
     ));
@@ -383,8 +383,7 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
       required this.passedStatusId,
       required this.checkpointMark,
       required this.havePatterns,
-      required final List<BaseUgcAnswerResource> answers})
-      : _answers = answers;
+      required this.answers});
 
   factory _$_SubjectJournalStepResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectJournalStepResourceFromJson(json);
@@ -430,12 +429,8 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
   final int? checkpointMark;
   @override
   final bool havePatterns;
-  final List<BaseUgcAnswerResource> _answers;
   @override
-  List<BaseUgcAnswerResource> get answers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_answers);
-  }
+  final List<BaseUgcAnswerResource> answers;
 
   @override
   String toString() {
@@ -474,7 +469,7 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
                 .equals(other.checkpointMark, checkpointMark) &&
             const DeepCollectionEquality()
                 .equals(other.havePatterns, havePatterns) &&
-            const DeepCollectionEquality().equals(other._answers, _answers));
+            const DeepCollectionEquality().equals(other.answers, answers));
   }
 
   @JsonKey(ignore: true)
@@ -501,7 +496,7 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
         const DeepCollectionEquality().hash(passedStatusId),
         const DeepCollectionEquality().hash(checkpointMark),
         const DeepCollectionEquality().hash(havePatterns),
-        const DeepCollectionEquality().hash(_answers)
+        const DeepCollectionEquality().hash(answers)
       ]);
 
   @JsonKey(ignore: true)

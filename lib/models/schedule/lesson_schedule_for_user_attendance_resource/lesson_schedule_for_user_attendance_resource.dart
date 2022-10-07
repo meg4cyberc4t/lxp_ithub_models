@@ -6,7 +6,7 @@ import 'package:lxp_ithub_models/models/place/bulgakov_platform_model/bulgakov_p
 part 'lesson_schedule_for_user_attendance_resource.freezed.dart';
 part 'lesson_schedule_for_user_attendance_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class LessonScheduleForUserAttendanceResource
     with _$LessonScheduleForUserAttendanceResource {
   factory LessonScheduleForUserAttendanceResource({

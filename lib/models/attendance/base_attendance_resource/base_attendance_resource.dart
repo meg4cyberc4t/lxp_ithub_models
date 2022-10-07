@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_attendance_resource.freezed.dart';
 part 'base_attendance_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseAttendanceResource with _$BaseAttendanceResource {
   factory BaseAttendanceResource({
     required int id,

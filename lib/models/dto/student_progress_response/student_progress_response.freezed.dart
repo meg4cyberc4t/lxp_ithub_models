@@ -124,11 +124,11 @@ class __$$_StudentProgressResponseCopyWithImpl<$Res>
           : student // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       subjects: subjects == freezed
-          ? _value._subjects
+          ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<StudentSubjectResource>,
     ));
@@ -139,30 +139,17 @@ class __$$_StudentProgressResponseCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_StudentProgressResponse implements _StudentProgressResponse {
   _$_StudentProgressResponse(
-      {required this.student,
-      required final List<BaseGroupResource> groups,
-      required final List<StudentSubjectResource> subjects})
-      : _groups = groups,
-        _subjects = subjects;
+      {required this.student, required this.groups, required this.subjects});
 
   factory _$_StudentProgressResponse.fromJson(Map<String, dynamic> json) =>
       _$$_StudentProgressResponseFromJson(json);
 
   @override
   final BaseUserResource student;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
-  final List<StudentSubjectResource> _subjects;
+  final List<BaseGroupResource> groups;
   @override
-  List<StudentSubjectResource> get subjects {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_subjects);
-  }
+  final List<StudentSubjectResource> subjects;
 
   @override
   String toString() {
@@ -175,8 +162,8 @@ class _$_StudentProgressResponse implements _StudentProgressResponse {
         (other.runtimeType == runtimeType &&
             other is _$_StudentProgressResponse &&
             const DeepCollectionEquality().equals(other.student, student) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
-            const DeepCollectionEquality().equals(other._subjects, _subjects));
+            const DeepCollectionEquality().equals(other.groups, groups) &&
+            const DeepCollectionEquality().equals(other.subjects, subjects));
   }
 
   @JsonKey(ignore: true)
@@ -184,8 +171,8 @@ class _$_StudentProgressResponse implements _StudentProgressResponse {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(student),
-      const DeepCollectionEquality().hash(_groups),
-      const DeepCollectionEquality().hash(_subjects));
+      const DeepCollectionEquality().hash(groups),
+      const DeepCollectionEquality().hash(subjects));
 
   @JsonKey(ignore: true)
   @override

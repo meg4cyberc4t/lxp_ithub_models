@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'roles_resource.freezed.dart';
 part 'roles_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class RolesResource with _$RolesResource {
   factory RolesResource({
     required bool isTeacher,

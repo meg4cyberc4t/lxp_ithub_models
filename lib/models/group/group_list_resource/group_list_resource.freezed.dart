@@ -270,7 +270,7 @@ class __$$_GroupListResourceCopyWithImpl<$Res>
           : usersCount // ignore: cast_nullable_to_non_nullable
               as int,
       users: users == freezed
-          ? _value._users
+          ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       half: half == freezed
@@ -300,10 +300,9 @@ class _$_GroupListResource implements _GroupListResource {
       required this.updatedAt,
       required this.subjectsCount,
       required this.usersCount,
-      required final List<BaseUserResource> users,
+      required this.users,
       required this.half,
-      required this.trajectory})
-      : _users = users;
+      required this.trajectory});
 
   factory _$_GroupListResource.fromJson(Map<String, dynamic> json) =>
       _$$_GroupListResourceFromJson(json);
@@ -330,13 +329,8 @@ class _$_GroupListResource implements _GroupListResource {
   final int subjectsCount;
   @override
   final int usersCount;
-  final List<BaseUserResource> _users;
   @override
-  List<BaseUserResource> get users {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_users);
-  }
-
+  final List<BaseUserResource> users;
   @override
   final BaseHalfResource half;
   @override
@@ -367,7 +361,7 @@ class _$_GroupListResource implements _GroupListResource {
                 .equals(other.subjectsCount, subjectsCount) &&
             const DeepCollectionEquality()
                 .equals(other.usersCount, usersCount) &&
-            const DeepCollectionEquality().equals(other._users, _users) &&
+            const DeepCollectionEquality().equals(other.users, users) &&
             const DeepCollectionEquality().equals(other.half, half) &&
             const DeepCollectionEquality()
                 .equals(other.trajectory, trajectory));
@@ -388,7 +382,7 @@ class _$_GroupListResource implements _GroupListResource {
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(subjectsCount),
       const DeepCollectionEquality().hash(usersCount),
-      const DeepCollectionEquality().hash(_users),
+      const DeepCollectionEquality().hash(users),
       const DeepCollectionEquality().hash(half),
       const DeepCollectionEquality().hash(trajectory));
 

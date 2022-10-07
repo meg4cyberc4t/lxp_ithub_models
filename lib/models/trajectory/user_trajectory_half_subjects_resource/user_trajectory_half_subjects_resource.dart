@@ -1,12 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/trajectory/base_trajectory_resource.dart/base_trajectory_resource.dart';
 import 'package:lxp_ithub_models/models/trajectory/base_trajectory_resource.dart/base_trajectory_resource_interface.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
 
 part 'user_trajectory_half_subjects_resource.freezed.dart';
 part 'user_trajectory_half_subjects_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserTrajectoryHalfSubjectsResource
     with _$UserTrajectoryHalfSubjectsResource {
   @Implements<BaseTrajectoryResourceInterface>()

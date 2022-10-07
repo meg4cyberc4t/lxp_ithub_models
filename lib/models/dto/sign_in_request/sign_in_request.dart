@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'sign_in_request.freezed.dart';
 part 'sign_in_request.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SignInRequest with _$SignInRequest {
   factory SignInRequest({
     required String email,

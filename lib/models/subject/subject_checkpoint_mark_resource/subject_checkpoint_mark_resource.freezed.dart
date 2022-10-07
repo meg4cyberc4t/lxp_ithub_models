@@ -253,15 +253,15 @@ class __$$SubjecCheckpointMarkResourceCopyWithImpl<$Res>
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       chapters: chapters == freezed
-          ? _value._chapters
+          ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<ChapterResource>,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
     ));
@@ -283,12 +283,9 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
       required this.updatedAt,
       required this.deletedAt,
       required this.deletePermanentlyAt,
-      required final List<ChapterResource> chapters,
-      required final List<BaseUserResource> teachers,
-      required final List<BaseGroupResource> groups})
-      : _chapters = chapters,
-        _teachers = teachers,
-        _groups = groups;
+      required this.chapters,
+      required this.teachers,
+      required this.groups});
 
   factory _$SubjecCheckpointMarkResource.fromJson(Map<String, dynamic> json) =>
       _$$SubjecCheckpointMarkResourceFromJson(json);
@@ -316,26 +313,12 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
   final DateTime? deletedAt;
   @override
   final DateTime? deletePermanentlyAt;
-  final List<ChapterResource> _chapters;
   @override
-  List<ChapterResource> get chapters {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_chapters);
-  }
-
-  final List<BaseUserResource> _teachers;
+  final List<ChapterResource> chapters;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
-
-  final List<BaseGroupResource> _groups;
+  final List<BaseUserResource> teachers;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
+  final List<BaseGroupResource> groups;
 
   @override
   String toString() {
@@ -360,9 +343,9 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
             const DeepCollectionEquality()
                 .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
-            const DeepCollectionEquality().equals(other._chapters, _chapters) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers) &&
-            const DeepCollectionEquality().equals(other._groups, _groups));
+            const DeepCollectionEquality().equals(other.chapters, chapters) &&
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.groups, groups));
   }
 
   @JsonKey(ignore: true)
@@ -380,9 +363,9 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(deletedAt),
       const DeepCollectionEquality().hash(deletePermanentlyAt),
-      const DeepCollectionEquality().hash(_chapters),
-      const DeepCollectionEquality().hash(_teachers),
-      const DeepCollectionEquality().hash(_groups));
+      const DeepCollectionEquality().hash(chapters),
+      const DeepCollectionEquality().hash(teachers),
+      const DeepCollectionEquality().hash(groups));
 
   @JsonKey(ignore: true)
   @override

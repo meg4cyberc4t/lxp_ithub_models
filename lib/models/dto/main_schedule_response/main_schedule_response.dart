@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/schedule/lesson_schedule/lesson_schedule
 part 'main_schedule_response.freezed.dart';
 part 'main_schedule_response.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class MainScheduleResponse with _$MainScheduleResponse {
   factory MainScheduleResponse({
     required List<LessonSchedule> teacher,

@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/schedule/base_lesson_schedule_resource/b
 part 'base_lesson_schedule_resource.freezed.dart';
 part 'base_lesson_schedule_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseLessonScheduleResource with _$BaseLessonScheduleResource {
   @Implements<BaseLessonScheduleResourceInterface>()
   factory BaseLessonScheduleResource({

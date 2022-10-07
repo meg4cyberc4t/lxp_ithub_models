@@ -224,7 +224,7 @@ class __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>
   }) {
     return _then(_$_ShowLessonSubjectResource(
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       cover: cover == freezed
@@ -232,7 +232,7 @@ class __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       id: id == freezed
@@ -287,9 +287,9 @@ class __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
   _$_ShowLessonSubjectResource(
-      {required final List<BaseUserResource> teachers,
+      {required this.teachers,
       required this.cover,
-      required final List<BaseGroupResource> groups,
+      required this.groups,
       required this.id,
       required this.title,
       this.code = '',
@@ -300,29 +300,17 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
       required this.createdAt,
       required this.updatedAt,
       required this.deletedAt,
-      required this.deletePermanentlyAt})
-      : _teachers = teachers,
-        _groups = groups;
+      required this.deletePermanentlyAt});
 
   factory _$_ShowLessonSubjectResource.fromJson(Map<String, dynamic> json) =>
       _$$_ShowLessonSubjectResourceFromJson(json);
 
-  final List<BaseUserResource> _teachers;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
-
+  final List<BaseUserResource> teachers;
   @override
   final BasePhotoResource? cover;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
+  final List<BaseGroupResource> groups;
   @override
   final int id;
   @override
@@ -357,9 +345,9 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ShowLessonSubjectResource &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers) &&
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
             const DeepCollectionEquality().equals(other.cover, cover) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.code, code) &&
@@ -379,9 +367,9 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_teachers),
+      const DeepCollectionEquality().hash(teachers),
       const DeepCollectionEquality().hash(cover),
-      const DeepCollectionEquality().hash(_groups),
+      const DeepCollectionEquality().hash(groups),
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(code),

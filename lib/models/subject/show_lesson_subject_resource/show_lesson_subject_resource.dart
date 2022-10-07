@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'show_lesson_subject_resource.freezed.dart';
 part 'show_lesson_subject_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class ShowLessonSubjectResource with _$ShowLessonSubjectResource {
   @Implements<BaseSubjectResourceInterface>()
   factory ShowLessonSubjectResource({

@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/lesson/base_step_user_process_resource/b
 part 'base_step_user_process_resource.freezed.dart';
 part 'base_step_user_process_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseStepUserProcessResource with _$BaseStepUserProcessResource {
   @Implements<BaseStepUserProcessResourceInterface>()
   factory BaseStepUserProcessResource({

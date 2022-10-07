@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'subject_journal_group_resource.freezed.dart';
 part 'subject_journal_group_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SubjectJounralGroupResource with _$SubjectJounralGroupResource {
   @Implements<BaseGroupResourceInterface>()
   factory SubjectJounralGroupResource({

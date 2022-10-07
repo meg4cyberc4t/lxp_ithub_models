@@ -1,12 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/chapter/base_chapter_resource/base_chapter_resource.dart';
 import 'package:lxp_ithub_models/models/chapter/base_chapter_resource/base_chapter_resource_interface.dart';
 import 'package:lxp_ithub_models/models/lesson/base_step_resource/base_step_resource.dart';
 
 part 'student_chapter_resource.freezed.dart';
 part 'student_chapter_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class StudentChapterResource with _$StudentChapterResource {
   @Implements<BaseChapterResourceInterface>()
   factory StudentChapterResource({

@@ -3,7 +3,6 @@ import 'package:lxp_ithub_models/models/attendance/base_attendance_resource/base
 import 'package:lxp_ithub_models/models/group/group_lesson_schedule_resource/group_lesson_schedule_resource.dart';
 import 'package:lxp_ithub_models/models/place/bulgakov_classroom_model/bulgakov_classroom_model.dart';
 import 'package:lxp_ithub_models/models/place/bulgakov_platform_model/bulgakov_platform_model.dart';
-import 'package:lxp_ithub_models/models/schedule/base_lesson_schedule_resource/base_lesson_schedule_resource.dart';
 import 'package:lxp_ithub_models/models/schedule/base_lesson_schedule_resource/base_lesson_schedule_resource_interface.dart';
 import 'package:lxp_ithub_models/models/subject/subject_lesson_schedule_resource/subject_lesson_schedule_resource.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
@@ -11,7 +10,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'lesson_schedule.freezed.dart';
 part 'lesson_schedule.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class LessonSchedule with _$LessonSchedule {
   @Implements<BaseLessonScheduleResourceInterface>()
   factory LessonSchedule({

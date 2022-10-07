@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'local_answer_resource.freezed.dart';
 part 'local_answer_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class LocalAnswerResource with _$LocalAnswerResource {
   factory LocalAnswerResource({
     required int id,

@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/subject/subject_lesson_schedule_resource
 part 'schedule_lesson_response.freezed.dart';
 part 'schedule_lesson_response.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class ScheduleLessonResponse with _$ScheduleLessonResponse {
   factory ScheduleLessonResponse({
     required BaseLessonScheduleResource lesson,

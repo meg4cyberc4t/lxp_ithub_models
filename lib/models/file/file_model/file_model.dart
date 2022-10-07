@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'file_model.freezed.dart';
 part 'file_model.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class FileModel with _$FileModel {
   factory FileModel({
     required int id,

@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/lesson/base_step_resource/base_step_reso
 part 'base_step_resource.freezed.dart';
 part 'base_step_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseStepResource with _$BaseStepResource {
   @Implements<BaseStepResourceInterface>()
   factory BaseStepResource({

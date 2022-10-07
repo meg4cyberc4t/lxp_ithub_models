@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'loaded_file.freezed.dart';
 part 'loaded_file.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class LoadedFile with _$LoadedFile {
   factory LoadedFile({
     required String publicId,

@@ -8,7 +8,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'base_notification_resource.freezed.dart';
 part 'base_notification_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseNotificationResource with _$BaseNotificationResource {
   factory BaseNotificationResource({
     required String id,

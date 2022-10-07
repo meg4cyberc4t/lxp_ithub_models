@@ -334,23 +334,23 @@ class __$$_SubjectShowResourseCopyWithImpl<$Res>
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       steps: steps == freezed
-          ? _value._steps
+          ? _value.steps
           : steps // ignore: cast_nullable_to_non_nullable
               as List<SubjectStepShowResource>,
       halves: halves == freezed
-          ? _value._halves
+          ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalfSubjectResource>?,
       trajectories: trajectories == freezed
-          ? _value._trajectories
+          ? _value.trajectories
           : trajectories // ignore: cast_nullable_to_non_nullable
               as List<BaseTrajectoryResource>,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       cover: cover == freezed
@@ -358,11 +358,11 @@ class __$$_SubjectShowResourseCopyWithImpl<$Res>
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
       chapters: chapters == freezed
-          ? _value._chapters
+          ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<BaseChapterResource>,
       subSubjects: subSubjects == freezed
-          ? _value._subSubjects
+          ? _value.subSubjects
           : subSubjects // ignore: cast_nullable_to_non_nullable
               as List<BaseSubjectResource>?,
       masterSubject: masterSubject == freezed
@@ -388,22 +388,15 @@ class _$_SubjectShowResourse implements _SubjectShowResourse {
       required this.updatedAt,
       required this.deletedAt,
       required this.deletePermanentlyAt,
-      required final List<SubjectStepShowResource> steps,
-      required final List<HalfSubjectResource>? halves,
-      required final List<BaseTrajectoryResource> trajectories,
-      required final List<BaseUserResource> teachers,
-      required final List<BaseGroupResource> groups,
+      required this.steps,
+      required this.halves,
+      required this.trajectories,
+      required this.teachers,
+      required this.groups,
       required this.cover,
-      required final List<BaseChapterResource> chapters,
-      required final List<BaseSubjectResource>? subSubjects,
-      required this.masterSubject})
-      : _steps = steps,
-        _halves = halves,
-        _trajectories = trajectories,
-        _teachers = teachers,
-        _groups = groups,
-        _chapters = chapters,
-        _subSubjects = subSubjects;
+      required this.chapters,
+      required this.subSubjects,
+      required this.masterSubject});
 
   factory _$_SubjectShowResourse.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectShowResourseFromJson(json);
@@ -431,61 +424,22 @@ class _$_SubjectShowResourse implements _SubjectShowResourse {
   final DateTime? deletedAt;
   @override
   final DateTime? deletePermanentlyAt;
-  final List<SubjectStepShowResource> _steps;
   @override
-  List<SubjectStepShowResource> get steps {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_steps);
-  }
-
-  final List<HalfSubjectResource>? _halves;
+  final List<SubjectStepShowResource> steps;
   @override
-  List<HalfSubjectResource>? get halves {
-    final value = _halves;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  final List<BaseTrajectoryResource> _trajectories;
+  final List<HalfSubjectResource>? halves;
   @override
-  List<BaseTrajectoryResource> get trajectories {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_trajectories);
-  }
-
-  final List<BaseUserResource> _teachers;
+  final List<BaseTrajectoryResource> trajectories;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
-
-  final List<BaseGroupResource> _groups;
+  final List<BaseUserResource> teachers;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
+  final List<BaseGroupResource> groups;
   @override
   final BasePhotoResource? cover;
-  final List<BaseChapterResource> _chapters;
   @override
-  List<BaseChapterResource> get chapters {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_chapters);
-  }
-
-  final List<BaseSubjectResource>? _subSubjects;
+  final List<BaseChapterResource> chapters;
   @override
-  List<BaseSubjectResource>? get subSubjects {
-    final value = _subSubjects;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
+  final List<BaseSubjectResource>? subSubjects;
   @override
   final BaseSubjectResource? masterSubject;
 
@@ -512,16 +466,16 @@ class _$_SubjectShowResourse implements _SubjectShowResourse {
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
             const DeepCollectionEquality()
                 .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
-            const DeepCollectionEquality().equals(other._steps, _steps) &&
-            const DeepCollectionEquality().equals(other._halves, _halves) &&
+            const DeepCollectionEquality().equals(other.steps, steps) &&
+            const DeepCollectionEquality().equals(other.halves, halves) &&
             const DeepCollectionEquality()
-                .equals(other._trajectories, _trajectories) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
+                .equals(other.trajectories, trajectories) &&
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.cover, cover) &&
-            const DeepCollectionEquality().equals(other._chapters, _chapters) &&
+            const DeepCollectionEquality().equals(other.chapters, chapters) &&
             const DeepCollectionEquality()
-                .equals(other._subSubjects, _subSubjects) &&
+                .equals(other.subSubjects, subSubjects) &&
             const DeepCollectionEquality()
                 .equals(other.masterSubject, masterSubject));
   }
@@ -541,14 +495,14 @@ class _$_SubjectShowResourse implements _SubjectShowResourse {
         const DeepCollectionEquality().hash(updatedAt),
         const DeepCollectionEquality().hash(deletedAt),
         const DeepCollectionEquality().hash(deletePermanentlyAt),
-        const DeepCollectionEquality().hash(_steps),
-        const DeepCollectionEquality().hash(_halves),
-        const DeepCollectionEquality().hash(_trajectories),
-        const DeepCollectionEquality().hash(_teachers),
-        const DeepCollectionEquality().hash(_groups),
+        const DeepCollectionEquality().hash(steps),
+        const DeepCollectionEquality().hash(halves),
+        const DeepCollectionEquality().hash(trajectories),
+        const DeepCollectionEquality().hash(teachers),
+        const DeepCollectionEquality().hash(groups),
         const DeepCollectionEquality().hash(cover),
-        const DeepCollectionEquality().hash(_chapters),
-        const DeepCollectionEquality().hash(_subSubjects),
+        const DeepCollectionEquality().hash(chapters),
+        const DeepCollectionEquality().hash(subSubjects),
         const DeepCollectionEquality().hash(masterSubject)
       ]);
 

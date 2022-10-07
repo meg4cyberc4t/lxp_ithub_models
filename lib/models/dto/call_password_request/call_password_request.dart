@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'call_password_request.freezed.dart';
 part 'call_password_request.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class CallPasswordRequest with _$CallPasswordRequest {
   factory CallPasswordRequest({
     required String phone,

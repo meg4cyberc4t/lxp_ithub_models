@@ -273,7 +273,7 @@ class __$$_UserListResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       roles: roles == freezed
@@ -281,7 +281,7 @@ class __$$_UserListResourceCopyWithImpl<$Res>
           : roles // ignore: cast_nullable_to_non_nullable
               as RolesResource,
       relatedUsers: relatedUsers == freezed
-          ? _value._relatedUsers
+          ? _value.relatedUsers
           : relatedUsers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -304,11 +304,9 @@ class _$_UserListResource implements _UserListResource {
       required this.isOnline,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseGroupResource> groups,
+      required this.groups,
       required this.roles,
-      required final List<BaseUserResource> relatedUsers})
-      : _groups = groups,
-        _relatedUsers = relatedUsers;
+      required this.relatedUsers});
 
   factory _$_UserListResource.fromJson(Map<String, dynamic> json) =>
       _$$_UserListResourceFromJson(json);
@@ -337,21 +335,12 @@ class _$_UserListResource implements _UserListResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
+  final List<BaseGroupResource> groups;
   @override
   final RolesResource roles;
-  final List<BaseUserResource> _relatedUsers;
   @override
-  List<BaseUserResource> get relatedUsers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_relatedUsers);
-  }
+  final List<BaseUserResource> relatedUsers;
 
   @override
   String toString() {
@@ -378,10 +367,10 @@ class _$_UserListResource implements _UserListResource {
             const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.roles, roles) &&
             const DeepCollectionEquality()
-                .equals(other._relatedUsers, _relatedUsers));
+                .equals(other.relatedUsers, relatedUsers));
   }
 
   @JsonKey(ignore: true)
@@ -400,9 +389,9 @@ class _$_UserListResource implements _UserListResource {
       const DeepCollectionEquality().hash(isOnline),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_groups),
+      const DeepCollectionEquality().hash(groups),
       const DeepCollectionEquality().hash(roles),
-      const DeepCollectionEquality().hash(_relatedUsers));
+      const DeepCollectionEquality().hash(relatedUsers));
 
   @JsonKey(ignore: true)
   @override

@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_video_resource.freezed.dart';
 part 'base_video_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseVideoResource with _$BaseVideoResource {
   factory BaseVideoResource({
     required int id,

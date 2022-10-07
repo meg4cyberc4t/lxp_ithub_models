@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'group_list_resource.freezed.dart';
 part 'group_list_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class GroupListResource with _$GroupListResource {
   @Implements<BaseGroupResourceInterface>()
   factory GroupListResource({

@@ -230,7 +230,7 @@ class __$$_ChapterResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       steps: steps == freezed
-          ? _value._steps
+          ? _value.steps
           : steps // ignore: cast_nullable_to_non_nullable
               as List<BaseStepResource>,
     ));
@@ -252,8 +252,7 @@ class _$_ChapterResource implements _ChapterResource {
       required this.maxSizeY,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseStepResource> steps})
-      : _steps = steps;
+      required this.steps});
 
   factory _$_ChapterResource.fromJson(Map<String, dynamic> json) =>
       _$$_ChapterResourceFromJson(json);
@@ -280,12 +279,8 @@ class _$_ChapterResource implements _ChapterResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseStepResource> _steps;
   @override
-  List<BaseStepResource> get steps {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_steps);
-  }
+  final List<BaseStepResource> steps;
 
   @override
   String toString() {
@@ -311,7 +306,7 @@ class _$_ChapterResource implements _ChapterResource {
             const DeepCollectionEquality().equals(other.maxSizeY, maxSizeY) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._steps, _steps));
+            const DeepCollectionEquality().equals(other.steps, steps));
   }
 
   @JsonKey(ignore: true)
@@ -329,7 +324,7 @@ class _$_ChapterResource implements _ChapterResource {
       const DeepCollectionEquality().hash(maxSizeY),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_steps));
+      const DeepCollectionEquality().hash(steps));
 
   @JsonKey(ignore: true)
   @override

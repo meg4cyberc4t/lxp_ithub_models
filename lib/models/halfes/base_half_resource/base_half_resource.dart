@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/halfes/base_half_resource/base_half_reso
 part 'base_half_resource.freezed.dart';
 part 'base_half_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseHalfResource with _$BaseHalfResource {
   @Implements<BaseHalfResourceInterface>()
   factory BaseHalfResource({

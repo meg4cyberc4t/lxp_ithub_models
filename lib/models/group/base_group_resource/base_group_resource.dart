@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/group/base_group_resource/base_group_res
 part 'base_group_resource.freezed.dart';
 part 'base_group_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseGroupResource with _$BaseGroupResource {
   @Implements<BaseGroupResourceInterface>()
   factory BaseGroupResource({

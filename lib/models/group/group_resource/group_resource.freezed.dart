@@ -204,7 +204,7 @@ class __$$_GroupResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       students: students == freezed
-          ? _value._students
+          ? _value.students
           : students // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -224,8 +224,7 @@ class _$_GroupResource implements _GroupResource {
       required this.externalLink,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseUserResource> students})
-      : _students = students;
+      required this.students});
 
   factory _$_GroupResource.fromJson(Map<String, dynamic> json) =>
       _$$_GroupResourceFromJson(json);
@@ -248,12 +247,8 @@ class _$_GroupResource implements _GroupResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseUserResource> _students;
   @override
-  List<BaseUserResource> get students {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_students);
-  }
+  final List<BaseUserResource> students;
 
   @override
   String toString() {
@@ -276,7 +271,7 @@ class _$_GroupResource implements _GroupResource {
                 .equals(other.externalLink, externalLink) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._students, _students));
+            const DeepCollectionEquality().equals(other.students, students));
   }
 
   @JsonKey(ignore: true)
@@ -292,7 +287,7 @@ class _$_GroupResource implements _GroupResource {
       const DeepCollectionEquality().hash(externalLink),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_students));
+      const DeepCollectionEquality().hash(students));
 
   @JsonKey(ignore: true)
   @override

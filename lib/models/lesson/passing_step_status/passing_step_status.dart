@@ -4,7 +4,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'passing_step_status.freezed.dart';
 part 'passing_step_status.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class PassingStepStatus with _$PassingStepStatus {
   factory PassingStepStatus({
     required int id,

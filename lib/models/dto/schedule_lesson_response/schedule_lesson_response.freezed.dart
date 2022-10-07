@@ -115,7 +115,7 @@ class __$$_ScheduleLessonResponseCopyWithImpl<$Res>
           : lesson // ignore: cast_nullable_to_non_nullable
               as BaseLessonScheduleResource,
       lessonSubjects: lessonSubjects == freezed
-          ? _value._lessonSubjects
+          ? _value.lessonSubjects
           : lessonSubjects // ignore: cast_nullable_to_non_nullable
               as List<SubjectLessonScheduleResource>,
     ));
@@ -126,21 +126,15 @@ class __$$_ScheduleLessonResponseCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ScheduleLessonResponse implements _ScheduleLessonResponse {
   _$_ScheduleLessonResponse(
-      {required this.lesson,
-      required final List<SubjectLessonScheduleResource> lessonSubjects})
-      : _lessonSubjects = lessonSubjects;
+      {required this.lesson, required this.lessonSubjects});
 
   factory _$_ScheduleLessonResponse.fromJson(Map<String, dynamic> json) =>
       _$$_ScheduleLessonResponseFromJson(json);
 
   @override
   final BaseLessonScheduleResource lesson;
-  final List<SubjectLessonScheduleResource> _lessonSubjects;
   @override
-  List<SubjectLessonScheduleResource> get lessonSubjects {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_lessonSubjects);
-  }
+  final List<SubjectLessonScheduleResource> lessonSubjects;
 
   @override
   String toString() {
@@ -154,7 +148,7 @@ class _$_ScheduleLessonResponse implements _ScheduleLessonResponse {
             other is _$_ScheduleLessonResponse &&
             const DeepCollectionEquality().equals(other.lesson, lesson) &&
             const DeepCollectionEquality()
-                .equals(other._lessonSubjects, _lessonSubjects));
+                .equals(other.lessonSubjects, lessonSubjects));
   }
 
   @JsonKey(ignore: true)
@@ -162,7 +156,7 @@ class _$_ScheduleLessonResponse implements _ScheduleLessonResponse {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(lesson),
-      const DeepCollectionEquality().hash(_lessonSubjects));
+      const DeepCollectionEquality().hash(lessonSubjects));
 
   @JsonKey(ignore: true)
   @override

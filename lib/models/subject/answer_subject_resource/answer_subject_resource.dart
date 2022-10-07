@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'answer_subject_resource.freezed.dart';
 part 'answer_subject_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class AnswerSubjectResource with _$AnswerSubjectResource {
   @Implements<BaseSubjectResourceInterface>()
   factory AnswerSubjectResource({

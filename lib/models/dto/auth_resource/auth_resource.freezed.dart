@@ -108,7 +108,7 @@ class __$$_AuthResourceCopyWithImpl<$Res>
           : user // ignore: cast_nullable_to_non_nullable
               as AuthUserResource,
       permissions: permissions == freezed
-          ? _value._permissions
+          ? _value.permissions
           : permissions // ignore: cast_nullable_to_non_nullable
               as List<PermissionResource>,
     ));
@@ -118,21 +118,15 @@ class __$$_AuthResourceCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_AuthResource implements _AuthResource {
-  _$_AuthResource(
-      {required this.user, required final List<PermissionResource> permissions})
-      : _permissions = permissions;
+  _$_AuthResource({required this.user, required this.permissions});
 
   factory _$_AuthResource.fromJson(Map<String, dynamic> json) =>
       _$$_AuthResourceFromJson(json);
 
   @override
   final AuthUserResource user;
-  final List<PermissionResource> _permissions;
   @override
-  List<PermissionResource> get permissions {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_permissions);
-  }
+  final List<PermissionResource> permissions;
 
   @override
   String toString() {
@@ -146,7 +140,7 @@ class _$_AuthResource implements _AuthResource {
             other is _$_AuthResource &&
             const DeepCollectionEquality().equals(other.user, user) &&
             const DeepCollectionEquality()
-                .equals(other._permissions, _permissions));
+                .equals(other.permissions, permissions));
   }
 
   @JsonKey(ignore: true)
@@ -154,7 +148,7 @@ class _$_AuthResource implements _AuthResource {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(user),
-      const DeepCollectionEquality().hash(_permissions));
+      const DeepCollectionEquality().hash(permissions));
 
   @JsonKey(ignore: true)
   @override

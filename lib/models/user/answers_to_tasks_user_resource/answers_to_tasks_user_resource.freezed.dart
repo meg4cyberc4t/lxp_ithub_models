@@ -256,11 +256,11 @@ class __$$_AnswersToTasksUserResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       lessons: lessons == freezed
-          ? _value._lessons
+          ? _value.lessons
           : lessons // ignore: cast_nullable_to_non_nullable
               as List<BaseStepResource>,
     ));
@@ -283,10 +283,8 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
       required this.isOnline,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseGroupResource> groups,
-      required final List<BaseStepResource> lessons})
-      : _groups = groups,
-        _lessons = lessons;
+      required this.groups,
+      required this.lessons});
 
   factory _$_AnswersToTasksUserResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswersToTasksUserResourceFromJson(json);
@@ -315,19 +313,10 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
-  final List<BaseStepResource> _lessons;
+  final List<BaseGroupResource> groups;
   @override
-  List<BaseStepResource> get lessons {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_lessons);
-  }
+  final List<BaseStepResource> lessons;
 
   @override
   String toString() {
@@ -354,8 +343,8 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
             const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
-            const DeepCollectionEquality().equals(other._lessons, _lessons));
+            const DeepCollectionEquality().equals(other.groups, groups) &&
+            const DeepCollectionEquality().equals(other.lessons, lessons));
   }
 
   @JsonKey(ignore: true)
@@ -374,8 +363,8 @@ class _$_AnswersToTasksUserResource implements _AnswersToTasksUserResource {
       const DeepCollectionEquality().hash(isOnline),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_groups),
-      const DeepCollectionEquality().hash(_lessons));
+      const DeepCollectionEquality().hash(groups),
+      const DeepCollectionEquality().hash(lessons));
 
   @JsonKey(ignore: true)
   @override

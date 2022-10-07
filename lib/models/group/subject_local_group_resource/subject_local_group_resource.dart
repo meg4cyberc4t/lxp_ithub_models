@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/user_resource/user_resource.dart';
 part 'subject_local_group_resource.freezed.dart';
 part 'subject_local_group_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SubjectLocalGroupResource with _$SubjectLocalGroupResource {
   @Implements<BaseGroupResourceInterface>()
   factory SubjectLocalGroupResource({

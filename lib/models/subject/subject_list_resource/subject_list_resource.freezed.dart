@@ -274,15 +274,15 @@ class __$$_SubjectListResourceCopyWithImpl<$Res>
           : quantityLessons // ignore: cast_nullable_to_non_nullable
               as int,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       halves: halves == freezed
-          ? _value._halves
+          ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalfSubjectResource>,
     ));
@@ -306,12 +306,9 @@ class _$_SubjectListResource implements _SubjectListResource {
       required this.deletePermanentlyAt,
       required this.quantitySections,
       required this.quantityLessons,
-      required final List<BaseUserResource> teachers,
-      required final List<BaseGroupResource> groups,
-      required final List<HalfSubjectResource> halves})
-      : _teachers = teachers,
-        _groups = groups,
-        _halves = halves;
+      required this.teachers,
+      required this.groups,
+      required this.halves});
 
   factory _$_SubjectListResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectListResourceFromJson(json);
@@ -343,26 +340,12 @@ class _$_SubjectListResource implements _SubjectListResource {
   final int quantitySections;
   @override
   final int quantityLessons;
-  final List<BaseUserResource> _teachers;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
-
-  final List<BaseGroupResource> _groups;
+  final List<BaseUserResource> teachers;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
-  final List<HalfSubjectResource> _halves;
+  final List<BaseGroupResource> groups;
   @override
-  List<HalfSubjectResource> get halves {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_halves);
-  }
+  final List<HalfSubjectResource> halves;
 
   @override
   String toString() {
@@ -391,9 +374,9 @@ class _$_SubjectListResource implements _SubjectListResource {
                 .equals(other.quantitySections, quantitySections) &&
             const DeepCollectionEquality()
                 .equals(other.quantityLessons, quantityLessons) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
-            const DeepCollectionEquality().equals(other._halves, _halves));
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
+            const DeepCollectionEquality().equals(other.halves, halves));
   }
 
   @JsonKey(ignore: true)
@@ -413,9 +396,9 @@ class _$_SubjectListResource implements _SubjectListResource {
       const DeepCollectionEquality().hash(deletePermanentlyAt),
       const DeepCollectionEquality().hash(quantitySections),
       const DeepCollectionEquality().hash(quantityLessons),
-      const DeepCollectionEquality().hash(_teachers),
-      const DeepCollectionEquality().hash(_groups),
-      const DeepCollectionEquality().hash(_halves));
+      const DeepCollectionEquality().hash(teachers),
+      const DeepCollectionEquality().hash(groups),
+      const DeepCollectionEquality().hash(halves));
 
   @JsonKey(ignore: true)
   @override

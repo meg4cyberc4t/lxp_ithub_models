@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/user/user_resource/user_resource_interfa
 part 'sign_in_response.freezed.dart';
 part 'sign_in_response.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SignInResponse with _$SignInResponse {
   @Implements<UserResourceInterface>()
   factory SignInResponse({

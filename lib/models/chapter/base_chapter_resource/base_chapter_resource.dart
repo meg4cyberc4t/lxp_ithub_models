@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/chapter/base_chapter_resource/base_chapt
 part 'base_chapter_resource.freezed.dart';
 part 'base_chapter_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseChapterResource with _$BaseChapterResource {
   @Implements<BaseChapterResourceInterface>()
   factory BaseChapterResource({

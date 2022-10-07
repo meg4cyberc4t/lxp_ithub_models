@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_photo_resource.freezed.dart';
 part 'base_photo_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BasePhotoResource with _$BasePhotoResource {
   factory BasePhotoResource({
     required int id,

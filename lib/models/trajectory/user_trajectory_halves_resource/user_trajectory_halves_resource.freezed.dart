@@ -91,7 +91,7 @@ class __$$_UserTrajectoryHalvesResourceCopyWithImpl<$Res>
   }) {
     return _then(_$_UserTrajectoryHalvesResource(
       subjects: subjects == freezed
-          ? _value._subjects
+          ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalfSubjectsResource>,
     ));
@@ -101,19 +101,13 @@ class __$$_UserTrajectoryHalvesResourceCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_UserTrajectoryHalvesResource implements _UserTrajectoryHalvesResource {
-  _$_UserTrajectoryHalvesResource(
-      {required final List<UserTrajectoryHalfSubjectsResource> subjects})
-      : _subjects = subjects;
+  _$_UserTrajectoryHalvesResource({required this.subjects});
 
   factory _$_UserTrajectoryHalvesResource.fromJson(Map<String, dynamic> json) =>
       _$$_UserTrajectoryHalvesResourceFromJson(json);
 
-  final List<UserTrajectoryHalfSubjectsResource> _subjects;
   @override
-  List<UserTrajectoryHalfSubjectsResource> get subjects {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_subjects);
-  }
+  final List<UserTrajectoryHalfSubjectsResource> subjects;
 
   @override
   String toString() {
@@ -125,13 +119,13 @@ class _$_UserTrajectoryHalvesResource implements _UserTrajectoryHalvesResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_UserTrajectoryHalvesResource &&
-            const DeepCollectionEquality().equals(other._subjects, _subjects));
+            const DeepCollectionEquality().equals(other.subjects, subjects));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_subjects));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(subjects));
 
   @JsonKey(ignore: true)
   @override

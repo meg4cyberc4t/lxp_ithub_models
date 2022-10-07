@@ -5,7 +5,7 @@ import 'package:lxp_ithub_models/models/user/user_show_resource/user_show_resour
 part 'user_answer_resource.freezed.dart';
 part 'user_answer_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserAnswerResource with _$UserAnswerResource {
   @Implements<UserShowResourceInterface>()
   factory UserAnswerResource({

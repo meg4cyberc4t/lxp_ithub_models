@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/ugc/base_ugc_form_resource/base_ugc_form
 part 'base_ugc_pattern_resource.freezed.dart';
 part 'base_ugc_pattern_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseUgcPatternResource with _$BaseUgcPatternResource {
   factory BaseUgcPatternResource({
     required int id,

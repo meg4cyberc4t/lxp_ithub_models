@@ -167,7 +167,7 @@ class __$$_BaseUgcPatternResourceCopyWithImpl<$Res>
           : type // ignore: cast_nullable_to_non_nullable
               as int?,
       forms: forms == freezed
-          ? _value._forms
+          ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcFormResource>?,
     ));
@@ -184,8 +184,7 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
       required this.required,
       required this.title,
       required this.type,
-      required final List<BaseUgcFormResource>? forms})
-      : _forms = forms;
+      required this.forms});
 
   factory _$_BaseUgcPatternResource.fromJson(Map<String, dynamic> json) =>
       _$$_BaseUgcPatternResourceFromJson(json);
@@ -202,14 +201,8 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
   final String title;
   @override
   final int? type;
-  final List<BaseUgcFormResource>? _forms;
   @override
-  List<BaseUgcFormResource>? get forms {
-    final value = _forms;
-    if (value == null) return null;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+  final List<BaseUgcFormResource>? forms;
 
   @override
   String toString() {
@@ -227,7 +220,7 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
             const DeepCollectionEquality().equals(other.required, required) &&
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other._forms, _forms));
+            const DeepCollectionEquality().equals(other.forms, forms));
   }
 
   @JsonKey(ignore: true)
@@ -240,7 +233,7 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
       const DeepCollectionEquality().hash(required),
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(_forms));
+      const DeepCollectionEquality().hash(forms));
 
   @JsonKey(ignore: true)
   @override

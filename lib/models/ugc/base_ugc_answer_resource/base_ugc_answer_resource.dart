@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_ugc_answer_resource.freezed.dart';
 part 'base_ugc_answer_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseUgcAnswerResource with _$BaseUgcAnswerResource {
   factory BaseUgcAnswerResource({
     required int id,

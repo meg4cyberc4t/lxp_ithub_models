@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/mark/base_mark_resource/base_mark_resour
 part 'base_mark_resource.freezed.dart';
 part 'base_mark_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseMarkResource with _$BaseMarkResource {
   @Implements<BaseMarkResourceInterface>()
   factory BaseMarkResource({

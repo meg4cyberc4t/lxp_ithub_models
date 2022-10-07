@@ -296,23 +296,23 @@ class __$$_AnswerResourceCopyWithImpl<$Res>
   }) {
     return _then(_$_AnswerResource(
       documents: documents == freezed
-          ? _value._documents
+          ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
       links: links == freezed
-          ? _value._links
+          ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
       photos: photos == freezed
-          ? _value._photos
+          ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
       videos: videos == freezed
-          ? _value._videos
+          ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       marks: marks == freezed
-          ? _value._marks
+          ? _value.marks
           : marks // ignore: cast_nullable_to_non_nullable
               as List<BaseMarkResource>,
       user: user == freezed
@@ -371,11 +371,11 @@ class __$$_AnswerResourceCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_AnswerResource implements _AnswerResource {
   _$_AnswerResource(
-      {required final List<BaseDocumentResource> documents,
-      required final List<BaseLinkResource> links,
-      required final List<BasePhotoResource> photos,
-      required final List<BaseVideoResource> videos,
-      required final List<BaseMarkResource> marks,
+      {required this.documents,
+      required this.links,
+      required this.photos,
+      required this.videos,
+      required this.marks,
       required this.user,
       required this.pattern,
       required this.lesson,
@@ -387,51 +387,21 @@ class _$_AnswerResource implements _AnswerResource {
       required this.timestamp,
       required this.patternId,
       required this.updated,
-      required this.privacy})
-      : _documents = documents,
-        _links = links,
-        _photos = photos,
-        _videos = videos,
-        _marks = marks;
+      required this.privacy});
 
   factory _$_AnswerResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswerResourceFromJson(json);
 
-  final List<BaseDocumentResource> _documents;
   @override
-  List<BaseDocumentResource> get documents {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_documents);
-  }
-
-  final List<BaseLinkResource> _links;
+  final List<BaseDocumentResource> documents;
   @override
-  List<BaseLinkResource> get links {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_links);
-  }
-
-  final List<BasePhotoResource> _photos;
+  final List<BaseLinkResource> links;
   @override
-  List<BasePhotoResource> get photos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_photos);
-  }
-
-  final List<BaseVideoResource> _videos;
+  final List<BasePhotoResource> photos;
   @override
-  List<BaseVideoResource> get videos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_videos);
-  }
-
-  final List<BaseMarkResource> _marks;
+  final List<BaseVideoResource> videos;
   @override
-  List<BaseMarkResource> get marks {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_marks);
-  }
-
+  final List<BaseMarkResource> marks;
   @override
   final UserAnswerResource user;
   @override
@@ -469,12 +439,11 @@ class _$_AnswerResource implements _AnswerResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AnswerResource &&
-            const DeepCollectionEquality()
-                .equals(other._documents, _documents) &&
-            const DeepCollectionEquality().equals(other._links, _links) &&
-            const DeepCollectionEquality().equals(other._photos, _photos) &&
-            const DeepCollectionEquality().equals(other._videos, _videos) &&
-            const DeepCollectionEquality().equals(other._marks, _marks) &&
+            const DeepCollectionEquality().equals(other.documents, documents) &&
+            const DeepCollectionEquality().equals(other.links, links) &&
+            const DeepCollectionEquality().equals(other.photos, photos) &&
+            const DeepCollectionEquality().equals(other.videos, videos) &&
+            const DeepCollectionEquality().equals(other.marks, marks) &&
             const DeepCollectionEquality().equals(other.user, user) &&
             const DeepCollectionEquality().equals(other.pattern, pattern) &&
             const DeepCollectionEquality().equals(other.lesson, lesson) &&
@@ -494,11 +463,11 @@ class _$_AnswerResource implements _AnswerResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_documents),
-      const DeepCollectionEquality().hash(_links),
-      const DeepCollectionEquality().hash(_photos),
-      const DeepCollectionEquality().hash(_videos),
-      const DeepCollectionEquality().hash(_marks),
+      const DeepCollectionEquality().hash(documents),
+      const DeepCollectionEquality().hash(links),
+      const DeepCollectionEquality().hash(photos),
+      const DeepCollectionEquality().hash(videos),
+      const DeepCollectionEquality().hash(marks),
       const DeepCollectionEquality().hash(user),
       const DeepCollectionEquality().hash(pattern),
       const DeepCollectionEquality().hash(lesson),

@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'base_document_resource.freezed.dart';
 part 'base_document_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseDocumentResource with _$BaseDocumentResource {
   factory BaseDocumentResource({
     required int id,

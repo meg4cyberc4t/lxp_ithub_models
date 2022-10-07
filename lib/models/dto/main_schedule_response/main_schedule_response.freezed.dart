@@ -92,11 +92,11 @@ class __$$_MainScheduleResponseCopyWithImpl<$Res>
   }) {
     return _then(_$_MainScheduleResponse(
       teacher: teacher == freezed
-          ? _value._teacher
+          ? _value.teacher
           : teacher // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
       student: student == freezed
-          ? _value._student
+          ? _value.student
           : student // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
     ));
@@ -106,28 +106,15 @@ class __$$_MainScheduleResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MainScheduleResponse implements _MainScheduleResponse {
-  _$_MainScheduleResponse(
-      {required final List<LessonSchedule> teacher,
-      required final List<LessonSchedule> student})
-      : _teacher = teacher,
-        _student = student;
+  _$_MainScheduleResponse({required this.teacher, required this.student});
 
   factory _$_MainScheduleResponse.fromJson(Map<String, dynamic> json) =>
       _$$_MainScheduleResponseFromJson(json);
 
-  final List<LessonSchedule> _teacher;
   @override
-  List<LessonSchedule> get teacher {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teacher);
-  }
-
-  final List<LessonSchedule> _student;
+  final List<LessonSchedule> teacher;
   @override
-  List<LessonSchedule> get student {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_student);
-  }
+  final List<LessonSchedule> student;
 
   @override
   String toString() {
@@ -139,16 +126,16 @@ class _$_MainScheduleResponse implements _MainScheduleResponse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MainScheduleResponse &&
-            const DeepCollectionEquality().equals(other._teacher, _teacher) &&
-            const DeepCollectionEquality().equals(other._student, _student));
+            const DeepCollectionEquality().equals(other.teacher, teacher) &&
+            const DeepCollectionEquality().equals(other.student, student));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(_teacher),
-      const DeepCollectionEquality().hash(_student));
+      const DeepCollectionEquality().hash(teacher),
+      const DeepCollectionEquality().hash(student));
 
   @JsonKey(ignore: true)
   @override

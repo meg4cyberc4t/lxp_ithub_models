@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/user/user_resource/user_resource_interfa
 part 'user_resource.freezed.dart';
 part 'user_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserResource with _$UserResource {
   UserResource._();
   @Implements<UserResourceInterface>()

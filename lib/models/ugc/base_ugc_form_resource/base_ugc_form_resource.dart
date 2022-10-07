@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/file/base_video_resource/base_video_reso
 part 'base_ugc_form_resource.freezed.dart';
 part 'base_ugc_form_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseUgcFormResource with _$BaseUgcFormResource {
   factory BaseUgcFormResource({
     required int id,

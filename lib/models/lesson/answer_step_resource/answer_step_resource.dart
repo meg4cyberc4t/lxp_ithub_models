@@ -1,12 +1,11 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:lxp_ithub_models/models/lesson/answer_step_resource/answer_step_resource_interface.dart';
-import 'package:lxp_ithub_models/models/lesson/base_step_resource/base_step_resource_interface.dart';
 import 'package:lxp_ithub_models/models/role/base_role_resource/base_role_resource.dart';
 
 part 'answer_step_resource.freezed.dart';
 part 'answer_step_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class AnswerStepResource with _$AnswerStepResource {
   @Implements<AnswerStepResourceInterface>()
   factory AnswerStepResource({

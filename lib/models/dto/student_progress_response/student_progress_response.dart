@@ -6,7 +6,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'student_progress_response.freezed.dart';
 part 'student_progress_response.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class StudentProgressResponse with _$StudentProgressResponse {
   factory StudentProgressResponse({
     required BaseUserResource student,

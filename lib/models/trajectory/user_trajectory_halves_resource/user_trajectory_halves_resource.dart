@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/trajectory/user_trajectory_half_subjects
 part 'user_trajectory_halves_resource.freezed.dart';
 part 'user_trajectory_halves_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserTrajectoryHalvesResource with _$UserTrajectoryHalvesResource {
   factory UserTrajectoryHalvesResource({
     required List<UserTrajectoryHalfSubjectsResource> subjects,

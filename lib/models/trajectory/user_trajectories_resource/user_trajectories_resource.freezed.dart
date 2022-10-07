@@ -183,7 +183,7 @@ class __$$_UserTrajectoriesResourceCopyWithImpl<$Res>
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       sections: sections == freezed
-          ? _value._sections
+          ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalvesResource>,
     ));
@@ -201,8 +201,7 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
       required this.createdAt,
       required this.updatedAt,
       required this.deletedAt,
-      required final List<UserTrajectoryHalvesResource> sections})
-      : _sections = sections;
+      required this.sections});
 
   factory _$_UserTrajectoriesResource.fromJson(Map<String, dynamic> json) =>
       _$$_UserTrajectoriesResourceFromJson(json);
@@ -222,12 +221,8 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
   final DateTime? updatedAt;
   @override
   final DateTime? deletedAt;
-  final List<UserTrajectoryHalvesResource> _sections;
   @override
-  List<UserTrajectoryHalvesResource> get sections {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_sections);
-  }
+  final List<UserTrajectoryHalvesResource> sections;
 
   @override
   String toString() {
@@ -248,7 +243,7 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality().equals(other._sections, _sections));
+            const DeepCollectionEquality().equals(other.sections, sections));
   }
 
   @JsonKey(ignore: true)
@@ -262,7 +257,7 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(_sections));
+      const DeepCollectionEquality().hash(sections));
 
   @JsonKey(ignore: true)
   @override

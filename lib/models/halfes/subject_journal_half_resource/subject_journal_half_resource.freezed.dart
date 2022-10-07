@@ -182,7 +182,7 @@ class __$$_SubjectJournalHalfResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
     ));
@@ -200,8 +200,7 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
       required this.index,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseGroupResource> groups})
-      : _groups = groups;
+      required this.groups});
 
   factory _$_SubjectJournalHalfResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectJournalHalfResourceFromJson(json);
@@ -220,12 +219,8 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
+  final List<BaseGroupResource> groups;
 
   @override
   String toString() {
@@ -246,7 +241,7 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
             const DeepCollectionEquality().equals(other.index, index) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._groups, _groups));
+            const DeepCollectionEquality().equals(other.groups, groups));
   }
 
   @JsonKey(ignore: true)
@@ -260,7 +255,7 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
       const DeepCollectionEquality().hash(index),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_groups));
+      const DeepCollectionEquality().hash(groups));
 
   @JsonKey(ignore: true)
   @override

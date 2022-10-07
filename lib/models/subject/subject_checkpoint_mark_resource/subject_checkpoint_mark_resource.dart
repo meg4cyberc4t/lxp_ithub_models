@@ -7,7 +7,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'subject_checkpoint_mark_resource.freezed.dart';
 part 'subject_checkpoint_mark_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SubjectCheckpointMarkResource with _$SubjectCheckpointMarkResource {
   @Implements<BaseSubjectResourceInterface>()
   factory SubjectCheckpointMarkResource({

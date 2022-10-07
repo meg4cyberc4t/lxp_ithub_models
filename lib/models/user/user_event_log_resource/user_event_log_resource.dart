@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resour
 part 'user_event_log_resource.freezed.dart';
 part 'user_event_log_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class UserEventLogResourse with _$UserEventLogResourse {
   @Implements<BaseUserResourceInterface>()
   factory UserEventLogResourse({

@@ -284,11 +284,11 @@ class __$$_StudentSubjectResourceCopyWithImpl<$Res>
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       teachers: teachers == freezed
-          ? _value._teachers
+          ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       chapters: chapters == freezed
-          ? _value._chapters
+          ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<StudentChapterResource>,
       attendance: attendance == freezed
@@ -318,12 +318,10 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
       required this.updatedAt,
       required this.deletedAt,
       required this.deletePermanentlyAt,
-      required final List<BaseUserResource> teachers,
-      required final List<StudentChapterResource> chapters,
+      required this.teachers,
+      required this.chapters,
       required this.attendance,
-      required this.checkpointsStats})
-      : _teachers = teachers,
-        _chapters = chapters;
+      required this.checkpointsStats});
 
   factory _$_StudentSubjectResource.fromJson(Map<String, dynamic> json) =>
       _$$_StudentSubjectResourceFromJson(json);
@@ -351,20 +349,10 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
   final DateTime? deletedAt;
   @override
   final DateTime? deletePermanentlyAt;
-  final List<BaseUserResource> _teachers;
   @override
-  List<BaseUserResource> get teachers {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_teachers);
-  }
-
-  final List<StudentChapterResource> _chapters;
+  final List<BaseUserResource> teachers;
   @override
-  List<StudentChapterResource> get chapters {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_chapters);
-  }
-
+  final List<StudentChapterResource> chapters;
   @override
   final StatisticsAttendanceResource attendance;
   @override
@@ -393,8 +381,8 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
             const DeepCollectionEquality()
                 .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
-            const DeepCollectionEquality().equals(other._teachers, _teachers) &&
-            const DeepCollectionEquality().equals(other._chapters, _chapters) &&
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.chapters, chapters) &&
             const DeepCollectionEquality()
                 .equals(other.attendance, attendance) &&
             const DeepCollectionEquality()
@@ -416,8 +404,8 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
       const DeepCollectionEquality().hash(updatedAt),
       const DeepCollectionEquality().hash(deletedAt),
       const DeepCollectionEquality().hash(deletePermanentlyAt),
-      const DeepCollectionEquality().hash(_teachers),
-      const DeepCollectionEquality().hash(_chapters),
+      const DeepCollectionEquality().hash(teachers),
+      const DeepCollectionEquality().hash(chapters),
       const DeepCollectionEquality().hash(attendance),
       const DeepCollectionEquality().hash(checkpointsStats));
 

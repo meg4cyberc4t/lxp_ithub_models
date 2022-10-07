@@ -13,7 +13,7 @@ import 'package:lxp_ithub_models/models/user/user_answer_resource/user_answer_re
 part 'answer_resource.freezed.dart';
 part 'answer_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class AnswerResource with _$AnswerResource {
   factory AnswerResource({
     required List<BaseDocumentResource> documents,

@@ -187,7 +187,7 @@ class __$$_BaseAttendanceResourceCopyWithImpl<$Res>
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
       subjectIds: subjectIds == freezed
-          ? _value._subjectIds
+          ? _value.subjectIds
           : subjectIds // ignore: cast_nullable_to_non_nullable
               as List<int>,
       date: date == freezed
@@ -222,13 +222,12 @@ class _$_BaseAttendanceResource implements _BaseAttendanceResource {
       required this.lessonId,
       required this.userId,
       required this.teacherId,
-      required final List<int> subjectIds,
+      required this.subjectIds,
       required this.date,
       @JsonKey(name: 'class') required this.classNumber,
       required this.status,
       required this.createdAt,
-      required this.updatedAt})
-      : _subjectIds = subjectIds;
+      required this.updatedAt});
 
   factory _$_BaseAttendanceResource.fromJson(Map<String, dynamic> json) =>
       _$$_BaseAttendanceResourceFromJson(json);
@@ -241,13 +240,8 @@ class _$_BaseAttendanceResource implements _BaseAttendanceResource {
   final int userId;
   @override
   final int teacherId;
-  final List<int> _subjectIds;
   @override
-  List<int> get subjectIds {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_subjectIds);
-  }
-
+  final List<int> subjectIds;
   @override
   final DateTime date;
   @override
@@ -275,7 +269,7 @@ class _$_BaseAttendanceResource implements _BaseAttendanceResource {
             const DeepCollectionEquality().equals(other.userId, userId) &&
             const DeepCollectionEquality().equals(other.teacherId, teacherId) &&
             const DeepCollectionEquality()
-                .equals(other._subjectIds, _subjectIds) &&
+                .equals(other.subjectIds, subjectIds) &&
             const DeepCollectionEquality().equals(other.date, date) &&
             const DeepCollectionEquality()
                 .equals(other.classNumber, classNumber) &&
@@ -292,7 +286,7 @@ class _$_BaseAttendanceResource implements _BaseAttendanceResource {
       const DeepCollectionEquality().hash(lessonId),
       const DeepCollectionEquality().hash(userId),
       const DeepCollectionEquality().hash(teacherId),
-      const DeepCollectionEquality().hash(_subjectIds),
+      const DeepCollectionEquality().hash(subjectIds),
       const DeepCollectionEquality().hash(date),
       const DeepCollectionEquality().hash(classNumber),
       const DeepCollectionEquality().hash(status),

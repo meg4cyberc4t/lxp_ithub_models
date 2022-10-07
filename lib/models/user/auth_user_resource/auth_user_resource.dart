@@ -8,7 +8,7 @@ import 'package:lxp_ithub_models/models/user/user_show_resource/user_show_resour
 part 'auth_user_resource.freezed.dart';
 part 'auth_user_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class AuthUserResource with _$AuthUserResource {
   @Implements<UserShowResourceInterface>()
   @Implements<BaseUserResourceInterface>()

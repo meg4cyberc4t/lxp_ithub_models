@@ -12,7 +12,7 @@ import 'package:lxp_ithub_models/models/section/base_section_resource/base_secti
 part 'show_lesson_resource.freezed.dart';
 part 'show_lesson_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class ShowLessonResource with _$ShowLessonResource {
   @Implements<AnswerStepResourceInterface>()
   factory ShowLessonResource({

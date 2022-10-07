@@ -208,7 +208,7 @@ class __$$_SubjectLocalGroupResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       users: users == freezed
-          ? _value._users
+          ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<UserResource>,
     ));
@@ -228,8 +228,7 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
       required this.externalLink,
       required this.createdAt,
       required this.updatedAt,
-      required final List<UserResource> users})
-      : _users = users;
+      required this.users});
 
   factory _$_SubjectLocalGroupResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectLocalGroupResourceFromJson(json);
@@ -252,12 +251,8 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<UserResource> _users;
   @override
-  List<UserResource> get users {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_users);
-  }
+  final List<UserResource> users;
 
   @override
   String toString() {
@@ -280,7 +275,7 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
                 .equals(other.externalLink, externalLink) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._users, _users));
+            const DeepCollectionEquality().equals(other.users, users));
   }
 
   @JsonKey(ignore: true)
@@ -296,7 +291,7 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
       const DeepCollectionEquality().hash(externalLink),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_users));
+      const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override

@@ -4,7 +4,7 @@ import 'package:lxp_ithub_models/models/file/base_photo_resource/base_photo_reso
 part 'base_link_resource.freezed.dart';
 part 'base_link_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class BaseLinkResource with _$BaseLinkResource {
   factory BaseLinkResource({
     required int id,

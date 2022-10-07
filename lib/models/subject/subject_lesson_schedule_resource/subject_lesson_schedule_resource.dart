@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'subject_lesson_schedule_resource.freezed.dart';
 part 'subject_lesson_schedule_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class SubjectLessonScheduleResource with _$SubjectLessonScheduleResource {
   factory SubjectLessonScheduleResource({
     required int id,

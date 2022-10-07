@@ -297,11 +297,11 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       groups: groups == freezed
-          ? _value._groups
+          ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
       children: children == freezed
-          ? _value._children
+          ? _value.children
           : children // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
       isMember: isMember == freezed
@@ -344,15 +344,13 @@ class _$_AuthUserResource implements _AuthUserResource {
       required this.isOnline,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseGroupResource> groups,
-      required final List<BaseUserResource> children,
+      required this.groups,
+      required this.children,
       required this.isMember,
       required this.isModerator,
       required this.isParent,
       required this.groupsCount,
-      required this.subjectsCount})
-      : _groups = groups,
-        _children = children;
+      required this.subjectsCount});
 
   factory _$_AuthUserResource.fromJson(Map<String, dynamic> json) =>
       _$$_AuthUserResourceFromJson(json);
@@ -381,20 +379,10 @@ class _$_AuthUserResource implements _AuthUserResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseGroupResource> _groups;
   @override
-  List<BaseGroupResource> get groups {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_groups);
-  }
-
-  final List<BaseUserResource> _children;
+  final List<BaseGroupResource> groups;
   @override
-  List<BaseUserResource> get children {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_children);
-  }
-
+  final List<BaseUserResource> children;
   @override
   final bool isMember;
   @override
@@ -431,8 +419,8 @@ class _$_AuthUserResource implements _AuthUserResource {
             const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._groups, _groups) &&
-            const DeepCollectionEquality().equals(other._children, _children) &&
+            const DeepCollectionEquality().equals(other.groups, groups) &&
+            const DeepCollectionEquality().equals(other.children, children) &&
             const DeepCollectionEquality().equals(other.isMember, isMember) &&
             const DeepCollectionEquality()
                 .equals(other.isModerator, isModerator) &&
@@ -459,8 +447,8 @@ class _$_AuthUserResource implements _AuthUserResource {
         const DeepCollectionEquality().hash(isOnline),
         const DeepCollectionEquality().hash(createdAt),
         const DeepCollectionEquality().hash(updatedAt),
-        const DeepCollectionEquality().hash(_groups),
-        const DeepCollectionEquality().hash(_children),
+        const DeepCollectionEquality().hash(groups),
+        const DeepCollectionEquality().hash(children),
         const DeepCollectionEquality().hash(isMember),
         const DeepCollectionEquality().hash(isModerator),
         const DeepCollectionEquality().hash(isParent),

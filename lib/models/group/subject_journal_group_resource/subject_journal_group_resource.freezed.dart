@@ -209,7 +209,7 @@ class __$$_SubjectJounralGroupResourceCopyWithImpl<$Res>
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
       users: users == freezed
-          ? _value._users
+          ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
     ));
@@ -229,8 +229,7 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
       required this.externalLink,
       required this.createdAt,
       required this.updatedAt,
-      required final List<BaseUserResource> users})
-      : _users = users;
+      required this.users});
 
   factory _$_SubjectJounralGroupResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectJounralGroupResourceFromJson(json);
@@ -253,12 +252,8 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
-  final List<BaseUserResource> _users;
   @override
-  List<BaseUserResource> get users {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_users);
-  }
+  final List<BaseUserResource> users;
 
   @override
   String toString() {
@@ -281,7 +276,7 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
                 .equals(other.externalLink, externalLink) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other._users, _users));
+            const DeepCollectionEquality().equals(other.users, users));
   }
 
   @JsonKey(ignore: true)
@@ -297,7 +292,7 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
       const DeepCollectionEquality().hash(externalLink),
       const DeepCollectionEquality().hash(createdAt),
       const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(_users));
+      const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override

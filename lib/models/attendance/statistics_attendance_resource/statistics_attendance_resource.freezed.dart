@@ -119,7 +119,7 @@ class __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>
           : attendanceStats // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResourceStats,
       data: data == freezed
-          ? _value._data
+          ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as List<BaseAttendanceResource>,
     ));
@@ -130,21 +130,15 @@ class __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
   _$_StatisticsAttendanceResource(
-      {required this.attendanceStats,
-      required final List<BaseAttendanceResource> data})
-      : _data = data;
+      {required this.attendanceStats, required this.data});
 
   factory _$_StatisticsAttendanceResource.fromJson(Map<String, dynamic> json) =>
       _$$_StatisticsAttendanceResourceFromJson(json);
 
   @override
   final StatisticsAttendanceResourceStats attendanceStats;
-  final List<BaseAttendanceResource> _data;
   @override
-  List<BaseAttendanceResource> get data {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_data);
-  }
+  final List<BaseAttendanceResource> data;
 
   @override
   String toString() {
@@ -158,7 +152,7 @@ class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
             other is _$_StatisticsAttendanceResource &&
             const DeepCollectionEquality()
                 .equals(other.attendanceStats, attendanceStats) &&
-            const DeepCollectionEquality().equals(other._data, _data));
+            const DeepCollectionEquality().equals(other.data, data));
   }
 
   @JsonKey(ignore: true)
@@ -166,7 +160,7 @@ class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(attendanceStats),
-      const DeepCollectionEquality().hash(_data));
+      const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override

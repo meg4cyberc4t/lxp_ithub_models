@@ -459,27 +459,27 @@ class __$$_ShowLessonResourceCopyWithImpl<$Res>
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as PassingStepStatus,
       sections: sections == freezed
-          ? _value._sections
+          ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<BaseSectionResource>,
       publicPhotos: publicPhotos == freezed
-          ? _value._publicPhotos
+          ? _value.publicPhotos
           : publicPhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
       privatePhotos: privatePhotos == freezed
-          ? _value._privatePhotos
+          ? _value.privatePhotos
           : privatePhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
       privateVideos: privateVideos == freezed
-          ? _value._privateVideos
+          ? _value.privateVideos
           : privateVideos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       privateDocuments: privateDocuments == freezed
-          ? _value._privateDocuments
+          ? _value.privateDocuments
           : privateDocuments // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
       privateLinks: privateLinks == freezed
-          ? _value._privateLinks
+          ? _value.privateLinks
           : privateLinks // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
     ));
@@ -512,18 +512,12 @@ class _$_ShowLessonResource implements _ShowLessonResource {
       required this.checkpointMark,
       required this.chapter,
       required this.passedStatus,
-      required final List<BaseSectionResource> sections,
-      required final List<BasePhotoResource> publicPhotos,
-      required final List<BasePhotoResource> privatePhotos,
-      required final List<BaseVideoResource> privateVideos,
-      required final List<BaseDocumentResource> privateDocuments,
-      required final List<BaseLinkResource> privateLinks})
-      : _sections = sections,
-        _publicPhotos = publicPhotos,
-        _privatePhotos = privatePhotos,
-        _privateVideos = privateVideos,
-        _privateDocuments = privateDocuments,
-        _privateLinks = privateLinks;
+      required this.sections,
+      required this.publicPhotos,
+      required this.privatePhotos,
+      required this.privateVideos,
+      required this.privateDocuments,
+      required this.privateLinks});
 
   factory _$_ShowLessonResource.fromJson(Map<String, dynamic> json) =>
       _$$_ShowLessonResourceFromJson(json);
@@ -573,47 +567,18 @@ class _$_ShowLessonResource implements _ShowLessonResource {
   final ShowLessonChapterResource chapter;
   @override
   final PassingStepStatus passedStatus;
-  final List<BaseSectionResource> _sections;
   @override
-  List<BaseSectionResource> get sections {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_sections);
-  }
-
-  final List<BasePhotoResource> _publicPhotos;
+  final List<BaseSectionResource> sections;
   @override
-  List<BasePhotoResource> get publicPhotos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_publicPhotos);
-  }
-
-  final List<BasePhotoResource> _privatePhotos;
+  final List<BasePhotoResource> publicPhotos;
   @override
-  List<BasePhotoResource> get privatePhotos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_privatePhotos);
-  }
-
-  final List<BaseVideoResource> _privateVideos;
+  final List<BasePhotoResource> privatePhotos;
   @override
-  List<BaseVideoResource> get privateVideos {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_privateVideos);
-  }
-
-  final List<BaseDocumentResource> _privateDocuments;
+  final List<BaseVideoResource> privateVideos;
   @override
-  List<BaseDocumentResource> get privateDocuments {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_privateDocuments);
-  }
-
-  final List<BaseLinkResource> _privateLinks;
+  final List<BaseDocumentResource> privateDocuments;
   @override
-  List<BaseLinkResource> get privateLinks {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_privateLinks);
-  }
+  final List<BaseLinkResource> privateLinks;
 
   @override
   String toString() {
@@ -654,17 +619,17 @@ class _$_ShowLessonResource implements _ShowLessonResource {
             const DeepCollectionEquality().equals(other.chapter, chapter) &&
             const DeepCollectionEquality()
                 .equals(other.passedStatus, passedStatus) &&
-            const DeepCollectionEquality().equals(other._sections, _sections) &&
+            const DeepCollectionEquality().equals(other.sections, sections) &&
             const DeepCollectionEquality()
-                .equals(other._publicPhotos, _publicPhotos) &&
+                .equals(other.publicPhotos, publicPhotos) &&
             const DeepCollectionEquality()
-                .equals(other._privatePhotos, _privatePhotos) &&
+                .equals(other.privatePhotos, privatePhotos) &&
             const DeepCollectionEquality()
-                .equals(other._privateVideos, _privateVideos) &&
+                .equals(other.privateVideos, privateVideos) &&
             const DeepCollectionEquality()
-                .equals(other._privateDocuments, _privateDocuments) &&
+                .equals(other.privateDocuments, privateDocuments) &&
             const DeepCollectionEquality()
-                .equals(other._privateLinks, _privateLinks));
+                .equals(other.privateLinks, privateLinks));
   }
 
   @JsonKey(ignore: true)
@@ -693,12 +658,12 @@ class _$_ShowLessonResource implements _ShowLessonResource {
         const DeepCollectionEquality().hash(checkpointMark),
         const DeepCollectionEquality().hash(chapter),
         const DeepCollectionEquality().hash(passedStatus),
-        const DeepCollectionEquality().hash(_sections),
-        const DeepCollectionEquality().hash(_publicPhotos),
-        const DeepCollectionEquality().hash(_privatePhotos),
-        const DeepCollectionEquality().hash(_privateVideos),
-        const DeepCollectionEquality().hash(_privateDocuments),
-        const DeepCollectionEquality().hash(_privateLinks)
+        const DeepCollectionEquality().hash(sections),
+        const DeepCollectionEquality().hash(publicPhotos),
+        const DeepCollectionEquality().hash(privatePhotos),
+        const DeepCollectionEquality().hash(privateVideos),
+        const DeepCollectionEquality().hash(privateDocuments),
+        const DeepCollectionEquality().hash(privateLinks)
       ]);
 
   @JsonKey(ignore: true)

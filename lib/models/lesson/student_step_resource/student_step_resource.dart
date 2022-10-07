@@ -1,11 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/lesson/base_step_resource/base_step_resource.dart';
 import 'package:lxp_ithub_models/models/lesson/base_step_resource/base_step_resource_interface.dart';
 
 part 'student_step_resource.freezed.dart';
 part 'student_step_resource.g.dart';
 
-@freezed
+@Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class StudentStepResource with _$StudentStepResource {
   @Implements<BaseStepResourceInterface>()
   factory StudentStepResource({
