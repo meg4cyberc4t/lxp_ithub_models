@@ -43,7 +43,7 @@ mixin _$SubjectStepShowResource {
   int? get checkpointMark => throw _privateConstructorUsedError;
   int get sectionsCount => throw _privateConstructorUsedError;
   int get tasksCount => throw _privateConstructorUsedError;
-  BaseStepUserProcessResource? get stepUserProgress =>
+  BaseStepUserProcessResource? get stepUserProcess =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -79,9 +79,9 @@ abstract class $SubjectStepShowResourceCopyWith<$Res> {
       int? checkpointMark,
       int sectionsCount,
       int tasksCount,
-      BaseStepUserProcessResource? stepUserProgress});
+      BaseStepUserProcessResource? stepUserProcess});
 
-  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProgress;
+  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProcess;
 }
 
 /// @nodoc
@@ -116,7 +116,7 @@ class _$SubjectStepShowResourceCopyWithImpl<$Res>
     Object? checkpointMark = freezed,
     Object? sectionsCount = freezed,
     Object? tasksCount = freezed,
-    Object? stepUserProgress = freezed,
+    Object? stepUserProcess = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -203,22 +203,22 @@ class _$SubjectStepShowResourceCopyWithImpl<$Res>
           ? _value.tasksCount
           : tasksCount // ignore: cast_nullable_to_non_nullable
               as int,
-      stepUserProgress: stepUserProgress == freezed
-          ? _value.stepUserProgress
-          : stepUserProgress // ignore: cast_nullable_to_non_nullable
+      stepUserProcess: stepUserProcess == freezed
+          ? _value.stepUserProcess
+          : stepUserProcess // ignore: cast_nullable_to_non_nullable
               as BaseStepUserProcessResource?,
     ));
   }
 
   @override
-  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProgress {
-    if (_value.stepUserProgress == null) {
+  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProcess {
+    if (_value.stepUserProcess == null) {
       return null;
     }
 
-    return $BaseStepUserProcessResourceCopyWith<$Res>(_value.stepUserProgress!,
+    return $BaseStepUserProcessResourceCopyWith<$Res>(_value.stepUserProcess!,
         (value) {
-      return _then(_value.copyWith(stepUserProgress: value));
+      return _then(_value.copyWith(stepUserProcess: value));
     });
   }
 }
@@ -252,10 +252,10 @@ abstract class _$$_SubjectStepShowResourceCopyWith<$Res>
       int? checkpointMark,
       int sectionsCount,
       int tasksCount,
-      BaseStepUserProcessResource? stepUserProgress});
+      BaseStepUserProcessResource? stepUserProcess});
 
   @override
-  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProgress;
+  $BaseStepUserProcessResourceCopyWith<$Res>? get stepUserProcess;
 }
 
 /// @nodoc
@@ -293,7 +293,7 @@ class __$$_SubjectStepShowResourceCopyWithImpl<$Res>
     Object? checkpointMark = freezed,
     Object? sectionsCount = freezed,
     Object? tasksCount = freezed,
-    Object? stepUserProgress = freezed,
+    Object? stepUserProcess = freezed,
   }) {
     return _then(_$_SubjectStepShowResource(
       id: id == freezed
@@ -380,9 +380,9 @@ class __$$_SubjectStepShowResourceCopyWithImpl<$Res>
           ? _value.tasksCount
           : tasksCount // ignore: cast_nullable_to_non_nullable
               as int,
-      stepUserProgress: stepUserProgress == freezed
-          ? _value.stepUserProgress
-          : stepUserProgress // ignore: cast_nullable_to_non_nullable
+      stepUserProcess: stepUserProcess == freezed
+          ? _value.stepUserProcess
+          : stepUserProcess // ignore: cast_nullable_to_non_nullable
               as BaseStepUserProcessResource?,
     ));
   }
@@ -413,7 +413,7 @@ class _$_SubjectStepShowResource implements _SubjectStepShowResource {
       required this.checkpointMark,
       required this.sectionsCount,
       required this.tasksCount,
-      required this.stepUserProgress});
+      required this.stepUserProcess});
 
   factory _$_SubjectStepShowResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectStepShowResourceFromJson(json);
@@ -462,11 +462,11 @@ class _$_SubjectStepShowResource implements _SubjectStepShowResource {
   @override
   final int tasksCount;
   @override
-  final BaseStepUserProcessResource? stepUserProgress;
+  final BaseStepUserProcessResource? stepUserProcess;
 
   @override
   String toString() {
-    return 'SubjectStepShowResource(id: $id, title: $title, publicText: $publicText, publicTextOriginal: $publicTextOriginal, privateText: $privateText, privateTextOriginal: $privateTextOriginal, chapterId: $chapterId, number: $number, type: $type, authorId: $authorId, time: $time, hours: $hours, maxMark: $maxMark, clonedId: $clonedId, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, passedStatusId: $passedStatusId, checkpointMark: $checkpointMark, sectionsCount: $sectionsCount, tasksCount: $tasksCount, stepUserProgress: $stepUserProgress)';
+    return 'SubjectStepShowResource(id: $id, title: $title, publicText: $publicText, publicTextOriginal: $publicTextOriginal, privateText: $privateText, privateTextOriginal: $privateTextOriginal, chapterId: $chapterId, number: $number, type: $type, authorId: $authorId, time: $time, hours: $hours, maxMark: $maxMark, clonedId: $clonedId, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, passedStatusId: $passedStatusId, checkpointMark: $checkpointMark, sectionsCount: $sectionsCount, tasksCount: $tasksCount, stepUserProcess: $stepUserProcess)';
   }
 
   @override
@@ -504,7 +504,7 @@ class _$_SubjectStepShowResource implements _SubjectStepShowResource {
             const DeepCollectionEquality()
                 .equals(other.tasksCount, tasksCount) &&
             const DeepCollectionEquality()
-                .equals(other.stepUserProgress, stepUserProgress));
+                .equals(other.stepUserProcess, stepUserProcess));
   }
 
   @JsonKey(ignore: true)
@@ -532,7 +532,7 @@ class _$_SubjectStepShowResource implements _SubjectStepShowResource {
         const DeepCollectionEquality().hash(checkpointMark),
         const DeepCollectionEquality().hash(sectionsCount),
         const DeepCollectionEquality().hash(tasksCount),
-        const DeepCollectionEquality().hash(stepUserProgress)
+        const DeepCollectionEquality().hash(stepUserProcess)
       ]);
 
   @JsonKey(ignore: true)
@@ -574,7 +574,7 @@ abstract class _SubjectStepShowResource
           required final int? checkpointMark,
           required final int sectionsCount,
           required final int tasksCount,
-          required final BaseStepUserProcessResource? stepUserProgress}) =
+          required final BaseStepUserProcessResource? stepUserProcess}) =
       _$_SubjectStepShowResource;
 
   factory _SubjectStepShowResource.fromJson(Map<String, dynamic> json) =
@@ -623,7 +623,7 @@ abstract class _SubjectStepShowResource
   @override
   int get tasksCount;
   @override
-  BaseStepUserProcessResource? get stepUserProgress;
+  BaseStepUserProcessResource? get stepUserProcess;
   @override
   @JsonKey(ignore: true)
   _$$_SubjectStepShowResourceCopyWith<_$_SubjectStepShowResource>

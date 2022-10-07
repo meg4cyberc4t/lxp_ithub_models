@@ -30,7 +30,7 @@ class SubjectStepShowResource with _$SubjectStepShowResource {
     required int? checkpointMark,
     required int sectionsCount,
     required int tasksCount,
-    required BaseStepUserProcessResource? stepUserProgress,
+    required BaseStepUserProcessResource? stepUserProcess,
   }) = _SubjectStepShowResource;
 
   factory SubjectStepShowResource.fromJson(Map<String, dynamic> json) =>

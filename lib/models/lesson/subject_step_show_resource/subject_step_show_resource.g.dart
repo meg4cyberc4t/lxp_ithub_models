@@ -34,10 +34,10 @@ _$_SubjectStepShowResource _$$_SubjectStepShowResourceFromJson(
       checkpointMark: json['checkpoint_mark'] as int?,
       sectionsCount: json['sections_count'] as int,
       tasksCount: json['tasks_count'] as int,
-      stepUserProgress: json['step_user_progress'] == null
+      stepUserProcess: json['step_user_process'] == null
           ? null
           : BaseStepUserProcessResource.fromJson(
-              json['step_user_progress'] as Map<String, dynamic>),
+              json['step_user_process'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_SubjectStepShowResourceToJson(
@@ -64,5 +64,5 @@ Map<String, dynamic> _$$_SubjectStepShowResourceToJson(
       'checkpoint_mark': instance.checkpointMark,
       'sections_count': instance.sectionsCount,
       'tasks_count': instance.tasksCount,
-      'step_user_progress': instance.stepUserProgress,
+      'step_user_process': instance.stepUserProcess,
     };
