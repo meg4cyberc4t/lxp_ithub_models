@@ -13,6 +13,7 @@ _$_PassingStepStatus _$$_PassingStepStatusFromJson(Map<String, dynamic> json) =>
       description: json['description'] as String,
       canUseStudent: json['can_use_student'] as int,
       sort: json['sort'] as int?,
+      colorValue: json['color'] as String,
     );
 
 Map<String, dynamic> _$$_PassingStepStatusToJson(
@@ -23,4 +24,5 @@ Map<String, dynamic> _$$_PassingStepStatusToJson(
       'description': instance.description,
       'can_use_student': instance.canUseStudent,
       'sort': instance.sort,
+      'color': instance.colorValue,
     };
