@@ -11,7 +11,7 @@ class PassingStepStatus with _$PassingStepStatus {
     required String description,
     required int canUseStudent,
     required int? sort,
-    @JsonKey(name: 'color') required String colorValue,
+    @JsonKey(name: 'color') required String? colorValue,
   }) = _PassingStepStatus;
 
   PassingStepStatus._();

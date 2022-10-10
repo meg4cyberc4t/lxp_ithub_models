@@ -26,7 +26,7 @@ mixin _$PassingStepStatus {
   int get canUseStudent => throw _privateConstructorUsedError;
   int? get sort => throw _privateConstructorUsedError;
   @JsonKey(name: 'color')
-  String get colorValue => throw _privateConstructorUsedError;
+  String? get colorValue => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -45,7 +45,7 @@ abstract class $PassingStepStatusCopyWith<$Res> {
       String description,
       int canUseStudent,
       int? sort,
-      @JsonKey(name: 'color') String colorValue});
+      @JsonKey(name: 'color') String? colorValue});
 }
 
 /// @nodoc
@@ -90,7 +90,7 @@ class _$PassingStepStatusCopyWithImpl<$Res>
       colorValue: colorValue == freezed
           ? _value.colorValue
           : colorValue // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -108,7 +108,7 @@ abstract class _$$_PassingStepStatusCopyWith<$Res>
       String description,
       int canUseStudent,
       int? sort,
-      @JsonKey(name: 'color') String colorValue});
+      @JsonKey(name: 'color') String? colorValue});
 }
 
 /// @nodoc
@@ -155,7 +155,7 @@ class __$$_PassingStepStatusCopyWithImpl<$Res>
       colorValue: colorValue == freezed
           ? _value.colorValue
           : colorValue // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -187,7 +187,7 @@ class _$_PassingStepStatus extends _PassingStepStatus {
   final int? sort;
   @override
   @JsonKey(name: 'color')
-  final String colorValue;
+  final String? colorValue;
 
   @override
   String toString() {
@@ -242,7 +242,7 @@ abstract class _PassingStepStatus extends PassingStepStatus {
           required final String description,
           required final int canUseStudent,
           required final int? sort,
-          @JsonKey(name: 'color') required final String colorValue}) =
+          @JsonKey(name: 'color') required final String? colorValue}) =
       _$_PassingStepStatus;
   _PassingStepStatus._() : super._();
 
@@ -261,7 +261,7 @@ abstract class _PassingStepStatus extends PassingStepStatus {
   int? get sort;
   @override
   @JsonKey(name: 'color')
-  String get colorValue;
+  String? get colorValue;
   @override
   @JsonKey(ignore: true)
   _$$_PassingStepStatusCopyWith<_$_PassingStepStatus> get copyWith =>
