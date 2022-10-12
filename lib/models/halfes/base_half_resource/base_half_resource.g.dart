@@ -11,7 +11,7 @@ _$_BaseHalfResource _$$_BaseHalfResourceFromJson(Map<String, dynamic> json) =>
       id: json['id'] as int,
       title: json['title'] as String,
       description: json['description'] as String,
-      trajectoryId: json['trajectory_id'] as int,
+      trajectoryId: json['trajectory_id'] as int?,
       index: json['index'] as int,
       createdAt: json['created_at'] == null
           ? null

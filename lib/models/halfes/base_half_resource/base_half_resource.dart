@@ -11,7 +11,7 @@ class BaseHalfResource with _$BaseHalfResource {
     required int id,
     required String title,
     required String description,
-    required int trajectoryId,
+    required int? trajectoryId,
     required int index,
     required DateTime? createdAt,
     required DateTime? updatedAt,

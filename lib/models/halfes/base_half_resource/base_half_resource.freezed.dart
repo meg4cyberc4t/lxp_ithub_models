@@ -23,7 +23,7 @@ mixin _$BaseHalfResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  int get trajectoryId => throw _privateConstructorUsedError;
+  int? get trajectoryId => throw _privateConstructorUsedError;
   int get index => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -43,7 +43,7 @@ abstract class $BaseHalfResourceCopyWith<$Res> {
       {int id,
       String title,
       String description,
-      int trajectoryId,
+      int? trajectoryId,
       int index,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -84,7 +84,7 @@ class _$BaseHalfResourceCopyWithImpl<$Res>
       trajectoryId: trajectoryId == freezed
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       index: index == freezed
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
@@ -112,7 +112,7 @@ abstract class _$$_BaseHalfResourceCopyWith<$Res>
       {int id,
       String title,
       String description,
-      int trajectoryId,
+      int? trajectoryId,
       int index,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -155,7 +155,7 @@ class __$$_BaseHalfResourceCopyWithImpl<$Res>
       trajectoryId: trajectoryId == freezed
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       index: index == freezed
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
@@ -194,7 +194,7 @@ class _$_BaseHalfResource implements _BaseHalfResource {
   @override
   final String description;
   @override
-  final int trajectoryId;
+  final int? trajectoryId;
   @override
   final int index;
   @override
@@ -254,7 +254,7 @@ abstract class _BaseHalfResource
       {required final int id,
       required final String title,
       required final String description,
-      required final int trajectoryId,
+      required final int? trajectoryId,
       required final int index,
       required final DateTime? createdAt,
       required final DateTime? updatedAt}) = _$_BaseHalfResource;
@@ -269,7 +269,7 @@ abstract class _BaseHalfResource
   @override
   String get description;
   @override
-  int get trajectoryId;
+  int? get trajectoryId;
   @override
   int get index;
   @override
