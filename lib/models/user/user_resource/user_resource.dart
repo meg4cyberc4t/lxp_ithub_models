@@ -14,7 +14,7 @@ class UserResource with _$UserResource {
     required String lastName,
     required String middleName,
     required String? email,
-    required String photoSrc,
+    required String? photoSrc,
     required String lastVisit,
   }) = _UserResource;
 

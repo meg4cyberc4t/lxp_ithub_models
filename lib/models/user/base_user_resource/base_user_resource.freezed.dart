@@ -25,7 +25,7 @@ mixin _$BaseUserResource {
   String get lastName => throw _privateConstructorUsedError;
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
-  String get photoSrc => throw _privateConstructorUsedError;
+  String? get photoSrc => throw _privateConstructorUsedError;
   int get lastVisit => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
@@ -51,7 +51,7 @@ abstract class $BaseUserResourceCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       int lastVisit,
       dynamic phone,
       String photoSrcSmall,
@@ -110,7 +110,7 @@ class _$BaseUserResourceCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
@@ -156,7 +156,7 @@ abstract class _$$_BaseUserResourceCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       int lastVisit,
       dynamic phone,
       String photoSrcSmall,
@@ -217,7 +217,7 @@ class __$$_BaseUserResourceCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
@@ -282,7 +282,7 @@ class _$_BaseUserResource implements _BaseUserResource {
   @override
   final String? email;
   @override
-  final String photoSrc;
+  final String? photoSrc;
   @override
   final int lastVisit;
   @override
@@ -368,7 +368,7 @@ abstract class _BaseUserResource
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String photoSrc,
+      required final String? photoSrc,
       required final int lastVisit,
       required final dynamic phone,
       required final String photoSrcSmall,
@@ -391,7 +391,7 @@ abstract class _BaseUserResource
   @override
   String? get email;
   @override
-  String get photoSrc;
+  String? get photoSrc;
   @override
   int get lastVisit;
   @override

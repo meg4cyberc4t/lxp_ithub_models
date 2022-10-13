@@ -19,7 +19,7 @@ class AuthUserResource with _$AuthUserResource {
     required String lastName,
     required String middleName,
     required String? email,
-    required String photoSrc,
+    required String? photoSrc,
     required dynamic phone,
     required String photoSrcSmall,
     required bool isSkillfolioReg,

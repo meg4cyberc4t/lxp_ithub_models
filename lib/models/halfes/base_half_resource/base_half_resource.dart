@@ -13,8 +13,8 @@ class BaseHalfResource with _$BaseHalfResource {
     required String description,
     required int? trajectoryId,
     required int index,
-    required DateTime? createdAt,
-    required DateTime? updatedAt,
+    // required DateTime? createdAt,
+    // required DateTime? updatedAt,
   }) = _BaseHalfResource;
 
   factory BaseHalfResource.fromJson(Map<String, dynamic> json) =>

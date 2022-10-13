@@ -13,7 +13,7 @@ _$_AuthUserResource _$$_AuthUserResourceFromJson(Map<String, dynamic> json) =>
       lastName: json['last_name'] as String,
       middleName: json['middle_name'] as String,
       email: json['email'] as String?,
-      photoSrc: json['photo_src'] as String,
+      photoSrc: json['photo_src'] as String?,
       phone: json['phone'],
       photoSrcSmall: json['photo_src_small'] as String,
       isSkillfolioReg: json['is_skillfolio_reg'] as bool,

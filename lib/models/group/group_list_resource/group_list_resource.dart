@@ -23,8 +23,8 @@ class GroupListResource with _$GroupListResource {
     required int subjectsCount,
     required int usersCount,
     required List<BaseUserResource> users,
-    required BaseHalfResource half,
-    required BaseTrajectoryResource trajectory,
+    required BaseHalfResource? half,
+    required BaseTrajectoryResource? trajectory,
   }) = _GroupListResource;
 
   factory GroupListResource.fromJson(Map<String, dynamic> json) =>

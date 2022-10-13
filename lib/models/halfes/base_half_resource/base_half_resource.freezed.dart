@@ -25,8 +25,6 @@ mixin _$BaseHalfResource {
   String get description => throw _privateConstructorUsedError;
   int? get trajectoryId => throw _privateConstructorUsedError;
   int get index => throw _privateConstructorUsedError;
-  DateTime? get createdAt => throw _privateConstructorUsedError;
-  DateTime? get updatedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -40,13 +38,7 @@ abstract class $BaseHalfResourceCopyWith<$Res> {
           BaseHalfResource value, $Res Function(BaseHalfResource) then) =
       _$BaseHalfResourceCopyWithImpl<$Res>;
   $Res call(
-      {int id,
-      String title,
-      String description,
-      int? trajectoryId,
-      int index,
-      DateTime? createdAt,
-      DateTime? updatedAt});
+      {int id, String title, String description, int? trajectoryId, int index});
 }
 
 /// @nodoc
@@ -65,8 +57,6 @@ class _$BaseHalfResourceCopyWithImpl<$Res>
     Object? description = freezed,
     Object? trajectoryId = freezed,
     Object? index = freezed,
-    Object? createdAt = freezed,
-    Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -89,14 +79,6 @@ class _$BaseHalfResourceCopyWithImpl<$Res>
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      updatedAt: updatedAt == freezed
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
     ));
   }
 }
@@ -109,13 +91,7 @@ abstract class _$$_BaseHalfResourceCopyWith<$Res>
       __$$_BaseHalfResourceCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id,
-      String title,
-      String description,
-      int? trajectoryId,
-      int index,
-      DateTime? createdAt,
-      DateTime? updatedAt});
+      {int id, String title, String description, int? trajectoryId, int index});
 }
 
 /// @nodoc
@@ -136,8 +112,6 @@ class __$$_BaseHalfResourceCopyWithImpl<$Res>
     Object? description = freezed,
     Object? trajectoryId = freezed,
     Object? index = freezed,
-    Object? createdAt = freezed,
-    Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseHalfResource(
       id: id == freezed
@@ -160,14 +134,6 @@ class __$$_BaseHalfResourceCopyWithImpl<$Res>
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      updatedAt: updatedAt == freezed
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
     ));
   }
 }
@@ -180,9 +146,7 @@ class _$_BaseHalfResource implements _BaseHalfResource {
       required this.title,
       required this.description,
       required this.trajectoryId,
-      required this.index,
-      required this.createdAt,
-      required this.updatedAt});
+      required this.index});
 
   factory _$_BaseHalfResource.fromJson(Map<String, dynamic> json) =>
       _$$_BaseHalfResourceFromJson(json);
@@ -197,14 +161,10 @@ class _$_BaseHalfResource implements _BaseHalfResource {
   final int? trajectoryId;
   @override
   final int index;
-  @override
-  final DateTime? createdAt;
-  @override
-  final DateTime? updatedAt;
 
   @override
   String toString() {
-    return 'BaseHalfResource(id: $id, title: $title, description: $description, trajectoryId: $trajectoryId, index: $index, createdAt: $createdAt, updatedAt: $updatedAt)';
+    return 'BaseHalfResource(id: $id, title: $title, description: $description, trajectoryId: $trajectoryId, index: $index)';
   }
 
   @override
@@ -218,9 +178,7 @@ class _$_BaseHalfResource implements _BaseHalfResource {
                 .equals(other.description, description) &&
             const DeepCollectionEquality()
                 .equals(other.trajectoryId, trajectoryId) &&
-            const DeepCollectionEquality().equals(other.index, index) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            const DeepCollectionEquality().equals(other.index, index));
   }
 
   @JsonKey(ignore: true)
@@ -231,9 +189,7 @@ class _$_BaseHalfResource implements _BaseHalfResource {
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(description),
       const DeepCollectionEquality().hash(trajectoryId),
-      const DeepCollectionEquality().hash(index),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      const DeepCollectionEquality().hash(index));
 
   @JsonKey(ignore: true)
   @override
@@ -255,9 +211,7 @@ abstract class _BaseHalfResource
       required final String title,
       required final String description,
       required final int? trajectoryId,
-      required final int index,
-      required final DateTime? createdAt,
-      required final DateTime? updatedAt}) = _$_BaseHalfResource;
+      required final int index}) = _$_BaseHalfResource;
 
   factory _BaseHalfResource.fromJson(Map<String, dynamic> json) =
       _$_BaseHalfResource.fromJson;
@@ -272,10 +226,6 @@ abstract class _BaseHalfResource
   int? get trajectoryId;
   @override
   int get index;
-  @override
-  DateTime? get createdAt;
-  @override
-  DateTime? get updatedAt;
   @override
   @JsonKey(ignore: true)
   _$$_BaseHalfResourceCopyWith<_$_BaseHalfResource> get copyWith =>

@@ -25,7 +25,7 @@ mixin _$UserResource {
   String get lastName => throw _privateConstructorUsedError;
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
-  String get photoSrc => throw _privateConstructorUsedError;
+  String? get photoSrc => throw _privateConstructorUsedError;
   String get lastVisit => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -45,7 +45,7 @@ abstract class $UserResourceCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       String lastVisit});
 }
 
@@ -91,7 +91,7 @@ class _$UserResourceCopyWithImpl<$Res> implements $UserResourceCopyWith<$Res> {
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
@@ -113,7 +113,7 @@ abstract class _$$_UserResourceCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       String lastVisit});
 }
 
@@ -162,7 +162,7 @@ class __$$_UserResourceCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
@@ -198,7 +198,7 @@ class _$_UserResource extends _UserResource {
   @override
   final String? email;
   @override
-  final String photoSrc;
+  final String? photoSrc;
   @override
   final String lastVisit;
 
@@ -255,7 +255,7 @@ abstract class _UserResource extends UserResource
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String photoSrc,
+      required final String? photoSrc,
       required final String lastVisit}) = _$_UserResource;
   _UserResource._() : super._();
 
@@ -273,7 +273,7 @@ abstract class _UserResource extends UserResource
   @override
   String? get email;
   @override
-  String get photoSrc;
+  String? get photoSrc;
   @override
   String get lastVisit;
   @override

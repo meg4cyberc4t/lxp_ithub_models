@@ -27,7 +27,7 @@ mixin _$UserAnswerResource {
   String? get email => throw _privateConstructorUsedError;
   String? get photoSrc => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
-  String get photoSrcSmall => throw _privateConstructorUsedError;
+  String? get photoSrcSmall => throw _privateConstructorUsedError;
   bool get isSkillfolioReg => throw _privateConstructorUsedError;
   bool get isOnline => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
@@ -53,7 +53,7 @@ abstract class $UserAnswerResourceCopyWith<$Res> {
       String? email,
       String? photoSrc,
       dynamic phone,
-      String photoSrcSmall,
+      String? photoSrcSmall,
       bool isSkillfolioReg,
       bool isOnline,
       DateTime? createdAt,
@@ -118,7 +118,7 @@ class _$UserAnswerResourceCopyWithImpl<$Res>
       photoSrcSmall: photoSrcSmall == freezed
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       isSkillfolioReg: isSkillfolioReg == freezed
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
@@ -158,7 +158,7 @@ abstract class _$$_UserAnswerResourceCopyWith<$Res>
       String? email,
       String? photoSrc,
       dynamic phone,
-      String photoSrcSmall,
+      String? photoSrcSmall,
       bool isSkillfolioReg,
       bool isOnline,
       DateTime? createdAt,
@@ -225,7 +225,7 @@ class __$$_UserAnswerResourceCopyWithImpl<$Res>
       photoSrcSmall: photoSrcSmall == freezed
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       isSkillfolioReg: isSkillfolioReg == freezed
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
@@ -286,7 +286,7 @@ class _$_UserAnswerResource implements _UserAnswerResource {
   @override
   final dynamic phone;
   @override
-  final String photoSrcSmall;
+  final String? photoSrcSmall;
   @override
   final bool isSkillfolioReg;
   @override
@@ -368,7 +368,7 @@ abstract class _UserAnswerResource
       required final String? email,
       required final String? photoSrc,
       required final dynamic phone,
-      required final String photoSrcSmall,
+      required final String? photoSrcSmall,
       required final bool isSkillfolioReg,
       required final bool isOnline,
       required final DateTime? createdAt,
@@ -393,7 +393,7 @@ abstract class _UserAnswerResource
   @override
   dynamic get phone;
   @override
-  String get photoSrcSmall;
+  String? get photoSrcSmall;
   @override
   bool get isSkillfolioReg;
   @override

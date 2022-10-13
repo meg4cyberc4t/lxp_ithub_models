@@ -14,7 +14,7 @@ class SignInResponse with _$SignInResponse {
     required String lastName,
     required String middleName,
     required String? email,
-    required String photoSrc,
+    required String? photoSrc,
   }) = _SignInResponse;
 
   factory SignInResponse.fromJson(Map<String, dynamic> json) =>

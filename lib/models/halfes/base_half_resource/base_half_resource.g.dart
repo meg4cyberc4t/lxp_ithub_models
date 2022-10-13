@@ -13,12 +13,6 @@ _$_BaseHalfResource _$$_BaseHalfResourceFromJson(Map<String, dynamic> json) =>
       description: json['description'] as String,
       trajectoryId: json['trajectory_id'] as int?,
       index: json['index'] as int,
-      createdAt: json['created_at'] == null
-          ? null
-          : DateTime.parse(json['created_at'] as String),
-      updatedAt: json['updated_at'] == null
-          ? null
-          : DateTime.parse(json['updated_at'] as String),
     );
 
 Map<String, dynamic> _$$_BaseHalfResourceToJson(_$_BaseHalfResource instance) =>
@@ -28,6 +22,4 @@ Map<String, dynamic> _$$_BaseHalfResourceToJson(_$_BaseHalfResource instance) =>
       'description': instance.description,
       'trajectory_id': instance.trajectoryId,
       'index': instance.index,
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
     };

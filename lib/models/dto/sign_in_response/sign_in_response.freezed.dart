@@ -26,7 +26,7 @@ mixin _$SignInResponse {
   String get lastName => throw _privateConstructorUsedError;
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
-  String get photoSrc => throw _privateConstructorUsedError;
+  String? get photoSrc => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -46,7 +46,7 @@ abstract class $SignInResponseCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String photoSrc});
+      String? photoSrc});
 }
 
 /// @nodoc
@@ -96,7 +96,7 @@ class _$SignInResponseCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -115,7 +115,7 @@ abstract class _$$_SignInResponseCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String photoSrc});
+      String? photoSrc});
 }
 
 /// @nodoc
@@ -167,7 +167,7 @@ class __$$_SignInResponseCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -200,7 +200,7 @@ class _$_SignInResponse implements _SignInResponse {
   @override
   final String? email;
   @override
-  final String photoSrc;
+  final String? photoSrc;
 
   @override
   String toString() {
@@ -256,7 +256,7 @@ abstract class _SignInResponse
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String photoSrc}) = _$_SignInResponse;
+      required final String? photoSrc}) = _$_SignInResponse;
 
   factory _SignInResponse.fromJson(Map<String, dynamic> json) =
       _$_SignInResponse.fromJson;
@@ -274,7 +274,7 @@ abstract class _SignInResponse
   @override
   String? get email;
   @override
-  String get photoSrc;
+  String? get photoSrc;
   @override
   @JsonKey(ignore: true)
   _$$_SignInResponseCopyWith<_$_SignInResponse> get copyWith =>

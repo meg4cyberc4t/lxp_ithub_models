@@ -26,9 +26,13 @@ _$_GroupListResource _$$_GroupListResourceFromJson(Map<String, dynamic> json) =>
       users: (json['users'] as List<dynamic>)
           .map((e) => BaseUserResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      half: BaseHalfResource.fromJson(json['half'] as Map<String, dynamic>),
-      trajectory: BaseTrajectoryResource.fromJson(
-          json['trajectory'] as Map<String, dynamic>),
+      half: json['half'] == null
+          ? null
+          : BaseHalfResource.fromJson(json['half'] as Map<String, dynamic>),
+      trajectory: json['trajectory'] == null
+          ? null
+          : BaseTrajectoryResource.fromJson(
+              json['trajectory'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_GroupListResourceToJson(

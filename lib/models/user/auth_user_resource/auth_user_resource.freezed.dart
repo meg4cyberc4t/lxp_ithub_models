@@ -25,7 +25,7 @@ mixin _$AuthUserResource {
   String get lastName => throw _privateConstructorUsedError;
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
-  String get photoSrc => throw _privateConstructorUsedError;
+  String? get photoSrc => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
   bool get isSkillfolioReg => throw _privateConstructorUsedError;
@@ -57,7 +57,7 @@ abstract class $AuthUserResourceCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -128,7 +128,7 @@ class _$AuthUserResourceCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -198,7 +198,7 @@ abstract class _$$_AuthUserResourceCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String photoSrc,
+      String? photoSrc,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -271,7 +271,7 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
       photoSrc: photoSrc == freezed
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -366,7 +366,7 @@ class _$_AuthUserResource implements _AuthUserResource {
   @override
   final String? email;
   @override
-  final String photoSrc;
+  final String? photoSrc;
   @override
   final dynamic phone;
   @override
@@ -481,7 +481,7 @@ abstract class _AuthUserResource
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String photoSrc,
+      required final String? photoSrc,
       required final dynamic phone,
       required final String photoSrcSmall,
       required final bool isSkillfolioReg,
@@ -510,7 +510,7 @@ abstract class _AuthUserResource
   @override
   String? get email;
   @override
-  String get photoSrc;
+  String? get photoSrc;
   @override
   dynamic get phone;
   @override

@@ -13,7 +13,7 @@ _$_BaseUserResource _$$_BaseUserResourceFromJson(Map<String, dynamic> json) =>
       lastName: json['last_name'] as String,
       middleName: json['middle_name'] as String,
       email: json['email'] as String?,
-      photoSrc: json['photo_src'] as String,
+      photoSrc: json['photo_src'] as String?,
       lastVisit: json['last_visit'] as int,
       phone: json['phone'],
       photoSrcSmall: json['photo_src_small'] as String,

@@ -14,7 +14,7 @@ _$_SignInResponse _$$_SignInResponseFromJson(Map<String, dynamic> json) =>
       lastName: json['last_name'] as String,
       middleName: json['middle_name'] as String,
       email: json['email'] as String?,
-      photoSrc: json['photo_src'] as String,
+      photoSrc: json['photo_src'] as String?,
     );
 
 Map<String, dynamic> _$$_SignInResponseToJson(_$_SignInResponse instance) =>

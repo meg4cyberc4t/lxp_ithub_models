@@ -32,8 +32,8 @@ mixin _$GroupListResource {
   int get subjectsCount => throw _privateConstructorUsedError;
   int get usersCount => throw _privateConstructorUsedError;
   List<BaseUserResource> get users => throw _privateConstructorUsedError;
-  BaseHalfResource get half => throw _privateConstructorUsedError;
-  BaseTrajectoryResource get trajectory => throw _privateConstructorUsedError;
+  BaseHalfResource? get half => throw _privateConstructorUsedError;
+  BaseTrajectoryResource? get trajectory => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -59,11 +59,11 @@ abstract class $GroupListResourceCopyWith<$Res> {
       int subjectsCount,
       int usersCount,
       List<BaseUserResource> users,
-      BaseHalfResource half,
-      BaseTrajectoryResource trajectory});
+      BaseHalfResource? half,
+      BaseTrajectoryResource? trajectory});
 
-  $BaseHalfResourceCopyWith<$Res> get half;
-  $BaseTrajectoryResourceCopyWith<$Res> get trajectory;
+  $BaseHalfResourceCopyWith<$Res>? get half;
+  $BaseTrajectoryResourceCopyWith<$Res>? get trajectory;
 }
 
 /// @nodoc
@@ -144,24 +144,32 @@ class _$GroupListResourceCopyWithImpl<$Res>
       half: half == freezed
           ? _value.half
           : half // ignore: cast_nullable_to_non_nullable
-              as BaseHalfResource,
+              as BaseHalfResource?,
       trajectory: trajectory == freezed
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
-              as BaseTrajectoryResource,
+              as BaseTrajectoryResource?,
     ));
   }
 
   @override
-  $BaseHalfResourceCopyWith<$Res> get half {
-    return $BaseHalfResourceCopyWith<$Res>(_value.half, (value) {
+  $BaseHalfResourceCopyWith<$Res>? get half {
+    if (_value.half == null) {
+      return null;
+    }
+
+    return $BaseHalfResourceCopyWith<$Res>(_value.half!, (value) {
       return _then(_value.copyWith(half: value));
     });
   }
 
   @override
-  $BaseTrajectoryResourceCopyWith<$Res> get trajectory {
-    return $BaseTrajectoryResourceCopyWith<$Res>(_value.trajectory, (value) {
+  $BaseTrajectoryResourceCopyWith<$Res>? get trajectory {
+    if (_value.trajectory == null) {
+      return null;
+    }
+
+    return $BaseTrajectoryResourceCopyWith<$Res>(_value.trajectory!, (value) {
       return _then(_value.copyWith(trajectory: value));
     });
   }
@@ -187,13 +195,13 @@ abstract class _$$_GroupListResourceCopyWith<$Res>
       int subjectsCount,
       int usersCount,
       List<BaseUserResource> users,
-      BaseHalfResource half,
-      BaseTrajectoryResource trajectory});
+      BaseHalfResource? half,
+      BaseTrajectoryResource? trajectory});
 
   @override
-  $BaseHalfResourceCopyWith<$Res> get half;
+  $BaseHalfResourceCopyWith<$Res>? get half;
   @override
-  $BaseTrajectoryResourceCopyWith<$Res> get trajectory;
+  $BaseTrajectoryResourceCopyWith<$Res>? get trajectory;
 }
 
 /// @nodoc
@@ -276,11 +284,11 @@ class __$$_GroupListResourceCopyWithImpl<$Res>
       half: half == freezed
           ? _value.half
           : half // ignore: cast_nullable_to_non_nullable
-              as BaseHalfResource,
+              as BaseHalfResource?,
       trajectory: trajectory == freezed
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
-              as BaseTrajectoryResource,
+              as BaseTrajectoryResource?,
     ));
   }
 }
@@ -332,9 +340,9 @@ class _$_GroupListResource implements _GroupListResource {
   @override
   final List<BaseUserResource> users;
   @override
-  final BaseHalfResource half;
+  final BaseHalfResource? half;
   @override
-  final BaseTrajectoryResource trajectory;
+  final BaseTrajectoryResource? trajectory;
 
   @override
   String toString() {
@@ -403,20 +411,21 @@ class _$_GroupListResource implements _GroupListResource {
 abstract class _GroupListResource
     implements GroupListResource, BaseGroupResourceInterface {
   factory _GroupListResource(
-      {required final int id,
-      required final String name,
-      required final String description,
-      required final int companyId,
-      required final int? halfId,
-      required final int labelId,
-      required final String? externalLink,
-      required final DateTime? createdAt,
-      required final DateTime? updatedAt,
-      required final int subjectsCount,
-      required final int usersCount,
-      required final List<BaseUserResource> users,
-      required final BaseHalfResource half,
-      required final BaseTrajectoryResource trajectory}) = _$_GroupListResource;
+          {required final int id,
+          required final String name,
+          required final String description,
+          required final int companyId,
+          required final int? halfId,
+          required final int labelId,
+          required final String? externalLink,
+          required final DateTime? createdAt,
+          required final DateTime? updatedAt,
+          required final int subjectsCount,
+          required final int usersCount,
+          required final List<BaseUserResource> users,
+          required final BaseHalfResource? half,
+          required final BaseTrajectoryResource? trajectory}) =
+      _$_GroupListResource;
 
   factory _GroupListResource.fromJson(Map<String, dynamic> json) =
       _$_GroupListResource.fromJson;
@@ -446,9 +455,9 @@ abstract class _GroupListResource
   @override
   List<BaseUserResource> get users;
   @override
-  BaseHalfResource get half;
+  BaseHalfResource? get half;
   @override
-  BaseTrajectoryResource get trajectory;
+  BaseTrajectoryResource? get trajectory;
   @override
   @JsonKey(ignore: true)
   _$$_GroupListResourceCopyWith<_$_GroupListResource> get copyWith =>
