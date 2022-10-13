@@ -25,9 +25,9 @@ mixin _$BaseStepUserProcessResource {
   int get userId => throw _privateConstructorUsedError;
   int get timestamp =>
       throw _privateConstructorUsedError; // Дата создания в timestamp
-  String get status => throw _privateConstructorUsedError;
+  String? get status => throw _privateConstructorUsedError;
   int get passedStatus => throw _privateConstructorUsedError;
-  int get passedStatusId => throw _privateConstructorUsedError;
+  int? get passedStatusId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -45,9 +45,9 @@ abstract class $BaseStepUserProcessResourceCopyWith<$Res> {
       {int stepId,
       int userId,
       int timestamp,
-      String status,
+      String? status,
       int passedStatus,
-      int passedStatusId});
+      int? passedStatusId});
 }
 
 /// @nodoc
@@ -84,7 +84,7 @@ class _$BaseStepUserProcessResourceCopyWithImpl<$Res>
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       passedStatus: passedStatus == freezed
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
@@ -92,7 +92,7 @@ class _$BaseStepUserProcessResourceCopyWithImpl<$Res>
       passedStatusId: passedStatusId == freezed
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -109,9 +109,9 @@ abstract class _$$_BaseStepUserProcessResourceCopyWith<$Res>
       {int stepId,
       int userId,
       int timestamp,
-      String status,
+      String? status,
       int passedStatus,
-      int passedStatusId});
+      int? passedStatusId});
 }
 
 /// @nodoc
@@ -152,7 +152,7 @@ class __$$_BaseStepUserProcessResourceCopyWithImpl<$Res>
       status: status == freezed
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       passedStatus: passedStatus == freezed
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
@@ -160,7 +160,7 @@ class __$$_BaseStepUserProcessResourceCopyWithImpl<$Res>
       passedStatusId: passedStatusId == freezed
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -187,11 +187,11 @@ class _$_BaseStepUserProcessResource implements _BaseStepUserProcessResource {
   final int timestamp;
 // Дата создания в timestamp
   @override
-  final String status;
+  final String? status;
   @override
   final int passedStatus;
   @override
-  final int passedStatusId;
+  final int? passedStatusId;
 
   @override
   String toString() {
@@ -246,9 +246,9 @@ abstract class _BaseStepUserProcessResource
       {required final int stepId,
       required final int userId,
       required final int timestamp,
-      required final String status,
+      required final String? status,
       required final int passedStatus,
-      required final int passedStatusId}) = _$_BaseStepUserProcessResource;
+      required final int? passedStatusId}) = _$_BaseStepUserProcessResource;
 
   factory _BaseStepUserProcessResource.fromJson(Map<String, dynamic> json) =
       _$_BaseStepUserProcessResource.fromJson;
@@ -260,11 +260,11 @@ abstract class _BaseStepUserProcessResource
   @override
   int get timestamp;
   @override // Дата создания в timestamp
-  String get status;
+  String? get status;
   @override
   int get passedStatus;
   @override
-  int get passedStatusId;
+  int? get passedStatusId;
   @override
   @JsonKey(ignore: true)
   _$$_BaseStepUserProcessResourceCopyWith<_$_BaseStepUserProcessResource>

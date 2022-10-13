@@ -12,9 +12,9 @@ _$_BaseStepUserProcessResource _$$_BaseStepUserProcessResourceFromJson(
       stepId: json['step_id'] as int,
       userId: json['user_id'] as int,
       timestamp: json['timestamp'] as int,
-      status: json['status'] as String,
+      status: json['status'] as String?,
       passedStatus: json['passed_status'] as int,
-      passedStatusId: json['passed_status_id'] as int,
+      passedStatusId: json['passed_status_id'] as int?,
     );
 
 Map<String, dynamic> _$$_BaseStepUserProcessResourceToJson(

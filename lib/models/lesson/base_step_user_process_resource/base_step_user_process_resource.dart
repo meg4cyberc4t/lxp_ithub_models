@@ -11,9 +11,9 @@ class BaseStepUserProcessResource with _$BaseStepUserProcessResource {
     required int stepId,
     required int userId,
     required int timestamp, // Дата создания в timestamp
-    required String status,
+    required String? status,
     required int passedStatus,
-    required int passedStatusId,
+    required int? passedStatusId,
   }) = _BaseStepUserProcessResource;
 
   factory BaseStepUserProcessResource.fromJson(Map<String, dynamic> json) =>
