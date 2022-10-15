@@ -15,7 +15,6 @@ class UserResource with _$UserResource {
     required String middleName,
     required String? email,
     required String? photoSrc,
-    required String lastVisit,
   }) = _UserResource;
 
   factory UserResource.fromJson(Map<String, dynamic> json) =>

@@ -26,7 +26,6 @@ mixin _$UserResource {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String? get photoSrc => throw _privateConstructorUsedError;
-  String get lastVisit => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -45,8 +44,7 @@ abstract class $UserResourceCopyWith<$Res> {
       String lastName,
       String middleName,
       String? email,
-      String? photoSrc,
-      String lastVisit});
+      String? photoSrc});
 }
 
 /// @nodoc
@@ -65,7 +63,6 @@ class _$UserResourceCopyWithImpl<$Res> implements $UserResourceCopyWith<$Res> {
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -92,10 +89,6 @@ class _$UserResourceCopyWithImpl<$Res> implements $UserResourceCopyWith<$Res> {
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 }
@@ -113,8 +106,7 @@ abstract class _$$_UserResourceCopyWith<$Res>
       String lastName,
       String middleName,
       String? email,
-      String? photoSrc,
-      String lastVisit});
+      String? photoSrc});
 }
 
 /// @nodoc
@@ -136,7 +128,6 @@ class __$$_UserResourceCopyWithImpl<$Res>
     Object? middleName = freezed,
     Object? email = freezed,
     Object? photoSrc = freezed,
-    Object? lastVisit = freezed,
   }) {
     return _then(_$_UserResource(
       id: id == freezed
@@ -163,10 +154,6 @@ class __$$_UserResourceCopyWithImpl<$Res>
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
-      lastVisit: lastVisit == freezed
-          ? _value.lastVisit
-          : lastVisit // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 }
@@ -180,8 +167,7 @@ class _$_UserResource extends _UserResource {
       required this.lastName,
       required this.middleName,
       required this.email,
-      required this.photoSrc,
-      required this.lastVisit})
+      required this.photoSrc})
       : super._();
 
   factory _$_UserResource.fromJson(Map<String, dynamic> json) =>
@@ -199,12 +185,10 @@ class _$_UserResource extends _UserResource {
   final String? email;
   @override
   final String? photoSrc;
-  @override
-  final String lastVisit;
 
   @override
   String toString() {
-    return 'UserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, lastVisit: $lastVisit)';
+    return 'UserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc)';
   }
 
   @override
@@ -218,8 +202,7 @@ class _$_UserResource extends _UserResource {
             const DeepCollectionEquality()
                 .equals(other.middleName, middleName) &&
             const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
-            const DeepCollectionEquality().equals(other.lastVisit, lastVisit));
+            const DeepCollectionEquality().equals(other.photoSrc, photoSrc));
   }
 
   @JsonKey(ignore: true)
@@ -231,8 +214,7 @@ class _$_UserResource extends _UserResource {
       const DeepCollectionEquality().hash(lastName),
       const DeepCollectionEquality().hash(middleName),
       const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrc),
-      const DeepCollectionEquality().hash(lastVisit));
+      const DeepCollectionEquality().hash(photoSrc));
 
   @JsonKey(ignore: true)
   @override
@@ -255,8 +237,7 @@ abstract class _UserResource extends UserResource
       required final String lastName,
       required final String middleName,
       required final String? email,
-      required final String? photoSrc,
-      required final String lastVisit}) = _$_UserResource;
+      required final String? photoSrc}) = _$_UserResource;
   _UserResource._() : super._();
 
   factory _UserResource.fromJson(Map<String, dynamic> json) =
@@ -274,8 +255,6 @@ abstract class _UserResource extends UserResource
   String? get email;
   @override
   String? get photoSrc;
-  @override
-  String get lastVisit;
   @override
   @JsonKey(ignore: true)
   _$$_UserResourceCopyWith<_$_UserResource> get copyWith =>
