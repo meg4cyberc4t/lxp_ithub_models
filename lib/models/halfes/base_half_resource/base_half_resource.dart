@@ -12,7 +12,7 @@ class BaseHalfResource with _$BaseHalfResource {
     required String title,
     required String description,
     required int? trajectoryId,
-    required int index,
+    required int? index,
     // required DateTime? createdAt,
     // required DateTime? updatedAt,
   }) = _BaseHalfResource;

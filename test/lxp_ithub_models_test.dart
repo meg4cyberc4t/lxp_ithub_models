@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lxp_ithub_models/lxp_ithub_models.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
@@ -45,6 +46,6 @@ void main() {
       updatedAt: DateTime.now(),
     );
     UserResourceInterface interface = user as UserResourceInterface;
-    print(interface.lastName.toString());
+    debugPrint(interface.lastName.toString());
   });
 }

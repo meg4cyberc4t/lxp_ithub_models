@@ -9,7 +9,6 @@ part of 'curator_user_resource.dart';
 _$_CuratorUserResource _$$_CuratorUserResourceFromJson(
         Map<String, dynamic> json) =>
     _$_CuratorUserResource(
-      groups: json['groups'] as List<dynamic>,
       curators: (json['curators'] as List<dynamic>)
           .map((e) => UserResource.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -18,6 +17,5 @@ _$_CuratorUserResource _$$_CuratorUserResourceFromJson(
 Map<String, dynamic> _$$_CuratorUserResourceToJson(
         _$_CuratorUserResource instance) =>
     <String, dynamic>{
-      'groups': instance.groups,
       'curators': instance.curators,
     };

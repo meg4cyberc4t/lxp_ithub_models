@@ -3,7 +3,7 @@ abstract class BaseHalfResourceInterface {
   String get title;
   String get description;
   int? get trajectoryId;
-  int get index;
+  int? get index;
   // DateTime? get createdAt;
   // DateTime? get updatedAt;
 }

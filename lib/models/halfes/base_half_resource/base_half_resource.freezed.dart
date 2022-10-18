@@ -24,7 +24,7 @@ mixin _$BaseHalfResource {
   String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
   int? get trajectoryId => throw _privateConstructorUsedError;
-  int get index => throw _privateConstructorUsedError;
+  int? get index => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -38,7 +38,11 @@ abstract class $BaseHalfResourceCopyWith<$Res> {
           BaseHalfResource value, $Res Function(BaseHalfResource) then) =
       _$BaseHalfResourceCopyWithImpl<$Res>;
   $Res call(
-      {int id, String title, String description, int? trajectoryId, int index});
+      {int id,
+      String title,
+      String description,
+      int? trajectoryId,
+      int? index});
 }
 
 /// @nodoc
@@ -78,7 +82,7 @@ class _$BaseHalfResourceCopyWithImpl<$Res>
       index: index == freezed
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -91,7 +95,11 @@ abstract class _$$_BaseHalfResourceCopyWith<$Res>
       __$$_BaseHalfResourceCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id, String title, String description, int? trajectoryId, int index});
+      {int id,
+      String title,
+      String description,
+      int? trajectoryId,
+      int? index});
 }
 
 /// @nodoc
@@ -133,7 +141,7 @@ class __$$_BaseHalfResourceCopyWithImpl<$Res>
       index: index == freezed
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -160,7 +168,7 @@ class _$_BaseHalfResource implements _BaseHalfResource {
   @override
   final int? trajectoryId;
   @override
-  final int index;
+  final int? index;
 
   @override
   String toString() {
@@ -211,7 +219,7 @@ abstract class _BaseHalfResource
       required final String title,
       required final String description,
       required final int? trajectoryId,
-      required final int index}) = _$_BaseHalfResource;
+      required final int? index}) = _$_BaseHalfResource;
 
   factory _BaseHalfResource.fromJson(Map<String, dynamic> json) =
       _$_BaseHalfResource.fromJson;
@@ -225,7 +233,7 @@ abstract class _BaseHalfResource
   @override
   int? get trajectoryId;
   @override
-  int get index;
+  int? get index;
   @override
   @JsonKey(ignore: true)
   _$$_BaseHalfResourceCopyWith<_$_BaseHalfResource> get copyWith =>

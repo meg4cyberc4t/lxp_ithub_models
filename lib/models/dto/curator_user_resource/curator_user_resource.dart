@@ -7,7 +7,7 @@ part 'curator_user_resource.g.dart';
 @Freezed(addImplicitFinal: true, makeCollectionsUnmodifiable: false)
 class CuratorUserResource with _$CuratorUserResource {
   factory CuratorUserResource({
-    @Deprecated("Incomplete structure") required List groups,
+    // @Deprecated("Incomplete structure") required List groups,
     required List<UserResource> curators,
   }) = _CuratorUserResource;
 

@@ -20,8 +20,7 @@ CuratorUserResource _$CuratorUserResourceFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$CuratorUserResource {
-  @Deprecated("Incomplete structure")
-  List<dynamic> get groups => throw _privateConstructorUsedError;
+// @Deprecated("Incomplete structure") required List groups,
   List<UserResource> get curators => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -35,9 +34,7 @@ abstract class $CuratorUserResourceCopyWith<$Res> {
   factory $CuratorUserResourceCopyWith(
           CuratorUserResource value, $Res Function(CuratorUserResource) then) =
       _$CuratorUserResourceCopyWithImpl<$Res>;
-  $Res call(
-      {@Deprecated("Incomplete structure") List<dynamic> groups,
-      List<UserResource> curators});
+  $Res call({List<UserResource> curators});
 }
 
 /// @nodoc
@@ -51,14 +48,9 @@ class _$CuratorUserResourceCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? groups = freezed,
     Object? curators = freezed,
   }) {
     return _then(_value.copyWith(
-      groups: groups == freezed
-          ? _value.groups
-          : groups // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>,
       curators: curators == freezed
           ? _value.curators
           : curators // ignore: cast_nullable_to_non_nullable
@@ -74,9 +66,7 @@ abstract class _$$_CuratorUserResourceCopyWith<$Res>
           $Res Function(_$_CuratorUserResource) then) =
       __$$_CuratorUserResourceCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {@Deprecated("Incomplete structure") List<dynamic> groups,
-      List<UserResource> curators});
+  $Res call({List<UserResource> curators});
 }
 
 /// @nodoc
@@ -92,14 +82,9 @@ class __$$_CuratorUserResourceCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? groups = freezed,
     Object? curators = freezed,
   }) {
     return _then(_$_CuratorUserResource(
-      groups: groups == freezed
-          ? _value.groups
-          : groups // ignore: cast_nullable_to_non_nullable
-              as List<dynamic>,
       curators: curators == freezed
           ? _value.curators
           : curators // ignore: cast_nullable_to_non_nullable
@@ -111,22 +96,18 @@ class __$$_CuratorUserResourceCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_CuratorUserResource implements _CuratorUserResource {
-  _$_CuratorUserResource(
-      {@Deprecated("Incomplete structure") required this.groups,
-      required this.curators});
+  _$_CuratorUserResource({required this.curators});
 
   factory _$_CuratorUserResource.fromJson(Map<String, dynamic> json) =>
       _$$_CuratorUserResourceFromJson(json);
 
-  @override
-  @Deprecated("Incomplete structure")
-  final List<dynamic> groups;
+// @Deprecated("Incomplete structure") required List groups,
   @override
   final List<UserResource> curators;
 
   @override
   String toString() {
-    return 'CuratorUserResource(groups: $groups, curators: $curators)';
+    return 'CuratorUserResource(curators: $curators)';
   }
 
   @override
@@ -134,16 +115,13 @@ class _$_CuratorUserResource implements _CuratorUserResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CuratorUserResource &&
-            const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.curators, curators));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(curators));
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(curators));
 
   @JsonKey(ignore: true)
   @override
@@ -160,17 +138,13 @@ class _$_CuratorUserResource implements _CuratorUserResource {
 }
 
 abstract class _CuratorUserResource implements CuratorUserResource {
-  factory _CuratorUserResource(
-      {@Deprecated("Incomplete structure") required final List<dynamic> groups,
-      required final List<UserResource> curators}) = _$_CuratorUserResource;
+  factory _CuratorUserResource({required final List<UserResource> curators}) =
+      _$_CuratorUserResource;
 
   factory _CuratorUserResource.fromJson(Map<String, dynamic> json) =
       _$_CuratorUserResource.fromJson;
 
-  @override
-  @Deprecated("Incomplete structure")
-  List<dynamic> get groups;
-  @override
+  @override // @Deprecated("Incomplete structure") required List groups,
   List<UserResource> get curators;
   @override
   @JsonKey(ignore: true)

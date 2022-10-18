@@ -12,7 +12,7 @@ _$_BaseHalfResource _$$_BaseHalfResourceFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       description: json['description'] as String,
       trajectoryId: json['trajectory_id'] as int?,
-      index: json['index'] as int,
+      index: json['index'] as int?,
     );
 
 Map<String, dynamic> _$$_BaseHalfResourceToJson(_$_BaseHalfResource instance) =>
