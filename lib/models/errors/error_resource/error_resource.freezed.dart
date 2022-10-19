@@ -22,9 +22,11 @@ ErrorResource _$ErrorResourceFromJson(Map<String, dynamic> json) {
 mixin _$ErrorResource {
   int get code => throw _privateConstructorUsedError;
   String get message => throw _privateConstructorUsedError;
+  @JsonKey(name: 'causeClass')
   String get causeClass => throw _privateConstructorUsedError;
   Map<String, List> get parameters => throw _privateConstructorUsedError;
   Map<String, List> get errors => throw _privateConstructorUsedError;
+  @JsonKey(name: 'traceId')
   String get traceId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -41,10 +43,10 @@ abstract class $ErrorResourceCopyWith<$Res> {
   $Res call(
       {int code,
       String message,
-      String causeClass,
+      @JsonKey(name: 'causeClass') String causeClass,
       Map<String, List> parameters,
       Map<String, List> errors,
-      String traceId});
+      @JsonKey(name: 'traceId') String traceId});
 }
 
 /// @nodoc
@@ -104,10 +106,10 @@ abstract class _$$_ErrorResourceCopyWith<$Res>
   $Res call(
       {int code,
       String message,
-      String causeClass,
+      @JsonKey(name: 'causeClass') String causeClass,
       Map<String, List> parameters,
       Map<String, List> errors,
-      String traceId});
+      @JsonKey(name: 'traceId') String traceId});
 }
 
 /// @nodoc
@@ -165,10 +167,10 @@ class _$_ErrorResource implements _ErrorResource {
   _$_ErrorResource(
       {required this.code,
       required this.message,
-      required this.causeClass,
+      @JsonKey(name: 'causeClass') required this.causeClass,
       required this.parameters,
       required this.errors,
-      required this.traceId});
+      @JsonKey(name: 'traceId') required this.traceId});
 
   factory _$_ErrorResource.fromJson(Map<String, dynamic> json) =>
       _$$_ErrorResourceFromJson(json);
@@ -178,12 +180,14 @@ class _$_ErrorResource implements _ErrorResource {
   @override
   final String message;
   @override
+  @JsonKey(name: 'causeClass')
   final String causeClass;
   @override
   final Map<String, List> parameters;
   @override
   final Map<String, List> errors;
   @override
+  @JsonKey(name: 'traceId')
   final String traceId;
 
   @override
@@ -232,12 +236,13 @@ class _$_ErrorResource implements _ErrorResource {
 
 abstract class _ErrorResource implements ErrorResource {
   factory _ErrorResource(
-      {required final int code,
-      required final String message,
-      required final String causeClass,
-      required final Map<String, List> parameters,
-      required final Map<String, List> errors,
-      required final String traceId}) = _$_ErrorResource;
+          {required final int code,
+          required final String message,
+          @JsonKey(name: 'causeClass') required final String causeClass,
+          required final Map<String, List> parameters,
+          required final Map<String, List> errors,
+          @JsonKey(name: 'traceId') required final String traceId}) =
+      _$_ErrorResource;
 
   factory _ErrorResource.fromJson(Map<String, dynamic> json) =
       _$_ErrorResource.fromJson;
@@ -247,12 +252,14 @@ abstract class _ErrorResource implements ErrorResource {
   @override
   String get message;
   @override
+  @JsonKey(name: 'causeClass')
   String get causeClass;
   @override
   Map<String, List> get parameters;
   @override
   Map<String, List> get errors;
   @override
+  @JsonKey(name: 'traceId')
   String get traceId;
   @override
   @JsonKey(ignore: true)
