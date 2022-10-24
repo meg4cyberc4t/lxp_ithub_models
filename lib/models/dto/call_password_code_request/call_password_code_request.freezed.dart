@@ -21,8 +21,8 @@ CallPasswordCodeRequest _$CallPasswordCodeRequestFromJson(
 
 /// @nodoc
 mixin _$CallPasswordCodeRequest {
-  String get code => throw _privateConstructorUsedError;
-  String get phone => throw _privateConstructorUsedError;
+  int get code => throw _privateConstructorUsedError;
+  int get phone => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -35,7 +35,7 @@ abstract class $CallPasswordCodeRequestCopyWith<$Res> {
   factory $CallPasswordCodeRequestCopyWith(CallPasswordCodeRequest value,
           $Res Function(CallPasswordCodeRequest) then) =
       _$CallPasswordCodeRequestCopyWithImpl<$Res>;
-  $Res call({String code, String phone});
+  $Res call({int code, int phone});
 }
 
 /// @nodoc
@@ -56,11 +56,11 @@ class _$CallPasswordCodeRequestCopyWithImpl<$Res>
       code: code == freezed
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
     ));
   }
 }
@@ -72,7 +72,7 @@ abstract class _$$_CallPasswordCodeRequestCopyWith<$Res>
           $Res Function(_$_CallPasswordCodeRequest) then) =
       __$$_CallPasswordCodeRequestCopyWithImpl<$Res>;
   @override
-  $Res call({String code, String phone});
+  $Res call({int code, int phone});
 }
 
 /// @nodoc
@@ -96,11 +96,11 @@ class __$$_CallPasswordCodeRequestCopyWithImpl<$Res>
       code: code == freezed
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as String,
+              as int,
     ));
   }
 }
@@ -114,9 +114,9 @@ class _$_CallPasswordCodeRequest implements _CallPasswordCodeRequest {
       _$$_CallPasswordCodeRequestFromJson(json);
 
   @override
-  final String code;
+  final int code;
   @override
-  final String phone;
+  final int phone;
 
   @override
   String toString() {
@@ -156,16 +156,16 @@ class _$_CallPasswordCodeRequest implements _CallPasswordCodeRequest {
 
 abstract class _CallPasswordCodeRequest implements CallPasswordCodeRequest {
   factory _CallPasswordCodeRequest(
-      {required final String code,
-      required final String phone}) = _$_CallPasswordCodeRequest;
+      {required final int code,
+      required final int phone}) = _$_CallPasswordCodeRequest;
 
   factory _CallPasswordCodeRequest.fromJson(Map<String, dynamic> json) =
       _$_CallPasswordCodeRequest.fromJson;
 
   @override
-  String get code;
+  int get code;
   @override
-  String get phone;
+  int get phone;
   @override
   @JsonKey(ignore: true)
   _$$_CallPasswordCodeRequestCopyWith<_$_CallPasswordCodeRequest>
