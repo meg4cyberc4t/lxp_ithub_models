@@ -1,7 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:lxp_ithub_models/models/attendance/base_attendance_resource/base_attendance_resource.dart';
-import 'package:lxp_ithub_models/models/place/bulgakov_classroom_model/bulgakov_classroom_model.dart';
-import 'package:lxp_ithub_models/models/place/bulgakov_platform_model/bulgakov_platform_model.dart';
+import 'package:lxp_ithub_models/lxp_ithub_models.dart';
+import 'package:lxp_ithub_models/models/schedule/attendance_lesson_schedule_resource/attendance_lesson_schedule_resource.dart';
 import 'package:lxp_ithub_models/models/schedule/base_lesson_schedule_resource/base_lesson_schedule_resource_interface.dart';
 
 part 'base_lesson_schedule_resource.freezed.dart';
@@ -11,16 +10,21 @@ part 'base_lesson_schedule_resource.g.dart';
 class BaseLessonScheduleResource with _$BaseLessonScheduleResource {
   @Implements<BaseLessonScheduleResourceInterface>()
   factory BaseLessonScheduleResource({
-    required int id,
-    required DateTime date,
+    // required abstractLessonSchedules,
+    required List<AttendanceLessonScheduleResource>? attendance,
     @JsonKey(name: 'class') required int classNumber,
-    required BulgakovPlatformModel platform,
-    // final teacher_platform;
     required BulgakovClassroomModel classroom,
-    // final teacher_classroom;
-    required String? subjectText,
-    required String? teacherText,
+    required DateTime date,
+    required int id,
+    required BulgakovPlatformModel platform,
     required BaseAttendanceResource? studentAttendance,
+    required List<GroupLessonScheduleResource>? groups,
+    required List<GroupLessonScheduleResource>? studentGroups,
+    required String? subjectText,
+    // final teacher_classroom;
+    // final teacher_platform;
+    required String? teacherText,
+    required List<BaseUserResource> teachers,
   }) = _BaseLessonScheduleResource;
 
   factory BaseLessonScheduleResource.fromJson(Map<String, dynamic> json) =>
