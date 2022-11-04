@@ -11,6 +11,8 @@ export 'models/chapter/base_chapter_resource/base_chapter_resource.dart';
 export 'models/chapter/chapter_resource/chapter_resource.dart';
 export 'models/chapter/show_lesson_chapter_resource/show_lesson_chapter_resource.dart';
 export 'models/chapter/student_chapter_resource/student_chapter_resource.dart';
+export 'models/dto/attendance_schedule_lesson_request/attendance_schedule_lesson_request.dart';
+export 'models/dto/attendance_schedule_lesson_request_item/attendance_schedule_lesson_request_item.dart';
 export 'models/dto/auth_resource/auth_resource.dart';
 export 'models/dto/call_password_code_request/call_password_code_request.dart';
 export 'models/dto/call_password_code_resource/call_password_code_resource.dart';
