@@ -9,7 +9,7 @@ part 'schedule_local_lesson_response.g.dart';
 class ScheduleLocalLessonResponse with _$ScheduleLocalLessonResponse {
   factory ScheduleLocalLessonResponse({
     required ScheduleLessonResponse response,
-    required Map<int, AttendanceLessonScheduleResource> attendance,
+    required Map<int, String> attendance,
   }) = _ScheduleLocalLessonResponse;
 
   factory ScheduleLocalLessonResponse.fromJson(Map<String, dynamic> json) =>

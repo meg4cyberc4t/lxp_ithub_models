@@ -12,10 +12,7 @@ _$_ScheduleLocalLessonResponse _$$_ScheduleLocalLessonResponseFromJson(
       response: ScheduleLessonResponse.fromJson(
           json['response'] as Map<String, dynamic>),
       attendance: (json['attendance'] as Map<String, dynamic>).map(
-        (k, e) => MapEntry(
-            int.parse(k),
-            AttendanceLessonScheduleResource.fromJson(
-                e as Map<String, dynamic>)),
+        (k, e) => MapEntry(int.parse(k), e as String),
       ),
     );
 

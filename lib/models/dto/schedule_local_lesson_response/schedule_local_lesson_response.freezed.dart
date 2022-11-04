@@ -22,8 +22,7 @@ ScheduleLocalLessonResponse _$ScheduleLocalLessonResponseFromJson(
 /// @nodoc
 mixin _$ScheduleLocalLessonResponse {
   ScheduleLessonResponse get response => throw _privateConstructorUsedError;
-  Map<int, AttendanceLessonScheduleResource> get attendance =>
-      throw _privateConstructorUsedError;
+  Map<int, String> get attendance => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,9 +36,7 @@ abstract class $ScheduleLocalLessonResponseCopyWith<$Res> {
           ScheduleLocalLessonResponse value,
           $Res Function(ScheduleLocalLessonResponse) then) =
       _$ScheduleLocalLessonResponseCopyWithImpl<$Res>;
-  $Res call(
-      {ScheduleLessonResponse response,
-      Map<int, AttendanceLessonScheduleResource> attendance});
+  $Res call({ScheduleLessonResponse response, Map<int, String> attendance});
 
   $ScheduleLessonResponseCopyWith<$Res> get response;
 }
@@ -66,7 +63,7 @@ class _$ScheduleLocalLessonResponseCopyWithImpl<$Res>
       attendance: attendance == freezed
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
-              as Map<int, AttendanceLessonScheduleResource>,
+              as Map<int, String>,
     ));
   }
 
@@ -86,9 +83,7 @@ abstract class _$$_ScheduleLocalLessonResponseCopyWith<$Res>
           $Res Function(_$_ScheduleLocalLessonResponse) then) =
       __$$_ScheduleLocalLessonResponseCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {ScheduleLessonResponse response,
-      Map<int, AttendanceLessonScheduleResource> attendance});
+  $Res call({ScheduleLessonResponse response, Map<int, String> attendance});
 
   @override
   $ScheduleLessonResponseCopyWith<$Res> get response;
@@ -120,7 +115,7 @@ class __$$_ScheduleLocalLessonResponseCopyWithImpl<$Res>
       attendance: attendance == freezed
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
-              as Map<int, AttendanceLessonScheduleResource>,
+              as Map<int, String>,
     ));
   }
 }
@@ -137,7 +132,7 @@ class _$_ScheduleLocalLessonResponse implements _ScheduleLocalLessonResponse {
   @override
   final ScheduleLessonResponse response;
   @override
-  final Map<int, AttendanceLessonScheduleResource> attendance;
+  final Map<int, String> attendance;
 
   @override
   String toString() {
@@ -178,9 +173,9 @@ class _$_ScheduleLocalLessonResponse implements _ScheduleLocalLessonResponse {
 abstract class _ScheduleLocalLessonResponse
     implements ScheduleLocalLessonResponse {
   factory _ScheduleLocalLessonResponse(
-      {required final ScheduleLessonResponse response,
-      required final Map<int, AttendanceLessonScheduleResource>
-          attendance}) = _$_ScheduleLocalLessonResponse;
+          {required final ScheduleLessonResponse response,
+          required final Map<int, String> attendance}) =
+      _$_ScheduleLocalLessonResponse;
 
   factory _ScheduleLocalLessonResponse.fromJson(Map<String, dynamic> json) =
       _$_ScheduleLocalLessonResponse.fromJson;
@@ -188,7 +183,7 @@ abstract class _ScheduleLocalLessonResponse
   @override
   ScheduleLessonResponse get response;
   @override
-  Map<int, AttendanceLessonScheduleResource> get attendance;
+  Map<int, String> get attendance;
   @override
   @JsonKey(ignore: true)
   _$$_ScheduleLocalLessonResponseCopyWith<_$_ScheduleLocalLessonResponse>
