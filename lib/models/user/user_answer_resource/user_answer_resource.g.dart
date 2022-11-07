@@ -17,7 +17,7 @@ _$_UserAnswerResource _$$_UserAnswerResourceFromJson(
       photoSrc: json['photo_src'] as String?,
       phone: json['phone'],
       photoSrcSmall: json['photo_src_small'] as String?,
-      isSkillfolioReg: json['is_skillfolio_reg'] as bool,
+      isSkillfolioReg: json['is_skillfolio_reg'] as bool?,
       isOnline: json['is_online'] as bool,
       createdAt: json['created_at'] == null
           ? null
