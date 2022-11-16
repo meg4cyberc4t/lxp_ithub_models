@@ -33,6 +33,8 @@ mixin _$SubjectResource {
   DateTime? get deletePermanentlyAt => throw _privateConstructorUsedError;
   List<BaseGroupResource> get groups => throw _privateConstructorUsedError;
   List<BaseUserResource> get teachers => throw _privateConstructorUsedError;
+  List<SemesterLocalResource> get semesters =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -58,7 +60,8 @@ abstract class $SubjectResourceCopyWith<$Res> {
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers});
+      List<BaseUserResource> teachers,
+      List<SemesterLocalResource> semesters});
 }
 
 /// @nodoc
@@ -85,6 +88,7 @@ class _$SubjectResourceCopyWithImpl<$Res>
     Object? deletePermanentlyAt = freezed,
     Object? groups = freezed,
     Object? teachers = freezed,
+    Object? semesters = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -139,6 +143,10 @@ class _$SubjectResourceCopyWithImpl<$Res>
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
+      semesters: semesters == freezed
+          ? _value.semesters
+          : semesters // ignore: cast_nullable_to_non_nullable
+              as List<SemesterLocalResource>,
     ));
   }
 }
@@ -163,7 +171,8 @@ abstract class _$$_SubjectResourceCopyWith<$Res>
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers});
+      List<BaseUserResource> teachers,
+      List<SemesterLocalResource> semesters});
 }
 
 /// @nodoc
@@ -192,6 +201,7 @@ class __$$_SubjectResourceCopyWithImpl<$Res>
     Object? deletePermanentlyAt = freezed,
     Object? groups = freezed,
     Object? teachers = freezed,
+    Object? semesters = freezed,
   }) {
     return _then(_$_SubjectResource(
       id: id == freezed
@@ -246,6 +256,10 @@ class __$$_SubjectResourceCopyWithImpl<$Res>
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
+      semesters: semesters == freezed
+          ? _value.semesters
+          : semesters // ignore: cast_nullable_to_non_nullable
+              as List<SemesterLocalResource>,
     ));
   }
 }
@@ -266,7 +280,8 @@ class _$_SubjectResource implements _SubjectResource {
       required this.deletedAt,
       required this.deletePermanentlyAt,
       required this.groups,
-      required this.teachers});
+      required this.teachers,
+      required this.semesters});
 
   factory _$_SubjectResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectResourceFromJson(json);
@@ -298,10 +313,12 @@ class _$_SubjectResource implements _SubjectResource {
   final List<BaseGroupResource> groups;
   @override
   final List<BaseUserResource> teachers;
+  @override
+  final List<SemesterLocalResource> semesters;
 
   @override
   String toString() {
-    return 'SubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, groups: $groups, teachers: $teachers)';
+    return 'SubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, groups: $groups, teachers: $teachers, semesters: $semesters)';
   }
 
   @override
@@ -323,7 +340,8 @@ class _$_SubjectResource implements _SubjectResource {
             const DeepCollectionEquality()
                 .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality().equals(other.teachers, teachers));
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.semesters, semesters));
   }
 
   @JsonKey(ignore: true)
@@ -342,7 +360,8 @@ class _$_SubjectResource implements _SubjectResource {
       const DeepCollectionEquality().hash(deletedAt),
       const DeepCollectionEquality().hash(deletePermanentlyAt),
       const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(teachers));
+      const DeepCollectionEquality().hash(teachers),
+      const DeepCollectionEquality().hash(semesters));
 
   @JsonKey(ignore: true)
   @override
@@ -360,19 +379,21 @@ class _$_SubjectResource implements _SubjectResource {
 abstract class _SubjectResource
     implements SubjectResource, BaseSubjectResourceInterface {
   factory _SubjectResource(
-      {required final int id,
-      required final String title,
-      final String code,
-      required final String type,
-      required final String description,
-      required final bool privacy,
-      required final int hidden,
-      required final DateTime? createdAt,
-      required final DateTime? updatedAt,
-      required final DateTime? deletedAt,
-      required final DateTime? deletePermanentlyAt,
-      required final List<BaseGroupResource> groups,
-      required final List<BaseUserResource> teachers}) = _$_SubjectResource;
+          {required final int id,
+          required final String title,
+          final String code,
+          required final String type,
+          required final String description,
+          required final bool privacy,
+          required final int hidden,
+          required final DateTime? createdAt,
+          required final DateTime? updatedAt,
+          required final DateTime? deletedAt,
+          required final DateTime? deletePermanentlyAt,
+          required final List<BaseGroupResource> groups,
+          required final List<BaseUserResource> teachers,
+          required final List<SemesterLocalResource> semesters}) =
+      _$_SubjectResource;
 
   factory _SubjectResource.fromJson(Map<String, dynamic> json) =
       _$_SubjectResource.fromJson;
@@ -403,6 +424,8 @@ abstract class _SubjectResource
   List<BaseGroupResource> get groups;
   @override
   List<BaseUserResource> get teachers;
+  @override
+  List<SemesterLocalResource> get semesters;
   @override
   @JsonKey(ignore: true)
   _$$_SubjectResourceCopyWith<_$_SubjectResource> get copyWith =>

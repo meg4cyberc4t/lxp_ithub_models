@@ -26,7 +26,6 @@ mixin _$SemesterLocalResource {
   String get title => throw _privateConstructorUsedError;
   DateTime get startedAt => throw _privateConstructorUsedError;
   DateTime get finishedAt => throw _privateConstructorUsedError;
-  List<HalvLocalResource> get halves => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -44,8 +43,7 @@ abstract class $SemesterLocalResourceCopyWith<$Res> {
       int isArchived,
       String title,
       DateTime startedAt,
-      DateTime finishedAt,
-      List<HalvLocalResource> halves});
+      DateTime finishedAt});
 }
 
 /// @nodoc
@@ -64,7 +62,6 @@ class _$SemesterLocalResourceCopyWithImpl<$Res>
     Object? title = freezed,
     Object? startedAt = freezed,
     Object? finishedAt = freezed,
-    Object? halves = freezed,
   }) {
     return _then(_value.copyWith(
       id: id == freezed
@@ -87,10 +84,6 @@ class _$SemesterLocalResourceCopyWithImpl<$Res>
           ? _value.finishedAt
           : finishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      halves: halves == freezed
-          ? _value.halves
-          : halves // ignore: cast_nullable_to_non_nullable
-              as List<HalvLocalResource>,
     ));
   }
 }
@@ -107,8 +100,7 @@ abstract class _$$_SemesterLocalResourceCopyWith<$Res>
       int isArchived,
       String title,
       DateTime startedAt,
-      DateTime finishedAt,
-      List<HalvLocalResource> halves});
+      DateTime finishedAt});
 }
 
 /// @nodoc
@@ -130,7 +122,6 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
     Object? title = freezed,
     Object? startedAt = freezed,
     Object? finishedAt = freezed,
-    Object? halves = freezed,
   }) {
     return _then(_$_SemesterLocalResource(
       id: id == freezed
@@ -153,10 +144,6 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
           ? _value.finishedAt
           : finishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      halves: halves == freezed
-          ? _value._halves
-          : halves // ignore: cast_nullable_to_non_nullable
-              as List<HalvLocalResource>,
     ));
   }
 }
@@ -169,9 +156,7 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
       required this.isArchived,
       required this.title,
       required this.startedAt,
-      required this.finishedAt,
-      required final List<HalvLocalResource> halves})
-      : _halves = halves;
+      required this.finishedAt});
 
   factory _$_SemesterLocalResource.fromJson(Map<String, dynamic> json) =>
       _$$_SemesterLocalResourceFromJson(json);
@@ -186,16 +171,10 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
   final DateTime startedAt;
   @override
   final DateTime finishedAt;
-  final List<HalvLocalResource> _halves;
-  @override
-  List<HalvLocalResource> get halves {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_halves);
-  }
 
   @override
   String toString() {
-    return 'SemesterLocalResource(id: $id, isArchived: $isArchived, title: $title, startedAt: $startedAt, finishedAt: $finishedAt, halves: $halves)';
+    return 'SemesterLocalResource(id: $id, isArchived: $isArchived, title: $title, startedAt: $startedAt, finishedAt: $finishedAt)';
   }
 
   @override
@@ -209,8 +188,7 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
             const DeepCollectionEquality().equals(other.title, title) &&
             const DeepCollectionEquality().equals(other.startedAt, startedAt) &&
             const DeepCollectionEquality()
-                .equals(other.finishedAt, finishedAt) &&
-            const DeepCollectionEquality().equals(other._halves, _halves));
+                .equals(other.finishedAt, finishedAt));
   }
 
   @JsonKey(ignore: true)
@@ -221,8 +199,7 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
       const DeepCollectionEquality().hash(isArchived),
       const DeepCollectionEquality().hash(title),
       const DeepCollectionEquality().hash(startedAt),
-      const DeepCollectionEquality().hash(finishedAt),
-      const DeepCollectionEquality().hash(_halves));
+      const DeepCollectionEquality().hash(finishedAt));
 
   @JsonKey(ignore: true)
   @override
@@ -240,13 +217,11 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
 
 abstract class _SemesterLocalResource implements SemesterLocalResource {
   factory _SemesterLocalResource(
-          {required final int id,
-          required final int isArchived,
-          required final String title,
-          required final DateTime startedAt,
-          required final DateTime finishedAt,
-          required final List<HalvLocalResource> halves}) =
-      _$_SemesterLocalResource;
+      {required final int id,
+      required final int isArchived,
+      required final String title,
+      required final DateTime startedAt,
+      required final DateTime finishedAt}) = _$_SemesterLocalResource;
 
   factory _SemesterLocalResource.fromJson(Map<String, dynamic> json) =
       _$_SemesterLocalResource.fromJson;
@@ -261,8 +236,6 @@ abstract class _SemesterLocalResource implements SemesterLocalResource {
   DateTime get startedAt;
   @override
   DateTime get finishedAt;
-  @override
-  List<HalvLocalResource> get halves;
   @override
   @JsonKey(ignore: true)
   _$$_SemesterLocalResourceCopyWith<_$_SemesterLocalResource> get copyWith =>

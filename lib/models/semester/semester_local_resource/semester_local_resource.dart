@@ -12,7 +12,6 @@ class SemesterLocalResource with _$SemesterLocalResource {
     required String title,
     required DateTime startedAt,
     required DateTime finishedAt,
-    required List<HalvLocalResource> halves,
   }) = _SemesterLocalResource;
 
   factory SemesterLocalResource.fromJson(Map<String, dynamic> json) =>

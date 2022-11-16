@@ -14,9 +14,6 @@ _$_SemesterLocalResource _$$_SemesterLocalResourceFromJson(
       title: json['title'] as String,
       startedAt: DateTime.parse(json['started_at'] as String),
       finishedAt: DateTime.parse(json['finished_at'] as String),
-      halves: (json['halves'] as List<dynamic>)
-          .map((e) => HalvLocalResource.fromJson(e as Map<String, dynamic>))
-          .toList(),
     );
 
 Map<String, dynamic> _$$_SemesterLocalResourceToJson(
@@ -27,5 +24,4 @@ Map<String, dynamic> _$$_SemesterLocalResourceToJson(
       'title': instance.title,
       'started_at': instance.startedAt.toIso8601String(),
       'finished_at': instance.finishedAt.toIso8601String(),
-      'halves': instance.halves,
     };
