@@ -28,15 +28,17 @@ mixin _$AuthUserResource {
   String? get photoSrc => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
-  bool get isSkillfolioReg => throw _privateConstructorUsedError;
-  bool get isOnline => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
   List<BaseGroupResource> get groups => throw _privateConstructorUsedError;
   List<BaseUserResource> get children => throw _privateConstructorUsedError;
+  bool get isCurator => throw _privateConstructorUsedError;
+  bool get isDistant => throw _privateConstructorUsedError;
   bool get isMember => throw _privateConstructorUsedError;
+  bool get isOnline => throw _privateConstructorUsedError;
   bool get isModerator => throw _privateConstructorUsedError;
   bool get isParent => throw _privateConstructorUsedError;
+  bool get isSkillfolioReg => throw _privateConstructorUsedError;
   int get groupsCount => throw _privateConstructorUsedError;
   int get subjectsCount => throw _privateConstructorUsedError;
 
@@ -60,15 +62,17 @@ abstract class $AuthUserResourceCopyWith<$Res> {
       String? photoSrc,
       dynamic phone,
       String photoSrcSmall,
-      bool isSkillfolioReg,
-      bool isOnline,
       DateTime? createdAt,
       DateTime? updatedAt,
       List<BaseGroupResource> groups,
       List<BaseUserResource> children,
+      bool isCurator,
+      bool isDistant,
       bool isMember,
+      bool isOnline,
       bool isModerator,
       bool isParent,
+      bool isSkillfolioReg,
       int groupsCount,
       int subjectsCount});
 }
@@ -92,15 +96,17 @@ class _$AuthUserResourceCopyWithImpl<$Res>
     Object? photoSrc = freezed,
     Object? phone = freezed,
     Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? groups = freezed,
     Object? children = freezed,
+    Object? isCurator = freezed,
+    Object? isDistant = freezed,
     Object? isMember = freezed,
+    Object? isOnline = freezed,
     Object? isModerator = freezed,
     Object? isParent = freezed,
+    Object? isSkillfolioReg = freezed,
     Object? groupsCount = freezed,
     Object? subjectsCount = freezed,
   }) {
@@ -137,14 +143,6 @@ class _$AuthUserResourceCopyWithImpl<$Res>
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
-          ? _value.isSkillfolioReg
-          : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isOnline: isOnline == freezed
-          ? _value.isOnline
-          : isOnline // ignore: cast_nullable_to_non_nullable
-              as bool,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -161,9 +159,21 @@ class _$AuthUserResourceCopyWithImpl<$Res>
           ? _value.children
           : children // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
+      isCurator: isCurator == freezed
+          ? _value.isCurator
+          : isCurator // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isDistant: isDistant == freezed
+          ? _value.isDistant
+          : isDistant // ignore: cast_nullable_to_non_nullable
+              as bool,
       isMember: isMember == freezed
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isOnline: isOnline == freezed
+          ? _value.isOnline
+          : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
       isModerator: isModerator == freezed
           ? _value.isModerator
@@ -172,6 +182,10 @@ class _$AuthUserResourceCopyWithImpl<$Res>
       isParent: isParent == freezed
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSkillfolioReg: isSkillfolioReg == freezed
+          ? _value.isSkillfolioReg
+          : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
       groupsCount: groupsCount == freezed
           ? _value.groupsCount
@@ -201,15 +215,17 @@ abstract class _$$_AuthUserResourceCopyWith<$Res>
       String? photoSrc,
       dynamic phone,
       String photoSrcSmall,
-      bool isSkillfolioReg,
-      bool isOnline,
       DateTime? createdAt,
       DateTime? updatedAt,
       List<BaseGroupResource> groups,
       List<BaseUserResource> children,
+      bool isCurator,
+      bool isDistant,
       bool isMember,
+      bool isOnline,
       bool isModerator,
       bool isParent,
+      bool isSkillfolioReg,
       int groupsCount,
       int subjectsCount});
 }
@@ -235,15 +251,17 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
     Object? photoSrc = freezed,
     Object? phone = freezed,
     Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? groups = freezed,
     Object? children = freezed,
+    Object? isCurator = freezed,
+    Object? isDistant = freezed,
     Object? isMember = freezed,
+    Object? isOnline = freezed,
     Object? isModerator = freezed,
     Object? isParent = freezed,
+    Object? isSkillfolioReg = freezed,
     Object? groupsCount = freezed,
     Object? subjectsCount = freezed,
   }) {
@@ -280,14 +298,6 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
-          ? _value.isSkillfolioReg
-          : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
-              as bool,
-      isOnline: isOnline == freezed
-          ? _value.isOnline
-          : isOnline // ignore: cast_nullable_to_non_nullable
-              as bool,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -304,9 +314,21 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
           ? _value.children
           : children // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
+      isCurator: isCurator == freezed
+          ? _value.isCurator
+          : isCurator // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isDistant: isDistant == freezed
+          ? _value.isDistant
+          : isDistant // ignore: cast_nullable_to_non_nullable
+              as bool,
       isMember: isMember == freezed
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isOnline: isOnline == freezed
+          ? _value.isOnline
+          : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
       isModerator: isModerator == freezed
           ? _value.isModerator
@@ -315,6 +337,10 @@ class __$$_AuthUserResourceCopyWithImpl<$Res>
       isParent: isParent == freezed
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSkillfolioReg: isSkillfolioReg == freezed
+          ? _value.isSkillfolioReg
+          : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
       groupsCount: groupsCount == freezed
           ? _value.groupsCount
@@ -340,15 +366,17 @@ class _$_AuthUserResource implements _AuthUserResource {
       required this.photoSrc,
       required this.phone,
       required this.photoSrcSmall,
-      required this.isSkillfolioReg,
-      required this.isOnline,
       required this.createdAt,
       required this.updatedAt,
       required this.groups,
       required this.children,
+      required this.isCurator,
+      required this.isDistant,
       required this.isMember,
+      required this.isOnline,
       required this.isModerator,
       required this.isParent,
+      required this.isSkillfolioReg,
       required this.groupsCount,
       required this.subjectsCount});
 
@@ -372,10 +400,6 @@ class _$_AuthUserResource implements _AuthUserResource {
   @override
   final String photoSrcSmall;
   @override
-  final bool isSkillfolioReg;
-  @override
-  final bool isOnline;
-  @override
   final DateTime? createdAt;
   @override
   final DateTime? updatedAt;
@@ -384,11 +408,19 @@ class _$_AuthUserResource implements _AuthUserResource {
   @override
   final List<BaseUserResource> children;
   @override
+  final bool isCurator;
+  @override
+  final bool isDistant;
+  @override
   final bool isMember;
+  @override
+  final bool isOnline;
   @override
   final bool isModerator;
   @override
   final bool isParent;
+  @override
+  final bool isSkillfolioReg;
   @override
   final int groupsCount;
   @override
@@ -396,7 +428,7 @@ class _$_AuthUserResource implements _AuthUserResource {
 
   @override
   String toString() {
-    return 'AuthUserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, phone: $phone, photoSrcSmall: $photoSrcSmall, isSkillfolioReg: $isSkillfolioReg, isOnline: $isOnline, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups, children: $children, isMember: $isMember, isModerator: $isModerator, isParent: $isParent, groupsCount: $groupsCount, subjectsCount: $subjectsCount)';
+    return 'AuthUserResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, phone: $phone, photoSrcSmall: $photoSrcSmall, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups, children: $children, isCurator: $isCurator, isDistant: $isDistant, isMember: $isMember, isOnline: $isOnline, isModerator: $isModerator, isParent: $isParent, isSkillfolioReg: $isSkillfolioReg, groupsCount: $groupsCount, subjectsCount: $subjectsCount)';
   }
 
   @override
@@ -414,17 +446,19 @@ class _$_AuthUserResource implements _AuthUserResource {
             const DeepCollectionEquality().equals(other.phone, phone) &&
             const DeepCollectionEquality()
                 .equals(other.photoSrcSmall, photoSrcSmall) &&
-            const DeepCollectionEquality()
-                .equals(other.isSkillfolioReg, isSkillfolioReg) &&
-            const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.children, children) &&
+            const DeepCollectionEquality().equals(other.isCurator, isCurator) &&
+            const DeepCollectionEquality().equals(other.isDistant, isDistant) &&
             const DeepCollectionEquality().equals(other.isMember, isMember) &&
+            const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
             const DeepCollectionEquality()
                 .equals(other.isModerator, isModerator) &&
             const DeepCollectionEquality().equals(other.isParent, isParent) &&
+            const DeepCollectionEquality()
+                .equals(other.isSkillfolioReg, isSkillfolioReg) &&
             const DeepCollectionEquality()
                 .equals(other.groupsCount, groupsCount) &&
             const DeepCollectionEquality()
@@ -443,15 +477,17 @@ class _$_AuthUserResource implements _AuthUserResource {
         const DeepCollectionEquality().hash(photoSrc),
         const DeepCollectionEquality().hash(phone),
         const DeepCollectionEquality().hash(photoSrcSmall),
-        const DeepCollectionEquality().hash(isSkillfolioReg),
-        const DeepCollectionEquality().hash(isOnline),
         const DeepCollectionEquality().hash(createdAt),
         const DeepCollectionEquality().hash(updatedAt),
         const DeepCollectionEquality().hash(groups),
         const DeepCollectionEquality().hash(children),
+        const DeepCollectionEquality().hash(isCurator),
+        const DeepCollectionEquality().hash(isDistant),
         const DeepCollectionEquality().hash(isMember),
+        const DeepCollectionEquality().hash(isOnline),
         const DeepCollectionEquality().hash(isModerator),
         const DeepCollectionEquality().hash(isParent),
+        const DeepCollectionEquality().hash(isSkillfolioReg),
         const DeepCollectionEquality().hash(groupsCount),
         const DeepCollectionEquality().hash(subjectsCount)
       ]);
@@ -484,15 +520,17 @@ abstract class _AuthUserResource
       required final String? photoSrc,
       required final dynamic phone,
       required final String photoSrcSmall,
-      required final bool isSkillfolioReg,
-      required final bool isOnline,
       required final DateTime? createdAt,
       required final DateTime? updatedAt,
       required final List<BaseGroupResource> groups,
       required final List<BaseUserResource> children,
+      required final bool isCurator,
+      required final bool isDistant,
       required final bool isMember,
+      required final bool isOnline,
       required final bool isModerator,
       required final bool isParent,
+      required final bool isSkillfolioReg,
       required final int groupsCount,
       required final int subjectsCount}) = _$_AuthUserResource;
 
@@ -516,10 +554,6 @@ abstract class _AuthUserResource
   @override
   String get photoSrcSmall;
   @override
-  bool get isSkillfolioReg;
-  @override
-  bool get isOnline;
-  @override
   DateTime? get createdAt;
   @override
   DateTime? get updatedAt;
@@ -528,11 +562,19 @@ abstract class _AuthUserResource
   @override
   List<BaseUserResource> get children;
   @override
+  bool get isCurator;
+  @override
+  bool get isDistant;
+  @override
   bool get isMember;
+  @override
+  bool get isOnline;
   @override
   bool get isModerator;
   @override
   bool get isParent;
+  @override
+  bool get isSkillfolioReg;
   @override
   int get groupsCount;
   @override
