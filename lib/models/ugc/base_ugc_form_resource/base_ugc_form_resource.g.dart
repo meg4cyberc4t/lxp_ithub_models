@@ -13,7 +13,7 @@ _$_BaseUgcFormResource _$$_BaseUgcFormResourceFromJson(
       patternId: json['pattern_id'] as int,
       number: json['number'] as int,
       type: json['type'] as int?,
-      required: json['required'] as bool,
+      required: json['required'] as int,
       title: json['title'] as String,
       defaultField: json['default'] as String,
       link: json['link'] as String,

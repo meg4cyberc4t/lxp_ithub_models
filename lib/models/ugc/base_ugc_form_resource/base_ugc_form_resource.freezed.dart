@@ -24,7 +24,7 @@ mixin _$BaseUgcFormResource {
   int get patternId => throw _privateConstructorUsedError;
   int get number => throw _privateConstructorUsedError;
   int? get type => throw _privateConstructorUsedError;
-  bool get required => throw _privateConstructorUsedError;
+  int get required => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   @JsonKey(name: "default")
   String get defaultField => throw _privateConstructorUsedError;
@@ -51,7 +51,7 @@ abstract class $BaseUgcFormResourceCopyWith<$Res> {
       int patternId,
       int number,
       int? type,
-      bool required,
+      int required,
       String title,
       @JsonKey(name: "default") String defaultField,
       String link,
@@ -105,7 +105,7 @@ class _$BaseUgcFormResourceCopyWithImpl<$Res>
       required: required == freezed
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as int,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -150,7 +150,7 @@ abstract class _$$_BaseUgcFormResourceCopyWith<$Res>
       int patternId,
       int number,
       int? type,
-      bool required,
+      int required,
       String title,
       @JsonKey(name: "default") String defaultField,
       String link,
@@ -206,7 +206,7 @@ class __$$_BaseUgcFormResourceCopyWithImpl<$Res>
       required: required == freezed
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as int,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -268,7 +268,7 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
   @override
   final int? type;
   @override
-  final bool required;
+  final int required;
   @override
   final String title;
   @override
@@ -347,7 +347,7 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
       required final int patternId,
       required final int number,
       required final int? type,
-      required final bool required,
+      required final int required,
       required final String title,
       @JsonKey(name: "default") required final String defaultField,
       required final String link,
@@ -368,7 +368,7 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
   @override
   int? get type;
   @override
-  bool get required;
+  int get required;
   @override
   String get title;
   @override

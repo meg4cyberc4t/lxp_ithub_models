@@ -14,7 +14,7 @@ class BaseUgcFormResource with _$BaseUgcFormResource {
     required int patternId,
     required int number,
     required int? type,
-    required bool required,
+    required int required,
     required String title,
     @JsonKey(name: "default") required String defaultField,
     required String link,
