@@ -17,7 +17,7 @@ class BaseUgcFormResource with _$BaseUgcFormResource {
     required int required,
     required String title,
     @JsonKey(name: "default") required String defaultField,
-    required String link,
+    required String? link,
     required List<BaseLinkResource> links,
     required List<BaseDocumentResource> documents,
     required List<BaseVideoResource> videos,

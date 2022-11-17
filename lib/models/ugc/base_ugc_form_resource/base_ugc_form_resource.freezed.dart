@@ -28,7 +28,7 @@ mixin _$BaseUgcFormResource {
   String get title => throw _privateConstructorUsedError;
   @JsonKey(name: "default")
   String get defaultField => throw _privateConstructorUsedError;
-  String get link => throw _privateConstructorUsedError;
+  String? get link => throw _privateConstructorUsedError;
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
   List<BaseDocumentResource> get documents =>
       throw _privateConstructorUsedError;
@@ -54,7 +54,7 @@ abstract class $BaseUgcFormResourceCopyWith<$Res> {
       int required,
       String title,
       @JsonKey(name: "default") String defaultField,
-      String link,
+      String? link,
       List<BaseLinkResource> links,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
@@ -117,7 +117,7 @@ class _$BaseUgcFormResourceCopyWithImpl<$Res>
       link: link == freezed
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
@@ -153,7 +153,7 @@ abstract class _$$_BaseUgcFormResourceCopyWith<$Res>
       int required,
       String title,
       @JsonKey(name: "default") String defaultField,
-      String link,
+      String? link,
       List<BaseLinkResource> links,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
@@ -218,7 +218,7 @@ class __$$_BaseUgcFormResourceCopyWithImpl<$Res>
       link: link == freezed
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
@@ -275,7 +275,7 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
   @JsonKey(name: "default")
   final String defaultField;
   @override
-  final String link;
+  final String? link;
   @override
   final List<BaseLinkResource> links;
   @override
@@ -350,7 +350,7 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
       required final int required,
       required final String title,
       @JsonKey(name: "default") required final String defaultField,
-      required final String link,
+      required final String? link,
       required final List<BaseLinkResource> links,
       required final List<BaseDocumentResource> documents,
       required final List<BaseVideoResource> videos,
@@ -375,7 +375,7 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
   @JsonKey(name: "default")
   String get defaultField;
   @override
-  String get link;
+  String? get link;
   @override
   List<BaseLinkResource> get links;
   @override
