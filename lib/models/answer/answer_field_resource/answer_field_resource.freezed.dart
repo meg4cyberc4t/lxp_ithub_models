@@ -30,7 +30,7 @@ mixin _$AnswerFieldResource {
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
   int get answerId => throw _privateConstructorUsedError;
-  int get formId => throw _privateConstructorUsedError;
+  int? get formId => throw _privateConstructorUsedError;
   String get value => throw _privateConstructorUsedError;
   String get formTitle => throw _privateConstructorUsedError;
   String get formLink => throw _privateConstructorUsedError;
@@ -55,7 +55,7 @@ abstract class $AnswerFieldResourceCopyWith<$Res> {
       List<BaseLinkResource> links,
       int id,
       int answerId,
-      int formId,
+      int? formId,
       String value,
       String formTitle,
       String formLink});
@@ -123,7 +123,7 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
       formId: formId == freezed
           ? _value.formId
           : formId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       value: value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -163,7 +163,7 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
       List<BaseLinkResource> links,
       int id,
       int answerId,
-      int formId,
+      int? formId,
       String value,
       String formTitle,
       String formLink});
@@ -234,7 +234,7 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
       formId: formId == freezed
           ? _value.formId
           : formId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       value: value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -288,7 +288,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
   @override
   final int answerId;
   @override
-  final int formId;
+  final int? formId;
   @override
   final String value;
   @override
@@ -361,7 +361,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
       required final List<BaseLinkResource> links,
       required final int id,
       required final int answerId,
-      required final int formId,
+      required final int? formId,
       required final String value,
       required final String formTitle,
       required final String formLink}) = _$_AnswerFieldResource;
@@ -386,7 +386,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
   @override
   int get answerId;
   @override
-  int get formId;
+  int? get formId;
   @override
   String get value;
   @override

@@ -16,7 +16,7 @@ class AnswerFieldResource with _$AnswerFieldResource {
     required List<BaseLinkResource> links,
     required int id,
     required int answerId,
-    required int formId,
+    required int? formId,
     required String value,
     required String formTitle,
     required String formLink,

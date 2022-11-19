@@ -27,7 +27,7 @@ _$_AnswerFieldResource _$$_AnswerFieldResourceFromJson(
           .toList(),
       id: json['id'] as int,
       answerId: json['answer_id'] as int,
-      formId: json['form_id'] as int,
+      formId: json['form_id'] as int?,
       value: json['value'] as String,
       formTitle: json['form_title'] as String,
       formLink: json['form_link'] as String,
