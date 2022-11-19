@@ -13,10 +13,10 @@ class CommentAnswerResource with _$CommentAnswerResource {
     required List<BasePhotoResource> photos,
     required List<BaseVideoResource> videos,
     required int id,
-    required int UgcAnswerId,
+    required int ugcAnswerId,
     required int userId,
     required String text,
-    required int UgcFieldId,
+    required int ugcFieldId,
     required int timestamp,
   }) = _CommentAnswerResource;
 

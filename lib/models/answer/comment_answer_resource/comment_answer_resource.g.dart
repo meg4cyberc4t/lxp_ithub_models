@@ -23,10 +23,10 @@ _$_CommentAnswerResource _$$_CommentAnswerResourceFromJson(
           .map((e) => BaseVideoResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       id: json['id'] as int,
-      UgcAnswerId: json['ugc_answer_id'] as int,
+      ugcAnswerId: json['ugc_answer_id'] as int,
       userId: json['user_id'] as int,
       text: json['text'] as String,
-      UgcFieldId: json['ugc_field_id'] as int,
+      ugcFieldId: json['ugc_field_id'] as int,
       timestamp: json['timestamp'] as int,
     );
 
@@ -39,9 +39,9 @@ Map<String, dynamic> _$$_CommentAnswerResourceToJson(
       'photos': instance.photos,
       'videos': instance.videos,
       'id': instance.id,
-      'ugc_answer_id': instance.UgcAnswerId,
+      'ugc_answer_id': instance.ugcAnswerId,
       'user_id': instance.userId,
       'text': instance.text,
-      'ugc_field_id': instance.UgcFieldId,
+      'ugc_field_id': instance.ugcFieldId,
       'timestamp': instance.timestamp,
     };

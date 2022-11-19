@@ -28,10 +28,10 @@ mixin _$CommentAnswerResource {
   List<BasePhotoResource> get photos => throw _privateConstructorUsedError;
   List<BaseVideoResource> get videos => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
-  int get UgcAnswerId => throw _privateConstructorUsedError;
+  int get ugcAnswerId => throw _privateConstructorUsedError;
   int get userId => throw _privateConstructorUsedError;
   String get text => throw _privateConstructorUsedError;
-  int get UgcFieldId => throw _privateConstructorUsedError;
+  int get ugcFieldId => throw _privateConstructorUsedError;
   int get timestamp => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -52,10 +52,10 @@ abstract class $CommentAnswerResourceCopyWith<$Res> {
       List<BasePhotoResource> photos,
       List<BaseVideoResource> videos,
       int id,
-      int UgcAnswerId,
+      int ugcAnswerId,
       int userId,
       String text,
-      int UgcFieldId,
+      int ugcFieldId,
       int timestamp});
 
   $BaseUserResourceCopyWith<$Res> get user;
@@ -78,10 +78,10 @@ class _$CommentAnswerResourceCopyWithImpl<$Res>
     Object? photos = freezed,
     Object? videos = freezed,
     Object? id = freezed,
-    Object? UgcAnswerId = freezed,
+    Object? ugcAnswerId = freezed,
     Object? userId = freezed,
     Object? text = freezed,
-    Object? UgcFieldId = freezed,
+    Object? ugcFieldId = freezed,
     Object? timestamp = freezed,
   }) {
     return _then(_value.copyWith(
@@ -109,9 +109,9 @@ class _$CommentAnswerResourceCopyWithImpl<$Res>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      UgcAnswerId: UgcAnswerId == freezed
-          ? _value.UgcAnswerId
-          : UgcAnswerId // ignore: cast_nullable_to_non_nullable
+      ugcAnswerId: ugcAnswerId == freezed
+          ? _value.ugcAnswerId
+          : ugcAnswerId // ignore: cast_nullable_to_non_nullable
               as int,
       userId: userId == freezed
           ? _value.userId
@@ -121,9 +121,9 @@ class _$CommentAnswerResourceCopyWithImpl<$Res>
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      UgcFieldId: UgcFieldId == freezed
-          ? _value.UgcFieldId
-          : UgcFieldId // ignore: cast_nullable_to_non_nullable
+      ugcFieldId: ugcFieldId == freezed
+          ? _value.ugcFieldId
+          : ugcFieldId // ignore: cast_nullable_to_non_nullable
               as int,
       timestamp: timestamp == freezed
           ? _value.timestamp
@@ -154,10 +154,10 @@ abstract class _$$_CommentAnswerResourceCopyWith<$Res>
       List<BasePhotoResource> photos,
       List<BaseVideoResource> videos,
       int id,
-      int UgcAnswerId,
+      int ugcAnswerId,
       int userId,
       String text,
-      int UgcFieldId,
+      int ugcFieldId,
       int timestamp});
 
   @override
@@ -184,10 +184,10 @@ class __$$_CommentAnswerResourceCopyWithImpl<$Res>
     Object? photos = freezed,
     Object? videos = freezed,
     Object? id = freezed,
-    Object? UgcAnswerId = freezed,
+    Object? ugcAnswerId = freezed,
     Object? userId = freezed,
     Object? text = freezed,
-    Object? UgcFieldId = freezed,
+    Object? ugcFieldId = freezed,
     Object? timestamp = freezed,
   }) {
     return _then(_$_CommentAnswerResource(
@@ -215,9 +215,9 @@ class __$$_CommentAnswerResourceCopyWithImpl<$Res>
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      UgcAnswerId: UgcAnswerId == freezed
-          ? _value.UgcAnswerId
-          : UgcAnswerId // ignore: cast_nullable_to_non_nullable
+      ugcAnswerId: ugcAnswerId == freezed
+          ? _value.ugcAnswerId
+          : ugcAnswerId // ignore: cast_nullable_to_non_nullable
               as int,
       userId: userId == freezed
           ? _value.userId
@@ -227,9 +227,9 @@ class __$$_CommentAnswerResourceCopyWithImpl<$Res>
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      UgcFieldId: UgcFieldId == freezed
-          ? _value.UgcFieldId
-          : UgcFieldId // ignore: cast_nullable_to_non_nullable
+      ugcFieldId: ugcFieldId == freezed
+          ? _value.ugcFieldId
+          : ugcFieldId // ignore: cast_nullable_to_non_nullable
               as int,
       timestamp: timestamp == freezed
           ? _value.timestamp
@@ -249,10 +249,10 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
       required final List<BasePhotoResource> photos,
       required final List<BaseVideoResource> videos,
       required this.id,
-      required this.UgcAnswerId,
+      required this.ugcAnswerId,
       required this.userId,
       required this.text,
-      required this.UgcFieldId,
+      required this.ugcFieldId,
       required this.timestamp})
       : _documents = documents,
         _links = links,
@@ -295,19 +295,19 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   @override
   final int id;
   @override
-  final int UgcAnswerId;
+  final int ugcAnswerId;
   @override
   final int userId;
   @override
   final String text;
   @override
-  final int UgcFieldId;
+  final int ugcFieldId;
   @override
   final int timestamp;
 
   @override
   String toString() {
-    return 'CommentAnswerResource(user: $user, documents: $documents, links: $links, photos: $photos, videos: $videos, id: $id, UgcAnswerId: $UgcAnswerId, userId: $userId, text: $text, UgcFieldId: $UgcFieldId, timestamp: $timestamp)';
+    return 'CommentAnswerResource(user: $user, documents: $documents, links: $links, photos: $photos, videos: $videos, id: $id, ugcAnswerId: $ugcAnswerId, userId: $userId, text: $text, ugcFieldId: $ugcFieldId, timestamp: $timestamp)';
   }
 
   @override
@@ -323,11 +323,11 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
             const DeepCollectionEquality().equals(other._videos, _videos) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality()
-                .equals(other.UgcAnswerId, UgcAnswerId) &&
+                .equals(other.ugcAnswerId, ugcAnswerId) &&
             const DeepCollectionEquality().equals(other.userId, userId) &&
             const DeepCollectionEquality().equals(other.text, text) &&
             const DeepCollectionEquality()
-                .equals(other.UgcFieldId, UgcFieldId) &&
+                .equals(other.ugcFieldId, ugcFieldId) &&
             const DeepCollectionEquality().equals(other.timestamp, timestamp));
   }
 
@@ -341,10 +341,10 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
       const DeepCollectionEquality().hash(_photos),
       const DeepCollectionEquality().hash(_videos),
       const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(UgcAnswerId),
+      const DeepCollectionEquality().hash(ugcAnswerId),
       const DeepCollectionEquality().hash(userId),
       const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(UgcFieldId),
+      const DeepCollectionEquality().hash(ugcFieldId),
       const DeepCollectionEquality().hash(timestamp));
 
   @JsonKey(ignore: true)
@@ -369,10 +369,10 @@ abstract class _CommentAnswerResource implements CommentAnswerResource {
       required final List<BasePhotoResource> photos,
       required final List<BaseVideoResource> videos,
       required final int id,
-      required final int UgcAnswerId,
+      required final int ugcAnswerId,
       required final int userId,
       required final String text,
-      required final int UgcFieldId,
+      required final int ugcFieldId,
       required final int timestamp}) = _$_CommentAnswerResource;
 
   factory _CommentAnswerResource.fromJson(Map<String, dynamic> json) =
@@ -391,13 +391,13 @@ abstract class _CommentAnswerResource implements CommentAnswerResource {
   @override
   int get id;
   @override
-  int get UgcAnswerId;
+  int get ugcAnswerId;
   @override
   int get userId;
   @override
   String get text;
   @override
-  int get UgcFieldId;
+  int get ugcFieldId;
   @override
   int get timestamp;
   @override
