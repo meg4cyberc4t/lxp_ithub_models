@@ -11,7 +11,7 @@ class AnswerExpertiseResource with _$AnswerExpertiseResource {
     required List<BaseDocumentResource> documents,
     required List<BaseLinkResource> links,
     required List<BasePhotoResource> photos,
-    required List<BaseVideoResource> vieos,
+    required List<BaseVideoResource> videos,
     required int id,
     required String text,
     required int authorId,

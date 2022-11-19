@@ -19,7 +19,7 @@ _$_AnswerExpertiseResource _$$_AnswerExpertiseResourceFromJson(
       photos: (json['photos'] as List<dynamic>)
           .map((e) => BasePhotoResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      vieos: (json['vieos'] as List<dynamic>)
+      videos: (json['videos'] as List<dynamic>)
           .map((e) => BaseVideoResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       id: json['id'] as int,
@@ -36,7 +36,7 @@ Map<String, dynamic> _$$_AnswerExpertiseResourceToJson(
       'documents': instance.documents,
       'links': instance.links,
       'photos': instance.photos,
-      'vieos': instance.vieos,
+      'videos': instance.videos,
       'id': instance.id,
       'text': instance.text,
       'author_id': instance.authorId,

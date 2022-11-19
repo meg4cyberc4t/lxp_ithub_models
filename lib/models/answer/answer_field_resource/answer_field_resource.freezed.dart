@@ -25,7 +25,7 @@ mixin _$AnswerFieldResource {
       throw _privateConstructorUsedError;
   List<BaseDocumentResource> get documents =>
       throw _privateConstructorUsedError;
-  List<BaseVideoResource> get viceos => throw _privateConstructorUsedError;
+  List<BaseVideoResource> get videos => throw _privateConstructorUsedError;
   List<BasePhotoResource> get photos => throw _privateConstructorUsedError;
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
@@ -50,7 +50,7 @@ abstract class $AnswerFieldResourceCopyWith<$Res> {
       {BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
-      List<BaseVideoResource> viceos,
+      List<BaseVideoResource> videos,
       List<BasePhotoResource> photos,
       List<BaseLinkResource> links,
       int id,
@@ -77,7 +77,7 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
     Object? form = freezed,
     Object? comments = freezed,
     Object? documents = freezed,
-    Object? viceos = freezed,
+    Object? videos = freezed,
     Object? photos = freezed,
     Object? links = freezed,
     Object? id = freezed,
@@ -100,9 +100,9 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      viceos: viceos == freezed
-          ? _value.viceos
-          : viceos // ignore: cast_nullable_to_non_nullable
+      videos: videos == freezed
+          ? _value.videos
+          : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       photos: photos == freezed
           ? _value.photos
@@ -158,7 +158,7 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
       {BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
-      List<BaseVideoResource> viceos,
+      List<BaseVideoResource> videos,
       List<BasePhotoResource> photos,
       List<BaseLinkResource> links,
       int id,
@@ -188,7 +188,7 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
     Object? form = freezed,
     Object? comments = freezed,
     Object? documents = freezed,
-    Object? viceos = freezed,
+    Object? videos = freezed,
     Object? photos = freezed,
     Object? links = freezed,
     Object? id = freezed,
@@ -211,9 +211,9 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      viceos: viceos == freezed
-          ? _value.viceos
-          : viceos // ignore: cast_nullable_to_non_nullable
+      videos: videos == freezed
+          ? _value.videos
+          : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       photos: photos == freezed
           ? _value.photos
@@ -258,7 +258,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
       {required this.form,
       required this.comments,
       required this.documents,
-      required this.viceos,
+      required this.videos,
       required this.photos,
       required this.links,
       required this.id,
@@ -278,7 +278,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
   @override
   final List<BaseDocumentResource> documents;
   @override
-  final List<BaseVideoResource> viceos;
+  final List<BaseVideoResource> videos;
   @override
   final List<BasePhotoResource> photos;
   @override
@@ -298,7 +298,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
 
   @override
   String toString() {
-    return 'AnswerFieldResource(form: $form, comments: $comments, documents: $documents, viceos: $viceos, photos: $photos, links: $links, id: $id, answerId: $answerId, formId: $formId, value: $value, formTitle: $formTitle, formLink: $formLink)';
+    return 'AnswerFieldResource(form: $form, comments: $comments, documents: $documents, videos: $videos, photos: $photos, links: $links, id: $id, answerId: $answerId, formId: $formId, value: $value, formTitle: $formTitle, formLink: $formLink)';
   }
 
   @override
@@ -309,7 +309,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
             const DeepCollectionEquality().equals(other.form, form) &&
             const DeepCollectionEquality().equals(other.comments, comments) &&
             const DeepCollectionEquality().equals(other.documents, documents) &&
-            const DeepCollectionEquality().equals(other.viceos, viceos) &&
+            const DeepCollectionEquality().equals(other.videos, videos) &&
             const DeepCollectionEquality().equals(other.photos, photos) &&
             const DeepCollectionEquality().equals(other.links, links) &&
             const DeepCollectionEquality().equals(other.id, id) &&
@@ -327,7 +327,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
       const DeepCollectionEquality().hash(form),
       const DeepCollectionEquality().hash(comments),
       const DeepCollectionEquality().hash(documents),
-      const DeepCollectionEquality().hash(viceos),
+      const DeepCollectionEquality().hash(videos),
       const DeepCollectionEquality().hash(photos),
       const DeepCollectionEquality().hash(links),
       const DeepCollectionEquality().hash(id),
@@ -356,7 +356,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
       {required final BaseUgcFormResource form,
       required final List<CommentAnswerResource> comments,
       required final List<BaseDocumentResource> documents,
-      required final List<BaseVideoResource> viceos,
+      required final List<BaseVideoResource> videos,
       required final List<BasePhotoResource> photos,
       required final List<BaseLinkResource> links,
       required final int id,
@@ -376,7 +376,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
   @override
   List<BaseDocumentResource> get documents;
   @override
-  List<BaseVideoResource> get viceos;
+  List<BaseVideoResource> get videos;
   @override
   List<BasePhotoResource> get photos;
   @override

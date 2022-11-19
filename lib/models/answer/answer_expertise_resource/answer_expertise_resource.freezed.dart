@@ -26,7 +26,7 @@ mixin _$AnswerExpertiseResource {
       throw _privateConstructorUsedError;
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
   List<BasePhotoResource> get photos => throw _privateConstructorUsedError;
-  List<BaseVideoResource> get vieos => throw _privateConstructorUsedError;
+  List<BaseVideoResource> get videos => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
   String get text => throw _privateConstructorUsedError;
   int get authorId => throw _privateConstructorUsedError;
@@ -49,7 +49,7 @@ abstract class $AnswerExpertiseResourceCopyWith<$Res> {
       List<BaseDocumentResource> documents,
       List<BaseLinkResource> links,
       List<BasePhotoResource> photos,
-      List<BaseVideoResource> vieos,
+      List<BaseVideoResource> videos,
       int id,
       String text,
       int authorId,
@@ -74,7 +74,7 @@ class _$AnswerExpertiseResourceCopyWithImpl<$Res>
     Object? documents = freezed,
     Object? links = freezed,
     Object? photos = freezed,
-    Object? vieos = freezed,
+    Object? videos = freezed,
     Object? id = freezed,
     Object? text = freezed,
     Object? authorId = freezed,
@@ -98,9 +98,9 @@ class _$AnswerExpertiseResourceCopyWithImpl<$Res>
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      vieos: vieos == freezed
-          ? _value.vieos
-          : vieos // ignore: cast_nullable_to_non_nullable
+      videos: videos == freezed
+          ? _value.videos
+          : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       id: id == freezed
           ? _value.id
@@ -145,7 +145,7 @@ abstract class _$$_AnswerExpertiseResourceCopyWith<$Res>
       List<BaseDocumentResource> documents,
       List<BaseLinkResource> links,
       List<BasePhotoResource> photos,
-      List<BaseVideoResource> vieos,
+      List<BaseVideoResource> videos,
       int id,
       String text,
       int authorId,
@@ -174,7 +174,7 @@ class __$$_AnswerExpertiseResourceCopyWithImpl<$Res>
     Object? documents = freezed,
     Object? links = freezed,
     Object? photos = freezed,
-    Object? vieos = freezed,
+    Object? videos = freezed,
     Object? id = freezed,
     Object? text = freezed,
     Object? authorId = freezed,
@@ -198,9 +198,9 @@ class __$$_AnswerExpertiseResourceCopyWithImpl<$Res>
           ? _value._photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      vieos: vieos == freezed
-          ? _value._vieos
-          : vieos // ignore: cast_nullable_to_non_nullable
+      videos: videos == freezed
+          ? _value._videos
+          : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
       id: id == freezed
           ? _value.id
@@ -234,7 +234,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
       required final List<BaseDocumentResource> documents,
       required final List<BaseLinkResource> links,
       required final List<BasePhotoResource> photos,
-      required final List<BaseVideoResource> vieos,
+      required final List<BaseVideoResource> videos,
       required this.id,
       required this.text,
       required this.authorId,
@@ -243,7 +243,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
       : _documents = documents,
         _links = links,
         _photos = photos,
-        _vieos = vieos;
+        _videos = videos;
 
   factory _$_AnswerExpertiseResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswerExpertiseResourceFromJson(json);
@@ -271,11 +271,11 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
     return EqualUnmodifiableListView(_photos);
   }
 
-  final List<BaseVideoResource> _vieos;
+  final List<BaseVideoResource> _videos;
   @override
-  List<BaseVideoResource> get vieos {
+  List<BaseVideoResource> get videos {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_vieos);
+    return EqualUnmodifiableListView(_videos);
   }
 
   @override
@@ -291,7 +291,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
 
   @override
   String toString() {
-    return 'AnswerExpertiseResource(author: $author, documents: $documents, links: $links, photos: $photos, vieos: $vieos, id: $id, text: $text, authorId: $authorId, answerId: $answerId, timestamp: $timestamp)';
+    return 'AnswerExpertiseResource(author: $author, documents: $documents, links: $links, photos: $photos, videos: $videos, id: $id, text: $text, authorId: $authorId, answerId: $answerId, timestamp: $timestamp)';
   }
 
   @override
@@ -304,7 +304,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
                 .equals(other._documents, _documents) &&
             const DeepCollectionEquality().equals(other._links, _links) &&
             const DeepCollectionEquality().equals(other._photos, _photos) &&
-            const DeepCollectionEquality().equals(other._vieos, _vieos) &&
+            const DeepCollectionEquality().equals(other._videos, _videos) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.text, text) &&
             const DeepCollectionEquality().equals(other.authorId, authorId) &&
@@ -320,7 +320,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
       const DeepCollectionEquality().hash(_documents),
       const DeepCollectionEquality().hash(_links),
       const DeepCollectionEquality().hash(_photos),
-      const DeepCollectionEquality().hash(_vieos),
+      const DeepCollectionEquality().hash(_videos),
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(text),
       const DeepCollectionEquality().hash(authorId),
@@ -348,7 +348,7 @@ abstract class _AnswerExpertiseResource implements AnswerExpertiseResource {
       required final List<BaseDocumentResource> documents,
       required final List<BaseLinkResource> links,
       required final List<BasePhotoResource> photos,
-      required final List<BaseVideoResource> vieos,
+      required final List<BaseVideoResource> videos,
       required final int id,
       required final String text,
       required final int authorId,
@@ -367,7 +367,7 @@ abstract class _AnswerExpertiseResource implements AnswerExpertiseResource {
   @override
   List<BasePhotoResource> get photos;
   @override
-  List<BaseVideoResource> get vieos;
+  List<BaseVideoResource> get videos;
   @override
   int get id;
   @override

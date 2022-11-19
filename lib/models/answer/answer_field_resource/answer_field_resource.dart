@@ -11,7 +11,7 @@ class AnswerFieldResource with _$AnswerFieldResource {
     required BaseUgcFormResource form,
     required List<CommentAnswerResource> comments,
     required List<BaseDocumentResource> documents,
-    required List<BaseVideoResource> viceos,
+    required List<BaseVideoResource> videos,
     required List<BasePhotoResource> photos,
     required List<BaseLinkResource> links,
     required int id,

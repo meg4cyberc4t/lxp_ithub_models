@@ -16,7 +16,7 @@ _$_AnswerFieldResource _$$_AnswerFieldResourceFromJson(
       documents: (json['documents'] as List<dynamic>)
           .map((e) => BaseDocumentResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      viceos: (json['viceos'] as List<dynamic>)
+      videos: (json['videos'] as List<dynamic>)
           .map((e) => BaseVideoResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       photos: (json['photos'] as List<dynamic>)
@@ -39,7 +39,7 @@ Map<String, dynamic> _$$_AnswerFieldResourceToJson(
       'form': instance.form,
       'comments': instance.comments,
       'documents': instance.documents,
-      'viceos': instance.viceos,
+      'videos': instance.videos,
       'photos': instance.photos,
       'links': instance.links,
       'id': instance.id,
