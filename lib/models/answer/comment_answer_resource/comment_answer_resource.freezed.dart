@@ -22,10 +22,11 @@ CommentAnswerResource _$CommentAnswerResourceFromJson(
 /// @nodoc
 mixin _$CommentAnswerResource {
   BaseUserResource get user => throw _privateConstructorUsedError;
-  BaseDocumentResource get documents => throw _privateConstructorUsedError;
-  BaseLinkResource get links => throw _privateConstructorUsedError;
-  BasePhotoResource get photos => throw _privateConstructorUsedError;
-  BaseVideoResource get videos => throw _privateConstructorUsedError;
+  List<BaseDocumentResource> get documents =>
+      throw _privateConstructorUsedError;
+  List<BaseLinkResource> get links => throw _privateConstructorUsedError;
+  List<BasePhotoResource> get photos => throw _privateConstructorUsedError;
+  List<BaseVideoResource> get videos => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
   int get UgcAnswerId => throw _privateConstructorUsedError;
   int get userId => throw _privateConstructorUsedError;
@@ -46,10 +47,10 @@ abstract class $CommentAnswerResourceCopyWith<$Res> {
       _$CommentAnswerResourceCopyWithImpl<$Res>;
   $Res call(
       {BaseUserResource user,
-      BaseDocumentResource documents,
-      BaseLinkResource links,
-      BasePhotoResource photos,
-      BaseVideoResource videos,
+      List<BaseDocumentResource> documents,
+      List<BaseLinkResource> links,
+      List<BasePhotoResource> photos,
+      List<BaseVideoResource> videos,
       int id,
       int UgcAnswerId,
       int userId,
@@ -58,10 +59,6 @@ abstract class $CommentAnswerResourceCopyWith<$Res> {
       int timestamp});
 
   $BaseUserResourceCopyWith<$Res> get user;
-  $BaseDocumentResourceCopyWith<$Res> get documents;
-  $BaseLinkResourceCopyWith<$Res> get links;
-  $BasePhotoResourceCopyWith<$Res> get photos;
-  $BaseVideoResourceCopyWith<$Res> get videos;
 }
 
 /// @nodoc
@@ -95,19 +92,19 @@ class _$CommentAnswerResourceCopyWithImpl<$Res>
       documents: documents == freezed
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
-              as BaseDocumentResource,
+              as List<BaseDocumentResource>,
       links: links == freezed
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
-              as BaseLinkResource,
+              as List<BaseLinkResource>,
       photos: photos == freezed
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
-              as BasePhotoResource,
+              as List<BasePhotoResource>,
       videos: videos == freezed
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
-              as BaseVideoResource,
+              as List<BaseVideoResource>,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -141,34 +138,6 @@ class _$CommentAnswerResourceCopyWithImpl<$Res>
       return _then(_value.copyWith(user: value));
     });
   }
-
-  @override
-  $BaseDocumentResourceCopyWith<$Res> get documents {
-    return $BaseDocumentResourceCopyWith<$Res>(_value.documents, (value) {
-      return _then(_value.copyWith(documents: value));
-    });
-  }
-
-  @override
-  $BaseLinkResourceCopyWith<$Res> get links {
-    return $BaseLinkResourceCopyWith<$Res>(_value.links, (value) {
-      return _then(_value.copyWith(links: value));
-    });
-  }
-
-  @override
-  $BasePhotoResourceCopyWith<$Res> get photos {
-    return $BasePhotoResourceCopyWith<$Res>(_value.photos, (value) {
-      return _then(_value.copyWith(photos: value));
-    });
-  }
-
-  @override
-  $BaseVideoResourceCopyWith<$Res> get videos {
-    return $BaseVideoResourceCopyWith<$Res>(_value.videos, (value) {
-      return _then(_value.copyWith(videos: value));
-    });
-  }
 }
 
 /// @nodoc
@@ -180,10 +149,10 @@ abstract class _$$_CommentAnswerResourceCopyWith<$Res>
   @override
   $Res call(
       {BaseUserResource user,
-      BaseDocumentResource documents,
-      BaseLinkResource links,
-      BasePhotoResource photos,
-      BaseVideoResource videos,
+      List<BaseDocumentResource> documents,
+      List<BaseLinkResource> links,
+      List<BasePhotoResource> photos,
+      List<BaseVideoResource> videos,
       int id,
       int UgcAnswerId,
       int userId,
@@ -193,14 +162,6 @@ abstract class _$$_CommentAnswerResourceCopyWith<$Res>
 
   @override
   $BaseUserResourceCopyWith<$Res> get user;
-  @override
-  $BaseDocumentResourceCopyWith<$Res> get documents;
-  @override
-  $BaseLinkResourceCopyWith<$Res> get links;
-  @override
-  $BasePhotoResourceCopyWith<$Res> get photos;
-  @override
-  $BaseVideoResourceCopyWith<$Res> get videos;
 }
 
 /// @nodoc
@@ -235,21 +196,21 @@ class __$$_CommentAnswerResourceCopyWithImpl<$Res>
           : user // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
       documents: documents == freezed
-          ? _value.documents
+          ? _value._documents
           : documents // ignore: cast_nullable_to_non_nullable
-              as BaseDocumentResource,
+              as List<BaseDocumentResource>,
       links: links == freezed
-          ? _value.links
+          ? _value._links
           : links // ignore: cast_nullable_to_non_nullable
-              as BaseLinkResource,
+              as List<BaseLinkResource>,
       photos: photos == freezed
-          ? _value.photos
+          ? _value._photos
           : photos // ignore: cast_nullable_to_non_nullable
-              as BasePhotoResource,
+              as List<BasePhotoResource>,
       videos: videos == freezed
-          ? _value.videos
+          ? _value._videos
           : videos // ignore: cast_nullable_to_non_nullable
-              as BaseVideoResource,
+              as List<BaseVideoResource>,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -283,30 +244,54 @@ class __$$_CommentAnswerResourceCopyWithImpl<$Res>
 class _$_CommentAnswerResource implements _CommentAnswerResource {
   _$_CommentAnswerResource(
       {required this.user,
-      required this.documents,
-      required this.links,
-      required this.photos,
-      required this.videos,
+      required final List<BaseDocumentResource> documents,
+      required final List<BaseLinkResource> links,
+      required final List<BasePhotoResource> photos,
+      required final List<BaseVideoResource> videos,
       required this.id,
       required this.UgcAnswerId,
       required this.userId,
       required this.text,
       required this.UgcFieldId,
-      required this.timestamp});
+      required this.timestamp})
+      : _documents = documents,
+        _links = links,
+        _photos = photos,
+        _videos = videos;
 
   factory _$_CommentAnswerResource.fromJson(Map<String, dynamic> json) =>
       _$$_CommentAnswerResourceFromJson(json);
 
   @override
   final BaseUserResource user;
+  final List<BaseDocumentResource> _documents;
   @override
-  final BaseDocumentResource documents;
+  List<BaseDocumentResource> get documents {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_documents);
+  }
+
+  final List<BaseLinkResource> _links;
   @override
-  final BaseLinkResource links;
+  List<BaseLinkResource> get links {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_links);
+  }
+
+  final List<BasePhotoResource> _photos;
   @override
-  final BasePhotoResource photos;
+  List<BasePhotoResource> get photos {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_photos);
+  }
+
+  final List<BaseVideoResource> _videos;
   @override
-  final BaseVideoResource videos;
+  List<BaseVideoResource> get videos {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_videos);
+  }
+
   @override
   final int id;
   @override
@@ -331,10 +316,11 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
         (other.runtimeType == runtimeType &&
             other is _$_CommentAnswerResource &&
             const DeepCollectionEquality().equals(other.user, user) &&
-            const DeepCollectionEquality().equals(other.documents, documents) &&
-            const DeepCollectionEquality().equals(other.links, links) &&
-            const DeepCollectionEquality().equals(other.photos, photos) &&
-            const DeepCollectionEquality().equals(other.videos, videos) &&
+            const DeepCollectionEquality()
+                .equals(other._documents, _documents) &&
+            const DeepCollectionEquality().equals(other._links, _links) &&
+            const DeepCollectionEquality().equals(other._photos, _photos) &&
+            const DeepCollectionEquality().equals(other._videos, _videos) &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality()
                 .equals(other.UgcAnswerId, UgcAnswerId) &&
@@ -350,10 +336,10 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(user),
-      const DeepCollectionEquality().hash(documents),
-      const DeepCollectionEquality().hash(links),
-      const DeepCollectionEquality().hash(photos),
-      const DeepCollectionEquality().hash(videos),
+      const DeepCollectionEquality().hash(_documents),
+      const DeepCollectionEquality().hash(_links),
+      const DeepCollectionEquality().hash(_photos),
+      const DeepCollectionEquality().hash(_videos),
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(UgcAnswerId),
       const DeepCollectionEquality().hash(userId),
@@ -378,10 +364,10 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
 abstract class _CommentAnswerResource implements CommentAnswerResource {
   factory _CommentAnswerResource(
       {required final BaseUserResource user,
-      required final BaseDocumentResource documents,
-      required final BaseLinkResource links,
-      required final BasePhotoResource photos,
-      required final BaseVideoResource videos,
+      required final List<BaseDocumentResource> documents,
+      required final List<BaseLinkResource> links,
+      required final List<BasePhotoResource> photos,
+      required final List<BaseVideoResource> videos,
       required final int id,
       required final int UgcAnswerId,
       required final int userId,
@@ -395,13 +381,13 @@ abstract class _CommentAnswerResource implements CommentAnswerResource {
   @override
   BaseUserResource get user;
   @override
-  BaseDocumentResource get documents;
+  List<BaseDocumentResource> get documents;
   @override
-  BaseLinkResource get links;
+  List<BaseLinkResource> get links;
   @override
-  BasePhotoResource get photos;
+  List<BasePhotoResource> get photos;
   @override
-  BaseVideoResource get videos;
+  List<BaseVideoResource> get videos;
   @override
   int get id;
   @override

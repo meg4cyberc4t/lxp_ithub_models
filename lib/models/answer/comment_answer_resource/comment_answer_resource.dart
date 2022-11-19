@@ -8,10 +8,10 @@ part 'comment_answer_resource.g.dart';
 class CommentAnswerResource with _$CommentAnswerResource {
   factory CommentAnswerResource({
     required BaseUserResource user,
-    required BaseDocumentResource documents,
-    required BaseLinkResource links,
-    required BasePhotoResource photos,
-    required BaseVideoResource videos,
+    required List<BaseDocumentResource> documents,
+    required List<BaseLinkResource> links,
+    required List<BasePhotoResource> photos,
+    required List<BaseVideoResource> videos,
     required int id,
     required int UgcAnswerId,
     required int userId,
