@@ -20,6 +20,13 @@ AnswerFieldResource _$AnswerFieldResourceFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$AnswerFieldResource {
+  int get id => throw _privateConstructorUsedError;
+  int get answerId => throw _privateConstructorUsedError;
+  int get questionId => throw _privateConstructorUsedError;
+  String get value => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
+  String get link => throw _privateConstructorUsedError;
+  int get order => throw _privateConstructorUsedError;
   BaseUgcFormResource get form => throw _privateConstructorUsedError;
   List<CommentAnswerResource> get comments =>
       throw _privateConstructorUsedError;
@@ -28,12 +35,6 @@ mixin _$AnswerFieldResource {
   List<BaseVideoResource> get videos => throw _privateConstructorUsedError;
   List<BasePhotoResource> get photos => throw _privateConstructorUsedError;
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
-  int get id => throw _privateConstructorUsedError;
-  int get answerId => throw _privateConstructorUsedError;
-  int? get formId => throw _privateConstructorUsedError;
-  String get value => throw _privateConstructorUsedError;
-  String get formTitle => throw _privateConstructorUsedError;
-  String get formLink => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -47,18 +48,19 @@ abstract class $AnswerFieldResourceCopyWith<$Res> {
           AnswerFieldResource value, $Res Function(AnswerFieldResource) then) =
       _$AnswerFieldResourceCopyWithImpl<$Res>;
   $Res call(
-      {BaseUgcFormResource form,
+      {int id,
+      int answerId,
+      int questionId,
+      String value,
+      String title,
+      String link,
+      int order,
+      BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
       List<BasePhotoResource> photos,
-      List<BaseLinkResource> links,
-      int id,
-      int answerId,
-      int? formId,
-      String value,
-      String formTitle,
-      String formLink});
+      List<BaseLinkResource> links});
 
   $BaseUgcFormResourceCopyWith<$Res> get form;
 }
@@ -74,20 +76,49 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? id = freezed,
+    Object? answerId = freezed,
+    Object? questionId = freezed,
+    Object? value = freezed,
+    Object? title = freezed,
+    Object? link = freezed,
+    Object? order = freezed,
     Object? form = freezed,
     Object? comments = freezed,
     Object? documents = freezed,
     Object? videos = freezed,
     Object? photos = freezed,
     Object? links = freezed,
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? formId = freezed,
-    Object? value = freezed,
-    Object? formTitle = freezed,
-    Object? formLink = freezed,
   }) {
     return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      answerId: answerId == freezed
+          ? _value.answerId
+          : answerId // ignore: cast_nullable_to_non_nullable
+              as int,
+      questionId: questionId == freezed
+          ? _value.questionId
+          : questionId // ignore: cast_nullable_to_non_nullable
+              as int,
+      value: value == freezed
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      link: link == freezed
+          ? _value.link
+          : link // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
       form: form == freezed
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
@@ -112,30 +143,6 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      answerId: answerId == freezed
-          ? _value.answerId
-          : answerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      formId: formId == freezed
-          ? _value.formId
-          : formId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      value: value == freezed
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as String,
-      formTitle: formTitle == freezed
-          ? _value.formTitle
-          : formTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      formLink: formLink == freezed
-          ? _value.formLink
-          : formLink // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 
@@ -155,18 +162,19 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
       __$$_AnswerFieldResourceCopyWithImpl<$Res>;
   @override
   $Res call(
-      {BaseUgcFormResource form,
+      {int id,
+      int answerId,
+      int questionId,
+      String value,
+      String title,
+      String link,
+      int order,
+      BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
       List<BasePhotoResource> photos,
-      List<BaseLinkResource> links,
-      int id,
-      int answerId,
-      int? formId,
-      String value,
-      String formTitle,
-      String formLink});
+      List<BaseLinkResource> links});
 
   @override
   $BaseUgcFormResourceCopyWith<$Res> get form;
@@ -185,20 +193,49 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
 
   @override
   $Res call({
+    Object? id = freezed,
+    Object? answerId = freezed,
+    Object? questionId = freezed,
+    Object? value = freezed,
+    Object? title = freezed,
+    Object? link = freezed,
+    Object? order = freezed,
     Object? form = freezed,
     Object? comments = freezed,
     Object? documents = freezed,
     Object? videos = freezed,
     Object? photos = freezed,
     Object? links = freezed,
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? formId = freezed,
-    Object? value = freezed,
-    Object? formTitle = freezed,
-    Object? formLink = freezed,
   }) {
     return _then(_$_AnswerFieldResource(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      answerId: answerId == freezed
+          ? _value.answerId
+          : answerId // ignore: cast_nullable_to_non_nullable
+              as int,
+      questionId: questionId == freezed
+          ? _value.questionId
+          : questionId // ignore: cast_nullable_to_non_nullable
+              as int,
+      value: value == freezed
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: title == freezed
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String,
+      link: link == freezed
+          ? _value.link
+          : link // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
       form: form == freezed
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
@@ -223,30 +260,6 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      id: id == freezed
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as int,
-      answerId: answerId == freezed
-          ? _value.answerId
-          : answerId // ignore: cast_nullable_to_non_nullable
-              as int,
-      formId: formId == freezed
-          ? _value.formId
-          : formId // ignore: cast_nullable_to_non_nullable
-              as int?,
-      value: value == freezed
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as String,
-      formTitle: formTitle == freezed
-          ? _value.formTitle
-          : formTitle // ignore: cast_nullable_to_non_nullable
-              as String,
-      formLink: formLink == freezed
-          ? _value.formLink
-          : formLink // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 }
@@ -255,22 +268,37 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_AnswerFieldResource implements _AnswerFieldResource {
   _$_AnswerFieldResource(
-      {required this.form,
+      {required this.id,
+      required this.answerId,
+      required this.questionId,
+      required this.value,
+      required this.title,
+      required this.link,
+      required this.order,
+      required this.form,
       required this.comments,
       required this.documents,
       required this.videos,
       required this.photos,
-      required this.links,
-      required this.id,
-      required this.answerId,
-      required this.formId,
-      required this.value,
-      required this.formTitle,
-      required this.formLink});
+      required this.links});
 
   factory _$_AnswerFieldResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswerFieldResourceFromJson(json);
 
+  @override
+  final int id;
+  @override
+  final int answerId;
+  @override
+  final int questionId;
+  @override
+  final String value;
+  @override
+  final String title;
+  @override
+  final String link;
+  @override
+  final int order;
   @override
   final BaseUgcFormResource form;
   @override
@@ -283,22 +311,10 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
   final List<BasePhotoResource> photos;
   @override
   final List<BaseLinkResource> links;
-  @override
-  final int id;
-  @override
-  final int answerId;
-  @override
-  final int? formId;
-  @override
-  final String value;
-  @override
-  final String formTitle;
-  @override
-  final String formLink;
 
   @override
   String toString() {
-    return 'AnswerFieldResource(form: $form, comments: $comments, documents: $documents, videos: $videos, photos: $photos, links: $links, id: $id, answerId: $answerId, formId: $formId, value: $value, formTitle: $formTitle, formLink: $formLink)';
+    return 'AnswerFieldResource(id: $id, answerId: $answerId, questionId: $questionId, value: $value, title: $title, link: $link, order: $order, form: $form, comments: $comments, documents: $documents, videos: $videos, photos: $photos, links: $links)';
   }
 
   @override
@@ -306,36 +322,39 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AnswerFieldResource &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.answerId, answerId) &&
+            const DeepCollectionEquality()
+                .equals(other.questionId, questionId) &&
+            const DeepCollectionEquality().equals(other.value, value) &&
+            const DeepCollectionEquality().equals(other.title, title) &&
+            const DeepCollectionEquality().equals(other.link, link) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
             const DeepCollectionEquality().equals(other.form, form) &&
             const DeepCollectionEquality().equals(other.comments, comments) &&
             const DeepCollectionEquality().equals(other.documents, documents) &&
             const DeepCollectionEquality().equals(other.videos, videos) &&
             const DeepCollectionEquality().equals(other.photos, photos) &&
-            const DeepCollectionEquality().equals(other.links, links) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.answerId, answerId) &&
-            const DeepCollectionEquality().equals(other.formId, formId) &&
-            const DeepCollectionEquality().equals(other.value, value) &&
-            const DeepCollectionEquality().equals(other.formTitle, formTitle) &&
-            const DeepCollectionEquality().equals(other.formLink, formLink));
+            const DeepCollectionEquality().equals(other.links, links));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(answerId),
+      const DeepCollectionEquality().hash(questionId),
+      const DeepCollectionEquality().hash(value),
+      const DeepCollectionEquality().hash(title),
+      const DeepCollectionEquality().hash(link),
+      const DeepCollectionEquality().hash(order),
       const DeepCollectionEquality().hash(form),
       const DeepCollectionEquality().hash(comments),
       const DeepCollectionEquality().hash(documents),
       const DeepCollectionEquality().hash(videos),
       const DeepCollectionEquality().hash(photos),
-      const DeepCollectionEquality().hash(links),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(answerId),
-      const DeepCollectionEquality().hash(formId),
-      const DeepCollectionEquality().hash(value),
-      const DeepCollectionEquality().hash(formTitle),
-      const DeepCollectionEquality().hash(formLink));
+      const DeepCollectionEquality().hash(links));
 
   @JsonKey(ignore: true)
   @override
@@ -353,22 +372,37 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
 
 abstract class _AnswerFieldResource implements AnswerFieldResource {
   factory _AnswerFieldResource(
-      {required final BaseUgcFormResource form,
+      {required final int id,
+      required final int answerId,
+      required final int questionId,
+      required final String value,
+      required final String title,
+      required final String link,
+      required final int order,
+      required final BaseUgcFormResource form,
       required final List<CommentAnswerResource> comments,
       required final List<BaseDocumentResource> documents,
       required final List<BaseVideoResource> videos,
       required final List<BasePhotoResource> photos,
-      required final List<BaseLinkResource> links,
-      required final int id,
-      required final int answerId,
-      required final int? formId,
-      required final String value,
-      required final String formTitle,
-      required final String formLink}) = _$_AnswerFieldResource;
+      required final List<BaseLinkResource> links}) = _$_AnswerFieldResource;
 
   factory _AnswerFieldResource.fromJson(Map<String, dynamic> json) =
       _$_AnswerFieldResource.fromJson;
 
+  @override
+  int get id;
+  @override
+  int get answerId;
+  @override
+  int get questionId;
+  @override
+  String get value;
+  @override
+  String get title;
+  @override
+  String get link;
+  @override
+  int get order;
   @override
   BaseUgcFormResource get form;
   @override
@@ -381,18 +415,6 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
   List<BasePhotoResource> get photos;
   @override
   List<BaseLinkResource> get links;
-  @override
-  int get id;
-  @override
-  int get answerId;
-  @override
-  int? get formId;
-  @override
-  String get value;
-  @override
-  String get formTitle;
-  @override
-  String get formLink;
   @override
   @JsonKey(ignore: true)
   _$$_AnswerFieldResourceCopyWith<_$_AnswerFieldResource> get copyWith =>
