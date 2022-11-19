@@ -38,6 +38,11 @@ mixin _$AnswerResource {
   int get patternId => throw _privateConstructorUsedError;
   int? get updated => throw _privateConstructorUsedError; // Дата изменения
   int get privacy => throw _privateConstructorUsedError;
+  List<CommentAnswerResource> get comments =>
+      throw _privateConstructorUsedError;
+  List<AnswerExpertiseResource> get expertises =>
+      throw _privateConstructorUsedError;
+  List<AnswerFieldResource> get questions => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -67,7 +72,10 @@ abstract class $AnswerResourceCopyWith<$Res> {
       int timestamp,
       int patternId,
       int? updated,
-      int privacy});
+      int privacy,
+      List<CommentAnswerResource> comments,
+      List<AnswerExpertiseResource> expertises,
+      List<AnswerFieldResource> questions});
 
   $UserAnswerResourceCopyWith<$Res> get user;
   $BaseUgcPatternResourceCopyWith<$Res> get pattern;
@@ -104,6 +112,9 @@ class _$AnswerResourceCopyWithImpl<$Res>
     Object? patternId = freezed,
     Object? updated = freezed,
     Object? privacy = freezed,
+    Object? comments = freezed,
+    Object? expertises = freezed,
+    Object? questions = freezed,
   }) {
     return _then(_value.copyWith(
       documents: documents == freezed
@@ -174,6 +185,18 @@ class _$AnswerResourceCopyWithImpl<$Res>
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
+      comments: comments == freezed
+          ? _value.comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<CommentAnswerResource>,
+      expertises: expertises == freezed
+          ? _value.expertises
+          : expertises // ignore: cast_nullable_to_non_nullable
+              as List<AnswerExpertiseResource>,
+      questions: questions == freezed
+          ? _value.questions
+          : questions // ignore: cast_nullable_to_non_nullable
+              as List<AnswerFieldResource>,
     ));
   }
 
@@ -249,7 +272,10 @@ abstract class _$$_AnswerResourceCopyWith<$Res>
       int timestamp,
       int patternId,
       int? updated,
-      int privacy});
+      int privacy,
+      List<CommentAnswerResource> comments,
+      List<AnswerExpertiseResource> expertises,
+      List<AnswerFieldResource> questions});
 
   @override
   $UserAnswerResourceCopyWith<$Res> get user;
@@ -293,6 +319,9 @@ class __$$_AnswerResourceCopyWithImpl<$Res>
     Object? patternId = freezed,
     Object? updated = freezed,
     Object? privacy = freezed,
+    Object? comments = freezed,
+    Object? expertises = freezed,
+    Object? questions = freezed,
   }) {
     return _then(_$_AnswerResource(
       documents: documents == freezed
@@ -363,6 +392,18 @@ class __$$_AnswerResourceCopyWithImpl<$Res>
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
+      comments: comments == freezed
+          ? _value.comments
+          : comments // ignore: cast_nullable_to_non_nullable
+              as List<CommentAnswerResource>,
+      expertises: expertises == freezed
+          ? _value.expertises
+          : expertises // ignore: cast_nullable_to_non_nullable
+              as List<AnswerExpertiseResource>,
+      questions: questions == freezed
+          ? _value.questions
+          : questions // ignore: cast_nullable_to_non_nullable
+              as List<AnswerFieldResource>,
     ));
   }
 }
@@ -387,7 +428,10 @@ class _$_AnswerResource implements _AnswerResource {
       required this.timestamp,
       required this.patternId,
       required this.updated,
-      required this.privacy});
+      required this.privacy,
+      required this.comments,
+      required this.expertises,
+      required this.questions});
 
   factory _$_AnswerResource.fromJson(Map<String, dynamic> json) =>
       _$$_AnswerResourceFromJson(json);
@@ -428,10 +472,16 @@ class _$_AnswerResource implements _AnswerResource {
 // Дата изменения
   @override
   final int privacy;
+  @override
+  final List<CommentAnswerResource> comments;
+  @override
+  final List<AnswerExpertiseResource> expertises;
+  @override
+  final List<AnswerFieldResource> questions;
 
   @override
   String toString() {
-    return 'AnswerResource(documents: $documents, links: $links, photos: $photos, videos: $videos, marks: $marks, user: $user, pattern: $pattern, lesson: $lesson, subject: $subject, checkpointMark: $checkpointMark, id: $id, userId: $userId, title: $title, timestamp: $timestamp, patternId: $patternId, updated: $updated, privacy: $privacy)';
+    return 'AnswerResource(documents: $documents, links: $links, photos: $photos, videos: $videos, marks: $marks, user: $user, pattern: $pattern, lesson: $lesson, subject: $subject, checkpointMark: $checkpointMark, id: $id, userId: $userId, title: $title, timestamp: $timestamp, patternId: $patternId, updated: $updated, privacy: $privacy, comments: $comments, expertises: $expertises, questions: $questions)';
   }
 
   @override
@@ -456,30 +506,38 @@ class _$_AnswerResource implements _AnswerResource {
             const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
             const DeepCollectionEquality().equals(other.patternId, patternId) &&
             const DeepCollectionEquality().equals(other.updated, updated) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy));
+            const DeepCollectionEquality().equals(other.privacy, privacy) &&
+            const DeepCollectionEquality().equals(other.comments, comments) &&
+            const DeepCollectionEquality()
+                .equals(other.expertises, expertises) &&
+            const DeepCollectionEquality().equals(other.questions, questions));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(documents),
-      const DeepCollectionEquality().hash(links),
-      const DeepCollectionEquality().hash(photos),
-      const DeepCollectionEquality().hash(videos),
-      const DeepCollectionEquality().hash(marks),
-      const DeepCollectionEquality().hash(user),
-      const DeepCollectionEquality().hash(pattern),
-      const DeepCollectionEquality().hash(lesson),
-      const DeepCollectionEquality().hash(subject),
-      const DeepCollectionEquality().hash(checkpointMark),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(timestamp),
-      const DeepCollectionEquality().hash(patternId),
-      const DeepCollectionEquality().hash(updated),
-      const DeepCollectionEquality().hash(privacy));
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        const DeepCollectionEquality().hash(documents),
+        const DeepCollectionEquality().hash(links),
+        const DeepCollectionEquality().hash(photos),
+        const DeepCollectionEquality().hash(videos),
+        const DeepCollectionEquality().hash(marks),
+        const DeepCollectionEquality().hash(user),
+        const DeepCollectionEquality().hash(pattern),
+        const DeepCollectionEquality().hash(lesson),
+        const DeepCollectionEquality().hash(subject),
+        const DeepCollectionEquality().hash(checkpointMark),
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(userId),
+        const DeepCollectionEquality().hash(title),
+        const DeepCollectionEquality().hash(timestamp),
+        const DeepCollectionEquality().hash(patternId),
+        const DeepCollectionEquality().hash(updated),
+        const DeepCollectionEquality().hash(privacy),
+        const DeepCollectionEquality().hash(comments),
+        const DeepCollectionEquality().hash(expertises),
+        const DeepCollectionEquality().hash(questions)
+      ]);
 
   @JsonKey(ignore: true)
   @override
@@ -512,7 +570,10 @@ abstract class _AnswerResource implements AnswerResource {
       required final int timestamp,
       required final int patternId,
       required final int? updated,
-      required final int privacy}) = _$_AnswerResource;
+      required final int privacy,
+      required final List<CommentAnswerResource> comments,
+      required final List<AnswerExpertiseResource> expertises,
+      required final List<AnswerFieldResource> questions}) = _$_AnswerResource;
 
   factory _AnswerResource.fromJson(Map<String, dynamic> json) =
       _$_AnswerResource.fromJson;
@@ -551,6 +612,12 @@ abstract class _AnswerResource implements AnswerResource {
   int? get updated;
   @override // Дата изменения
   int get privacy;
+  @override
+  List<CommentAnswerResource> get comments;
+  @override
+  List<AnswerExpertiseResource> get expertises;
+  @override
+  List<AnswerFieldResource> get questions;
   @override
   @JsonKey(ignore: true)
   _$$_AnswerResourceCopyWith<_$_AnswerResource> get copyWith =>

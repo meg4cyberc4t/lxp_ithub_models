@@ -44,6 +44,16 @@ _$_AnswerResource _$$_AnswerResourceFromJson(Map<String, dynamic> json) =>
       patternId: json['pattern_id'] as int,
       updated: json['updated'] as int?,
       privacy: json['privacy'] as int,
+      comments: (json['comments'] as List<dynamic>)
+          .map((e) => CommentAnswerResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      expertises: (json['expertises'] as List<dynamic>)
+          .map((e) =>
+              AnswerExpertiseResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      questions: (json['questions'] as List<dynamic>)
+          .map((e) => AnswerFieldResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
     );
 
 Map<String, dynamic> _$$_AnswerResourceToJson(_$_AnswerResource instance) =>
@@ -65,4 +75,7 @@ Map<String, dynamic> _$$_AnswerResourceToJson(_$_AnswerResource instance) =>
       'pattern_id': instance.patternId,
       'updated': instance.updated,
       'privacy': instance.privacy,
+      'comments': instance.comments,
+      'expertises': instance.expertises,
+      'questions': instance.questions,
     };
