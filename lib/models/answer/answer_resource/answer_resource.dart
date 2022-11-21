@@ -31,7 +31,7 @@ class AnswerResource with _$AnswerResource {
     required CheckpointMark? checkpointMark,
     required int id,
     required int userId,
-    required String title,
+    @Deprecated("Broken field") required String title,
     required int timestamp, // Дата создания
     required int patternId,
     required int? updated, // Дата изменения

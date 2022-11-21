@@ -33,6 +33,7 @@ mixin _$AnswerResource {
   CheckpointMark? get checkpointMark => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
   int get userId => throw _privateConstructorUsedError;
+  @Deprecated("Broken field")
   String get title => throw _privateConstructorUsedError;
   int get timestamp => throw _privateConstructorUsedError; // Дата создания
   int get patternId => throw _privateConstructorUsedError;
@@ -68,7 +69,7 @@ abstract class $AnswerResourceCopyWith<$Res> {
       CheckpointMark? checkpointMark,
       int id,
       int userId,
-      String title,
+      @Deprecated("Broken field") String title,
       int timestamp,
       int patternId,
       int? updated,
@@ -268,7 +269,7 @@ abstract class _$$_AnswerResourceCopyWith<$Res>
       CheckpointMark? checkpointMark,
       int id,
       int userId,
-      String title,
+      @Deprecated("Broken field") String title,
       int timestamp,
       int patternId,
       int? updated,
@@ -424,7 +425,7 @@ class _$_AnswerResource implements _AnswerResource {
       required this.checkpointMark,
       required this.id,
       required this.userId,
-      required this.title,
+      @Deprecated("Broken field") required this.title,
       required this.timestamp,
       required this.patternId,
       required this.updated,
@@ -461,6 +462,7 @@ class _$_AnswerResource implements _AnswerResource {
   @override
   final int userId;
   @override
+  @Deprecated("Broken field")
   final String title;
   @override
   final int timestamp;
@@ -566,7 +568,7 @@ abstract class _AnswerResource implements AnswerResource {
       required final CheckpointMark? checkpointMark,
       required final int id,
       required final int userId,
-      required final String title,
+      @Deprecated("Broken field") required final String title,
       required final int timestamp,
       required final int patternId,
       required final int? updated,
@@ -603,6 +605,7 @@ abstract class _AnswerResource implements AnswerResource {
   @override
   int get userId;
   @override
+  @Deprecated("Broken field")
   String get title;
   @override
   int get timestamp;
