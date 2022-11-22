@@ -15,7 +15,7 @@ _$_AnswerFieldResource _$$_AnswerFieldResourceFromJson(
       value: json['value'] as String,
       title: json['title'] as String,
       link: json['link'] as String,
-      order: json['order'] as int,
+      order: json['order'] as int?,
       form: BaseUgcFormResource.fromJson(json['form'] as Map<String, dynamic>),
       comments: (json['comments'] as List<dynamic>)
           .map((e) => CommentAnswerResource.fromJson(e as Map<String, dynamic>))

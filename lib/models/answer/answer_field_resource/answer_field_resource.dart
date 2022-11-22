@@ -14,7 +14,7 @@ class AnswerFieldResource with _$AnswerFieldResource {
     required String value,
     required String title,
     required String link,
-    required int order,
+    required int? order,
     required BaseUgcFormResource form,
     required List<CommentAnswerResource> comments,
     required List<BaseDocumentResource> documents,

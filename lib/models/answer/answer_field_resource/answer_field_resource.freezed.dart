@@ -26,7 +26,7 @@ mixin _$AnswerFieldResource {
   String get value => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get link => throw _privateConstructorUsedError;
-  int get order => throw _privateConstructorUsedError;
+  int? get order => throw _privateConstructorUsedError;
   BaseUgcFormResource get form => throw _privateConstructorUsedError;
   List<CommentAnswerResource> get comments =>
       throw _privateConstructorUsedError;
@@ -54,7 +54,7 @@ abstract class $AnswerFieldResourceCopyWith<$Res> {
       String value,
       String title,
       String link,
-      int order,
+      int? order,
       BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
@@ -118,7 +118,7 @@ class _$AnswerFieldResourceCopyWithImpl<$Res>
       order: order == freezed
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       form: form == freezed
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
@@ -168,7 +168,7 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
       String value,
       String title,
       String link,
-      int order,
+      int? order,
       BaseUgcFormResource form,
       List<CommentAnswerResource> comments,
       List<BaseDocumentResource> documents,
@@ -235,7 +235,7 @@ class __$$_AnswerFieldResourceCopyWithImpl<$Res>
       order: order == freezed
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       form: form == freezed
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
@@ -298,7 +298,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
   @override
   final String link;
   @override
-  final int order;
+  final int? order;
   @override
   final BaseUgcFormResource form;
   @override
@@ -378,7 +378,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
       required final String value,
       required final String title,
       required final String link,
-      required final int order,
+      required final int? order,
       required final BaseUgcFormResource form,
       required final List<CommentAnswerResource> comments,
       required final List<BaseDocumentResource> documents,
@@ -402,7 +402,7 @@ abstract class _AnswerFieldResource implements AnswerFieldResource {
   @override
   String get link;
   @override
-  int get order;
+  int? get order;
   @override
   BaseUgcFormResource get form;
   @override
