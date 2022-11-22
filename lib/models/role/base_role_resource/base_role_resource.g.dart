@@ -10,7 +10,7 @@ _$_BaseRoleResource _$$_BaseRoleResourceFromJson(Map<String, dynamic> json) =>
     _$_BaseRoleResource(
       id: json['id'] as int,
       title: json['title'] as String,
-      access: json['access'] as int,
+      access: json['access'] as int?,
       objectType: json['object_type'] as String,
       objectId: json['object_id'] as int,
     );

@@ -22,7 +22,7 @@ BaseRoleResource _$BaseRoleResourceFromJson(Map<String, dynamic> json) {
 mixin _$BaseRoleResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
-  int get access => throw _privateConstructorUsedError;
+  int? get access => throw _privateConstructorUsedError;
   String get objectType => throw _privateConstructorUsedError;
   int get objectId => throw _privateConstructorUsedError;
 
@@ -38,7 +38,7 @@ abstract class $BaseRoleResourceCopyWith<$Res> {
           BaseRoleResource value, $Res Function(BaseRoleResource) then) =
       _$BaseRoleResourceCopyWithImpl<$Res>;
   $Res call(
-      {int id, String title, int access, String objectType, int objectId});
+      {int id, String title, int? access, String objectType, int objectId});
 }
 
 /// @nodoc
@@ -70,7 +70,7 @@ class _$BaseRoleResourceCopyWithImpl<$Res>
       access: access == freezed
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       objectType: objectType == freezed
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
@@ -91,7 +91,7 @@ abstract class _$$_BaseRoleResourceCopyWith<$Res>
       __$$_BaseRoleResourceCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id, String title, int access, String objectType, int objectId});
+      {int id, String title, int? access, String objectType, int objectId});
 }
 
 /// @nodoc
@@ -125,7 +125,7 @@ class __$$_BaseRoleResourceCopyWithImpl<$Res>
       access: access == freezed
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       objectType: objectType == freezed
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
@@ -156,7 +156,7 @@ class _$_BaseRoleResource implements _BaseRoleResource {
   @override
   final String title;
   @override
-  final int access;
+  final int? access;
   @override
   final String objectType;
   @override
@@ -207,7 +207,7 @@ abstract class _BaseRoleResource implements BaseRoleResource {
   factory _BaseRoleResource(
       {required final int id,
       required final String title,
-      required final int access,
+      required final int? access,
       required final String objectType,
       required final int objectId}) = _$_BaseRoleResource;
 
@@ -219,7 +219,7 @@ abstract class _BaseRoleResource implements BaseRoleResource {
   @override
   String get title;
   @override
-  int get access;
+  int? get access;
   @override
   String get objectType;
   @override

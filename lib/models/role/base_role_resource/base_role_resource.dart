@@ -8,7 +8,7 @@ class BaseRoleResource with _$BaseRoleResource {
   factory BaseRoleResource({
     required int id,
     required String title,
-    required int access,
+    required int? access,
     required String objectType,
     required int objectId,
   }) = _BaseRoleResource;
