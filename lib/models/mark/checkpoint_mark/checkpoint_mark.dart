@@ -11,7 +11,7 @@ class CheckpointMark with _$CheckpointMark {
     required int? studentId,
     required dynamic topicId,
     required int points,
-    required int maxPoints,
+    required int? maxPoints,
     required int grade,
     required String? comment,
     required DateTime? createdAt,

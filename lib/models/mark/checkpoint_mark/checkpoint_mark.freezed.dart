@@ -25,7 +25,7 @@ mixin _$CheckpointMark {
   int? get studentId => throw _privateConstructorUsedError;
   dynamic get topicId => throw _privateConstructorUsedError;
   int get points => throw _privateConstructorUsedError;
-  int get maxPoints => throw _privateConstructorUsedError;
+  int? get maxPoints => throw _privateConstructorUsedError;
   int get grade => throw _privateConstructorUsedError;
   String? get comment => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
@@ -48,7 +48,7 @@ abstract class $CheckpointMarkCopyWith<$Res> {
       int? studentId,
       dynamic topicId,
       int points,
-      int maxPoints,
+      int? maxPoints,
       int grade,
       String? comment,
       DateTime? createdAt,
@@ -101,7 +101,7 @@ class _$CheckpointMarkCopyWithImpl<$Res>
       maxPoints: maxPoints == freezed
           ? _value.maxPoints
           : maxPoints // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       grade: grade == freezed
           ? _value.grade
           : grade // ignore: cast_nullable_to_non_nullable
@@ -135,7 +135,7 @@ abstract class _$$_CheckpointMarkCopyWith<$Res>
       int? studentId,
       dynamic topicId,
       int points,
-      int maxPoints,
+      int? maxPoints,
       int grade,
       String? comment,
       DateTime? createdAt,
@@ -190,7 +190,7 @@ class __$$_CheckpointMarkCopyWithImpl<$Res>
       maxPoints: maxPoints == freezed
           ? _value.maxPoints
           : maxPoints // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       grade: grade == freezed
           ? _value.grade
           : grade // ignore: cast_nullable_to_non_nullable
@@ -240,7 +240,7 @@ class _$_CheckpointMark implements _CheckpointMark {
   @override
   final int points;
   @override
-  final int maxPoints;
+  final int? maxPoints;
   @override
   final int grade;
   @override
@@ -307,7 +307,7 @@ abstract class _CheckpointMark implements CheckpointMark {
       required final int? studentId,
       required final dynamic topicId,
       required final int points,
-      required final int maxPoints,
+      required final int? maxPoints,
       required final int grade,
       required final String? comment,
       required final DateTime? createdAt,
@@ -327,7 +327,7 @@ abstract class _CheckpointMark implements CheckpointMark {
   @override
   int get points;
   @override
-  int get maxPoints;
+  int? get maxPoints;
   @override
   int get grade;
   @override
