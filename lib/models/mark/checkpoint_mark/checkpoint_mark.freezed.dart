@@ -26,7 +26,7 @@ mixin _$CheckpointMark {
   dynamic get topicId => throw _privateConstructorUsedError;
   int get points => throw _privateConstructorUsedError;
   int? get maxPoints => throw _privateConstructorUsedError;
-  int get grade => throw _privateConstructorUsedError;
+  int? get grade => throw _privateConstructorUsedError;
   String? get comment => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -49,7 +49,7 @@ abstract class $CheckpointMarkCopyWith<$Res> {
       dynamic topicId,
       int points,
       int? maxPoints,
-      int grade,
+      int? grade,
       String? comment,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -105,7 +105,7 @@ class _$CheckpointMarkCopyWithImpl<$Res>
       grade: grade == freezed
           ? _value.grade
           : grade // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       comment: comment == freezed
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -136,7 +136,7 @@ abstract class _$$_CheckpointMarkCopyWith<$Res>
       dynamic topicId,
       int points,
       int? maxPoints,
-      int grade,
+      int? grade,
       String? comment,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -194,7 +194,7 @@ class __$$_CheckpointMarkCopyWithImpl<$Res>
       grade: grade == freezed
           ? _value.grade
           : grade // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       comment: comment == freezed
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
@@ -242,7 +242,7 @@ class _$_CheckpointMark implements _CheckpointMark {
   @override
   final int? maxPoints;
   @override
-  final int grade;
+  final int? grade;
   @override
   final String? comment;
   @override
@@ -308,7 +308,7 @@ abstract class _CheckpointMark implements CheckpointMark {
       required final dynamic topicId,
       required final int points,
       required final int? maxPoints,
-      required final int grade,
+      required final int? grade,
       required final String? comment,
       required final DateTime? createdAt,
       required final DateTime? updatedAt}) = _$_CheckpointMark;
@@ -329,7 +329,7 @@ abstract class _CheckpointMark implements CheckpointMark {
   @override
   int? get maxPoints;
   @override
-  int get grade;
+  int? get grade;
   @override
   String? get comment;
   @override
