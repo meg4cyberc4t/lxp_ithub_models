@@ -150,13 +150,14 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_SemesterLocalResource implements _SemesterLocalResource {
+class _$_SemesterLocalResource extends _SemesterLocalResource {
   _$_SemesterLocalResource(
       {required this.id,
       required this.isArchived,
       required this.title,
       required this.startedAt,
-      required this.finishedAt});
+      required this.finishedAt})
+      : super._();
 
   factory _$_SemesterLocalResource.fromJson(Map<String, dynamic> json) =>
       _$$_SemesterLocalResourceFromJson(json);
@@ -172,35 +173,6 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
   @override
   final DateTime finishedAt;
 
-  @override
-  String toString() {
-    return 'SemesterLocalResource(id: $id, isArchived: $isArchived, title: $title, startedAt: $startedAt, finishedAt: $finishedAt)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_SemesterLocalResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality()
-                .equals(other.isArchived, isArchived) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.startedAt, startedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.finishedAt, finishedAt));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(isArchived),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(startedAt),
-      const DeepCollectionEquality().hash(finishedAt));
-
   @JsonKey(ignore: true)
   @override
   _$$_SemesterLocalResourceCopyWith<_$_SemesterLocalResource> get copyWith =>
@@ -215,13 +187,14 @@ class _$_SemesterLocalResource implements _SemesterLocalResource {
   }
 }
 
-abstract class _SemesterLocalResource implements SemesterLocalResource {
+abstract class _SemesterLocalResource extends SemesterLocalResource {
   factory _SemesterLocalResource(
       {required final int id,
       required final int isArchived,
       required final String title,
       required final DateTime startedAt,
       required final DateTime finishedAt}) = _$_SemesterLocalResource;
+  _SemesterLocalResource._() : super._();
 
   factory _SemesterLocalResource.fromJson(Map<String, dynamic> json) =
       _$_SemesterLocalResource.fromJson;
