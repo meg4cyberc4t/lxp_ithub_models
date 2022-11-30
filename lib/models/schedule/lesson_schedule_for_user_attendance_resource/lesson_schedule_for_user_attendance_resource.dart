@@ -13,13 +13,13 @@ class LessonScheduleForUserAttendanceResource
     required String? attendanceStatus,
     required int id,
     required DateTime date,
-    required BulgakovPlatformModel platform,
+    // required BulgakovPlatformModel platform,
     // final teacher_platform;
-    required BulgakovClassroomModel classroom,
+    // required BulgakovClassroomModel classroom,
     // final teacher_classroom;
-    required String? subjectText,
-    required String? teacherText,
-    required BaseAttendanceResource? studentAttendance,
+    // required String? subjectText,
+    // required String? teacherText,
+    // required BaseAttendanceResource? studentAttendance,
   }) = _LessonScheduleForUserAttendanceResource;
 
   factory LessonScheduleForUserAttendanceResource.fromJson(
