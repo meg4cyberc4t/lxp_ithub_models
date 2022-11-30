@@ -26,7 +26,7 @@ mixin _$BaseUserResource {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String? get photoSrc => throw _privateConstructorUsedError;
-  int get lastVisit => throw _privateConstructorUsedError;
+  int? get lastVisit => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
   bool get isSkillfolioReg => throw _privateConstructorUsedError;
@@ -52,7 +52,7 @@ abstract class $BaseUserResourceCopyWith<$Res> {
       String middleName,
       String? email,
       String? photoSrc,
-      int lastVisit,
+      int? lastVisit,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -114,7 +114,7 @@ class _$BaseUserResourceCopyWithImpl<$Res>
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -157,7 +157,7 @@ abstract class _$$_BaseUserResourceCopyWith<$Res>
       String middleName,
       String? email,
       String? photoSrc,
-      int lastVisit,
+      int? lastVisit,
       dynamic phone,
       String photoSrcSmall,
       bool isSkillfolioReg,
@@ -221,7 +221,7 @@ class __$$_BaseUserResourceCopyWithImpl<$Res>
       lastVisit: lastVisit == freezed
           ? _value.lastVisit
           : lastVisit // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       phone: phone == freezed
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
@@ -284,7 +284,7 @@ class _$_BaseUserResource implements _BaseUserResource {
   @override
   final String? photoSrc;
   @override
-  final int lastVisit;
+  final int? lastVisit;
   @override
   final dynamic phone;
   @override
@@ -369,7 +369,7 @@ abstract class _BaseUserResource
       required final String middleName,
       required final String? email,
       required final String? photoSrc,
-      required final int lastVisit,
+      required final int? lastVisit,
       required final dynamic phone,
       required final String photoSrcSmall,
       required final bool isSkillfolioReg,
@@ -393,7 +393,7 @@ abstract class _BaseUserResource
   @override
   String? get photoSrc;
   @override
-  int get lastVisit;
+  int? get lastVisit;
   @override
   dynamic get phone;
   @override

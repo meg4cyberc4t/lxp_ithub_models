@@ -16,7 +16,7 @@ class BaseUserResource with _$BaseUserResource {
     required String middleName,
     required String? email,
     required String? photoSrc,
-    required int lastVisit,
+    required int? lastVisit,
     required dynamic phone,
     required String photoSrcSmall,
     required bool isSkillfolioReg,
