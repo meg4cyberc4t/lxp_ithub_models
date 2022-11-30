@@ -2,7 +2,7 @@ abstract class BaseGroupResourceInterface {
   int get id;
   String get name;
   String get description;
-  int get companyId;
+  int? get companyId;
   int? get halfId;
   int get labelId;
   String? get externalLink;

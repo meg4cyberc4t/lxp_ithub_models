@@ -11,7 +11,7 @@ class BaseGroupResource with _$BaseGroupResource {
     required int id,
     required String name,
     required String description,
-    required int companyId,
+    required int? companyId,
     required int? halfId,
     required int labelId,
     required String? externalLink,

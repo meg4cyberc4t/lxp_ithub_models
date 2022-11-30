@@ -23,7 +23,7 @@ mixin _$BaseGroupResource {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  int get companyId => throw _privateConstructorUsedError;
+  int? get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
   int get labelId => throw _privateConstructorUsedError;
   String? get externalLink => throw _privateConstructorUsedError;
@@ -45,7 +45,7 @@ abstract class $BaseGroupResourceCopyWith<$Res> {
       {int id,
       String name,
       String description,
-      int companyId,
+      int? companyId,
       int? halfId,
       int labelId,
       String? externalLink,
@@ -90,7 +90,7 @@ class _$BaseGroupResourceCopyWithImpl<$Res>
       companyId: companyId == freezed
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       halfId: halfId == freezed
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
@@ -126,7 +126,7 @@ abstract class _$$_BaseGroupResourceCopyWith<$Res>
       {int id,
       String name,
       String description,
-      int companyId,
+      int? companyId,
       int? halfId,
       int labelId,
       String? externalLink,
@@ -173,7 +173,7 @@ class __$$_BaseGroupResourceCopyWithImpl<$Res>
       companyId: companyId == freezed
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       halfId: halfId == freezed
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
@@ -222,7 +222,7 @@ class _$_BaseGroupResource implements _BaseGroupResource {
   @override
   final String description;
   @override
-  final int companyId;
+  final int? companyId;
   @override
   final int? halfId;
   @override
@@ -291,7 +291,7 @@ abstract class _BaseGroupResource
       {required final int id,
       required final String name,
       required final String description,
-      required final int companyId,
+      required final int? companyId,
       required final int? halfId,
       required final int labelId,
       required final String? externalLink,
@@ -308,7 +308,7 @@ abstract class _BaseGroupResource
   @override
   String get description;
   @override
-  int get companyId;
+  int? get companyId;
   @override
   int? get halfId;
   @override
