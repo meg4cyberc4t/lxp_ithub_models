@@ -24,10 +24,20 @@ mixin _$AnswerSubjectResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
+  String? get type => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
   bool get privacy => throw _privateConstructorUsedError;
-  int get hidden => throw _privateConstructorUsedError;
+  int? get hidden => throw _privateConstructorUsedError;
+  int get maxPoints =>
+      throw _privateConstructorUsedError; // required int? time,
+  int get isArchived => throw _privateConstructorUsedError;
+  int? get stepsCount => throw _privateConstructorUsedError;
+  int? get checkpointsCount => throw _privateConstructorUsedError;
+  int? get checkpointsMarkCount => throw _privateConstructorUsedError;
+  int get isHardSkills => throw _privateConstructorUsedError;
+  int get isDistant => throw _privateConstructorUsedError;
+  List<HalvLocalResource> get halves => throw _privateConstructorUsedError;
+  int? get isOverdue => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
   DateTime? get deletedAt => throw _privateConstructorUsedError;
@@ -49,10 +59,19 @@ abstract class $AnswerSubjectResourceCopyWith<$Res> {
       {int id,
       String title,
       String code,
-      String type,
+      String? type,
       String description,
       bool privacy,
-      int hidden,
+      int? hidden,
+      int maxPoints,
+      int isArchived,
+      int? stepsCount,
+      int? checkpointsCount,
+      int? checkpointsMarkCount,
+      int isHardSkills,
+      int isDistant,
+      List<HalvLocalResource> halves,
+      int? isOverdue,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -78,6 +97,15 @@ class _$AnswerSubjectResourceCopyWithImpl<$Res>
     Object? description = freezed,
     Object? privacy = freezed,
     Object? hidden = freezed,
+    Object? maxPoints = freezed,
+    Object? isArchived = freezed,
+    Object? stepsCount = freezed,
+    Object? checkpointsCount = freezed,
+    Object? checkpointsMarkCount = freezed,
+    Object? isHardSkills = freezed,
+    Object? isDistant = freezed,
+    Object? halves = freezed,
+    Object? isOverdue = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
@@ -100,7 +128,7 @@ class _$AnswerSubjectResourceCopyWithImpl<$Res>
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -112,7 +140,43 @@ class _$AnswerSubjectResourceCopyWithImpl<$Res>
       hidden: hidden == freezed
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxPoints: maxPoints == freezed
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
+      isArchived: isArchived == freezed
+          ? _value.isArchived
+          : isArchived // ignore: cast_nullable_to_non_nullable
+              as int,
+      stepsCount: stepsCount == freezed
+          ? _value.stepsCount
+          : stepsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      checkpointsCount: checkpointsCount == freezed
+          ? _value.checkpointsCount
+          : checkpointsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      checkpointsMarkCount: checkpointsMarkCount == freezed
+          ? _value.checkpointsMarkCount
+          : checkpointsMarkCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isHardSkills: isHardSkills == freezed
+          ? _value.isHardSkills
+          : isHardSkills // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDistant: isDistant == freezed
+          ? _value.isDistant
+          : isDistant // ignore: cast_nullable_to_non_nullable
+              as int,
+      halves: halves == freezed
+          ? _value.halves
+          : halves // ignore: cast_nullable_to_non_nullable
+              as List<HalvLocalResource>,
+      isOverdue: isOverdue == freezed
+          ? _value.isOverdue
+          : isOverdue // ignore: cast_nullable_to_non_nullable
+              as int?,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -148,10 +212,19 @@ abstract class _$$_AnswerSubjectResourceCopyWith<$Res>
       {int id,
       String title,
       String code,
-      String type,
+      String? type,
       String description,
       bool privacy,
-      int hidden,
+      int? hidden,
+      int maxPoints,
+      int isArchived,
+      int? stepsCount,
+      int? checkpointsCount,
+      int? checkpointsMarkCount,
+      int isHardSkills,
+      int isDistant,
+      List<HalvLocalResource> halves,
+      int? isOverdue,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -180,6 +253,15 @@ class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
     Object? description = freezed,
     Object? privacy = freezed,
     Object? hidden = freezed,
+    Object? maxPoints = freezed,
+    Object? isArchived = freezed,
+    Object? stepsCount = freezed,
+    Object? checkpointsCount = freezed,
+    Object? checkpointsMarkCount = freezed,
+    Object? isHardSkills = freezed,
+    Object? isDistant = freezed,
+    Object? halves = freezed,
+    Object? isOverdue = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
@@ -202,7 +284,7 @@ class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
@@ -214,7 +296,43 @@ class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
       hidden: hidden == freezed
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
+              as int?,
+      maxPoints: maxPoints == freezed
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
+      isArchived: isArchived == freezed
+          ? _value.isArchived
+          : isArchived // ignore: cast_nullable_to_non_nullable
+              as int,
+      stepsCount: stepsCount == freezed
+          ? _value.stepsCount
+          : stepsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      checkpointsCount: checkpointsCount == freezed
+          ? _value.checkpointsCount
+          : checkpointsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      checkpointsMarkCount: checkpointsMarkCount == freezed
+          ? _value.checkpointsMarkCount
+          : checkpointsMarkCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isHardSkills: isHardSkills == freezed
+          ? _value.isHardSkills
+          : isHardSkills // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDistant: isDistant == freezed
+          ? _value.isDistant
+          : isDistant // ignore: cast_nullable_to_non_nullable
+              as int,
+      halves: halves == freezed
+          ? _value.halves
+          : halves // ignore: cast_nullable_to_non_nullable
+              as List<HalvLocalResource>,
+      isOverdue: isOverdue == freezed
+          ? _value.isOverdue
+          : isOverdue // ignore: cast_nullable_to_non_nullable
+              as int?,
       createdAt: createdAt == freezed
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
@@ -250,6 +368,15 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
       required this.description,
       required this.privacy,
       required this.hidden,
+      required this.maxPoints,
+      required this.isArchived,
+      required this.stepsCount,
+      required this.checkpointsCount,
+      required this.checkpointsMarkCount,
+      required this.isHardSkills,
+      required this.isDistant,
+      required this.halves,
+      required this.isOverdue,
       required this.createdAt,
       required this.updatedAt,
       required this.deletedAt,
@@ -267,13 +394,32 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
   @JsonKey()
   final String code;
   @override
-  final String type;
+  final String? type;
   @override
   final String description;
   @override
   final bool privacy;
   @override
-  final int hidden;
+  final int? hidden;
+  @override
+  final int maxPoints;
+// required int? time,
+  @override
+  final int isArchived;
+  @override
+  final int? stepsCount;
+  @override
+  final int? checkpointsCount;
+  @override
+  final int? checkpointsMarkCount;
+  @override
+  final int isHardSkills;
+  @override
+  final int isDistant;
+  @override
+  final List<HalvLocalResource> halves;
+  @override
+  final int? isOverdue;
   @override
   final DateTime? createdAt;
   @override
@@ -287,7 +433,7 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
 
   @override
   String toString() {
-    return 'AnswerSubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, teachers: $teachers)';
+    return 'AnswerSubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, maxPoints: $maxPoints, isArchived: $isArchived, stepsCount: $stepsCount, checkpointsCount: $checkpointsCount, checkpointsMarkCount: $checkpointsMarkCount, isHardSkills: $isHardSkills, isDistant: $isDistant, halves: $halves, isOverdue: $isOverdue, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, teachers: $teachers)';
   }
 
   @override
@@ -303,6 +449,20 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
                 .equals(other.description, description) &&
             const DeepCollectionEquality().equals(other.privacy, privacy) &&
             const DeepCollectionEquality().equals(other.hidden, hidden) &&
+            const DeepCollectionEquality().equals(other.maxPoints, maxPoints) &&
+            const DeepCollectionEquality()
+                .equals(other.isArchived, isArchived) &&
+            const DeepCollectionEquality()
+                .equals(other.stepsCount, stepsCount) &&
+            const DeepCollectionEquality()
+                .equals(other.checkpointsCount, checkpointsCount) &&
+            const DeepCollectionEquality()
+                .equals(other.checkpointsMarkCount, checkpointsMarkCount) &&
+            const DeepCollectionEquality()
+                .equals(other.isHardSkills, isHardSkills) &&
+            const DeepCollectionEquality().equals(other.isDistant, isDistant) &&
+            const DeepCollectionEquality().equals(other.halves, halves) &&
+            const DeepCollectionEquality().equals(other.isOverdue, isOverdue) &&
             const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
             const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
             const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
@@ -313,20 +473,30 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt),
-      const DeepCollectionEquality().hash(teachers));
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(title),
+        const DeepCollectionEquality().hash(code),
+        const DeepCollectionEquality().hash(type),
+        const DeepCollectionEquality().hash(description),
+        const DeepCollectionEquality().hash(privacy),
+        const DeepCollectionEquality().hash(hidden),
+        const DeepCollectionEquality().hash(maxPoints),
+        const DeepCollectionEquality().hash(isArchived),
+        const DeepCollectionEquality().hash(stepsCount),
+        const DeepCollectionEquality().hash(checkpointsCount),
+        const DeepCollectionEquality().hash(checkpointsMarkCount),
+        const DeepCollectionEquality().hash(isHardSkills),
+        const DeepCollectionEquality().hash(isDistant),
+        const DeepCollectionEquality().hash(halves),
+        const DeepCollectionEquality().hash(isOverdue),
+        const DeepCollectionEquality().hash(createdAt),
+        const DeepCollectionEquality().hash(updatedAt),
+        const DeepCollectionEquality().hash(deletedAt),
+        const DeepCollectionEquality().hash(deletePermanentlyAt),
+        const DeepCollectionEquality().hash(teachers)
+      ]);
 
   @JsonKey(ignore: true)
   @override
@@ -348,10 +518,19 @@ abstract class _AnswerSubjectResource
           {required final int id,
           required final String title,
           final String code,
-          required final String type,
+          required final String? type,
           required final String description,
           required final bool privacy,
-          required final int hidden,
+          required final int? hidden,
+          required final int maxPoints,
+          required final int isArchived,
+          required final int? stepsCount,
+          required final int? checkpointsCount,
+          required final int? checkpointsMarkCount,
+          required final int isHardSkills,
+          required final int isDistant,
+          required final List<HalvLocalResource> halves,
+          required final int? isOverdue,
           required final DateTime? createdAt,
           required final DateTime? updatedAt,
           required final DateTime? deletedAt,
@@ -369,13 +548,31 @@ abstract class _AnswerSubjectResource
   @override
   String get code;
   @override
-  String get type;
+  String? get type;
   @override
   String get description;
   @override
   bool get privacy;
   @override
-  int get hidden;
+  int? get hidden;
+  @override
+  int get maxPoints;
+  @override // required int? time,
+  int get isArchived;
+  @override
+  int? get stepsCount;
+  @override
+  int? get checkpointsCount;
+  @override
+  int? get checkpointsMarkCount;
+  @override
+  int get isHardSkills;
+  @override
+  int get isDistant;
+  @override
+  List<HalvLocalResource> get halves;
+  @override
+  int? get isOverdue;
   @override
   DateTime? get createdAt;
   @override
