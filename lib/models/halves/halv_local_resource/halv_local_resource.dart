@@ -9,7 +9,7 @@ class HalvLocalResource with _$HalvLocalResource {
     required int id,
     required String? imageId,
     required int isArchived,
-    required int semesterId,
+    required int? semesterId,
     required String title,
     required String description,
     required DateTime? updatedAt,

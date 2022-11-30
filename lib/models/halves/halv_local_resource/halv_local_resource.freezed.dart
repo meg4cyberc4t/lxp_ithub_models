@@ -23,7 +23,7 @@ mixin _$HalvLocalResource {
   int get id => throw _privateConstructorUsedError;
   String? get imageId => throw _privateConstructorUsedError;
   int get isArchived => throw _privateConstructorUsedError;
-  int get semesterId => throw _privateConstructorUsedError;
+  int? get semesterId => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -45,7 +45,7 @@ abstract class $HalvLocalResourceCopyWith<$Res> {
       {int id,
       String? imageId,
       int isArchived,
-      int semesterId,
+      int? semesterId,
       String title,
       String description,
       DateTime? updatedAt,
@@ -90,7 +90,7 @@ class _$HalvLocalResourceCopyWithImpl<$Res>
       semesterId: semesterId == freezed
           ? _value.semesterId
           : semesterId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -126,7 +126,7 @@ abstract class _$$_HalvLocalResourceCopyWith<$Res>
       {int id,
       String? imageId,
       int isArchived,
-      int semesterId,
+      int? semesterId,
       String title,
       String description,
       DateTime? updatedAt,
@@ -173,7 +173,7 @@ class __$$_HalvLocalResourceCopyWithImpl<$Res>
       semesterId: semesterId == freezed
           ? _value.semesterId
           : semesterId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       title: title == freezed
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
@@ -222,7 +222,7 @@ class _$_HalvLocalResource implements _HalvLocalResource {
   @override
   final int isArchived;
   @override
-  final int semesterId;
+  final int? semesterId;
   @override
   final String title;
   @override
@@ -291,7 +291,7 @@ abstract class _HalvLocalResource implements HalvLocalResource {
       {required final int id,
       required final String? imageId,
       required final int isArchived,
-      required final int semesterId,
+      required final int? semesterId,
       required final String title,
       required final String description,
       required final DateTime? updatedAt,
@@ -308,7 +308,7 @@ abstract class _HalvLocalResource implements HalvLocalResource {
   @override
   int get isArchived;
   @override
-  int get semesterId;
+  int? get semesterId;
   @override
   String get title;
   @override

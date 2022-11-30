@@ -11,7 +11,7 @@ _$_HalvLocalResource _$$_HalvLocalResourceFromJson(Map<String, dynamic> json) =>
       id: json['id'] as int,
       imageId: json['image_id'] as String?,
       isArchived: json['is_archived'] as int,
-      semesterId: json['semester_id'] as int,
+      semesterId: json['semester_id'] as int?,
       title: json['title'] as String,
       description: json['description'] as String,
       updatedAt: json['updated_at'] == null
