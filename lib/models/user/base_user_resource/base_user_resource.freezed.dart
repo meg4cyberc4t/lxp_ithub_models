@@ -29,7 +29,7 @@ mixin _$BaseUserResource {
   int? get lastVisit => throw _privateConstructorUsedError;
   dynamic get phone => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
-  bool get isSkillfolioReg => throw _privateConstructorUsedError;
+  bool? get isSkillfolioReg => throw _privateConstructorUsedError;
   bool get isOnline => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
@@ -55,7 +55,7 @@ abstract class $BaseUserResourceCopyWith<$Res> {
       int? lastVisit,
       dynamic phone,
       String photoSrcSmall,
-      bool isSkillfolioReg,
+      bool? isSkillfolioReg,
       bool isOnline,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -126,7 +126,7 @@ class _$BaseUserResourceCopyWithImpl<$Res>
       isSkillfolioReg: isSkillfolioReg == freezed
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       isOnline: isOnline == freezed
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
@@ -160,7 +160,7 @@ abstract class _$$_BaseUserResourceCopyWith<$Res>
       int? lastVisit,
       dynamic phone,
       String photoSrcSmall,
-      bool isSkillfolioReg,
+      bool? isSkillfolioReg,
       bool isOnline,
       DateTime? createdAt,
       DateTime? updatedAt});
@@ -233,7 +233,7 @@ class __$$_BaseUserResourceCopyWithImpl<$Res>
       isSkillfolioReg: isSkillfolioReg == freezed
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
       isOnline: isOnline == freezed
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
@@ -290,7 +290,7 @@ class _$_BaseUserResource implements _BaseUserResource {
   @override
   final String photoSrcSmall;
   @override
-  final bool isSkillfolioReg;
+  final bool? isSkillfolioReg;
   @override
   final bool isOnline;
   @override
@@ -372,7 +372,7 @@ abstract class _BaseUserResource
       required final int? lastVisit,
       required final dynamic phone,
       required final String photoSrcSmall,
-      required final bool isSkillfolioReg,
+      required final bool? isSkillfolioReg,
       required final bool isOnline,
       required final DateTime? createdAt,
       required final DateTime? updatedAt}) = _$_BaseUserResource;
@@ -399,7 +399,7 @@ abstract class _BaseUserResource
   @override
   String get photoSrcSmall;
   @override
-  bool get isSkillfolioReg;
+  bool? get isSkillfolioReg;
   @override
   bool get isOnline;
   @override

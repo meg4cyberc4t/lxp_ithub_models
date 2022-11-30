@@ -19,7 +19,7 @@ class BaseUserResource with _$BaseUserResource {
     required int? lastVisit,
     required dynamic phone,
     required String photoSrcSmall,
-    required bool isSkillfolioReg,
+    required bool? isSkillfolioReg,
     required bool isOnline,
     required DateTime? createdAt,
     required DateTime? updatedAt,

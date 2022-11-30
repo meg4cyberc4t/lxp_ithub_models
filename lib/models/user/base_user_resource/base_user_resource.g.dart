@@ -17,7 +17,7 @@ _$_BaseUserResource _$$_BaseUserResourceFromJson(Map<String, dynamic> json) =>
       lastVisit: json['last_visit'] as int?,
       phone: json['phone'],
       photoSrcSmall: json['photo_src_small'] as String,
-      isSkillfolioReg: json['is_skillfolio_reg'] as bool,
+      isSkillfolioReg: json['is_skillfolio_reg'] as bool?,
       isOnline: json['is_online'] as bool,
       createdAt: json['created_at'] == null
           ? null
