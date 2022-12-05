@@ -30,7 +30,7 @@ mixin _$SubjectResource {
   DateTime? get deletedAt => throw _privateConstructorUsedError;
   DateTime? get deletePermanentlyAt => throw _privateConstructorUsedError;
   List<BaseGroupResource> get groups => throw _privateConstructorUsedError;
-  List<BaseUserResource> get teachers => throw _privateConstructorUsedError;
+  List<UserResource> get teachers => throw _privateConstructorUsedError;
   List<SemesterLocalResource> get semesters =>
       throw _privateConstructorUsedError;
 
@@ -57,7 +57,7 @@ abstract class $SubjectResourceCopyWith<$Res> {
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers,
+      List<UserResource> teachers,
       List<SemesterLocalResource> semesters});
 }
 
@@ -131,7 +131,7 @@ class _$SubjectResourceCopyWithImpl<$Res, $Val extends SubjectResource>
       teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
+              as List<UserResource>,
       semesters: null == semesters
           ? _value.semesters
           : semesters // ignore: cast_nullable_to_non_nullable
@@ -159,7 +159,7 @@ abstract class _$$_SubjectResourceCopyWith<$Res>
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers,
+      List<UserResource> teachers,
       List<SemesterLocalResource> semesters});
 }
 
@@ -231,7 +231,7 @@ class __$$_SubjectResourceCopyWithImpl<$Res>
       teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
+              as List<UserResource>,
       semesters: null == semesters
           ? _value.semesters
           : semesters // ignore: cast_nullable_to_non_nullable
@@ -282,7 +282,7 @@ class _$_SubjectResource implements _SubjectResource {
   @override
   final List<BaseGroupResource> groups;
   @override
-  final List<BaseUserResource> teachers;
+  final List<UserResource> teachers;
   @override
   final List<SemesterLocalResource> semesters;
 
@@ -358,7 +358,7 @@ abstract class _SubjectResource
           required final DateTime? deletedAt,
           required final DateTime? deletePermanentlyAt,
           required final List<BaseGroupResource> groups,
-          required final List<BaseUserResource> teachers,
+          required final List<UserResource> teachers,
           required final List<SemesterLocalResource> semesters}) =
       _$_SubjectResource;
 
@@ -386,7 +386,7 @@ abstract class _SubjectResource
   @override
   List<BaseGroupResource> get groups;
   @override
-  List<BaseUserResource> get teachers;
+  List<UserResource> get teachers;
   @override
   List<SemesterLocalResource> get semesters;
   @override

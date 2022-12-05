@@ -3,6 +3,7 @@ import 'package:lxp_ithub_models/models/group/base_group_resource/base_group_res
 import 'package:lxp_ithub_models/models/semester/semester_local_resource/semester_local_resource.dart';
 import 'package:lxp_ithub_models/models/subject/base_subject_resource/base_subject_resource_interface.dart';
 import 'package:lxp_ithub_models/models/user/base_user_resource/base_user_resource.dart';
+import 'package:lxp_ithub_models/models/user/user_resource/user_resource.dart';
 
 part 'subject_resource.freezed.dart';
 part 'subject_resource.g.dart';
@@ -21,7 +22,7 @@ class SubjectResource with _$SubjectResource {
     required DateTime? deletedAt,
     required DateTime? deletePermanentlyAt,
     required List<BaseGroupResource> groups,
-    required List<BaseUserResource> teachers,
+    required List<UserResource> teachers,
     required List<SemesterLocalResource> semesters,
   }) = _SubjectResource;
 

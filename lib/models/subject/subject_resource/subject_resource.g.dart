@@ -29,7 +29,7 @@ _$_SubjectResource _$$_SubjectResourceFromJson(Map<String, dynamic> json) =>
           .map((e) => BaseGroupResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       teachers: (json['teachers'] as List<dynamic>)
-          .map((e) => BaseUserResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => UserResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       semesters: (json['semesters'] as List<dynamic>)
           .map((e) => SemesterLocalResource.fromJson(e as Map<String, dynamic>))
