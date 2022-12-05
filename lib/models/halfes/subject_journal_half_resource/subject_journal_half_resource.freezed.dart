@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_journal_half_resource.dart';
 
@@ -40,7 +40,9 @@ mixin _$SubjectJournalHalfResource {
 abstract class $SubjectJournalHalfResourceCopyWith<$Res> {
   factory $SubjectJournalHalfResourceCopyWith(SubjectJournalHalfResource value,
           $Res Function(SubjectJournalHalfResource) then) =
-      _$SubjectJournalHalfResourceCopyWithImpl<$Res>;
+      _$SubjectJournalHalfResourceCopyWithImpl<$Res,
+          SubjectJournalHalfResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -53,59 +55,62 @@ abstract class $SubjectJournalHalfResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectJournalHalfResourceCopyWithImpl<$Res>
+class _$SubjectJournalHalfResourceCopyWithImpl<$Res,
+        $Val extends SubjectJournalHalfResource>
     implements $SubjectJournalHalfResourceCopyWith<$Res> {
   _$SubjectJournalHalfResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectJournalHalfResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectJournalHalfResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? trajectoryId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? trajectoryId = null,
+    Object? index = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
+    Object? groups = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: null == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -117,6 +122,7 @@ abstract class _$$_SubjectJournalHalfResourceCopyWith<$Res>
           $Res Function(_$_SubjectJournalHalfResource) then) =
       __$$_SubjectJournalHalfResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -130,58 +136,56 @@ abstract class _$$_SubjectJournalHalfResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_SubjectJournalHalfResourceCopyWithImpl<$Res>
-    extends _$SubjectJournalHalfResourceCopyWithImpl<$Res>
+    extends _$SubjectJournalHalfResourceCopyWithImpl<$Res,
+        _$_SubjectJournalHalfResource>
     implements _$$_SubjectJournalHalfResourceCopyWith<$Res> {
   __$$_SubjectJournalHalfResourceCopyWithImpl(
       _$_SubjectJournalHalfResource _value,
       $Res Function(_$_SubjectJournalHalfResource) _then)
-      : super(_value, (v) => _then(v as _$_SubjectJournalHalfResource));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectJournalHalfResource get _value =>
-      super._value as _$_SubjectJournalHalfResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? trajectoryId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? trajectoryId = null,
+    Object? index = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
+    Object? groups = null,
   }) {
     return _then(_$_SubjectJournalHalfResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: null == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
@@ -232,15 +236,17 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectJournalHalfResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.trajectoryId, trajectoryId) &&
-            const DeepCollectionEquality().equals(other.index, index) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.trajectoryId, trajectoryId) ||
+                other.trajectoryId == trajectoryId) &&
+            (identical(other.index, index) || other.index == index) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.groups, groups));
   }
 
@@ -248,17 +254,18 @@ class _$_SubjectJournalHalfResource implements _SubjectJournalHalfResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(trajectoryId),
-      const DeepCollectionEquality().hash(index),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
+      id,
+      title,
+      description,
+      trajectoryId,
+      index,
+      createdAt,
+      updatedAt,
       const DeepCollectionEquality().hash(groups));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectJournalHalfResourceCopyWith<_$_SubjectJournalHalfResource>
       get copyWith => __$$_SubjectJournalHalfResourceCopyWithImpl<
           _$_SubjectJournalHalfResource>(this, _$identity);

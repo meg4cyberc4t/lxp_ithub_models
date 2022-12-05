@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'sign_in_response.dart';
 
@@ -38,7 +38,8 @@ mixin _$SignInResponse {
 abstract class $SignInResponseCopyWith<$Res> {
   factory $SignInResponseCopyWith(
           SignInResponse value, $Res Function(SignInResponse) then) =
-      _$SignInResponseCopyWithImpl<$Res>;
+      _$SignInResponseCopyWithImpl<$Res, SignInResponse>;
+  @useResult
   $Res call(
       {String token,
       int id,
@@ -50,54 +51,56 @@ abstract class $SignInResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SignInResponseCopyWithImpl<$Res>
+class _$SignInResponseCopyWithImpl<$Res, $Val extends SignInResponse>
     implements $SignInResponseCopyWith<$Res> {
   _$SignInResponseCopyWithImpl(this._value, this._then);
 
-  final SignInResponse _value;
   // ignore: unused_field
-  final $Res Function(SignInResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? token = null,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
     Object? photoSrc = freezed,
   }) {
     return _then(_value.copyWith(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: freezed == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -108,6 +111,7 @@ abstract class _$$_SignInResponseCopyWith<$Res>
           _$_SignInResponse value, $Res Function(_$_SignInResponse) then) =
       __$$_SignInResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String token,
       int id,
@@ -120,51 +124,49 @@ abstract class _$$_SignInResponseCopyWith<$Res>
 
 /// @nodoc
 class __$$_SignInResponseCopyWithImpl<$Res>
-    extends _$SignInResponseCopyWithImpl<$Res>
+    extends _$SignInResponseCopyWithImpl<$Res, _$_SignInResponse>
     implements _$$_SignInResponseCopyWith<$Res> {
   __$$_SignInResponseCopyWithImpl(
       _$_SignInResponse _value, $Res Function(_$_SignInResponse) _then)
-      : super(_value, (v) => _then(v as _$_SignInResponse));
+      : super(_value, _then);
 
-  @override
-  _$_SignInResponse get _value => super._value as _$_SignInResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? token = null,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
     Object? photoSrc = freezed,
   }) {
     return _then(_$_SignInResponse(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: freezed == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -212,30 +214,27 @@ class _$_SignInResponse implements _SignInResponse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SignInResponse &&
-            const DeepCollectionEquality().equals(other.token, token) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality()
-                .equals(other.middleName, middleName) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc));
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
+            (identical(other.middleName, middleName) ||
+                other.middleName == middleName) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.photoSrc, photoSrc) ||
+                other.photoSrc == photoSrc));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(token),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(firstName),
-      const DeepCollectionEquality().hash(lastName),
-      const DeepCollectionEquality().hash(middleName),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrc));
+      runtimeType, token, id, firstName, lastName, middleName, email, photoSrc);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SignInResponseCopyWith<_$_SignInResponse> get copyWith =>
       __$$_SignInResponseCopyWithImpl<_$_SignInResponse>(this, _$identity);
 

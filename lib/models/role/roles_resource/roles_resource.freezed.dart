@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'roles_resource.dart';
 
@@ -36,7 +36,8 @@ mixin _$RolesResource {
 abstract class $RolesResourceCopyWith<$Res> {
   factory $RolesResourceCopyWith(
           RolesResource value, $Res Function(RolesResource) then) =
-      _$RolesResourceCopyWithImpl<$Res>;
+      _$RolesResourceCopyWithImpl<$Res, RolesResource>;
+  @useResult
   $Res call(
       {bool isTeacher,
       bool isMember,
@@ -46,44 +47,46 @@ abstract class $RolesResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RolesResourceCopyWithImpl<$Res>
+class _$RolesResourceCopyWithImpl<$Res, $Val extends RolesResource>
     implements $RolesResourceCopyWith<$Res> {
   _$RolesResourceCopyWithImpl(this._value, this._then);
 
-  final RolesResource _value;
   // ignore: unused_field
-  final $Res Function(RolesResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isTeacher = freezed,
-    Object? isMember = freezed,
-    Object? isAdmin = freezed,
-    Object? isParent = freezed,
-    Object? isStudent = freezed,
+    Object? isTeacher = null,
+    Object? isMember = null,
+    Object? isAdmin = null,
+    Object? isParent = null,
+    Object? isStudent = null,
   }) {
     return _then(_value.copyWith(
-      isTeacher: isTeacher == freezed
+      isTeacher: null == isTeacher
           ? _value.isTeacher
           : isTeacher // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMember: isMember == freezed
+      isMember: null == isMember
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAdmin: isAdmin == freezed
+      isAdmin: null == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool,
-      isParent: isParent == freezed
+      isParent: null == isParent
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
               as bool,
-      isStudent: isStudent == freezed
+      isStudent: null == isStudent
           ? _value.isStudent
           : isStudent // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
@@ -94,6 +97,7 @@ abstract class _$$_RolesResourceCopyWith<$Res>
           _$_RolesResource value, $Res Function(_$_RolesResource) then) =
       __$$_RolesResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {bool isTeacher,
       bool isMember,
@@ -104,41 +108,39 @@ abstract class _$$_RolesResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_RolesResourceCopyWithImpl<$Res>
-    extends _$RolesResourceCopyWithImpl<$Res>
+    extends _$RolesResourceCopyWithImpl<$Res, _$_RolesResource>
     implements _$$_RolesResourceCopyWith<$Res> {
   __$$_RolesResourceCopyWithImpl(
       _$_RolesResource _value, $Res Function(_$_RolesResource) _then)
-      : super(_value, (v) => _then(v as _$_RolesResource));
+      : super(_value, _then);
 
-  @override
-  _$_RolesResource get _value => super._value as _$_RolesResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isTeacher = freezed,
-    Object? isMember = freezed,
-    Object? isAdmin = freezed,
-    Object? isParent = freezed,
-    Object? isStudent = freezed,
+    Object? isTeacher = null,
+    Object? isMember = null,
+    Object? isAdmin = null,
+    Object? isParent = null,
+    Object? isStudent = null,
   }) {
     return _then(_$_RolesResource(
-      isTeacher: isTeacher == freezed
+      isTeacher: null == isTeacher
           ? _value.isTeacher
           : isTeacher // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMember: isMember == freezed
+      isMember: null == isMember
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAdmin: isAdmin == freezed
+      isAdmin: null == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool,
-      isParent: isParent == freezed
+      isParent: null == isParent
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
               as bool,
-      isStudent: isStudent == freezed
+      isStudent: null == isStudent
           ? _value.isStudent
           : isStudent // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -180,25 +182,25 @@ class _$_RolesResource implements _RolesResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_RolesResource &&
-            const DeepCollectionEquality().equals(other.isTeacher, isTeacher) &&
-            const DeepCollectionEquality().equals(other.isMember, isMember) &&
-            const DeepCollectionEquality().equals(other.isAdmin, isAdmin) &&
-            const DeepCollectionEquality().equals(other.isParent, isParent) &&
-            const DeepCollectionEquality().equals(other.isStudent, isStudent));
+            (identical(other.isTeacher, isTeacher) ||
+                other.isTeacher == isTeacher) &&
+            (identical(other.isMember, isMember) ||
+                other.isMember == isMember) &&
+            (identical(other.isAdmin, isAdmin) || other.isAdmin == isAdmin) &&
+            (identical(other.isParent, isParent) ||
+                other.isParent == isParent) &&
+            (identical(other.isStudent, isStudent) ||
+                other.isStudent == isStudent));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isTeacher),
-      const DeepCollectionEquality().hash(isMember),
-      const DeepCollectionEquality().hash(isAdmin),
-      const DeepCollectionEquality().hash(isParent),
-      const DeepCollectionEquality().hash(isStudent));
+      runtimeType, isTeacher, isMember, isAdmin, isParent, isStudent);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_RolesResourceCopyWith<_$_RolesResource> get copyWith =>
       __$$_RolesResourceCopyWithImpl<_$_RolesResource>(this, _$identity);
 

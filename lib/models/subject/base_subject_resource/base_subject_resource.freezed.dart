@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_subject_resource.dart';
 
@@ -24,9 +24,7 @@ mixin _$BaseSubjectResource {
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
-  String? get description => throw _privateConstructorUsedError;
-  bool get privacy => throw _privateConstructorUsedError;
-  int get hidden => throw _privateConstructorUsedError;
+  int? get hidden => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
   DateTime? get deletedAt => throw _privateConstructorUsedError;
@@ -42,15 +40,14 @@ mixin _$BaseSubjectResource {
 abstract class $BaseSubjectResourceCopyWith<$Res> {
   factory $BaseSubjectResourceCopyWith(
           BaseSubjectResource value, $Res Function(BaseSubjectResource) then) =
-      _$BaseSubjectResourceCopyWithImpl<$Res>;
+      _$BaseSubjectResourceCopyWithImpl<$Res, BaseSubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
       String type,
-      String? description,
-      bool privacy,
-      int hidden,
+      int? hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -58,22 +55,22 @@ abstract class $BaseSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseSubjectResourceCopyWithImpl<$Res>
+class _$BaseSubjectResourceCopyWithImpl<$Res, $Val extends BaseSubjectResource>
     implements $BaseSubjectResourceCopyWith<$Res> {
   _$BaseSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final BaseSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(BaseSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? hidden = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
@@ -81,51 +78,43 @@ class _$BaseSubjectResourceCopyWithImpl<$Res>
     Object? deletePermanentlyAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
-              as bool,
-      hidden: hidden == freezed
+      hidden: freezed == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
-              as int,
-      createdAt: createdAt == freezed
+              as int?,
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -136,14 +125,13 @@ abstract class _$$_BaseSubjectResourceCopyWith<$Res>
           $Res Function(_$_BaseSubjectResource) then) =
       __$$_BaseSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
       String type,
-      String? description,
-      bool privacy,
-      int hidden,
+      int? hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
@@ -152,23 +140,19 @@ abstract class _$$_BaseSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseSubjectResourceCopyWithImpl<$Res>
-    extends _$BaseSubjectResourceCopyWithImpl<$Res>
+    extends _$BaseSubjectResourceCopyWithImpl<$Res, _$_BaseSubjectResource>
     implements _$$_BaseSubjectResourceCopyWith<$Res> {
   __$$_BaseSubjectResourceCopyWithImpl(_$_BaseSubjectResource _value,
       $Res Function(_$_BaseSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseSubjectResource get _value => super._value as _$_BaseSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? hidden = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
@@ -176,47 +160,39 @@ class __$$_BaseSubjectResourceCopyWithImpl<$Res>
     Object? deletePermanentlyAt = freezed,
   }) {
     return _then(_$_BaseSubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
-              as bool,
-      hidden: hidden == freezed
+      hidden: freezed == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
-              as int,
-      createdAt: createdAt == freezed
+              as int?,
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -232,8 +208,6 @@ class _$_BaseSubjectResource implements _BaseSubjectResource {
       required this.title,
       this.code = '',
       required this.type,
-      required this.description,
-      required this.privacy,
       required this.hidden,
       required this.createdAt,
       required this.updatedAt,
@@ -253,11 +227,7 @@ class _$_BaseSubjectResource implements _BaseSubjectResource {
   @override
   final String type;
   @override
-  final String? description;
-  @override
-  final bool privacy;
-  @override
-  final int hidden;
+  final int? hidden;
   @override
   final DateTime? createdAt;
   @override
@@ -269,7 +239,7 @@ class _$_BaseSubjectResource implements _BaseSubjectResource {
 
   @override
   String toString() {
-    return 'BaseSubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt)';
+    return 'BaseSubjectResource(id: $id, title: $title, code: $code, type: $type, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt)';
   }
 
   @override
@@ -277,39 +247,29 @@ class _$_BaseSubjectResource implements _BaseSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseSubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt));
+  int get hashCode => Object.hash(runtimeType, id, title, code, type, hidden,
+      createdAt, updatedAt, deletedAt, deletePermanentlyAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseSubjectResourceCopyWith<_$_BaseSubjectResource> get copyWith =>
       __$$_BaseSubjectResourceCopyWithImpl<_$_BaseSubjectResource>(
           this, _$identity);
@@ -329,9 +289,7 @@ abstract class _BaseSubjectResource
       required final String title,
       final String code,
       required final String type,
-      required final String? description,
-      required final bool privacy,
-      required final int hidden,
+      required final int? hidden,
       required final DateTime? createdAt,
       required final DateTime? updatedAt,
       required final DateTime? deletedAt,
@@ -349,11 +307,7 @@ abstract class _BaseSubjectResource
   @override
   String get type;
   @override
-  String? get description;
-  @override
-  bool get privacy;
-  @override
-  int get hidden;
+  int? get hidden;
   @override
   DateTime? get createdAt;
   @override

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_mark_resource.dart';
 
@@ -45,7 +45,8 @@ mixin _$BaseMarkResource {
 abstract class $BaseMarkResourceCopyWith<$Res> {
   factory $BaseMarkResourceCopyWith(
           BaseMarkResource value, $Res Function(BaseMarkResource) then) =
-      _$BaseMarkResourceCopyWithImpl<$Res>;
+      _$BaseMarkResourceCopyWithImpl<$Res, BaseMarkResource>;
+  @useResult
   $Res call(
       {int id,
       String date,
@@ -64,89 +65,91 @@ abstract class $BaseMarkResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseMarkResourceCopyWithImpl<$Res>
+class _$BaseMarkResourceCopyWithImpl<$Res, $Val extends BaseMarkResource>
     implements $BaseMarkResourceCopyWith<$Res> {
   _$BaseMarkResourceCopyWithImpl(this._value, this._then);
 
-  final BaseMarkResource _value;
   // ignore: unused_field
-  final $Res Function(BaseMarkResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? teacherId = freezed,
-    Object? studentId = freezed,
-    Object? typeId = freezed,
-    Object? originalMarkId = freezed,
-    Object? superseded = freezed,
-    Object? subjectId = freezed,
-    Object? stepId = freezed,
-    Object? answerId = freezed,
-    Object? mark = freezed,
-    Object? comment = freezed,
+    Object? id = null,
+    Object? date = null,
+    Object? teacherId = null,
+    Object? studentId = null,
+    Object? typeId = null,
+    Object? originalMarkId = null,
+    Object? superseded = null,
+    Object? subjectId = null,
+    Object? stepId = null,
+    Object? answerId = null,
+    Object? mark = null,
+    Object? comment = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as String,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      studentId: studentId == freezed
+      studentId: null == studentId
           ? _value.studentId
           : studentId // ignore: cast_nullable_to_non_nullable
               as int,
-      typeId: typeId == freezed
+      typeId: null == typeId
           ? _value.typeId
           : typeId // ignore: cast_nullable_to_non_nullable
               as int,
-      originalMarkId: originalMarkId == freezed
+      originalMarkId: null == originalMarkId
           ? _value.originalMarkId
           : originalMarkId // ignore: cast_nullable_to_non_nullable
               as int,
-      superseded: superseded == freezed
+      superseded: null == superseded
           ? _value.superseded
           : superseded // ignore: cast_nullable_to_non_nullable
               as bool,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      mark: mark == freezed
+      mark: null == mark
           ? _value.mark
           : mark // ignore: cast_nullable_to_non_nullable
               as int,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -157,6 +160,7 @@ abstract class _$$_BaseMarkResourceCopyWith<$Res>
           _$_BaseMarkResource value, $Res Function(_$_BaseMarkResource) then) =
       __$$_BaseMarkResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String date,
@@ -176,86 +180,84 @@ abstract class _$$_BaseMarkResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseMarkResourceCopyWithImpl<$Res>
-    extends _$BaseMarkResourceCopyWithImpl<$Res>
+    extends _$BaseMarkResourceCopyWithImpl<$Res, _$_BaseMarkResource>
     implements _$$_BaseMarkResourceCopyWith<$Res> {
   __$$_BaseMarkResourceCopyWithImpl(
       _$_BaseMarkResource _value, $Res Function(_$_BaseMarkResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseMarkResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseMarkResource get _value => super._value as _$_BaseMarkResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? teacherId = freezed,
-    Object? studentId = freezed,
-    Object? typeId = freezed,
-    Object? originalMarkId = freezed,
-    Object? superseded = freezed,
-    Object? subjectId = freezed,
-    Object? stepId = freezed,
-    Object? answerId = freezed,
-    Object? mark = freezed,
-    Object? comment = freezed,
+    Object? id = null,
+    Object? date = null,
+    Object? teacherId = null,
+    Object? studentId = null,
+    Object? typeId = null,
+    Object? originalMarkId = null,
+    Object? superseded = null,
+    Object? subjectId = null,
+    Object? stepId = null,
+    Object? answerId = null,
+    Object? mark = null,
+    Object? comment = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseMarkResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as String,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      studentId: studentId == freezed
+      studentId: null == studentId
           ? _value.studentId
           : studentId // ignore: cast_nullable_to_non_nullable
               as int,
-      typeId: typeId == freezed
+      typeId: null == typeId
           ? _value.typeId
           : typeId // ignore: cast_nullable_to_non_nullable
               as int,
-      originalMarkId: originalMarkId == freezed
+      originalMarkId: null == originalMarkId
           ? _value.originalMarkId
           : originalMarkId // ignore: cast_nullable_to_non_nullable
               as int,
-      superseded: superseded == freezed
+      superseded: null == superseded
           ? _value.superseded
           : superseded // ignore: cast_nullable_to_non_nullable
               as bool,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      mark: mark == freezed
+      mark: null == mark
           ? _value.mark
           : mark // ignore: cast_nullable_to_non_nullable
               as int,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -324,45 +326,52 @@ class _$_BaseMarkResource implements _BaseMarkResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseMarkResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.date, date) &&
-            const DeepCollectionEquality().equals(other.teacherId, teacherId) &&
-            const DeepCollectionEquality().equals(other.studentId, studentId) &&
-            const DeepCollectionEquality().equals(other.typeId, typeId) &&
-            const DeepCollectionEquality()
-                .equals(other.originalMarkId, originalMarkId) &&
-            const DeepCollectionEquality()
-                .equals(other.superseded, superseded) &&
-            const DeepCollectionEquality().equals(other.subjectId, subjectId) &&
-            const DeepCollectionEquality().equals(other.stepId, stepId) &&
-            const DeepCollectionEquality().equals(other.answerId, answerId) &&
-            const DeepCollectionEquality().equals(other.mark, mark) &&
-            const DeepCollectionEquality().equals(other.comment, comment) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.teacherId, teacherId) ||
+                other.teacherId == teacherId) &&
+            (identical(other.studentId, studentId) ||
+                other.studentId == studentId) &&
+            (identical(other.typeId, typeId) || other.typeId == typeId) &&
+            (identical(other.originalMarkId, originalMarkId) ||
+                other.originalMarkId == originalMarkId) &&
+            (identical(other.superseded, superseded) ||
+                other.superseded == superseded) &&
+            (identical(other.subjectId, subjectId) ||
+                other.subjectId == subjectId) &&
+            (identical(other.stepId, stepId) || other.stepId == stepId) &&
+            (identical(other.answerId, answerId) ||
+                other.answerId == answerId) &&
+            (identical(other.mark, mark) || other.mark == mark) &&
+            (identical(other.comment, comment) || other.comment == comment) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(date),
-      const DeepCollectionEquality().hash(teacherId),
-      const DeepCollectionEquality().hash(studentId),
-      const DeepCollectionEquality().hash(typeId),
-      const DeepCollectionEquality().hash(originalMarkId),
-      const DeepCollectionEquality().hash(superseded),
-      const DeepCollectionEquality().hash(subjectId),
-      const DeepCollectionEquality().hash(stepId),
-      const DeepCollectionEquality().hash(answerId),
-      const DeepCollectionEquality().hash(mark),
-      const DeepCollectionEquality().hash(comment),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      id,
+      date,
+      teacherId,
+      studentId,
+      typeId,
+      originalMarkId,
+      superseded,
+      subjectId,
+      stepId,
+      answerId,
+      mark,
+      comment,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseMarkResourceCopyWith<_$_BaseMarkResource> get copyWith =>
       __$$_BaseMarkResourceCopyWithImpl<_$_BaseMarkResource>(this, _$identity);
 

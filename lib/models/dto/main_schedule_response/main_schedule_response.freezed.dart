@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'main_schedule_response.dart';
 
@@ -33,34 +33,38 @@ mixin _$MainScheduleResponse {
 abstract class $MainScheduleResponseCopyWith<$Res> {
   factory $MainScheduleResponseCopyWith(MainScheduleResponse value,
           $Res Function(MainScheduleResponse) then) =
-      _$MainScheduleResponseCopyWithImpl<$Res>;
+      _$MainScheduleResponseCopyWithImpl<$Res, MainScheduleResponse>;
+  @useResult
   $Res call({List<LessonSchedule> teacher, List<LessonSchedule> student});
 }
 
 /// @nodoc
-class _$MainScheduleResponseCopyWithImpl<$Res>
+class _$MainScheduleResponseCopyWithImpl<$Res,
+        $Val extends MainScheduleResponse>
     implements $MainScheduleResponseCopyWith<$Res> {
   _$MainScheduleResponseCopyWithImpl(this._value, this._then);
 
-  final MainScheduleResponse _value;
   // ignore: unused_field
-  final $Res Function(MainScheduleResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teacher = freezed,
-    Object? student = freezed,
+    Object? teacher = null,
+    Object? student = null,
   }) {
     return _then(_value.copyWith(
-      teacher: teacher == freezed
+      teacher: null == teacher
           ? _value.teacher
           : teacher // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
-      student: student == freezed
+      student: null == student
           ? _value.student
           : student // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -71,31 +75,30 @@ abstract class _$$_MainScheduleResponseCopyWith<$Res>
           $Res Function(_$_MainScheduleResponse) then) =
       __$$_MainScheduleResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<LessonSchedule> teacher, List<LessonSchedule> student});
 }
 
 /// @nodoc
 class __$$_MainScheduleResponseCopyWithImpl<$Res>
-    extends _$MainScheduleResponseCopyWithImpl<$Res>
+    extends _$MainScheduleResponseCopyWithImpl<$Res, _$_MainScheduleResponse>
     implements _$$_MainScheduleResponseCopyWith<$Res> {
   __$$_MainScheduleResponseCopyWithImpl(_$_MainScheduleResponse _value,
       $Res Function(_$_MainScheduleResponse) _then)
-      : super(_value, (v) => _then(v as _$_MainScheduleResponse));
+      : super(_value, _then);
 
-  @override
-  _$_MainScheduleResponse get _value => super._value as _$_MainScheduleResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teacher = freezed,
-    Object? student = freezed,
+    Object? teacher = null,
+    Object? student = null,
   }) {
     return _then(_$_MainScheduleResponse(
-      teacher: teacher == freezed
+      teacher: null == teacher
           ? _value.teacher
           : teacher // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
-      student: student == freezed
+      student: null == student
           ? _value.student
           : student // ignore: cast_nullable_to_non_nullable
               as List<LessonSchedule>,
@@ -139,6 +142,7 @@ class _$_MainScheduleResponse implements _MainScheduleResponse {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MainScheduleResponseCopyWith<_$_MainScheduleResponse> get copyWith =>
       __$$_MainScheduleResponseCopyWithImpl<_$_MainScheduleResponse>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_ugc_pattern_resource.dart';
 
@@ -39,7 +39,8 @@ mixin _$BaseUgcPatternResource {
 abstract class $BaseUgcPatternResourceCopyWith<$Res> {
   factory $BaseUgcPatternResourceCopyWith(BaseUgcPatternResource value,
           $Res Function(BaseUgcPatternResource) then) =
-      _$BaseUgcPatternResourceCopyWithImpl<$Res>;
+      _$BaseUgcPatternResourceCopyWithImpl<$Res, BaseUgcPatternResource>;
+  @useResult
   $Res call(
       {int id,
       int stepId,
@@ -51,54 +52,57 @@ abstract class $BaseUgcPatternResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseUgcPatternResourceCopyWithImpl<$Res>
+class _$BaseUgcPatternResourceCopyWithImpl<$Res,
+        $Val extends BaseUgcPatternResource>
     implements $BaseUgcPatternResourceCopyWith<$Res> {
   _$BaseUgcPatternResourceCopyWithImpl(this._value, this._then);
 
-  final BaseUgcPatternResource _value;
   // ignore: unused_field
-  final $Res Function(BaseUgcPatternResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? stepId = freezed,
-    Object? number = freezed,
-    Object? required = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? stepId = null,
+    Object? number = null,
+    Object? required = null,
+    Object? title = null,
     Object? type = freezed,
     Object? forms = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      required: required == freezed
+      required: null == required
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
               as bool,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int?,
-      forms: forms == freezed
+      forms: freezed == forms
           ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcFormResource>?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -109,6 +113,7 @@ abstract class _$$_BaseUgcPatternResourceCopyWith<$Res>
           $Res Function(_$_BaseUgcPatternResource) then) =
       __$$_BaseUgcPatternResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int stepId,
@@ -121,52 +126,50 @@ abstract class _$$_BaseUgcPatternResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseUgcPatternResourceCopyWithImpl<$Res>
-    extends _$BaseUgcPatternResourceCopyWithImpl<$Res>
+    extends _$BaseUgcPatternResourceCopyWithImpl<$Res,
+        _$_BaseUgcPatternResource>
     implements _$$_BaseUgcPatternResourceCopyWith<$Res> {
   __$$_BaseUgcPatternResourceCopyWithImpl(_$_BaseUgcPatternResource _value,
       $Res Function(_$_BaseUgcPatternResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseUgcPatternResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseUgcPatternResource get _value =>
-      super._value as _$_BaseUgcPatternResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? stepId = freezed,
-    Object? number = freezed,
-    Object? required = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? stepId = null,
+    Object? number = null,
+    Object? required = null,
+    Object? title = null,
     Object? type = freezed,
     Object? forms = freezed,
   }) {
     return _then(_$_BaseUgcPatternResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      required: required == freezed
+      required: null == required
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
               as bool,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int?,
-      forms: forms == freezed
+      forms: freezed == forms
           ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcFormResource>?,
@@ -214,29 +217,24 @@ class _$_BaseUgcPatternResource implements _BaseUgcPatternResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseUgcPatternResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.stepId, stepId) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality().equals(other.required, required) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.stepId, stepId) || other.stepId == stepId) &&
+            (identical(other.number, number) || other.number == number) &&
+            (identical(other.required, required) ||
+                other.required == required) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.type, type) || other.type == type) &&
             const DeepCollectionEquality().equals(other.forms, forms));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(stepId),
-      const DeepCollectionEquality().hash(number),
-      const DeepCollectionEquality().hash(required),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(forms));
+  int get hashCode => Object.hash(runtimeType, id, stepId, number, required,
+      title, type, const DeepCollectionEquality().hash(forms));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseUgcPatternResourceCopyWith<_$_BaseUgcPatternResource> get copyWith =>
       __$$_BaseUgcPatternResourceCopyWithImpl<_$_BaseUgcPatternResource>(
           this, _$identity);

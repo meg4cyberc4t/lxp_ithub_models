@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'user_trajectory_halves_resource.dart';
 
@@ -35,29 +35,34 @@ abstract class $UserTrajectoryHalvesResourceCopyWith<$Res> {
   factory $UserTrajectoryHalvesResourceCopyWith(
           UserTrajectoryHalvesResource value,
           $Res Function(UserTrajectoryHalvesResource) then) =
-      _$UserTrajectoryHalvesResourceCopyWithImpl<$Res>;
+      _$UserTrajectoryHalvesResourceCopyWithImpl<$Res,
+          UserTrajectoryHalvesResource>;
+  @useResult
   $Res call({List<UserTrajectoryHalfSubjectsResource> subjects});
 }
 
 /// @nodoc
-class _$UserTrajectoryHalvesResourceCopyWithImpl<$Res>
+class _$UserTrajectoryHalvesResourceCopyWithImpl<$Res,
+        $Val extends UserTrajectoryHalvesResource>
     implements $UserTrajectoryHalvesResourceCopyWith<$Res> {
   _$UserTrajectoryHalvesResourceCopyWithImpl(this._value, this._then);
 
-  final UserTrajectoryHalvesResource _value;
   // ignore: unused_field
-  final $Res Function(UserTrajectoryHalvesResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subjects = freezed,
+    Object? subjects = null,
   }) {
     return _then(_value.copyWith(
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalfSubjectsResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -69,28 +74,27 @@ abstract class _$$_UserTrajectoryHalvesResourceCopyWith<$Res>
           $Res Function(_$_UserTrajectoryHalvesResource) then) =
       __$$_UserTrajectoryHalvesResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<UserTrajectoryHalfSubjectsResource> subjects});
 }
 
 /// @nodoc
 class __$$_UserTrajectoryHalvesResourceCopyWithImpl<$Res>
-    extends _$UserTrajectoryHalvesResourceCopyWithImpl<$Res>
+    extends _$UserTrajectoryHalvesResourceCopyWithImpl<$Res,
+        _$_UserTrajectoryHalvesResource>
     implements _$$_UserTrajectoryHalvesResourceCopyWith<$Res> {
   __$$_UserTrajectoryHalvesResourceCopyWithImpl(
       _$_UserTrajectoryHalvesResource _value,
       $Res Function(_$_UserTrajectoryHalvesResource) _then)
-      : super(_value, (v) => _then(v as _$_UserTrajectoryHalvesResource));
+      : super(_value, _then);
 
-  @override
-  _$_UserTrajectoryHalvesResource get _value =>
-      super._value as _$_UserTrajectoryHalvesResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subjects = freezed,
+    Object? subjects = null,
   }) {
     return _then(_$_UserTrajectoryHalvesResource(
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalfSubjectsResource>,
@@ -129,6 +133,7 @@ class _$_UserTrajectoryHalvesResource implements _UserTrajectoryHalvesResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_UserTrajectoryHalvesResourceCopyWith<_$_UserTrajectoryHalvesResource>
       get copyWith => __$$_UserTrajectoryHalvesResourceCopyWithImpl<
           _$_UserTrajectoryHalvesResource>(this, _$identity);

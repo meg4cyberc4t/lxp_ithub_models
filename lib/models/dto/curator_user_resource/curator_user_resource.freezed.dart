@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'curator_user_resource.dart';
 
@@ -33,29 +33,32 @@ mixin _$CuratorUserResource {
 abstract class $CuratorUserResourceCopyWith<$Res> {
   factory $CuratorUserResourceCopyWith(
           CuratorUserResource value, $Res Function(CuratorUserResource) then) =
-      _$CuratorUserResourceCopyWithImpl<$Res>;
+      _$CuratorUserResourceCopyWithImpl<$Res, CuratorUserResource>;
+  @useResult
   $Res call({List<UserResource> curators});
 }
 
 /// @nodoc
-class _$CuratorUserResourceCopyWithImpl<$Res>
+class _$CuratorUserResourceCopyWithImpl<$Res, $Val extends CuratorUserResource>
     implements $CuratorUserResourceCopyWith<$Res> {
   _$CuratorUserResourceCopyWithImpl(this._value, this._then);
 
-  final CuratorUserResource _value;
   // ignore: unused_field
-  final $Res Function(CuratorUserResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? curators = freezed,
+    Object? curators = null,
   }) {
     return _then(_value.copyWith(
-      curators: curators == freezed
+      curators: null == curators
           ? _value.curators
           : curators // ignore: cast_nullable_to_non_nullable
               as List<UserResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -66,26 +69,25 @@ abstract class _$$_CuratorUserResourceCopyWith<$Res>
           $Res Function(_$_CuratorUserResource) then) =
       __$$_CuratorUserResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<UserResource> curators});
 }
 
 /// @nodoc
 class __$$_CuratorUserResourceCopyWithImpl<$Res>
-    extends _$CuratorUserResourceCopyWithImpl<$Res>
+    extends _$CuratorUserResourceCopyWithImpl<$Res, _$_CuratorUserResource>
     implements _$$_CuratorUserResourceCopyWith<$Res> {
   __$$_CuratorUserResourceCopyWithImpl(_$_CuratorUserResource _value,
       $Res Function(_$_CuratorUserResource) _then)
-      : super(_value, (v) => _then(v as _$_CuratorUserResource));
+      : super(_value, _then);
 
-  @override
-  _$_CuratorUserResource get _value => super._value as _$_CuratorUserResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? curators = freezed,
+    Object? curators = null,
   }) {
     return _then(_$_CuratorUserResource(
-      curators: curators == freezed
+      curators: null == curators
           ? _value.curators
           : curators // ignore: cast_nullable_to_non_nullable
               as List<UserResource>,
@@ -125,6 +127,7 @@ class _$_CuratorUserResource implements _CuratorUserResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CuratorUserResourceCopyWith<_$_CuratorUserResource> get copyWith =>
       __$$_CuratorUserResourceCopyWithImpl<_$_CuratorUserResource>(
           this, _$identity);

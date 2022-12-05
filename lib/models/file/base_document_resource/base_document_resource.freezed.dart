@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_document_resource.dart';
 
@@ -38,7 +38,8 @@ mixin _$BaseDocumentResource {
 abstract class $BaseDocumentResourceCopyWith<$Res> {
   factory $BaseDocumentResourceCopyWith(BaseDocumentResource value,
           $Res Function(BaseDocumentResource) then) =
-      _$BaseDocumentResourceCopyWithImpl<$Res>;
+      _$BaseDocumentResourceCopyWithImpl<$Res, BaseDocumentResource>;
+  @useResult
   $Res call(
       {int id,
       String publicId,
@@ -50,54 +51,57 @@ abstract class $BaseDocumentResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseDocumentResourceCopyWithImpl<$Res>
+class _$BaseDocumentResourceCopyWithImpl<$Res,
+        $Val extends BaseDocumentResource>
     implements $BaseDocumentResourceCopyWith<$Res> {
   _$BaseDocumentResourceCopyWithImpl(this._value, this._then);
 
-  final BaseDocumentResource _value;
   // ignore: unused_field
-  final $Res Function(BaseDocumentResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? publicId = freezed,
-    Object? ownerId = freezed,
-    Object? path = freezed,
-    Object? description = freezed,
-    Object? size = freezed,
-    Object? privacy = freezed,
+    Object? id = null,
+    Object? publicId = null,
+    Object? ownerId = null,
+    Object? path = null,
+    Object? description = null,
+    Object? size = null,
+    Object? privacy = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -108,6 +112,7 @@ abstract class _$$_BaseDocumentResourceCopyWith<$Res>
           $Res Function(_$_BaseDocumentResource) then) =
       __$$_BaseDocumentResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String publicId,
@@ -120,51 +125,49 @@ abstract class _$$_BaseDocumentResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseDocumentResourceCopyWithImpl<$Res>
-    extends _$BaseDocumentResourceCopyWithImpl<$Res>
+    extends _$BaseDocumentResourceCopyWithImpl<$Res, _$_BaseDocumentResource>
     implements _$$_BaseDocumentResourceCopyWith<$Res> {
   __$$_BaseDocumentResourceCopyWithImpl(_$_BaseDocumentResource _value,
       $Res Function(_$_BaseDocumentResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseDocumentResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseDocumentResource get _value => super._value as _$_BaseDocumentResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? publicId = freezed,
-    Object? ownerId = freezed,
-    Object? path = freezed,
-    Object? description = freezed,
-    Object? size = freezed,
-    Object? privacy = freezed,
+    Object? id = null,
+    Object? publicId = null,
+    Object? ownerId = null,
+    Object? path = null,
+    Object? description = null,
+    Object? size = null,
+    Object? privacy = null,
   }) {
     return _then(_$_BaseDocumentResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
@@ -212,30 +215,25 @@ class _$_BaseDocumentResource implements _BaseDocumentResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseDocumentResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.publicId, publicId) &&
-            const DeepCollectionEquality().equals(other.ownerId, ownerId) &&
-            const DeepCollectionEquality().equals(other.path, path) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.size, size) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.publicId, publicId) ||
+                other.publicId == publicId) &&
+            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
+            (identical(other.path, path) || other.path == path) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.size, size) || other.size == size) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(publicId),
-      const DeepCollectionEquality().hash(ownerId),
-      const DeepCollectionEquality().hash(path),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(size),
-      const DeepCollectionEquality().hash(privacy));
+      runtimeType, id, publicId, ownerId, path, description, size, privacy);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseDocumentResourceCopyWith<_$_BaseDocumentResource> get copyWith =>
       __$$_BaseDocumentResourceCopyWithImpl<_$_BaseDocumentResource>(
           this, _$identity);

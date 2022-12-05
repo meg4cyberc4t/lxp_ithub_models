@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'checkpoints_stats.dart';
 
@@ -35,7 +35,8 @@ mixin _$CheckpointsStats {
 abstract class $CheckpointsStatsCopyWith<$Res> {
   factory $CheckpointsStatsCopyWith(
           CheckpointsStats value, $Res Function(CheckpointsStats) then) =
-      _$CheckpointsStatsCopyWithImpl<$Res>;
+      _$CheckpointsStatsCopyWithImpl<$Res, CheckpointsStats>;
+  @useResult
   $Res call(
       {int checkpointsTotal,
       int checkpointsPassed,
@@ -44,39 +45,41 @@ abstract class $CheckpointsStatsCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CheckpointsStatsCopyWithImpl<$Res>
+class _$CheckpointsStatsCopyWithImpl<$Res, $Val extends CheckpointsStats>
     implements $CheckpointsStatsCopyWith<$Res> {
   _$CheckpointsStatsCopyWithImpl(this._value, this._then);
 
-  final CheckpointsStats _value;
   // ignore: unused_field
-  final $Res Function(CheckpointsStats) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? checkpointsTotal = freezed,
-    Object? checkpointsPassed = freezed,
+    Object? checkpointsTotal = null,
+    Object? checkpointsPassed = null,
     Object? checkpointsMarksTotal = freezed,
     Object? checkpointsMarksCollected = freezed,
   }) {
     return _then(_value.copyWith(
-      checkpointsTotal: checkpointsTotal == freezed
+      checkpointsTotal: null == checkpointsTotal
           ? _value.checkpointsTotal
           : checkpointsTotal // ignore: cast_nullable_to_non_nullable
               as int,
-      checkpointsPassed: checkpointsPassed == freezed
+      checkpointsPassed: null == checkpointsPassed
           ? _value.checkpointsPassed
           : checkpointsPassed // ignore: cast_nullable_to_non_nullable
               as int,
-      checkpointsMarksTotal: checkpointsMarksTotal == freezed
+      checkpointsMarksTotal: freezed == checkpointsMarksTotal
           ? _value.checkpointsMarksTotal
           : checkpointsMarksTotal // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsMarksCollected: checkpointsMarksCollected == freezed
+      checkpointsMarksCollected: freezed == checkpointsMarksCollected
           ? _value.checkpointsMarksCollected
           : checkpointsMarksCollected // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -87,6 +90,7 @@ abstract class _$$_CheckpointsStatsCopyWith<$Res>
           _$_CheckpointsStats value, $Res Function(_$_CheckpointsStats) then) =
       __$$_CheckpointsStatsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int checkpointsTotal,
       int checkpointsPassed,
@@ -96,36 +100,34 @@ abstract class _$$_CheckpointsStatsCopyWith<$Res>
 
 /// @nodoc
 class __$$_CheckpointsStatsCopyWithImpl<$Res>
-    extends _$CheckpointsStatsCopyWithImpl<$Res>
+    extends _$CheckpointsStatsCopyWithImpl<$Res, _$_CheckpointsStats>
     implements _$$_CheckpointsStatsCopyWith<$Res> {
   __$$_CheckpointsStatsCopyWithImpl(
       _$_CheckpointsStats _value, $Res Function(_$_CheckpointsStats) _then)
-      : super(_value, (v) => _then(v as _$_CheckpointsStats));
+      : super(_value, _then);
 
-  @override
-  _$_CheckpointsStats get _value => super._value as _$_CheckpointsStats;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? checkpointsTotal = freezed,
-    Object? checkpointsPassed = freezed,
+    Object? checkpointsTotal = null,
+    Object? checkpointsPassed = null,
     Object? checkpointsMarksTotal = freezed,
     Object? checkpointsMarksCollected = freezed,
   }) {
     return _then(_$_CheckpointsStats(
-      checkpointsTotal: checkpointsTotal == freezed
+      checkpointsTotal: null == checkpointsTotal
           ? _value.checkpointsTotal
           : checkpointsTotal // ignore: cast_nullable_to_non_nullable
               as int,
-      checkpointsPassed: checkpointsPassed == freezed
+      checkpointsPassed: null == checkpointsPassed
           ? _value.checkpointsPassed
           : checkpointsPassed // ignore: cast_nullable_to_non_nullable
               as int,
-      checkpointsMarksTotal: checkpointsMarksTotal == freezed
+      checkpointsMarksTotal: freezed == checkpointsMarksTotal
           ? _value.checkpointsMarksTotal
           : checkpointsMarksTotal // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsMarksCollected: checkpointsMarksCollected == freezed
+      checkpointsMarksCollected: freezed == checkpointsMarksCollected
           ? _value.checkpointsMarksCollected
           : checkpointsMarksCollected // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -164,27 +166,25 @@ class _$_CheckpointsStats implements _CheckpointsStats {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CheckpointsStats &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsTotal, checkpointsTotal) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsPassed, checkpointsPassed) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsMarksTotal, checkpointsMarksTotal) &&
-            const DeepCollectionEquality().equals(
-                other.checkpointsMarksCollected, checkpointsMarksCollected));
+            (identical(other.checkpointsTotal, checkpointsTotal) ||
+                other.checkpointsTotal == checkpointsTotal) &&
+            (identical(other.checkpointsPassed, checkpointsPassed) ||
+                other.checkpointsPassed == checkpointsPassed) &&
+            (identical(other.checkpointsMarksTotal, checkpointsMarksTotal) ||
+                other.checkpointsMarksTotal == checkpointsMarksTotal) &&
+            (identical(other.checkpointsMarksCollected,
+                    checkpointsMarksCollected) ||
+                other.checkpointsMarksCollected == checkpointsMarksCollected));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(checkpointsTotal),
-      const DeepCollectionEquality().hash(checkpointsPassed),
-      const DeepCollectionEquality().hash(checkpointsMarksTotal),
-      const DeepCollectionEquality().hash(checkpointsMarksCollected));
+  int get hashCode => Object.hash(runtimeType, checkpointsTotal,
+      checkpointsPassed, checkpointsMarksTotal, checkpointsMarksCollected);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CheckpointsStatsCopyWith<_$_CheckpointsStats> get copyWith =>
       __$$_CheckpointsStatsCopyWithImpl<_$_CheckpointsStats>(this, _$identity);
 

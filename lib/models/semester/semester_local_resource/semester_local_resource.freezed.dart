@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'semester_local_resource.dart';
 
@@ -37,7 +37,8 @@ mixin _$SemesterLocalResource {
 abstract class $SemesterLocalResourceCopyWith<$Res> {
   factory $SemesterLocalResourceCopyWith(SemesterLocalResource value,
           $Res Function(SemesterLocalResource) then) =
-      _$SemesterLocalResourceCopyWithImpl<$Res>;
+      _$SemesterLocalResourceCopyWithImpl<$Res, SemesterLocalResource>;
+  @useResult
   $Res call(
       {int id,
       int isArchived,
@@ -47,44 +48,47 @@ abstract class $SemesterLocalResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SemesterLocalResourceCopyWithImpl<$Res>
+class _$SemesterLocalResourceCopyWithImpl<$Res,
+        $Val extends SemesterLocalResource>
     implements $SemesterLocalResourceCopyWith<$Res> {
   _$SemesterLocalResourceCopyWithImpl(this._value, this._then);
 
-  final SemesterLocalResource _value;
   // ignore: unused_field
-  final $Res Function(SemesterLocalResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? isArchived = freezed,
-    Object? title = freezed,
-    Object? startedAt = freezed,
-    Object? finishedAt = freezed,
+    Object? id = null,
+    Object? isArchived = null,
+    Object? title = null,
+    Object? startedAt = null,
+    Object? finishedAt = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      startedAt: startedAt == freezed
+      startedAt: null == startedAt
           ? _value.startedAt
           : startedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      finishedAt: finishedAt == freezed
+      finishedAt: null == finishedAt
           ? _value.finishedAt
           : finishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-    ));
+    ) as $Val);
   }
 }
 
@@ -95,6 +99,7 @@ abstract class _$$_SemesterLocalResourceCopyWith<$Res>
           $Res Function(_$_SemesterLocalResource) then) =
       __$$_SemesterLocalResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int isArchived,
@@ -105,42 +110,39 @@ abstract class _$$_SemesterLocalResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_SemesterLocalResourceCopyWithImpl<$Res>
-    extends _$SemesterLocalResourceCopyWithImpl<$Res>
+    extends _$SemesterLocalResourceCopyWithImpl<$Res, _$_SemesterLocalResource>
     implements _$$_SemesterLocalResourceCopyWith<$Res> {
   __$$_SemesterLocalResourceCopyWithImpl(_$_SemesterLocalResource _value,
       $Res Function(_$_SemesterLocalResource) _then)
-      : super(_value, (v) => _then(v as _$_SemesterLocalResource));
+      : super(_value, _then);
 
-  @override
-  _$_SemesterLocalResource get _value =>
-      super._value as _$_SemesterLocalResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? isArchived = freezed,
-    Object? title = freezed,
-    Object? startedAt = freezed,
-    Object? finishedAt = freezed,
+    Object? id = null,
+    Object? isArchived = null,
+    Object? title = null,
+    Object? startedAt = null,
+    Object? finishedAt = null,
   }) {
     return _then(_$_SemesterLocalResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      startedAt: startedAt == freezed
+      startedAt: null == startedAt
           ? _value.startedAt
           : startedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      finishedAt: finishedAt == freezed
+      finishedAt: null == finishedAt
           ? _value.finishedAt
           : finishedAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
@@ -175,6 +177,7 @@ class _$_SemesterLocalResource extends _SemesterLocalResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SemesterLocalResourceCopyWith<_$_SemesterLocalResource> get copyWith =>
       __$$_SemesterLocalResourceCopyWithImpl<_$_SemesterLocalResource>(
           this, _$identity);

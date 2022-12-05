@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'local_answer_resource.dart';
 
@@ -39,7 +39,8 @@ mixin _$LocalAnswerResource {
 abstract class $LocalAnswerResourceCopyWith<$Res> {
   factory $LocalAnswerResourceCopyWith(
           LocalAnswerResource value, $Res Function(LocalAnswerResource) then) =
-      _$LocalAnswerResourceCopyWithImpl<$Res>;
+      _$LocalAnswerResourceCopyWithImpl<$Res, LocalAnswerResource>;
+  @useResult
   $Res call(
       {int id,
       int userId,
@@ -52,59 +53,61 @@ abstract class $LocalAnswerResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LocalAnswerResourceCopyWithImpl<$Res>
+class _$LocalAnswerResourceCopyWithImpl<$Res, $Val extends LocalAnswerResource>
     implements $LocalAnswerResourceCopyWith<$Res> {
   _$LocalAnswerResourceCopyWithImpl(this._value, this._then);
 
-  final LocalAnswerResource _value;
   // ignore: unused_field
-  final $Res Function(LocalAnswerResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
-    Object? timestamp = freezed,
-    Object? patternId = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
+    Object? timestamp = null,
+    Object? patternId = null,
     Object? updated = freezed,
-    Object? privacy = freezed,
-    Object? stepId = freezed,
+    Object? privacy = null,
+    Object? stepId = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      updated: updated == freezed
+      updated: freezed == updated
           ? _value.updated
           : updated // ignore: cast_nullable_to_non_nullable
               as int?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -115,6 +118,7 @@ abstract class _$$_LocalAnswerResourceCopyWith<$Res>
           $Res Function(_$_LocalAnswerResource) then) =
       __$$_LocalAnswerResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int userId,
@@ -128,56 +132,54 @@ abstract class _$$_LocalAnswerResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_LocalAnswerResourceCopyWithImpl<$Res>
-    extends _$LocalAnswerResourceCopyWithImpl<$Res>
+    extends _$LocalAnswerResourceCopyWithImpl<$Res, _$_LocalAnswerResource>
     implements _$$_LocalAnswerResourceCopyWith<$Res> {
   __$$_LocalAnswerResourceCopyWithImpl(_$_LocalAnswerResource _value,
       $Res Function(_$_LocalAnswerResource) _then)
-      : super(_value, (v) => _then(v as _$_LocalAnswerResource));
+      : super(_value, _then);
 
-  @override
-  _$_LocalAnswerResource get _value => super._value as _$_LocalAnswerResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
-    Object? timestamp = freezed,
-    Object? patternId = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
+    Object? timestamp = null,
+    Object? patternId = null,
     Object? updated = freezed,
-    Object? privacy = freezed,
-    Object? stepId = freezed,
+    Object? privacy = null,
+    Object? stepId = null,
   }) {
     return _then(_$_LocalAnswerResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      updated: updated == freezed
+      updated: freezed == updated
           ? _value.updated
           : updated // ignore: cast_nullable_to_non_nullable
               as int?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
@@ -230,31 +232,26 @@ class _$_LocalAnswerResource implements _LocalAnswerResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LocalAnswerResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
-            const DeepCollectionEquality().equals(other.patternId, patternId) &&
-            const DeepCollectionEquality().equals(other.updated, updated) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.stepId, stepId));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp) &&
+            (identical(other.patternId, patternId) ||
+                other.patternId == patternId) &&
+            (identical(other.updated, updated) || other.updated == updated) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.stepId, stepId) || other.stepId == stepId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(timestamp),
-      const DeepCollectionEquality().hash(patternId),
-      const DeepCollectionEquality().hash(updated),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(stepId));
+  int get hashCode => Object.hash(runtimeType, id, userId, title, timestamp,
+      patternId, updated, privacy, stepId);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LocalAnswerResourceCopyWith<_$_LocalAnswerResource> get copyWith =>
       __$$_LocalAnswerResourceCopyWithImpl<_$_LocalAnswerResource>(
           this, _$identity);

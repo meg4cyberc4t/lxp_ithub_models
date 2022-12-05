@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_section_resource.dart';
 
@@ -45,7 +45,8 @@ mixin _$BaseSectionResource {
 abstract class $BaseSectionResourceCopyWith<$Res> {
   factory $BaseSectionResourceCopyWith(
           BaseSectionResource value, $Res Function(BaseSectionResource) then) =
-      _$BaseSectionResourceCopyWithImpl<$Res>;
+      _$BaseSectionResourceCopyWithImpl<$Res, BaseSectionResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -63,84 +64,86 @@ abstract class $BaseSectionResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseSectionResourceCopyWithImpl<$Res>
+class _$BaseSectionResourceCopyWithImpl<$Res, $Val extends BaseSectionResource>
     implements $BaseSectionResourceCopyWith<$Res> {
   _$BaseSectionResourceCopyWithImpl(this._value, this._then);
 
-  final BaseSectionResource _value;
   // ignore: unused_field
-  final $Res Function(BaseSectionResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? content = freezed,
-    Object? stepId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? content = null,
+    Object? stepId = null,
+    Object? index = null,
     Object? sourceId = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      sourceId: sourceId == freezed
+      sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
               as int?,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -151,6 +154,7 @@ abstract class _$$_BaseSectionResourceCopyWith<$Res>
           $Res Function(_$_BaseSectionResource) then) =
       __$$_BaseSectionResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -169,81 +173,79 @@ abstract class _$$_BaseSectionResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseSectionResourceCopyWithImpl<$Res>
-    extends _$BaseSectionResourceCopyWithImpl<$Res>
+    extends _$BaseSectionResourceCopyWithImpl<$Res, _$_BaseSectionResource>
     implements _$$_BaseSectionResourceCopyWith<$Res> {
   __$$_BaseSectionResourceCopyWithImpl(_$_BaseSectionResource _value,
       $Res Function(_$_BaseSectionResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseSectionResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseSectionResource get _value => super._value as _$_BaseSectionResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? content = freezed,
-    Object? stepId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? content = null,
+    Object? stepId = null,
+    Object? index = null,
     Object? sourceId = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_$_BaseSectionResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      content: content == freezed
+      content: null == content
           ? _value.content
           : content // ignore: cast_nullable_to_non_nullable
               as String,
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      sourceId: sourceId == freezed
+      sourceId: freezed == sourceId
           ? _value.sourceId
           : sourceId // ignore: cast_nullable_to_non_nullable
               as int?,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -309,41 +311,46 @@ class _$_BaseSectionResource implements _BaseSectionResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseSectionResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.content, content) &&
-            const DeepCollectionEquality().equals(other.stepId, stepId) &&
-            const DeepCollectionEquality().equals(other.index, index) &&
-            const DeepCollectionEquality().equals(other.sourceId, sourceId) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.content, content) || other.content == content) &&
+            (identical(other.stepId, stepId) || other.stepId == stepId) &&
+            (identical(other.index, index) || other.index == index) &&
+            (identical(other.sourceId, sourceId) ||
+                other.sourceId == sourceId) &&
             const DeepCollectionEquality().equals(other.documents, documents) &&
             const DeepCollectionEquality().equals(other.links, links) &&
             const DeepCollectionEquality().equals(other.photos, photos) &&
             const DeepCollectionEquality().equals(other.videos, videos) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(content),
-      const DeepCollectionEquality().hash(stepId),
-      const DeepCollectionEquality().hash(index),
-      const DeepCollectionEquality().hash(sourceId),
+      id,
+      title,
+      content,
+      stepId,
+      index,
+      sourceId,
       const DeepCollectionEquality().hash(documents),
       const DeepCollectionEquality().hash(links),
       const DeepCollectionEquality().hash(photos),
       const DeepCollectionEquality().hash(videos),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt));
+      createdAt,
+      updatedAt,
+      deletedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseSectionResourceCopyWith<_$_BaseSectionResource> get copyWith =>
       __$$_BaseSectionResourceCopyWithImpl<_$_BaseSectionResource>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'half_subject_resource.dart';
 
@@ -40,7 +40,8 @@ mixin _$HalfSubjectResource {
 abstract class $HalfSubjectResourceCopyWith<$Res> {
   factory $HalfSubjectResourceCopyWith(
           HalfSubjectResource value, $Res Function(HalfSubjectResource) then) =
-      _$HalfSubjectResourceCopyWithImpl<$Res>;
+      _$HalfSubjectResourceCopyWithImpl<$Res, HalfSubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -56,70 +57,73 @@ abstract class $HalfSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$HalfSubjectResourceCopyWithImpl<$Res>
+class _$HalfSubjectResourceCopyWithImpl<$Res, $Val extends HalfSubjectResource>
     implements $HalfSubjectResourceCopyWith<$Res> {
   _$HalfSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final HalfSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(HalfSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? trajectoryId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? trajectoryId = null,
+    Object? index = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? trajectory = freezed,
+    Object? groups = null,
+    Object? trajectory = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: null == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      trajectory: trajectory == freezed
+      trajectory: null == trajectory
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
               as BaseTrajectoryResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseTrajectoryResourceCopyWith<$Res> get trajectory {
     return $BaseTrajectoryResourceCopyWith<$Res>(_value.trajectory, (value) {
-      return _then(_value.copyWith(trajectory: value));
+      return _then(_value.copyWith(trajectory: value) as $Val);
     });
   }
 }
@@ -131,6 +135,7 @@ abstract class _$$_HalfSubjectResourceCopyWith<$Res>
           $Res Function(_$_HalfSubjectResource) then) =
       __$$_HalfSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -148,61 +153,59 @@ abstract class _$$_HalfSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_HalfSubjectResourceCopyWithImpl<$Res>
-    extends _$HalfSubjectResourceCopyWithImpl<$Res>
+    extends _$HalfSubjectResourceCopyWithImpl<$Res, _$_HalfSubjectResource>
     implements _$$_HalfSubjectResourceCopyWith<$Res> {
   __$$_HalfSubjectResourceCopyWithImpl(_$_HalfSubjectResource _value,
       $Res Function(_$_HalfSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_HalfSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_HalfSubjectResource get _value => super._value as _$_HalfSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? trajectoryId = freezed,
-    Object? index = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? trajectoryId = null,
+    Object? index = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? trajectory = freezed,
+    Object? groups = null,
+    Object? trajectory = null,
   }) {
     return _then(_$_HalfSubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: null == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int,
-      index: index == freezed
+      index: null == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      trajectory: trajectory == freezed
+      trajectory: null == trajectory
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
               as BaseTrajectoryResource,
@@ -256,36 +259,39 @@ class _$_HalfSubjectResource implements _HalfSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_HalfSubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.trajectoryId, trajectoryId) &&
-            const DeepCollectionEquality().equals(other.index, index) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.trajectoryId, trajectoryId) ||
+                other.trajectoryId == trajectoryId) &&
+            (identical(other.index, index) || other.index == index) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality()
-                .equals(other.trajectory, trajectory));
+            (identical(other.trajectory, trajectory) ||
+                other.trajectory == trajectory));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(trajectoryId),
-      const DeepCollectionEquality().hash(index),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
+      id,
+      title,
+      description,
+      trajectoryId,
+      index,
+      createdAt,
+      updatedAt,
       const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(trajectory));
+      trajectory);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_HalfSubjectResourceCopyWith<_$_HalfSubjectResource> get copyWith =>
       __$$_HalfSubjectResourceCopyWithImpl<_$_HalfSubjectResource>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'student_subject_resource.dart';
 
@@ -49,7 +49,8 @@ mixin _$StudentSubjectResource {
 abstract class $StudentSubjectResourceCopyWith<$Res> {
   factory $StudentSubjectResourceCopyWith(StudentSubjectResource value,
           $Res Function(StudentSubjectResource) then) =
-      _$StudentSubjectResourceCopyWithImpl<$Res>;
+      _$StudentSubjectResourceCopyWithImpl<$Res, StudentSubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -72,108 +73,113 @@ abstract class $StudentSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StudentSubjectResourceCopyWithImpl<$Res>
+class _$StudentSubjectResourceCopyWithImpl<$Res,
+        $Val extends StudentSubjectResource>
     implements $StudentSubjectResourceCopyWith<$Res> {
   _$StudentSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final StudentSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(StudentSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
-    Object? chapters = freezed,
-    Object? attendance = freezed,
-    Object? checkpointsStats = freezed,
+    Object? teachers = null,
+    Object? chapters = null,
+    Object? attendance = null,
+    Object? checkpointsStats = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<StudentChapterResource>,
-      attendance: attendance == freezed
+      attendance: null == attendance
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResource,
-      checkpointsStats: checkpointsStats == freezed
+      checkpointsStats: null == checkpointsStats
           ? _value.checkpointsStats
           : checkpointsStats // ignore: cast_nullable_to_non_nullable
               as CheckpointsStats,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $StatisticsAttendanceResourceCopyWith<$Res> get attendance {
     return $StatisticsAttendanceResourceCopyWith<$Res>(_value.attendance,
         (value) {
-      return _then(_value.copyWith(attendance: value));
+      return _then(_value.copyWith(attendance: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $CheckpointsStatsCopyWith<$Res> get checkpointsStats {
     return $CheckpointsStatsCopyWith<$Res>(_value.checkpointsStats, (value) {
-      return _then(_value.copyWith(checkpointsStats: value));
+      return _then(_value.copyWith(checkpointsStats: value) as $Val);
     });
   }
 }
@@ -185,6 +191,7 @@ abstract class _$$_StudentSubjectResourceCopyWith<$Res>
           $Res Function(_$_StudentSubjectResource) then) =
       __$$_StudentSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -210,92 +217,90 @@ abstract class _$$_StudentSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_StudentSubjectResourceCopyWithImpl<$Res>
-    extends _$StudentSubjectResourceCopyWithImpl<$Res>
+    extends _$StudentSubjectResourceCopyWithImpl<$Res,
+        _$_StudentSubjectResource>
     implements _$$_StudentSubjectResourceCopyWith<$Res> {
   __$$_StudentSubjectResourceCopyWithImpl(_$_StudentSubjectResource _value,
       $Res Function(_$_StudentSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_StudentSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_StudentSubjectResource get _value =>
-      super._value as _$_StudentSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
-    Object? chapters = freezed,
-    Object? attendance = freezed,
-    Object? checkpointsStats = freezed,
+    Object? teachers = null,
+    Object? chapters = null,
+    Object? attendance = null,
+    Object? checkpointsStats = null,
   }) {
     return _then(_$_StudentSubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<StudentChapterResource>,
-      attendance: attendance == freezed
+      attendance: null == attendance
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResource,
-      checkpointsStats: checkpointsStats == freezed
+      checkpointsStats: null == checkpointsStats
           ? _value.checkpointsStats
           : checkpointsStats // ignore: cast_nullable_to_non_nullable
               as CheckpointsStats,
@@ -368,49 +373,53 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StudentSubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.teachers, teachers) &&
             const DeepCollectionEquality().equals(other.chapters, chapters) &&
-            const DeepCollectionEquality()
-                .equals(other.attendance, attendance) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsStats, checkpointsStats));
+            (identical(other.attendance, attendance) ||
+                other.attendance == attendance) &&
+            (identical(other.checkpointsStats, checkpointsStats) ||
+                other.checkpointsStats == checkpointsStats));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt),
+      id,
+      title,
+      code,
+      type,
+      description,
+      privacy,
+      hidden,
+      createdAt,
+      updatedAt,
+      deletedAt,
+      deletePermanentlyAt,
       const DeepCollectionEquality().hash(teachers),
       const DeepCollectionEquality().hash(chapters),
-      const DeepCollectionEquality().hash(attendance),
-      const DeepCollectionEquality().hash(checkpointsStats));
+      attendance,
+      checkpointsStats);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StudentSubjectResourceCopyWith<_$_StudentSubjectResource> get copyWith =>
       __$$_StudentSubjectResourceCopyWithImpl<_$_StudentSubjectResource>(
           this, _$identity);

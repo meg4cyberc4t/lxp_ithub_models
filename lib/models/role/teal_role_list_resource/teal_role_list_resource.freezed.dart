@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'teal_role_list_resource.dart';
 
@@ -34,39 +34,43 @@ mixin _$TealRoleListResource {
 abstract class $TealRoleListResourceCopyWith<$Res> {
   factory $TealRoleListResourceCopyWith(TealRoleListResource value,
           $Res Function(TealRoleListResource) then) =
-      _$TealRoleListResourceCopyWithImpl<$Res>;
+      _$TealRoleListResourceCopyWithImpl<$Res, TealRoleListResource>;
+  @useResult
   $Res call({int id, String name, String description});
 }
 
 /// @nodoc
-class _$TealRoleListResourceCopyWithImpl<$Res>
+class _$TealRoleListResourceCopyWithImpl<$Res,
+        $Val extends TealRoleListResource>
     implements $TealRoleListResourceCopyWith<$Res> {
   _$TealRoleListResourceCopyWithImpl(this._value, this._then);
 
-  final TealRoleListResource _value;
   // ignore: unused_field
-  final $Res Function(TealRoleListResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -77,36 +81,35 @@ abstract class _$$_TealRoleListResourceCopyWith<$Res>
           $Res Function(_$_TealRoleListResource) then) =
       __$$_TealRoleListResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String name, String description});
 }
 
 /// @nodoc
 class __$$_TealRoleListResourceCopyWithImpl<$Res>
-    extends _$TealRoleListResourceCopyWithImpl<$Res>
+    extends _$TealRoleListResourceCopyWithImpl<$Res, _$_TealRoleListResource>
     implements _$$_TealRoleListResourceCopyWith<$Res> {
   __$$_TealRoleListResourceCopyWithImpl(_$_TealRoleListResource _value,
       $Res Function(_$_TealRoleListResource) _then)
-      : super(_value, (v) => _then(v as _$_TealRoleListResource));
+      : super(_value, _then);
 
-  @override
-  _$_TealRoleListResource get _value => super._value as _$_TealRoleListResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
   }) {
     return _then(_$_TealRoleListResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
@@ -140,22 +143,19 @@ class _$_TealRoleListResource implements _TealRoleListResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TealRoleListResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description));
+  int get hashCode => Object.hash(runtimeType, id, name, description);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TealRoleListResourceCopyWith<_$_TealRoleListResource> get copyWith =>
       __$$_TealRoleListResourceCopyWithImpl<_$_TealRoleListResource>(
           this, _$identity);

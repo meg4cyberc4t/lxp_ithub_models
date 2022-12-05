@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'answer_field_resource.dart';
 
@@ -46,7 +46,8 @@ mixin _$AnswerFieldResource {
 abstract class $AnswerFieldResourceCopyWith<$Res> {
   factory $AnswerFieldResourceCopyWith(
           AnswerFieldResource value, $Res Function(AnswerFieldResource) then) =
-      _$AnswerFieldResourceCopyWithImpl<$Res>;
+      _$AnswerFieldResourceCopyWithImpl<$Res, AnswerFieldResource>;
+  @useResult
   $Res call(
       {int id,
       int answerId,
@@ -66,90 +67,93 @@ abstract class $AnswerFieldResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AnswerFieldResourceCopyWithImpl<$Res>
+class _$AnswerFieldResourceCopyWithImpl<$Res, $Val extends AnswerFieldResource>
     implements $AnswerFieldResourceCopyWith<$Res> {
   _$AnswerFieldResourceCopyWithImpl(this._value, this._then);
 
-  final AnswerFieldResource _value;
   // ignore: unused_field
-  final $Res Function(AnswerFieldResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? questionId = freezed,
-    Object? value = freezed,
-    Object? title = freezed,
-    Object? link = freezed,
+    Object? id = null,
+    Object? answerId = null,
+    Object? questionId = null,
+    Object? value = null,
+    Object? title = null,
+    Object? link = null,
     Object? order = freezed,
-    Object? form = freezed,
-    Object? comments = freezed,
-    Object? documents = freezed,
-    Object? videos = freezed,
-    Object? photos = freezed,
-    Object? links = freezed,
+    Object? form = null,
+    Object? comments = null,
+    Object? documents = null,
+    Object? videos = null,
+    Object? photos = null,
+    Object? links = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      questionId: questionId == freezed
+      questionId: null == questionId
           ? _value.questionId
           : questionId // ignore: cast_nullable_to_non_nullable
               as int,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      link: link == freezed
+      link: null == link
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: freezed == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int?,
-      form: form == freezed
+      form: null == form
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
               as BaseUgcFormResource,
-      comments: comments == freezed
+      comments: null == comments
           ? _value.comments
           : comments // ignore: cast_nullable_to_non_nullable
               as List<CommentAnswerResource>,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUgcFormResourceCopyWith<$Res> get form {
     return $BaseUgcFormResourceCopyWith<$Res>(_value.form, (value) {
-      return _then(_value.copyWith(form: value));
+      return _then(_value.copyWith(form: value) as $Val);
     });
   }
 }
@@ -161,6 +165,7 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
           $Res Function(_$_AnswerFieldResource) then) =
       __$$_AnswerFieldResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int answerId,
@@ -182,81 +187,79 @@ abstract class _$$_AnswerFieldResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_AnswerFieldResourceCopyWithImpl<$Res>
-    extends _$AnswerFieldResourceCopyWithImpl<$Res>
+    extends _$AnswerFieldResourceCopyWithImpl<$Res, _$_AnswerFieldResource>
     implements _$$_AnswerFieldResourceCopyWith<$Res> {
   __$$_AnswerFieldResourceCopyWithImpl(_$_AnswerFieldResource _value,
       $Res Function(_$_AnswerFieldResource) _then)
-      : super(_value, (v) => _then(v as _$_AnswerFieldResource));
+      : super(_value, _then);
 
-  @override
-  _$_AnswerFieldResource get _value => super._value as _$_AnswerFieldResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? questionId = freezed,
-    Object? value = freezed,
-    Object? title = freezed,
-    Object? link = freezed,
+    Object? id = null,
+    Object? answerId = null,
+    Object? questionId = null,
+    Object? value = null,
+    Object? title = null,
+    Object? link = null,
     Object? order = freezed,
-    Object? form = freezed,
-    Object? comments = freezed,
-    Object? documents = freezed,
-    Object? videos = freezed,
-    Object? photos = freezed,
-    Object? links = freezed,
+    Object? form = null,
+    Object? comments = null,
+    Object? documents = null,
+    Object? videos = null,
+    Object? photos = null,
+    Object? links = null,
   }) {
     return _then(_$_AnswerFieldResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      questionId: questionId == freezed
+      questionId: null == questionId
           ? _value.questionId
           : questionId // ignore: cast_nullable_to_non_nullable
               as int,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      link: link == freezed
+      link: null == link
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: freezed == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int?,
-      form: form == freezed
+      form: null == form
           ? _value.form
           : form // ignore: cast_nullable_to_non_nullable
               as BaseUgcFormResource,
-      comments: comments == freezed
+      comments: null == comments
           ? _value.comments
           : comments // ignore: cast_nullable_to_non_nullable
               as List<CommentAnswerResource>,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
@@ -322,15 +325,16 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AnswerFieldResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.answerId, answerId) &&
-            const DeepCollectionEquality()
-                .equals(other.questionId, questionId) &&
-            const DeepCollectionEquality().equals(other.value, value) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.link, link) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality().equals(other.form, form) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.answerId, answerId) ||
+                other.answerId == answerId) &&
+            (identical(other.questionId, questionId) ||
+                other.questionId == questionId) &&
+            (identical(other.value, value) || other.value == value) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.link, link) || other.link == link) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.form, form) || other.form == form) &&
             const DeepCollectionEquality().equals(other.comments, comments) &&
             const DeepCollectionEquality().equals(other.documents, documents) &&
             const DeepCollectionEquality().equals(other.videos, videos) &&
@@ -342,14 +346,14 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(answerId),
-      const DeepCollectionEquality().hash(questionId),
-      const DeepCollectionEquality().hash(value),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(link),
-      const DeepCollectionEquality().hash(order),
-      const DeepCollectionEquality().hash(form),
+      id,
+      answerId,
+      questionId,
+      value,
+      title,
+      link,
+      order,
+      form,
       const DeepCollectionEquality().hash(comments),
       const DeepCollectionEquality().hash(documents),
       const DeepCollectionEquality().hash(videos),
@@ -358,6 +362,7 @@ class _$_AnswerFieldResource implements _AnswerFieldResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AnswerFieldResourceCopyWith<_$_AnswerFieldResource> get copyWith =>
       __$$_AnswerFieldResourceCopyWithImpl<_$_AnswerFieldResource>(
           this, _$identity);

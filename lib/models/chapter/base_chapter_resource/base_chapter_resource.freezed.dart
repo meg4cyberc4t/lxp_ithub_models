@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_chapter_resource.dart';
 
@@ -42,7 +42,8 @@ mixin _$BaseChapterResource {
 abstract class $BaseChapterResourceCopyWith<$Res> {
   factory $BaseChapterResourceCopyWith(
           BaseChapterResource value, $Res Function(BaseChapterResource) then) =
-      _$BaseChapterResourceCopyWithImpl<$Res>;
+      _$BaseChapterResourceCopyWithImpl<$Res, BaseChapterResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -58,21 +59,23 @@ abstract class $BaseChapterResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseChapterResourceCopyWithImpl<$Res>
+class _$BaseChapterResourceCopyWithImpl<$Res, $Val extends BaseChapterResource>
     implements $BaseChapterResourceCopyWith<$Res> {
   _$BaseChapterResourceCopyWithImpl(this._value, this._then);
 
-  final BaseChapterResource _value;
   // ignore: unused_field
-  final $Res Function(BaseChapterResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? subjectId = freezed,
-    Object? number = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? subjectId = null,
+    Object? number = null,
     Object? maxPositionX = freezed,
     Object? maxPositionY = freezed,
     Object? maxSizeX = freezed,
@@ -81,51 +84,51 @@ class _$BaseChapterResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      maxPositionX: maxPositionX == freezed
+      maxPositionX: freezed == maxPositionX
           ? _value.maxPositionX
           : maxPositionX // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxPositionY: maxPositionY == freezed
+      maxPositionY: freezed == maxPositionY
           ? _value.maxPositionY
           : maxPositionY // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxSizeX: maxSizeX == freezed
+      maxSizeX: freezed == maxSizeX
           ? _value.maxSizeX
           : maxSizeX // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxSizeY: maxSizeY == freezed
+      maxSizeY: freezed == maxSizeY
           ? _value.maxSizeY
           : maxSizeY // ignore: cast_nullable_to_non_nullable
               as double?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -136,6 +139,7 @@ abstract class _$$_BaseChapterResourceCopyWith<$Res>
           $Res Function(_$_BaseChapterResource) then) =
       __$$_BaseChapterResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -152,22 +156,20 @@ abstract class _$$_BaseChapterResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseChapterResourceCopyWithImpl<$Res>
-    extends _$BaseChapterResourceCopyWithImpl<$Res>
+    extends _$BaseChapterResourceCopyWithImpl<$Res, _$_BaseChapterResource>
     implements _$$_BaseChapterResourceCopyWith<$Res> {
   __$$_BaseChapterResourceCopyWithImpl(_$_BaseChapterResource _value,
       $Res Function(_$_BaseChapterResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseChapterResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseChapterResource get _value => super._value as _$_BaseChapterResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? subjectId = freezed,
-    Object? number = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? subjectId = null,
+    Object? number = null,
     Object? maxPositionX = freezed,
     Object? maxPositionY = freezed,
     Object? maxSizeX = freezed,
@@ -176,47 +178,47 @@ class __$$_BaseChapterResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseChapterResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      maxPositionX: maxPositionX == freezed
+      maxPositionX: freezed == maxPositionX
           ? _value.maxPositionX
           : maxPositionX // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxPositionY: maxPositionY == freezed
+      maxPositionY: freezed == maxPositionY
           ? _value.maxPositionY
           : maxPositionY // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxSizeX: maxSizeX == freezed
+      maxSizeX: freezed == maxSizeX
           ? _value.maxSizeX
           : maxSizeX // ignore: cast_nullable_to_non_nullable
               as double?,
-      maxSizeY: maxSizeY == freezed
+      maxSizeY: freezed == maxSizeY
           ? _value.maxSizeY
           : maxSizeY // ignore: cast_nullable_to_non_nullable
               as double?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -276,40 +278,46 @@ class _$_BaseChapterResource implements _BaseChapterResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseChapterResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.subjectId, subjectId) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality()
-                .equals(other.maxPositionX, maxPositionX) &&
-            const DeepCollectionEquality()
-                .equals(other.maxPositionY, maxPositionY) &&
-            const DeepCollectionEquality().equals(other.maxSizeX, maxSizeX) &&
-            const DeepCollectionEquality().equals(other.maxSizeY, maxSizeY) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.subjectId, subjectId) ||
+                other.subjectId == subjectId) &&
+            (identical(other.number, number) || other.number == number) &&
+            (identical(other.maxPositionX, maxPositionX) ||
+                other.maxPositionX == maxPositionX) &&
+            (identical(other.maxPositionY, maxPositionY) ||
+                other.maxPositionY == maxPositionY) &&
+            (identical(other.maxSizeX, maxSizeX) ||
+                other.maxSizeX == maxSizeX) &&
+            (identical(other.maxSizeY, maxSizeY) ||
+                other.maxSizeY == maxSizeY) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(subjectId),
-      const DeepCollectionEquality().hash(number),
-      const DeepCollectionEquality().hash(maxPositionX),
-      const DeepCollectionEquality().hash(maxPositionY),
-      const DeepCollectionEquality().hash(maxSizeX),
-      const DeepCollectionEquality().hash(maxSizeY),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      id,
+      title,
+      description,
+      subjectId,
+      number,
+      maxPositionX,
+      maxPositionY,
+      maxSizeX,
+      maxSizeY,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseChapterResourceCopyWith<_$_BaseChapterResource> get copyWith =>
       __$$_BaseChapterResourceCopyWithImpl<_$_BaseChapterResource>(
           this, _$identity);

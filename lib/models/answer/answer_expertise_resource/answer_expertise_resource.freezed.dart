@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'answer_expertise_resource.dart';
 
@@ -43,7 +43,8 @@ mixin _$AnswerExpertiseResource {
 abstract class $AnswerExpertiseResourceCopyWith<$Res> {
   factory $AnswerExpertiseResourceCopyWith(AnswerExpertiseResource value,
           $Res Function(AnswerExpertiseResource) then) =
-      _$AnswerExpertiseResourceCopyWithImpl<$Res>;
+      _$AnswerExpertiseResourceCopyWithImpl<$Res, AnswerExpertiseResource>;
+  @useResult
   $Res call(
       {BaseUserResource author,
       List<BaseDocumentResource> documents,
@@ -60,75 +61,79 @@ abstract class $AnswerExpertiseResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AnswerExpertiseResourceCopyWithImpl<$Res>
+class _$AnswerExpertiseResourceCopyWithImpl<$Res,
+        $Val extends AnswerExpertiseResource>
     implements $AnswerExpertiseResourceCopyWith<$Res> {
   _$AnswerExpertiseResourceCopyWithImpl(this._value, this._then);
 
-  final AnswerExpertiseResource _value;
   // ignore: unused_field
-  final $Res Function(AnswerExpertiseResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? author = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
-    Object? id = freezed,
-    Object? text = freezed,
-    Object? authorId = freezed,
-    Object? answerId = freezed,
-    Object? timestamp = freezed,
+    Object? author = null,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
+    Object? id = null,
+    Object? text = null,
+    Object? authorId = null,
+    Object? answerId = null,
+    Object? timestamp = null,
   }) {
     return _then(_value.copyWith(
-      author: author == freezed
+      author: null == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      text: text == freezed
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      authorId: authorId == freezed
+      authorId: null == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get author {
     return $BaseUserResourceCopyWith<$Res>(_value.author, (value) {
-      return _then(_value.copyWith(author: value));
+      return _then(_value.copyWith(author: value) as $Val);
     });
   }
 }
@@ -140,6 +145,7 @@ abstract class _$$_AnswerExpertiseResourceCopyWith<$Res>
           $Res Function(_$_AnswerExpertiseResource) then) =
       __$$_AnswerExpertiseResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {BaseUserResource author,
       List<BaseDocumentResource> documents,
@@ -158,67 +164,65 @@ abstract class _$$_AnswerExpertiseResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_AnswerExpertiseResourceCopyWithImpl<$Res>
-    extends _$AnswerExpertiseResourceCopyWithImpl<$Res>
+    extends _$AnswerExpertiseResourceCopyWithImpl<$Res,
+        _$_AnswerExpertiseResource>
     implements _$$_AnswerExpertiseResourceCopyWith<$Res> {
   __$$_AnswerExpertiseResourceCopyWithImpl(_$_AnswerExpertiseResource _value,
       $Res Function(_$_AnswerExpertiseResource) _then)
-      : super(_value, (v) => _then(v as _$_AnswerExpertiseResource));
+      : super(_value, _then);
 
-  @override
-  _$_AnswerExpertiseResource get _value =>
-      super._value as _$_AnswerExpertiseResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? author = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
-    Object? id = freezed,
-    Object? text = freezed,
-    Object? authorId = freezed,
-    Object? answerId = freezed,
-    Object? timestamp = freezed,
+    Object? author = null,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
+    Object? id = null,
+    Object? text = null,
+    Object? authorId = null,
+    Object? answerId = null,
+    Object? timestamp = null,
   }) {
     return _then(_$_AnswerExpertiseResource(
-      author: author == freezed
+      author: null == author
           ? _value.author
           : author // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      documents: documents == freezed
+      documents: null == documents
           ? _value._documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value._links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value._photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value._videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      text: text == freezed
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      authorId: authorId == freezed
+      authorId: null == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
@@ -253,6 +257,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
   final List<BaseDocumentResource> _documents;
   @override
   List<BaseDocumentResource> get documents {
+    if (_documents is EqualUnmodifiableListView) return _documents;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_documents);
   }
@@ -260,6 +265,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
   final List<BaseLinkResource> _links;
   @override
   List<BaseLinkResource> get links {
+    if (_links is EqualUnmodifiableListView) return _links;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_links);
   }
@@ -267,6 +273,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
   final List<BasePhotoResource> _photos;
   @override
   List<BasePhotoResource> get photos {
+    if (_photos is EqualUnmodifiableListView) return _photos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_photos);
   }
@@ -274,6 +281,7 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
   final List<BaseVideoResource> _videos;
   @override
   List<BaseVideoResource> get videos {
+    if (_videos is EqualUnmodifiableListView) return _videos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_videos);
   }
@@ -299,36 +307,40 @@ class _$_AnswerExpertiseResource implements _AnswerExpertiseResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AnswerExpertiseResource &&
-            const DeepCollectionEquality().equals(other.author, author) &&
+            (identical(other.author, author) || other.author == author) &&
             const DeepCollectionEquality()
                 .equals(other._documents, _documents) &&
             const DeepCollectionEquality().equals(other._links, _links) &&
             const DeepCollectionEquality().equals(other._photos, _photos) &&
             const DeepCollectionEquality().equals(other._videos, _videos) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.authorId, authorId) &&
-            const DeepCollectionEquality().equals(other.answerId, answerId) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.authorId, authorId) ||
+                other.authorId == authorId) &&
+            (identical(other.answerId, answerId) ||
+                other.answerId == answerId) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(author),
+      author,
       const DeepCollectionEquality().hash(_documents),
       const DeepCollectionEquality().hash(_links),
       const DeepCollectionEquality().hash(_photos),
       const DeepCollectionEquality().hash(_videos),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(authorId),
-      const DeepCollectionEquality().hash(answerId),
-      const DeepCollectionEquality().hash(timestamp));
+      id,
+      text,
+      authorId,
+      answerId,
+      timestamp);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AnswerExpertiseResourceCopyWith<_$_AnswerExpertiseResource>
       get copyWith =>
           __$$_AnswerExpertiseResourceCopyWithImpl<_$_AnswerExpertiseResource>(

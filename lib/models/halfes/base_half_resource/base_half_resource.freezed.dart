@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_half_resource.dart';
 
@@ -36,7 +36,8 @@ mixin _$BaseHalfResource {
 abstract class $BaseHalfResourceCopyWith<$Res> {
   factory $BaseHalfResourceCopyWith(
           BaseHalfResource value, $Res Function(BaseHalfResource) then) =
-      _$BaseHalfResourceCopyWithImpl<$Res>;
+      _$BaseHalfResourceCopyWithImpl<$Res, BaseHalfResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -46,44 +47,46 @@ abstract class $BaseHalfResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseHalfResourceCopyWithImpl<$Res>
+class _$BaseHalfResourceCopyWithImpl<$Res, $Val extends BaseHalfResource>
     implements $BaseHalfResourceCopyWith<$Res> {
   _$BaseHalfResourceCopyWithImpl(this._value, this._then);
 
-  final BaseHalfResource _value;
   // ignore: unused_field
-  final $Res Function(BaseHalfResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? trajectoryId = freezed,
     Object? index = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: freezed == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int?,
-      index: index == freezed
+      index: freezed == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -94,6 +97,7 @@ abstract class _$$_BaseHalfResourceCopyWith<$Res>
           _$_BaseHalfResource value, $Res Function(_$_BaseHalfResource) then) =
       __$$_BaseHalfResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -104,41 +108,39 @@ abstract class _$$_BaseHalfResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseHalfResourceCopyWithImpl<$Res>
-    extends _$BaseHalfResourceCopyWithImpl<$Res>
+    extends _$BaseHalfResourceCopyWithImpl<$Res, _$_BaseHalfResource>
     implements _$$_BaseHalfResourceCopyWith<$Res> {
   __$$_BaseHalfResourceCopyWithImpl(
       _$_BaseHalfResource _value, $Res Function(_$_BaseHalfResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseHalfResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseHalfResource get _value => super._value as _$_BaseHalfResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? trajectoryId = freezed,
     Object? index = freezed,
   }) {
     return _then(_$_BaseHalfResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      trajectoryId: trajectoryId == freezed
+      trajectoryId: freezed == trajectoryId
           ? _value.trajectoryId
           : trajectoryId // ignore: cast_nullable_to_non_nullable
               as int?,
-      index: index == freezed
+      index: freezed == index
           ? _value.index
           : index // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -180,27 +182,23 @@ class _$_BaseHalfResource implements _BaseHalfResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseHalfResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.trajectoryId, trajectoryId) &&
-            const DeepCollectionEquality().equals(other.index, index));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.trajectoryId, trajectoryId) ||
+                other.trajectoryId == trajectoryId) &&
+            (identical(other.index, index) || other.index == index));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(trajectoryId),
-      const DeepCollectionEquality().hash(index));
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, description, trajectoryId, index);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseHalfResourceCopyWith<_$_BaseHalfResource> get copyWith =>
       __$$_BaseHalfResourceCopyWithImpl<_$_BaseHalfResource>(this, _$identity);
 

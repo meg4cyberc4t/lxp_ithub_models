@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'trajectory_list_resource.dart';
 
@@ -42,7 +42,8 @@ mixin _$TrajectoryListResource {
 abstract class $TrajectoryListResourceCopyWith<$Res> {
   factory $TrajectoryListResourceCopyWith(TrajectoryListResource value,
           $Res Function(TrajectoryListResource) then) =
-      _$TrajectoryListResourceCopyWithImpl<$Res>;
+      _$TrajectoryListResourceCopyWithImpl<$Res, TrajectoryListResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -56,64 +57,67 @@ abstract class $TrajectoryListResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TrajectoryListResourceCopyWithImpl<$Res>
+class _$TrajectoryListResourceCopyWithImpl<$Res,
+        $Val extends TrajectoryListResource>
     implements $TrajectoryListResourceCopyWith<$Res> {
   _$TrajectoryListResourceCopyWithImpl(this._value, this._then);
 
-  final TrajectoryListResource _value;
   // ignore: unused_field
-  final $Res Function(TrajectoryListResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? educationalProgramName = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
-    Object? subjectCount = freezed,
-    Object? subjectTime = freezed,
+    Object? subjectCount = null,
+    Object? subjectTime = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      educationalProgramName: educationalProgramName == freezed
+      educationalProgramName: freezed == educationalProgramName
           ? _value.educationalProgramName
           : educationalProgramName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      subjectCount: subjectCount == freezed
+      subjectCount: null == subjectCount
           ? _value.subjectCount
           : subjectCount // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectTime: subjectTime == freezed
+      subjectTime: null == subjectTime
           ? _value.subjectTime
           : subjectTime // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -124,6 +128,7 @@ abstract class _$$_TrajectoryListResourceCopyWith<$Res>
           $Res Function(_$_TrajectoryListResource) then) =
       __$$_TrajectoryListResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -138,62 +143,60 @@ abstract class _$$_TrajectoryListResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_TrajectoryListResourceCopyWithImpl<$Res>
-    extends _$TrajectoryListResourceCopyWithImpl<$Res>
+    extends _$TrajectoryListResourceCopyWithImpl<$Res,
+        _$_TrajectoryListResource>
     implements _$$_TrajectoryListResourceCopyWith<$Res> {
   __$$_TrajectoryListResourceCopyWithImpl(_$_TrajectoryListResource _value,
       $Res Function(_$_TrajectoryListResource) _then)
-      : super(_value, (v) => _then(v as _$_TrajectoryListResource));
+      : super(_value, _then);
 
-  @override
-  _$_TrajectoryListResource get _value =>
-      super._value as _$_TrajectoryListResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? educationalProgramName = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
-    Object? subjectCount = freezed,
-    Object? subjectTime = freezed,
+    Object? subjectCount = null,
+    Object? subjectTime = null,
   }) {
     return _then(_$_TrajectoryListResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      educationalProgramName: educationalProgramName == freezed
+      educationalProgramName: freezed == educationalProgramName
           ? _value.educationalProgramName
           : educationalProgramName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      subjectCount: subjectCount == freezed
+      subjectCount: null == subjectCount
           ? _value.subjectCount
           : subjectCount // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectTime: subjectTime == freezed
+      subjectTime: null == subjectTime
           ? _value.subjectTime
           : subjectTime // ignore: cast_nullable_to_non_nullable
               as int,
@@ -248,37 +251,41 @@ class _$_TrajectoryListResource implements _TrajectoryListResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TrajectoryListResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.educationalProgramName, educationalProgramName) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectCount, subjectCount) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectTime, subjectTime));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.educationalProgramName, educationalProgramName) ||
+                other.educationalProgramName == educationalProgramName) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.subjectCount, subjectCount) ||
+                other.subjectCount == subjectCount) &&
+            (identical(other.subjectTime, subjectTime) ||
+                other.subjectTime == subjectTime));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(educationalProgramName),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(subjectCount),
-      const DeepCollectionEquality().hash(subjectTime));
+      id,
+      title,
+      description,
+      educationalProgramName,
+      createdAt,
+      updatedAt,
+      deletedAt,
+      subjectCount,
+      subjectTime);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TrajectoryListResourceCopyWith<_$_TrajectoryListResource> get copyWith =>
       __$$_TrajectoryListResourceCopyWithImpl<_$_TrajectoryListResource>(
           this, _$identity);

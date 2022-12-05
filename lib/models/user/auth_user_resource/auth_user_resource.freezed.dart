@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'auth_user_resource.dart';
 
@@ -52,7 +52,8 @@ mixin _$AuthUserResource {
 abstract class $AuthUserResourceCopyWith<$Res> {
   factory $AuthUserResourceCopyWith(
           AuthUserResource value, $Res Function(AuthUserResource) then) =
-      _$AuthUserResourceCopyWithImpl<$Res>;
+      _$AuthUserResourceCopyWithImpl<$Res, AuthUserResource>;
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -78,124 +79,126 @@ abstract class $AuthUserResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AuthUserResourceCopyWithImpl<$Res>
+class _$AuthUserResourceCopyWithImpl<$Res, $Val extends AuthUserResource>
     implements $AuthUserResourceCopyWith<$Res> {
   _$AuthUserResourceCopyWithImpl(this._value, this._then);
 
-  final AuthUserResource _value;
   // ignore: unused_field
-  final $Res Function(AuthUserResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
     Object? photoSrc = freezed,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
+    Object? photoSrcSmall = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? children = freezed,
-    Object? isCurator = freezed,
-    Object? isDistant = freezed,
-    Object? isMember = freezed,
-    Object? isOnline = freezed,
-    Object? isModerator = freezed,
-    Object? isParent = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? groupsCount = freezed,
-    Object? subjectsCount = freezed,
+    Object? groups = null,
+    Object? children = null,
+    Object? isCurator = null,
+    Object? isDistant = null,
+    Object? isMember = null,
+    Object? isOnline = null,
+    Object? isModerator = null,
+    Object? isParent = null,
+    Object? isSkillfolioReg = null,
+    Object? groupsCount = null,
+    Object? subjectsCount = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: freezed == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      children: children == freezed
+      children: null == children
           ? _value.children
           : children // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      isCurator: isCurator == freezed
+      isCurator: null == isCurator
           ? _value.isCurator
           : isCurator // ignore: cast_nullable_to_non_nullable
               as bool,
-      isDistant: isDistant == freezed
+      isDistant: null == isDistant
           ? _value.isDistant
           : isDistant // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMember: isMember == freezed
+      isMember: null == isMember
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      isModerator: isModerator == freezed
+      isModerator: null == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool,
-      isParent: isParent == freezed
+      isParent: null == isParent
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      groupsCount: groupsCount == freezed
+      groupsCount: null == groupsCount
           ? _value.groupsCount
           : groupsCount // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectsCount: subjectsCount == freezed
+      subjectsCount: null == subjectsCount
           ? _value.subjectsCount
           : subjectsCount // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -206,6 +209,7 @@ abstract class _$$_AuthUserResourceCopyWith<$Res>
           _$_AuthUserResource value, $Res Function(_$_AuthUserResource) then) =
       __$$_AuthUserResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -232,121 +236,119 @@ abstract class _$$_AuthUserResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_AuthUserResourceCopyWithImpl<$Res>
-    extends _$AuthUserResourceCopyWithImpl<$Res>
+    extends _$AuthUserResourceCopyWithImpl<$Res, _$_AuthUserResource>
     implements _$$_AuthUserResourceCopyWith<$Res> {
   __$$_AuthUserResourceCopyWithImpl(
       _$_AuthUserResource _value, $Res Function(_$_AuthUserResource) _then)
-      : super(_value, (v) => _then(v as _$_AuthUserResource));
+      : super(_value, _then);
 
-  @override
-  _$_AuthUserResource get _value => super._value as _$_AuthUserResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
     Object? photoSrc = freezed,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
+    Object? photoSrcSmall = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? children = freezed,
-    Object? isCurator = freezed,
-    Object? isDistant = freezed,
-    Object? isMember = freezed,
-    Object? isOnline = freezed,
-    Object? isModerator = freezed,
-    Object? isParent = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? groupsCount = freezed,
-    Object? subjectsCount = freezed,
+    Object? groups = null,
+    Object? children = null,
+    Object? isCurator = null,
+    Object? isDistant = null,
+    Object? isMember = null,
+    Object? isOnline = null,
+    Object? isModerator = null,
+    Object? isParent = null,
+    Object? isSkillfolioReg = null,
+    Object? groupsCount = null,
+    Object? subjectsCount = null,
   }) {
     return _then(_$_AuthUserResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: freezed == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String?,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      children: children == freezed
+      children: null == children
           ? _value.children
           : children // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      isCurator: isCurator == freezed
+      isCurator: null == isCurator
           ? _value.isCurator
           : isCurator // ignore: cast_nullable_to_non_nullable
               as bool,
-      isDistant: isDistant == freezed
+      isDistant: null == isDistant
           ? _value.isDistant
           : isDistant // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMember: isMember == freezed
+      isMember: null == isMember
           ? _value.isMember
           : isMember // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      isModerator: isModerator == freezed
+      isModerator: null == isModerator
           ? _value.isModerator
           : isModerator // ignore: cast_nullable_to_non_nullable
               as bool,
-      isParent: isParent == freezed
+      isParent: null == isParent
           ? _value.isParent
           : isParent // ignore: cast_nullable_to_non_nullable
               as bool,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      groupsCount: groupsCount == freezed
+      groupsCount: null == groupsCount
           ? _value.groupsCount
           : groupsCount // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectsCount: subjectsCount == freezed
+      subjectsCount: null == subjectsCount
           ? _value.subjectsCount
           : subjectsCount // ignore: cast_nullable_to_non_nullable
               as int,
@@ -436,64 +438,75 @@ class _$_AuthUserResource implements _AuthUserResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AuthUserResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality()
-                .equals(other.middleName, middleName) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
+            (identical(other.middleName, middleName) ||
+                other.middleName == middleName) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.photoSrc, photoSrc) ||
+                other.photoSrc == photoSrc) &&
             const DeepCollectionEquality().equals(other.phone, phone) &&
-            const DeepCollectionEquality()
-                .equals(other.photoSrcSmall, photoSrcSmall) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.photoSrcSmall, photoSrcSmall) ||
+                other.photoSrcSmall == photoSrcSmall) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.children, children) &&
-            const DeepCollectionEquality().equals(other.isCurator, isCurator) &&
-            const DeepCollectionEquality().equals(other.isDistant, isDistant) &&
-            const DeepCollectionEquality().equals(other.isMember, isMember) &&
-            const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
-            const DeepCollectionEquality()
-                .equals(other.isModerator, isModerator) &&
-            const DeepCollectionEquality().equals(other.isParent, isParent) &&
-            const DeepCollectionEquality()
-                .equals(other.isSkillfolioReg, isSkillfolioReg) &&
-            const DeepCollectionEquality()
-                .equals(other.groupsCount, groupsCount) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectsCount, subjectsCount));
+            (identical(other.isCurator, isCurator) ||
+                other.isCurator == isCurator) &&
+            (identical(other.isDistant, isDistant) ||
+                other.isDistant == isDistant) &&
+            (identical(other.isMember, isMember) ||
+                other.isMember == isMember) &&
+            (identical(other.isOnline, isOnline) ||
+                other.isOnline == isOnline) &&
+            (identical(other.isModerator, isModerator) ||
+                other.isModerator == isModerator) &&
+            (identical(other.isParent, isParent) ||
+                other.isParent == isParent) &&
+            (identical(other.isSkillfolioReg, isSkillfolioReg) ||
+                other.isSkillfolioReg == isSkillfolioReg) &&
+            (identical(other.groupsCount, groupsCount) ||
+                other.groupsCount == groupsCount) &&
+            (identical(other.subjectsCount, subjectsCount) ||
+                other.subjectsCount == subjectsCount));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(firstName),
-        const DeepCollectionEquality().hash(lastName),
-        const DeepCollectionEquality().hash(middleName),
-        const DeepCollectionEquality().hash(email),
-        const DeepCollectionEquality().hash(photoSrc),
+        id,
+        firstName,
+        lastName,
+        middleName,
+        email,
+        photoSrc,
         const DeepCollectionEquality().hash(phone),
-        const DeepCollectionEquality().hash(photoSrcSmall),
-        const DeepCollectionEquality().hash(createdAt),
-        const DeepCollectionEquality().hash(updatedAt),
+        photoSrcSmall,
+        createdAt,
+        updatedAt,
         const DeepCollectionEquality().hash(groups),
         const DeepCollectionEquality().hash(children),
-        const DeepCollectionEquality().hash(isCurator),
-        const DeepCollectionEquality().hash(isDistant),
-        const DeepCollectionEquality().hash(isMember),
-        const DeepCollectionEquality().hash(isOnline),
-        const DeepCollectionEquality().hash(isModerator),
-        const DeepCollectionEquality().hash(isParent),
-        const DeepCollectionEquality().hash(isSkillfolioReg),
-        const DeepCollectionEquality().hash(groupsCount),
-        const DeepCollectionEquality().hash(subjectsCount)
+        isCurator,
+        isDistant,
+        isMember,
+        isOnline,
+        isModerator,
+        isParent,
+        isSkillfolioReg,
+        groupsCount,
+        subjectsCount
       ]);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AuthUserResourceCopyWith<_$_AuthUserResource> get copyWith =>
       __$$_AuthUserResourceCopyWithImpl<_$_AuthUserResource>(this, _$identity);
 

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'comment_answer_resource.dart';
 
@@ -44,7 +44,8 @@ mixin _$CommentAnswerResource {
 abstract class $CommentAnswerResourceCopyWith<$Res> {
   factory $CommentAnswerResourceCopyWith(CommentAnswerResource value,
           $Res Function(CommentAnswerResource) then) =
-      _$CommentAnswerResourceCopyWithImpl<$Res>;
+      _$CommentAnswerResourceCopyWithImpl<$Res, CommentAnswerResource>;
+  @useResult
   $Res call(
       {BaseUserResource user,
       List<BaseDocumentResource> documents,
@@ -62,80 +63,84 @@ abstract class $CommentAnswerResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CommentAnswerResourceCopyWithImpl<$Res>
+class _$CommentAnswerResourceCopyWithImpl<$Res,
+        $Val extends CommentAnswerResource>
     implements $CommentAnswerResourceCopyWith<$Res> {
   _$CommentAnswerResourceCopyWithImpl(this._value, this._then);
 
-  final CommentAnswerResource _value;
   // ignore: unused_field
-  final $Res Function(CommentAnswerResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
-    Object? id = freezed,
-    Object? ugcAnswerId = freezed,
-    Object? userId = freezed,
-    Object? text = freezed,
-    Object? ugcFieldId = freezed,
-    Object? timestamp = freezed,
+    Object? user = null,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
+    Object? id = null,
+    Object? ugcAnswerId = null,
+    Object? userId = null,
+    Object? text = null,
+    Object? ugcFieldId = null,
+    Object? timestamp = null,
   }) {
     return _then(_value.copyWith(
-      user: user == freezed
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ugcAnswerId: ugcAnswerId == freezed
+      ugcAnswerId: null == ugcAnswerId
           ? _value.ugcAnswerId
           : ugcAnswerId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      text: text == freezed
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      ugcFieldId: ugcFieldId == freezed
+      ugcFieldId: null == ugcFieldId
           ? _value.ugcFieldId
           : ugcFieldId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get user {
     return $BaseUserResourceCopyWith<$Res>(_value.user, (value) {
-      return _then(_value.copyWith(user: value));
+      return _then(_value.copyWith(user: value) as $Val);
     });
   }
 }
@@ -147,6 +152,7 @@ abstract class _$$_CommentAnswerResourceCopyWith<$Res>
           $Res Function(_$_CommentAnswerResource) then) =
       __$$_CommentAnswerResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {BaseUserResource user,
       List<BaseDocumentResource> documents,
@@ -166,72 +172,69 @@ abstract class _$$_CommentAnswerResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_CommentAnswerResourceCopyWithImpl<$Res>
-    extends _$CommentAnswerResourceCopyWithImpl<$Res>
+    extends _$CommentAnswerResourceCopyWithImpl<$Res, _$_CommentAnswerResource>
     implements _$$_CommentAnswerResourceCopyWith<$Res> {
   __$$_CommentAnswerResourceCopyWithImpl(_$_CommentAnswerResource _value,
       $Res Function(_$_CommentAnswerResource) _then)
-      : super(_value, (v) => _then(v as _$_CommentAnswerResource));
+      : super(_value, _then);
 
-  @override
-  _$_CommentAnswerResource get _value =>
-      super._value as _$_CommentAnswerResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? user = freezed,
-    Object? documents = freezed,
-    Object? links = freezed,
-    Object? photos = freezed,
-    Object? videos = freezed,
-    Object? id = freezed,
-    Object? ugcAnswerId = freezed,
-    Object? userId = freezed,
-    Object? text = freezed,
-    Object? ugcFieldId = freezed,
-    Object? timestamp = freezed,
+    Object? user = null,
+    Object? documents = null,
+    Object? links = null,
+    Object? photos = null,
+    Object? videos = null,
+    Object? id = null,
+    Object? ugcAnswerId = null,
+    Object? userId = null,
+    Object? text = null,
+    Object? ugcFieldId = null,
+    Object? timestamp = null,
   }) {
     return _then(_$_CommentAnswerResource(
-      user: user == freezed
+      user: null == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      documents: documents == freezed
+      documents: null == documents
           ? _value._documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      links: links == freezed
+      links: null == links
           ? _value._links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value._photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value._videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ugcAnswerId: ugcAnswerId == freezed
+      ugcAnswerId: null == ugcAnswerId
           ? _value.ugcAnswerId
           : ugcAnswerId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      text: text == freezed
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      ugcFieldId: ugcFieldId == freezed
+      ugcFieldId: null == ugcFieldId
           ? _value.ugcFieldId
           : ugcFieldId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
@@ -267,6 +270,7 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   final List<BaseDocumentResource> _documents;
   @override
   List<BaseDocumentResource> get documents {
+    if (_documents is EqualUnmodifiableListView) return _documents;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_documents);
   }
@@ -274,6 +278,7 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   final List<BaseLinkResource> _links;
   @override
   List<BaseLinkResource> get links {
+    if (_links is EqualUnmodifiableListView) return _links;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_links);
   }
@@ -281,6 +286,7 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   final List<BasePhotoResource> _photos;
   @override
   List<BasePhotoResource> get photos {
+    if (_photos is EqualUnmodifiableListView) return _photos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_photos);
   }
@@ -288,6 +294,7 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
   final List<BaseVideoResource> _videos;
   @override
   List<BaseVideoResource> get videos {
+    if (_videos is EqualUnmodifiableListView) return _videos;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_videos);
   }
@@ -315,40 +322,42 @@ class _$_CommentAnswerResource implements _CommentAnswerResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CommentAnswerResource &&
-            const DeepCollectionEquality().equals(other.user, user) &&
+            (identical(other.user, user) || other.user == user) &&
             const DeepCollectionEquality()
                 .equals(other._documents, _documents) &&
             const DeepCollectionEquality().equals(other._links, _links) &&
             const DeepCollectionEquality().equals(other._photos, _photos) &&
             const DeepCollectionEquality().equals(other._videos, _videos) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality()
-                .equals(other.ugcAnswerId, ugcAnswerId) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality()
-                .equals(other.ugcFieldId, ugcFieldId) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.ugcAnswerId, ugcAnswerId) ||
+                other.ugcAnswerId == ugcAnswerId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.ugcFieldId, ugcFieldId) ||
+                other.ugcFieldId == ugcFieldId) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(user),
+      user,
       const DeepCollectionEquality().hash(_documents),
       const DeepCollectionEquality().hash(_links),
       const DeepCollectionEquality().hash(_photos),
       const DeepCollectionEquality().hash(_videos),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(ugcAnswerId),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(ugcFieldId),
-      const DeepCollectionEquality().hash(timestamp));
+      id,
+      ugcAnswerId,
+      userId,
+      text,
+      ugcFieldId,
+      timestamp);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CommentAnswerResourceCopyWith<_$_CommentAnswerResource> get copyWith =>
       __$$_CommentAnswerResourceCopyWithImpl<_$_CommentAnswerResource>(
           this, _$identity);

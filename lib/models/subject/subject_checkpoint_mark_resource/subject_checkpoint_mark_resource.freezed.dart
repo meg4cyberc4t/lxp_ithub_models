@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_checkpoint_mark_resource.dart';
 
@@ -47,7 +47,9 @@ abstract class $SubjectCheckpointMarkResourceCopyWith<$Res> {
   factory $SubjectCheckpointMarkResourceCopyWith(
           SubjectCheckpointMarkResource value,
           $Res Function(SubjectCheckpointMarkResource) then) =
-      _$SubjectCheckpointMarkResourceCopyWithImpl<$Res>;
+      _$SubjectCheckpointMarkResourceCopyWithImpl<$Res,
+          SubjectCheckpointMarkResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -66,89 +68,92 @@ abstract class $SubjectCheckpointMarkResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectCheckpointMarkResourceCopyWithImpl<$Res>
+class _$SubjectCheckpointMarkResourceCopyWithImpl<$Res,
+        $Val extends SubjectCheckpointMarkResource>
     implements $SubjectCheckpointMarkResourceCopyWith<$Res> {
   _$SubjectCheckpointMarkResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectCheckpointMarkResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectCheckpointMarkResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? chapters = freezed,
-    Object? teachers = freezed,
-    Object? groups = freezed,
+    Object? chapters = null,
+    Object? teachers = null,
+    Object? groups = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<ChapterResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -160,6 +165,7 @@ abstract class _$$SubjecCheckpointMarkResourceCopyWith<$Res>
           $Res Function(_$SubjecCheckpointMarkResource) then) =
       __$$SubjecCheckpointMarkResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -179,88 +185,86 @@ abstract class _$$SubjecCheckpointMarkResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$SubjecCheckpointMarkResourceCopyWithImpl<$Res>
-    extends _$SubjectCheckpointMarkResourceCopyWithImpl<$Res>
+    extends _$SubjectCheckpointMarkResourceCopyWithImpl<$Res,
+        _$SubjecCheckpointMarkResource>
     implements _$$SubjecCheckpointMarkResourceCopyWith<$Res> {
   __$$SubjecCheckpointMarkResourceCopyWithImpl(
       _$SubjecCheckpointMarkResource _value,
       $Res Function(_$SubjecCheckpointMarkResource) _then)
-      : super(_value, (v) => _then(v as _$SubjecCheckpointMarkResource));
+      : super(_value, _then);
 
-  @override
-  _$SubjecCheckpointMarkResource get _value =>
-      super._value as _$SubjecCheckpointMarkResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? chapters = freezed,
-    Object? teachers = freezed,
-    Object? groups = freezed,
+    Object? chapters = null,
+    Object? teachers = null,
+    Object? groups = null,
   }) {
     return _then(_$SubjecCheckpointMarkResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<ChapterResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
@@ -330,19 +334,22 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SubjecCheckpointMarkResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.chapters, chapters) &&
             const DeepCollectionEquality().equals(other.teachers, teachers) &&
             const DeepCollectionEquality().equals(other.groups, groups));
@@ -352,23 +359,24 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt),
+      id,
+      title,
+      code,
+      type,
+      description,
+      privacy,
+      hidden,
+      createdAt,
+      updatedAt,
+      deletedAt,
+      deletePermanentlyAt,
       const DeepCollectionEquality().hash(chapters),
       const DeepCollectionEquality().hash(teachers),
       const DeepCollectionEquality().hash(groups));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$SubjecCheckpointMarkResourceCopyWith<_$SubjecCheckpointMarkResource>
       get copyWith => __$$SubjecCheckpointMarkResourceCopyWithImpl<
           _$SubjecCheckpointMarkResource>(this, _$identity);

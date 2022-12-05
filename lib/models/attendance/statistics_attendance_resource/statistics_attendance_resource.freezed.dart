@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'statistics_attendance_resource.dart';
 
@@ -36,7 +36,9 @@ abstract class $StatisticsAttendanceResourceCopyWith<$Res> {
   factory $StatisticsAttendanceResourceCopyWith(
           StatisticsAttendanceResource value,
           $Res Function(StatisticsAttendanceResource) then) =
-      _$StatisticsAttendanceResourceCopyWithImpl<$Res>;
+      _$StatisticsAttendanceResourceCopyWithImpl<$Res,
+          StatisticsAttendanceResource>;
+  @useResult
   $Res call(
       {StatisticsAttendanceResourceStats attendanceStats,
       List<BaseAttendanceResource> data});
@@ -45,36 +47,40 @@ abstract class $StatisticsAttendanceResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StatisticsAttendanceResourceCopyWithImpl<$Res>
+class _$StatisticsAttendanceResourceCopyWithImpl<$Res,
+        $Val extends StatisticsAttendanceResource>
     implements $StatisticsAttendanceResourceCopyWith<$Res> {
   _$StatisticsAttendanceResourceCopyWithImpl(this._value, this._then);
 
-  final StatisticsAttendanceResource _value;
   // ignore: unused_field
-  final $Res Function(StatisticsAttendanceResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? attendanceStats = freezed,
-    Object? data = freezed,
+    Object? attendanceStats = null,
+    Object? data = null,
   }) {
     return _then(_value.copyWith(
-      attendanceStats: attendanceStats == freezed
+      attendanceStats: null == attendanceStats
           ? _value.attendanceStats
           : attendanceStats // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResourceStats,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as List<BaseAttendanceResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $StatisticsAttendanceResourceStatsCopyWith<$Res> get attendanceStats {
     return $StatisticsAttendanceResourceStatsCopyWith<$Res>(
         _value.attendanceStats, (value) {
-      return _then(_value.copyWith(attendanceStats: value));
+      return _then(_value.copyWith(attendanceStats: value) as $Val);
     });
   }
 }
@@ -87,6 +93,7 @@ abstract class _$$_StatisticsAttendanceResourceCopyWith<$Res>
           $Res Function(_$_StatisticsAttendanceResource) then) =
       __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {StatisticsAttendanceResourceStats attendanceStats,
       List<BaseAttendanceResource> data});
@@ -97,28 +104,26 @@ abstract class _$$_StatisticsAttendanceResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>
-    extends _$StatisticsAttendanceResourceCopyWithImpl<$Res>
+    extends _$StatisticsAttendanceResourceCopyWithImpl<$Res,
+        _$_StatisticsAttendanceResource>
     implements _$$_StatisticsAttendanceResourceCopyWith<$Res> {
   __$$_StatisticsAttendanceResourceCopyWithImpl(
       _$_StatisticsAttendanceResource _value,
       $Res Function(_$_StatisticsAttendanceResource) _then)
-      : super(_value, (v) => _then(v as _$_StatisticsAttendanceResource));
+      : super(_value, _then);
 
-  @override
-  _$_StatisticsAttendanceResource get _value =>
-      super._value as _$_StatisticsAttendanceResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? attendanceStats = freezed,
-    Object? data = freezed,
+    Object? attendanceStats = null,
+    Object? data = null,
   }) {
     return _then(_$_StatisticsAttendanceResource(
-      attendanceStats: attendanceStats == freezed
+      attendanceStats: null == attendanceStats
           ? _value.attendanceStats
           : attendanceStats // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResourceStats,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as List<BaseAttendanceResource>,
@@ -150,20 +155,19 @@ class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StatisticsAttendanceResource &&
-            const DeepCollectionEquality()
-                .equals(other.attendanceStats, attendanceStats) &&
+            (identical(other.attendanceStats, attendanceStats) ||
+                other.attendanceStats == attendanceStats) &&
             const DeepCollectionEquality().equals(other.data, data));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(attendanceStats),
-      const DeepCollectionEquality().hash(data));
+      runtimeType, attendanceStats, const DeepCollectionEquality().hash(data));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StatisticsAttendanceResourceCopyWith<_$_StatisticsAttendanceResource>
       get copyWith => __$$_StatisticsAttendanceResourceCopyWithImpl<
           _$_StatisticsAttendanceResource>(this, _$identity);

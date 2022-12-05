@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_local_group_resource.dart';
 
@@ -42,7 +42,8 @@ mixin _$SubjectLocalGroupResource {
 abstract class $SubjectLocalGroupResourceCopyWith<$Res> {
   factory $SubjectLocalGroupResourceCopyWith(SubjectLocalGroupResource value,
           $Res Function(SubjectLocalGroupResource) then) =
-      _$SubjectLocalGroupResourceCopyWithImpl<$Res>;
+      _$SubjectLocalGroupResourceCopyWithImpl<$Res, SubjectLocalGroupResource>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -57,69 +58,72 @@ abstract class $SubjectLocalGroupResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectLocalGroupResourceCopyWithImpl<$Res>
+class _$SubjectLocalGroupResourceCopyWithImpl<$Res,
+        $Val extends SubjectLocalGroupResource>
     implements $SubjectLocalGroupResourceCopyWith<$Res> {
   _$SubjectLocalGroupResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectLocalGroupResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectLocalGroupResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? companyId = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
+    Object? companyId = null,
     Object? halfId = freezed,
-    Object? labelId = freezed,
+    Object? labelId = null,
     Object? externalLink = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? users = freezed,
+    Object? users = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      companyId: companyId == freezed
+      companyId: null == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: null == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<UserResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -131,6 +135,7 @@ abstract class _$$_SubjectLocalGroupResourceCopyWith<$Res>
           $Res Function(_$_SubjectLocalGroupResource) then) =
       __$$_SubjectLocalGroupResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -146,68 +151,66 @@ abstract class _$$_SubjectLocalGroupResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_SubjectLocalGroupResourceCopyWithImpl<$Res>
-    extends _$SubjectLocalGroupResourceCopyWithImpl<$Res>
+    extends _$SubjectLocalGroupResourceCopyWithImpl<$Res,
+        _$_SubjectLocalGroupResource>
     implements _$$_SubjectLocalGroupResourceCopyWith<$Res> {
   __$$_SubjectLocalGroupResourceCopyWithImpl(
       _$_SubjectLocalGroupResource _value,
       $Res Function(_$_SubjectLocalGroupResource) _then)
-      : super(_value, (v) => _then(v as _$_SubjectLocalGroupResource));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectLocalGroupResource get _value =>
-      super._value as _$_SubjectLocalGroupResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? companyId = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
+    Object? companyId = null,
     Object? halfId = freezed,
-    Object? labelId = freezed,
+    Object? labelId = null,
     Object? externalLink = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? users = freezed,
+    Object? users = null,
   }) {
     return _then(_$_SubjectLocalGroupResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      companyId: companyId == freezed
+      companyId: null == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: null == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<UserResource>,
@@ -264,17 +267,20 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectLocalGroupResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.companyId, companyId) &&
-            const DeepCollectionEquality().equals(other.halfId, halfId) &&
-            const DeepCollectionEquality().equals(other.labelId, labelId) &&
-            const DeepCollectionEquality()
-                .equals(other.externalLink, externalLink) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.companyId, companyId) ||
+                other.companyId == companyId) &&
+            (identical(other.halfId, halfId) || other.halfId == halfId) &&
+            (identical(other.labelId, labelId) || other.labelId == labelId) &&
+            (identical(other.externalLink, externalLink) ||
+                other.externalLink == externalLink) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.users, users));
   }
 
@@ -282,19 +288,20 @@ class _$_SubjectLocalGroupResource implements _SubjectLocalGroupResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(companyId),
-      const DeepCollectionEquality().hash(halfId),
-      const DeepCollectionEquality().hash(labelId),
-      const DeepCollectionEquality().hash(externalLink),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
+      id,
+      name,
+      description,
+      companyId,
+      halfId,
+      labelId,
+      externalLink,
+      createdAt,
+      updatedAt,
       const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectLocalGroupResourceCopyWith<_$_SubjectLocalGroupResource>
       get copyWith => __$$_SubjectLocalGroupResourceCopyWithImpl<
           _$_SubjectLocalGroupResource>(this, _$identity);

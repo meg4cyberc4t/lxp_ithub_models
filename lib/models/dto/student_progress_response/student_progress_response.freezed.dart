@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'student_progress_response.dart';
 
@@ -36,7 +36,8 @@ mixin _$StudentProgressResponse {
 abstract class $StudentProgressResponseCopyWith<$Res> {
   factory $StudentProgressResponseCopyWith(StudentProgressResponse value,
           $Res Function(StudentProgressResponse) then) =
-      _$StudentProgressResponseCopyWithImpl<$Res>;
+      _$StudentProgressResponseCopyWithImpl<$Res, StudentProgressResponse>;
+  @useResult
   $Res call(
       {BaseUserResource student,
       List<BaseGroupResource> groups,
@@ -46,40 +47,44 @@ abstract class $StudentProgressResponseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StudentProgressResponseCopyWithImpl<$Res>
+class _$StudentProgressResponseCopyWithImpl<$Res,
+        $Val extends StudentProgressResponse>
     implements $StudentProgressResponseCopyWith<$Res> {
   _$StudentProgressResponseCopyWithImpl(this._value, this._then);
 
-  final StudentProgressResponse _value;
   // ignore: unused_field
-  final $Res Function(StudentProgressResponse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? student = freezed,
-    Object? groups = freezed,
-    Object? subjects = freezed,
+    Object? student = null,
+    Object? groups = null,
+    Object? subjects = null,
   }) {
     return _then(_value.copyWith(
-      student: student == freezed
+      student: null == student
           ? _value.student
           : student // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<StudentSubjectResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get student {
     return $BaseUserResourceCopyWith<$Res>(_value.student, (value) {
-      return _then(_value.copyWith(student: value));
+      return _then(_value.copyWith(student: value) as $Val);
     });
   }
 }
@@ -91,6 +96,7 @@ abstract class _$$_StudentProgressResponseCopyWith<$Res>
           $Res Function(_$_StudentProgressResponse) then) =
       __$$_StudentProgressResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {BaseUserResource student,
       List<BaseGroupResource> groups,
@@ -102,32 +108,30 @@ abstract class _$$_StudentProgressResponseCopyWith<$Res>
 
 /// @nodoc
 class __$$_StudentProgressResponseCopyWithImpl<$Res>
-    extends _$StudentProgressResponseCopyWithImpl<$Res>
+    extends _$StudentProgressResponseCopyWithImpl<$Res,
+        _$_StudentProgressResponse>
     implements _$$_StudentProgressResponseCopyWith<$Res> {
   __$$_StudentProgressResponseCopyWithImpl(_$_StudentProgressResponse _value,
       $Res Function(_$_StudentProgressResponse) _then)
-      : super(_value, (v) => _then(v as _$_StudentProgressResponse));
+      : super(_value, _then);
 
-  @override
-  _$_StudentProgressResponse get _value =>
-      super._value as _$_StudentProgressResponse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? student = freezed,
-    Object? groups = freezed,
-    Object? subjects = freezed,
+    Object? student = null,
+    Object? groups = null,
+    Object? subjects = null,
   }) {
     return _then(_$_StudentProgressResponse(
-      student: student == freezed
+      student: null == student
           ? _value.student
           : student // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<StudentSubjectResource>,
@@ -161,7 +165,7 @@ class _$_StudentProgressResponse implements _StudentProgressResponse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StudentProgressResponse &&
-            const DeepCollectionEquality().equals(other.student, student) &&
+            (identical(other.student, student) || other.student == student) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.subjects, subjects));
   }
@@ -170,12 +174,13 @@ class _$_StudentProgressResponse implements _StudentProgressResponse {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(student),
+      student,
       const DeepCollectionEquality().hash(groups),
       const DeepCollectionEquality().hash(subjects));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StudentProgressResponseCopyWith<_$_StudentProgressResponse>
       get copyWith =>
           __$$_StudentProgressResponseCopyWithImpl<_$_StudentProgressResponse>(

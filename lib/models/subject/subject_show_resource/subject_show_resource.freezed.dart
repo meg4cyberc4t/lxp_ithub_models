@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_show_resource.dart';
 
@@ -53,7 +53,8 @@ mixin _$SubjectShowResource {
 abstract class $SubjectShowResourceCopyWith<$Res> {
   factory $SubjectShowResourceCopyWith(
           SubjectShowResource value, $Res Function(SubjectShowResource) then) =
-      _$SubjectShowResourceCopyWithImpl<$Res>;
+      _$SubjectShowResourceCopyWithImpl<$Res, SubjectShowResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -81,140 +82,144 @@ abstract class $SubjectShowResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectShowResourceCopyWithImpl<$Res>
+class _$SubjectShowResourceCopyWithImpl<$Res, $Val extends SubjectShowResource>
     implements $SubjectShowResourceCopyWith<$Res> {
   _$SubjectShowResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectShowResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectShowResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? steps = freezed,
+    Object? steps = null,
     Object? halves = freezed,
-    Object? trajectories = freezed,
-    Object? teachers = freezed,
-    Object? groups = freezed,
+    Object? trajectories = null,
+    Object? teachers = null,
+    Object? groups = null,
     Object? cover = freezed,
-    Object? chapters = freezed,
+    Object? chapters = null,
     Object? subSubjects = freezed,
     Object? masterSubject = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      steps: steps == freezed
+      steps: null == steps
           ? _value.steps
           : steps // ignore: cast_nullable_to_non_nullable
               as List<SubjectStepShowResource>,
-      halves: halves == freezed
+      halves: freezed == halves
           ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalfSubjectResource>?,
-      trajectories: trajectories == freezed
+      trajectories: null == trajectories
           ? _value.trajectories
           : trajectories // ignore: cast_nullable_to_non_nullable
               as List<BaseTrajectoryResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<BaseChapterResource>,
-      subSubjects: subSubjects == freezed
+      subSubjects: freezed == subSubjects
           ? _value.subSubjects
           : subSubjects // ignore: cast_nullable_to_non_nullable
               as List<BaseSubjectResource>?,
-      masterSubject: masterSubject == freezed
+      masterSubject: freezed == masterSubject
           ? _value.masterSubject
           : masterSubject // ignore: cast_nullable_to_non_nullable
               as BaseSubjectResource?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BasePhotoResourceCopyWith<$Res>? get cover {
     if (_value.cover == null) {
       return null;
     }
 
     return $BasePhotoResourceCopyWith<$Res>(_value.cover!, (value) {
-      return _then(_value.copyWith(cover: value));
+      return _then(_value.copyWith(cover: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseSubjectResourceCopyWith<$Res>? get masterSubject {
     if (_value.masterSubject == null) {
       return null;
     }
 
     return $BaseSubjectResourceCopyWith<$Res>(_value.masterSubject!, (value) {
-      return _then(_value.copyWith(masterSubject: value));
+      return _then(_value.copyWith(masterSubject: value) as $Val);
     });
   }
 }
@@ -226,6 +231,7 @@ abstract class _$$_SubjectShowResourseCopyWith<$Res>
           $Res Function(_$_SubjectShowResourse) then) =
       __$$_SubjectShowResourseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -256,116 +262,114 @@ abstract class _$$_SubjectShowResourseCopyWith<$Res>
 
 /// @nodoc
 class __$$_SubjectShowResourseCopyWithImpl<$Res>
-    extends _$SubjectShowResourceCopyWithImpl<$Res>
+    extends _$SubjectShowResourceCopyWithImpl<$Res, _$_SubjectShowResourse>
     implements _$$_SubjectShowResourseCopyWith<$Res> {
   __$$_SubjectShowResourseCopyWithImpl(_$_SubjectShowResourse _value,
       $Res Function(_$_SubjectShowResourse) _then)
-      : super(_value, (v) => _then(v as _$_SubjectShowResourse));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectShowResourse get _value => super._value as _$_SubjectShowResourse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? steps = freezed,
+    Object? steps = null,
     Object? halves = freezed,
-    Object? trajectories = freezed,
-    Object? teachers = freezed,
-    Object? groups = freezed,
+    Object? trajectories = null,
+    Object? teachers = null,
+    Object? groups = null,
     Object? cover = freezed,
-    Object? chapters = freezed,
+    Object? chapters = null,
     Object? subSubjects = freezed,
     Object? masterSubject = freezed,
   }) {
     return _then(_$_SubjectShowResourse(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      steps: steps == freezed
+      steps: null == steps
           ? _value.steps
           : steps // ignore: cast_nullable_to_non_nullable
               as List<SubjectStepShowResource>,
-      halves: halves == freezed
+      halves: freezed == halves
           ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalfSubjectResource>?,
-      trajectories: trajectories == freezed
+      trajectories: null == trajectories
           ? _value.trajectories
           : trajectories // ignore: cast_nullable_to_non_nullable
               as List<BaseTrajectoryResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      chapters: chapters == freezed
+      chapters: null == chapters
           ? _value.chapters
           : chapters // ignore: cast_nullable_to_non_nullable
               as List<BaseChapterResource>,
-      subSubjects: subSubjects == freezed
+      subSubjects: freezed == subSubjects
           ? _value.subSubjects
           : subSubjects // ignore: cast_nullable_to_non_nullable
               as List<BaseSubjectResource>?,
-      masterSubject: masterSubject == freezed
+      masterSubject: freezed == masterSubject
           ? _value.masterSubject
           : masterSubject // ignore: cast_nullable_to_non_nullable
               as BaseSubjectResource?,
@@ -453,61 +457,65 @@ class _$_SubjectShowResourse implements _SubjectShowResourse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectShowResourse &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.steps, steps) &&
             const DeepCollectionEquality().equals(other.halves, halves) &&
             const DeepCollectionEquality()
                 .equals(other.trajectories, trajectories) &&
             const DeepCollectionEquality().equals(other.teachers, teachers) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality().equals(other.cover, cover) &&
+            (identical(other.cover, cover) || other.cover == cover) &&
             const DeepCollectionEquality().equals(other.chapters, chapters) &&
             const DeepCollectionEquality()
                 .equals(other.subSubjects, subSubjects) &&
-            const DeepCollectionEquality()
-                .equals(other.masterSubject, masterSubject));
+            (identical(other.masterSubject, masterSubject) ||
+                other.masterSubject == masterSubject));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(title),
-        const DeepCollectionEquality().hash(code),
-        const DeepCollectionEquality().hash(type),
-        const DeepCollectionEquality().hash(description),
-        const DeepCollectionEquality().hash(privacy),
-        const DeepCollectionEquality().hash(hidden),
-        const DeepCollectionEquality().hash(createdAt),
-        const DeepCollectionEquality().hash(updatedAt),
-        const DeepCollectionEquality().hash(deletedAt),
-        const DeepCollectionEquality().hash(deletePermanentlyAt),
+        id,
+        title,
+        code,
+        type,
+        description,
+        privacy,
+        hidden,
+        createdAt,
+        updatedAt,
+        deletedAt,
+        deletePermanentlyAt,
         const DeepCollectionEquality().hash(steps),
         const DeepCollectionEquality().hash(halves),
         const DeepCollectionEquality().hash(trajectories),
         const DeepCollectionEquality().hash(teachers),
         const DeepCollectionEquality().hash(groups),
-        const DeepCollectionEquality().hash(cover),
+        cover,
         const DeepCollectionEquality().hash(chapters),
         const DeepCollectionEquality().hash(subSubjects),
-        const DeepCollectionEquality().hash(masterSubject)
+        masterSubject
       ]);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectShowResourseCopyWith<_$_SubjectShowResourse> get copyWith =>
       __$$_SubjectShowResourseCopyWithImpl<_$_SubjectShowResourse>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_video_resource.dart';
 
@@ -38,7 +38,8 @@ mixin _$BaseVideoResource {
 abstract class $BaseVideoResourceCopyWith<$Res> {
   factory $BaseVideoResourceCopyWith(
           BaseVideoResource value, $Res Function(BaseVideoResource) then) =
-      _$BaseVideoResourceCopyWithImpl<$Res>;
+      _$BaseVideoResourceCopyWithImpl<$Res, BaseVideoResource>;
+  @useResult
   $Res call(
       {int id,
       int ownerId,
@@ -50,54 +51,56 @@ abstract class $BaseVideoResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseVideoResourceCopyWithImpl<$Res>
+class _$BaseVideoResourceCopyWithImpl<$Res, $Val extends BaseVideoResource>
     implements $BaseVideoResourceCopyWith<$Res> {
   _$BaseVideoResourceCopyWithImpl(this._value, this._then);
 
-  final BaseVideoResource _value;
   // ignore: unused_field
-  final $Res Function(BaseVideoResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? ownerId = freezed,
-    Object? description = freezed,
-    Object? type = freezed,
-    Object? duration = freezed,
-    Object? preview = freezed,
-    Object? path = freezed,
+    Object? id = null,
+    Object? ownerId = null,
+    Object? description = null,
+    Object? type = null,
+    Object? duration = null,
+    Object? preview = null,
+    Object? path = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as String,
-      preview: preview == freezed
+      preview: null == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as String,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -108,6 +111,7 @@ abstract class _$$_BaseVideoResourceCopyWith<$Res>
           $Res Function(_$_BaseVideoResource) then) =
       __$$_BaseVideoResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int ownerId,
@@ -120,51 +124,49 @@ abstract class _$$_BaseVideoResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseVideoResourceCopyWithImpl<$Res>
-    extends _$BaseVideoResourceCopyWithImpl<$Res>
+    extends _$BaseVideoResourceCopyWithImpl<$Res, _$_BaseVideoResource>
     implements _$$_BaseVideoResourceCopyWith<$Res> {
   __$$_BaseVideoResourceCopyWithImpl(
       _$_BaseVideoResource _value, $Res Function(_$_BaseVideoResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseVideoResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseVideoResource get _value => super._value as _$_BaseVideoResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? ownerId = freezed,
-    Object? description = freezed,
-    Object? type = freezed,
-    Object? duration = freezed,
-    Object? preview = freezed,
-    Object? path = freezed,
+    Object? id = null,
+    Object? ownerId = null,
+    Object? description = null,
+    Object? type = null,
+    Object? duration = null,
+    Object? preview = null,
+    Object? path = null,
   }) {
     return _then(_$_BaseVideoResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      duration: duration == freezed
+      duration: null == duration
           ? _value.duration
           : duration // ignore: cast_nullable_to_non_nullable
               as String,
-      preview: preview == freezed
+      preview: null == preview
           ? _value.preview
           : preview // ignore: cast_nullable_to_non_nullable
               as String,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
@@ -212,30 +214,25 @@ class _$_BaseVideoResource implements _BaseVideoResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseVideoResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.ownerId, ownerId) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.duration, duration) &&
-            const DeepCollectionEquality().equals(other.preview, preview) &&
-            const DeepCollectionEquality().equals(other.path, path));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.duration, duration) ||
+                other.duration == duration) &&
+            (identical(other.preview, preview) || other.preview == preview) &&
+            (identical(other.path, path) || other.path == path));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(ownerId),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(duration),
-      const DeepCollectionEquality().hash(preview),
-      const DeepCollectionEquality().hash(path));
+      runtimeType, id, ownerId, description, type, duration, preview, path);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseVideoResourceCopyWith<_$_BaseVideoResource> get copyWith =>
       __$$_BaseVideoResourceCopyWithImpl<_$_BaseVideoResource>(
           this, _$identity);

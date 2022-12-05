@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'sign_in_request.dart';
 
@@ -33,34 +33,37 @@ mixin _$SignInRequest {
 abstract class $SignInRequestCopyWith<$Res> {
   factory $SignInRequestCopyWith(
           SignInRequest value, $Res Function(SignInRequest) then) =
-      _$SignInRequestCopyWithImpl<$Res>;
+      _$SignInRequestCopyWithImpl<$Res, SignInRequest>;
+  @useResult
   $Res call({String email, String password});
 }
 
 /// @nodoc
-class _$SignInRequestCopyWithImpl<$Res>
+class _$SignInRequestCopyWithImpl<$Res, $Val extends SignInRequest>
     implements $SignInRequestCopyWith<$Res> {
   _$SignInRequestCopyWithImpl(this._value, this._then);
 
-  final SignInRequest _value;
   // ignore: unused_field
-  final $Res Function(SignInRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = freezed,
-    Object? password = freezed,
+    Object? email = null,
+    Object? password = null,
   }) {
     return _then(_value.copyWith(
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -71,31 +74,30 @@ abstract class _$$_SignInRequestCopyWith<$Res>
           _$_SignInRequest value, $Res Function(_$_SignInRequest) then) =
       __$$_SignInRequestCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String email, String password});
 }
 
 /// @nodoc
 class __$$_SignInRequestCopyWithImpl<$Res>
-    extends _$SignInRequestCopyWithImpl<$Res>
+    extends _$SignInRequestCopyWithImpl<$Res, _$_SignInRequest>
     implements _$$_SignInRequestCopyWith<$Res> {
   __$$_SignInRequestCopyWithImpl(
       _$_SignInRequest _value, $Res Function(_$_SignInRequest) _then)
-      : super(_value, (v) => _then(v as _$_SignInRequest));
+      : super(_value, _then);
 
-  @override
-  _$_SignInRequest get _value => super._value as _$_SignInRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? email = freezed,
-    Object? password = freezed,
+    Object? email = null,
+    Object? password = null,
   }) {
     return _then(_$_SignInRequest(
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      password: password == freezed
+      password: null == password
           ? _value.password
           : password // ignore: cast_nullable_to_non_nullable
               as String,
@@ -126,19 +128,18 @@ class _$_SignInRequest implements _SignInRequest {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SignInRequest &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.password, password));
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.password, password) ||
+                other.password == password));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(password));
+  int get hashCode => Object.hash(runtimeType, email, password);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SignInRequestCopyWith<_$_SignInRequest> get copyWith =>
       __$$_SignInRequestCopyWithImpl<_$_SignInRequest>(this, _$identity);
 

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_group_resource.dart';
 
@@ -40,7 +40,8 @@ mixin _$BaseGroupResource {
 abstract class $BaseGroupResourceCopyWith<$Res> {
   factory $BaseGroupResourceCopyWith(
           BaseGroupResource value, $Res Function(BaseGroupResource) then) =
-      _$BaseGroupResourceCopyWithImpl<$Res>;
+      _$BaseGroupResourceCopyWithImpl<$Res, BaseGroupResource>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -54,19 +55,21 @@ abstract class $BaseGroupResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseGroupResourceCopyWithImpl<$Res>
+class _$BaseGroupResourceCopyWithImpl<$Res, $Val extends BaseGroupResource>
     implements $BaseGroupResourceCopyWith<$Res> {
   _$BaseGroupResourceCopyWithImpl(this._value, this._then);
 
-  final BaseGroupResource _value;
   // ignore: unused_field
-  final $Res Function(BaseGroupResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
     Object? companyId = freezed,
     Object? halfId = freezed,
     Object? labelId = freezed,
@@ -75,43 +78,43 @@ class _$BaseGroupResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      companyId: companyId == freezed
+      companyId: freezed == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int?,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: freezed == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int?,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -122,6 +125,7 @@ abstract class _$$_BaseGroupResourceCopyWith<$Res>
           $Res Function(_$_BaseGroupResource) then) =
       __$$_BaseGroupResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -136,20 +140,18 @@ abstract class _$$_BaseGroupResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseGroupResourceCopyWithImpl<$Res>
-    extends _$BaseGroupResourceCopyWithImpl<$Res>
+    extends _$BaseGroupResourceCopyWithImpl<$Res, _$_BaseGroupResource>
     implements _$$_BaseGroupResourceCopyWith<$Res> {
   __$$_BaseGroupResourceCopyWithImpl(
       _$_BaseGroupResource _value, $Res Function(_$_BaseGroupResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseGroupResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseGroupResource get _value => super._value as _$_BaseGroupResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
     Object? companyId = freezed,
     Object? halfId = freezed,
     Object? labelId = freezed,
@@ -158,39 +160,39 @@ class __$$_BaseGroupResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseGroupResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      companyId: companyId == freezed
+      companyId: freezed == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int?,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: freezed == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int?,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -244,35 +246,30 @@ class _$_BaseGroupResource implements _BaseGroupResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseGroupResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.companyId, companyId) &&
-            const DeepCollectionEquality().equals(other.halfId, halfId) &&
-            const DeepCollectionEquality().equals(other.labelId, labelId) &&
-            const DeepCollectionEquality()
-                .equals(other.externalLink, externalLink) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.companyId, companyId) ||
+                other.companyId == companyId) &&
+            (identical(other.halfId, halfId) || other.halfId == halfId) &&
+            (identical(other.labelId, labelId) || other.labelId == labelId) &&
+            (identical(other.externalLink, externalLink) ||
+                other.externalLink == externalLink) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(companyId),
-      const DeepCollectionEquality().hash(halfId),
-      const DeepCollectionEquality().hash(labelId),
-      const DeepCollectionEquality().hash(externalLink),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+  int get hashCode => Object.hash(runtimeType, id, name, description, companyId,
+      halfId, labelId, externalLink, createdAt, updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseGroupResourceCopyWith<_$_BaseGroupResource> get copyWith =>
       __$$_BaseGroupResourceCopyWithImpl<_$_BaseGroupResource>(
           this, _$identity);

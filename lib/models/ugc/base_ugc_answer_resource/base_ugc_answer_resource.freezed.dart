@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_ugc_answer_resource.dart';
 
@@ -40,7 +40,8 @@ mixin _$BaseUgcAnswerResource {
 abstract class $BaseUgcAnswerResourceCopyWith<$Res> {
   factory $BaseUgcAnswerResourceCopyWith(BaseUgcAnswerResource value,
           $Res Function(BaseUgcAnswerResource) then) =
-      _$BaseUgcAnswerResourceCopyWithImpl<$Res>;
+      _$BaseUgcAnswerResourceCopyWithImpl<$Res, BaseUgcAnswerResource>;
+  @useResult
   $Res call(
       {int id,
       int userId,
@@ -52,54 +53,57 @@ abstract class $BaseUgcAnswerResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseUgcAnswerResourceCopyWithImpl<$Res>
+class _$BaseUgcAnswerResourceCopyWithImpl<$Res,
+        $Val extends BaseUgcAnswerResource>
     implements $BaseUgcAnswerResourceCopyWith<$Res> {
   _$BaseUgcAnswerResourceCopyWithImpl(this._value, this._then);
 
-  final BaseUgcAnswerResource _value;
   // ignore: unused_field
-  final $Res Function(BaseUgcAnswerResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
-    Object? timestamp = freezed,
-    Object? patternId = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
+    Object? timestamp = null,
+    Object? patternId = null,
     Object? updated = freezed,
-    Object? privacy = freezed,
+    Object? privacy = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      updated: updated == freezed
+      updated: freezed == updated
           ? _value.updated
           : updated // ignore: cast_nullable_to_non_nullable
               as int?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -110,6 +114,7 @@ abstract class _$$_BaseUgcAnswerResourceCopyWith<$Res>
           $Res Function(_$_BaseUgcAnswerResource) then) =
       __$$_BaseUgcAnswerResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int userId,
@@ -122,52 +127,49 @@ abstract class _$$_BaseUgcAnswerResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseUgcAnswerResourceCopyWithImpl<$Res>
-    extends _$BaseUgcAnswerResourceCopyWithImpl<$Res>
+    extends _$BaseUgcAnswerResourceCopyWithImpl<$Res, _$_BaseUgcAnswerResource>
     implements _$$_BaseUgcAnswerResourceCopyWith<$Res> {
   __$$_BaseUgcAnswerResourceCopyWithImpl(_$_BaseUgcAnswerResource _value,
       $Res Function(_$_BaseUgcAnswerResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseUgcAnswerResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseUgcAnswerResource get _value =>
-      super._value as _$_BaseUgcAnswerResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? userId = freezed,
-    Object? title = freezed,
-    Object? timestamp = freezed,
-    Object? patternId = freezed,
+    Object? id = null,
+    Object? userId = null,
+    Object? title = null,
+    Object? timestamp = null,
+    Object? patternId = null,
     Object? updated = freezed,
-    Object? privacy = freezed,
+    Object? privacy = null,
   }) {
     return _then(_$_BaseUgcAnswerResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      updated: updated == freezed
+      updated: freezed == updated
           ? _value.updated
           : updated // ignore: cast_nullable_to_non_nullable
               as int?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as int,
@@ -217,29 +219,25 @@ class _$_BaseUgcAnswerResource implements _BaseUgcAnswerResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseUgcAnswerResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
-            const DeepCollectionEquality().equals(other.patternId, patternId) &&
-            const DeepCollectionEquality().equals(other.updated, updated) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp) &&
+            (identical(other.patternId, patternId) ||
+                other.patternId == patternId) &&
+            (identical(other.updated, updated) || other.updated == updated) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(timestamp),
-      const DeepCollectionEquality().hash(patternId),
-      const DeepCollectionEquality().hash(updated),
-      const DeepCollectionEquality().hash(privacy));
+      runtimeType, id, userId, title, timestamp, patternId, updated, privacy);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseUgcAnswerResourceCopyWith<_$_BaseUgcAnswerResource> get copyWith =>
       __$$_BaseUgcAnswerResourceCopyWithImpl<_$_BaseUgcAnswerResource>(
           this, _$identity);

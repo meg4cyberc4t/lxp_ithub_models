@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'halv_local_resource.dart';
 
@@ -40,7 +40,8 @@ mixin _$HalvLocalResource {
 abstract class $HalvLocalResourceCopyWith<$Res> {
   factory $HalvLocalResourceCopyWith(
           HalvLocalResource value, $Res Function(HalvLocalResource) then) =
-      _$HalvLocalResourceCopyWithImpl<$Res>;
+      _$HalvLocalResourceCopyWithImpl<$Res, HalvLocalResource>;
+  @useResult
   $Res call(
       {int id,
       String? imageId,
@@ -54,64 +55,66 @@ abstract class $HalvLocalResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$HalvLocalResourceCopyWithImpl<$Res>
+class _$HalvLocalResourceCopyWithImpl<$Res, $Val extends HalvLocalResource>
     implements $HalvLocalResourceCopyWith<$Res> {
   _$HalvLocalResourceCopyWithImpl(this._value, this._then);
 
-  final HalvLocalResource _value;
   // ignore: unused_field
-  final $Res Function(HalvLocalResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? imageId = freezed,
-    Object? isArchived = freezed,
+    Object? isArchived = null,
     Object? semesterId = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? title = null,
+    Object? description = null,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? createdAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      imageId: imageId == freezed
+      imageId: freezed == imageId
           ? _value.imageId
           : imageId // ignore: cast_nullable_to_non_nullable
               as String?,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      semesterId: semesterId == freezed
+      semesterId: freezed == semesterId
           ? _value.semesterId
           : semesterId // ignore: cast_nullable_to_non_nullable
               as int?,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -122,6 +125,7 @@ abstract class _$$_HalvLocalResourceCopyWith<$Res>
           $Res Function(_$_HalvLocalResource) then) =
       __$$_HalvLocalResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String? imageId,
@@ -136,61 +140,59 @@ abstract class _$$_HalvLocalResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_HalvLocalResourceCopyWithImpl<$Res>
-    extends _$HalvLocalResourceCopyWithImpl<$Res>
+    extends _$HalvLocalResourceCopyWithImpl<$Res, _$_HalvLocalResource>
     implements _$$_HalvLocalResourceCopyWith<$Res> {
   __$$_HalvLocalResourceCopyWithImpl(
       _$_HalvLocalResource _value, $Res Function(_$_HalvLocalResource) _then)
-      : super(_value, (v) => _then(v as _$_HalvLocalResource));
+      : super(_value, _then);
 
-  @override
-  _$_HalvLocalResource get _value => super._value as _$_HalvLocalResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
+    Object? id = null,
     Object? imageId = freezed,
-    Object? isArchived = freezed,
+    Object? isArchived = null,
     Object? semesterId = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? title = null,
+    Object? description = null,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? createdAt = freezed,
   }) {
     return _then(_$_HalvLocalResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      imageId: imageId == freezed
+      imageId: freezed == imageId
           ? _value.imageId
           : imageId // ignore: cast_nullable_to_non_nullable
               as String?,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      semesterId: semesterId == freezed
+      semesterId: freezed == semesterId
           ? _value.semesterId
           : semesterId // ignore: cast_nullable_to_non_nullable
               as int?,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -244,36 +246,31 @@ class _$_HalvLocalResource implements _HalvLocalResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_HalvLocalResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.imageId, imageId) &&
-            const DeepCollectionEquality()
-                .equals(other.isArchived, isArchived) &&
-            const DeepCollectionEquality()
-                .equals(other.semesterId, semesterId) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.imageId, imageId) || other.imageId == imageId) &&
+            (identical(other.isArchived, isArchived) ||
+                other.isArchived == isArchived) &&
+            (identical(other.semesterId, semesterId) ||
+                other.semesterId == semesterId) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(imageId),
-      const DeepCollectionEquality().hash(isArchived),
-      const DeepCollectionEquality().hash(semesterId),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(createdAt));
+  int get hashCode => Object.hash(runtimeType, id, imageId, isArchived,
+      semesterId, title, description, updatedAt, deletedAt, createdAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_HalvLocalResourceCopyWith<_$_HalvLocalResource> get copyWith =>
       __$$_HalvLocalResourceCopyWithImpl<_$_HalvLocalResource>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'show_lesson_resource.dart';
 
@@ -64,7 +64,8 @@ mixin _$ShowLessonResource {
 abstract class $ShowLessonResourceCopyWith<$Res> {
   factory $ShowLessonResourceCopyWith(
           ShowLessonResource value, $Res Function(ShowLessonResource) then) =
-      _$ShowLessonResourceCopyWithImpl<$Res>;
+      _$ShowLessonResourceCopyWithImpl<$Res, ShowLessonResource>;
+  @useResult
   $Res call(
       {BaseRoleResource? myRole,
       int id,
@@ -101,183 +102,188 @@ abstract class $ShowLessonResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ShowLessonResourceCopyWithImpl<$Res>
+class _$ShowLessonResourceCopyWithImpl<$Res, $Val extends ShowLessonResource>
     implements $ShowLessonResourceCopyWith<$Res> {
   _$ShowLessonResourceCopyWithImpl(this._value, this._then);
 
-  final ShowLessonResource _value;
   // ignore: unused_field
-  final $Res Function(ShowLessonResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? myRole = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? publicText = freezed,
-    Object? publicTextOriginal = freezed,
-    Object? privateText = freezed,
-    Object? privateTextOriginal = freezed,
-    Object? chapterId = freezed,
-    Object? number = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? publicText = null,
+    Object? publicTextOriginal = null,
+    Object? privateText = null,
+    Object? privateTextOriginal = null,
+    Object? chapterId = null,
+    Object? number = null,
+    Object? type = null,
     Object? authorId = freezed,
-    Object? time = freezed,
-    Object? hours = freezed,
+    Object? time = null,
+    Object? hours = null,
     Object? maxMark = freezed,
     Object? clonedId = freezed,
-    Object? hidden = freezed,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? passedStatusId = freezed,
     Object? checkpointMark = freezed,
-    Object? chapter = freezed,
-    Object? passedStatus = freezed,
-    Object? sections = freezed,
-    Object? publicPhotos = freezed,
-    Object? privatePhotos = freezed,
-    Object? privateVideos = freezed,
-    Object? privateDocuments = freezed,
-    Object? privateLinks = freezed,
+    Object? chapter = null,
+    Object? passedStatus = null,
+    Object? sections = null,
+    Object? publicPhotos = null,
+    Object? privatePhotos = null,
+    Object? privateVideos = null,
+    Object? privateDocuments = null,
+    Object? privateLinks = null,
   }) {
     return _then(_value.copyWith(
-      myRole: myRole == freezed
+      myRole: freezed == myRole
           ? _value.myRole
           : myRole // ignore: cast_nullable_to_non_nullable
               as BaseRoleResource?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      publicText: publicText == freezed
+      publicText: null == publicText
           ? _value.publicText
           : publicText // ignore: cast_nullable_to_non_nullable
               as String,
-      publicTextOriginal: publicTextOriginal == freezed
+      publicTextOriginal: null == publicTextOriginal
           ? _value.publicTextOriginal
           : publicTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      privateText: privateText == freezed
+      privateText: null == privateText
           ? _value.privateText
           : privateText // ignore: cast_nullable_to_non_nullable
               as String,
-      privateTextOriginal: privateTextOriginal == freezed
+      privateTextOriginal: null == privateTextOriginal
           ? _value.privateTextOriginal
           : privateTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      chapterId: chapterId == freezed
+      chapterId: null == chapterId
           ? _value.chapterId
           : chapterId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      authorId: authorId == freezed
+      authorId: freezed == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int?,
-      time: time == freezed
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as int,
-      hours: hours == freezed
+      hours: null == hours
           ? _value.hours
           : hours // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMark: maxMark == freezed
+      maxMark: freezed == maxMark
           ? _value.maxMark
           : maxMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      clonedId: clonedId == freezed
+      clonedId: freezed == clonedId
           ? _value.clonedId
           : clonedId // ignore: cast_nullable_to_non_nullable
               as int?,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointMark: checkpointMark == freezed
+      checkpointMark: freezed == checkpointMark
           ? _value.checkpointMark
           : checkpointMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      chapter: chapter == freezed
+      chapter: null == chapter
           ? _value.chapter
           : chapter // ignore: cast_nullable_to_non_nullable
               as ShowLessonChapterResource,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as PassingStepStatus,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<BaseSectionResource>,
-      publicPhotos: publicPhotos == freezed
+      publicPhotos: null == publicPhotos
           ? _value.publicPhotos
           : publicPhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      privatePhotos: privatePhotos == freezed
+      privatePhotos: null == privatePhotos
           ? _value.privatePhotos
           : privatePhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      privateVideos: privateVideos == freezed
+      privateVideos: null == privateVideos
           ? _value.privateVideos
           : privateVideos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      privateDocuments: privateDocuments == freezed
+      privateDocuments: null == privateDocuments
           ? _value.privateDocuments
           : privateDocuments // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      privateLinks: privateLinks == freezed
+      privateLinks: null == privateLinks
           ? _value.privateLinks
           : privateLinks // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseRoleResourceCopyWith<$Res>? get myRole {
     if (_value.myRole == null) {
       return null;
     }
 
     return $BaseRoleResourceCopyWith<$Res>(_value.myRole!, (value) {
-      return _then(_value.copyWith(myRole: value));
+      return _then(_value.copyWith(myRole: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $ShowLessonChapterResourceCopyWith<$Res> get chapter {
     return $ShowLessonChapterResourceCopyWith<$Res>(_value.chapter, (value) {
-      return _then(_value.copyWith(chapter: value));
+      return _then(_value.copyWith(chapter: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PassingStepStatusCopyWith<$Res> get passedStatus {
     return $PassingStepStatusCopyWith<$Res>(_value.passedStatus, (value) {
-      return _then(_value.copyWith(passedStatus: value));
+      return _then(_value.copyWith(passedStatus: value) as $Val);
     });
   }
 }
@@ -289,6 +295,7 @@ abstract class _$$_ShowLessonResourceCopyWith<$Res>
           $Res Function(_$_ShowLessonResource) then) =
       __$$_ShowLessonResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {BaseRoleResource? myRole,
       int id,
@@ -329,156 +336,154 @@ abstract class _$$_ShowLessonResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_ShowLessonResourceCopyWithImpl<$Res>
-    extends _$ShowLessonResourceCopyWithImpl<$Res>
+    extends _$ShowLessonResourceCopyWithImpl<$Res, _$_ShowLessonResource>
     implements _$$_ShowLessonResourceCopyWith<$Res> {
   __$$_ShowLessonResourceCopyWithImpl(
       _$_ShowLessonResource _value, $Res Function(_$_ShowLessonResource) _then)
-      : super(_value, (v) => _then(v as _$_ShowLessonResource));
+      : super(_value, _then);
 
-  @override
-  _$_ShowLessonResource get _value => super._value as _$_ShowLessonResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? myRole = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? publicText = freezed,
-    Object? publicTextOriginal = freezed,
-    Object? privateText = freezed,
-    Object? privateTextOriginal = freezed,
-    Object? chapterId = freezed,
-    Object? number = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? publicText = null,
+    Object? publicTextOriginal = null,
+    Object? privateText = null,
+    Object? privateTextOriginal = null,
+    Object? chapterId = null,
+    Object? number = null,
+    Object? type = null,
     Object? authorId = freezed,
-    Object? time = freezed,
-    Object? hours = freezed,
+    Object? time = null,
+    Object? hours = null,
     Object? maxMark = freezed,
     Object? clonedId = freezed,
-    Object? hidden = freezed,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? passedStatusId = freezed,
     Object? checkpointMark = freezed,
-    Object? chapter = freezed,
-    Object? passedStatus = freezed,
-    Object? sections = freezed,
-    Object? publicPhotos = freezed,
-    Object? privatePhotos = freezed,
-    Object? privateVideos = freezed,
-    Object? privateDocuments = freezed,
-    Object? privateLinks = freezed,
+    Object? chapter = null,
+    Object? passedStatus = null,
+    Object? sections = null,
+    Object? publicPhotos = null,
+    Object? privatePhotos = null,
+    Object? privateVideos = null,
+    Object? privateDocuments = null,
+    Object? privateLinks = null,
   }) {
     return _then(_$_ShowLessonResource(
-      myRole: myRole == freezed
+      myRole: freezed == myRole
           ? _value.myRole
           : myRole // ignore: cast_nullable_to_non_nullable
               as BaseRoleResource?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      publicText: publicText == freezed
+      publicText: null == publicText
           ? _value.publicText
           : publicText // ignore: cast_nullable_to_non_nullable
               as String,
-      publicTextOriginal: publicTextOriginal == freezed
+      publicTextOriginal: null == publicTextOriginal
           ? _value.publicTextOriginal
           : publicTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      privateText: privateText == freezed
+      privateText: null == privateText
           ? _value.privateText
           : privateText // ignore: cast_nullable_to_non_nullable
               as String,
-      privateTextOriginal: privateTextOriginal == freezed
+      privateTextOriginal: null == privateTextOriginal
           ? _value.privateTextOriginal
           : privateTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      chapterId: chapterId == freezed
+      chapterId: null == chapterId
           ? _value.chapterId
           : chapterId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      authorId: authorId == freezed
+      authorId: freezed == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int?,
-      time: time == freezed
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as int,
-      hours: hours == freezed
+      hours: null == hours
           ? _value.hours
           : hours // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMark: maxMark == freezed
+      maxMark: freezed == maxMark
           ? _value.maxMark
           : maxMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      clonedId: clonedId == freezed
+      clonedId: freezed == clonedId
           ? _value.clonedId
           : clonedId // ignore: cast_nullable_to_non_nullable
               as int?,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointMark: checkpointMark == freezed
+      checkpointMark: freezed == checkpointMark
           ? _value.checkpointMark
           : checkpointMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      chapter: chapter == freezed
+      chapter: null == chapter
           ? _value.chapter
           : chapter // ignore: cast_nullable_to_non_nullable
               as ShowLessonChapterResource,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as PassingStepStatus,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<BaseSectionResource>,
-      publicPhotos: publicPhotos == freezed
+      publicPhotos: null == publicPhotos
           ? _value.publicPhotos
           : publicPhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      privatePhotos: privatePhotos == freezed
+      privatePhotos: null == privatePhotos
           ? _value.privatePhotos
           : privatePhotos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-      privateVideos: privateVideos == freezed
+      privateVideos: null == privateVideos
           ? _value.privateVideos
           : privateVideos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      privateDocuments: privateDocuments == freezed
+      privateDocuments: null == privateDocuments
           ? _value.privateDocuments
           : privateDocuments // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      privateLinks: privateLinks == freezed
+      privateLinks: null == privateLinks
           ? _value.privateLinks
           : privateLinks // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
@@ -590,35 +595,40 @@ class _$_ShowLessonResource implements _ShowLessonResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ShowLessonResource &&
-            const DeepCollectionEquality().equals(other.myRole, myRole) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.publicText, publicText) &&
-            const DeepCollectionEquality()
-                .equals(other.publicTextOriginal, publicTextOriginal) &&
-            const DeepCollectionEquality()
-                .equals(other.privateText, privateText) &&
-            const DeepCollectionEquality()
-                .equals(other.privateTextOriginal, privateTextOriginal) &&
-            const DeepCollectionEquality().equals(other.chapterId, chapterId) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.authorId, authorId) &&
-            const DeepCollectionEquality().equals(other.time, time) &&
-            const DeepCollectionEquality().equals(other.hours, hours) &&
-            const DeepCollectionEquality().equals(other.maxMark, maxMark) &&
-            const DeepCollectionEquality().equals(other.clonedId, clonedId) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatusId, passedStatusId) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointMark, checkpointMark) &&
-            const DeepCollectionEquality().equals(other.chapter, chapter) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatus, passedStatus) &&
+            (identical(other.myRole, myRole) || other.myRole == myRole) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.publicText, publicText) ||
+                other.publicText == publicText) &&
+            (identical(other.publicTextOriginal, publicTextOriginal) ||
+                other.publicTextOriginal == publicTextOriginal) &&
+            (identical(other.privateText, privateText) ||
+                other.privateText == privateText) &&
+            (identical(other.privateTextOriginal, privateTextOriginal) ||
+                other.privateTextOriginal == privateTextOriginal) &&
+            (identical(other.chapterId, chapterId) ||
+                other.chapterId == chapterId) &&
+            (identical(other.number, number) || other.number == number) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.authorId, authorId) ||
+                other.authorId == authorId) &&
+            (identical(other.time, time) || other.time == time) &&
+            (identical(other.hours, hours) || other.hours == hours) &&
+            (identical(other.maxMark, maxMark) || other.maxMark == maxMark) &&
+            (identical(other.clonedId, clonedId) ||
+                other.clonedId == clonedId) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.passedStatusId, passedStatusId) ||
+                other.passedStatusId == passedStatusId) &&
+            (identical(other.checkpointMark, checkpointMark) ||
+                other.checkpointMark == checkpointMark) &&
+            (identical(other.chapter, chapter) || other.chapter == chapter) &&
+            (identical(other.passedStatus, passedStatus) ||
+                other.passedStatus == passedStatus) &&
             const DeepCollectionEquality().equals(other.sections, sections) &&
             const DeepCollectionEquality()
                 .equals(other.publicPhotos, publicPhotos) &&
@@ -636,28 +646,28 @@ class _$_ShowLessonResource implements _ShowLessonResource {
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(myRole),
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(title),
-        const DeepCollectionEquality().hash(publicText),
-        const DeepCollectionEquality().hash(publicTextOriginal),
-        const DeepCollectionEquality().hash(privateText),
-        const DeepCollectionEquality().hash(privateTextOriginal),
-        const DeepCollectionEquality().hash(chapterId),
-        const DeepCollectionEquality().hash(number),
-        const DeepCollectionEquality().hash(type),
-        const DeepCollectionEquality().hash(authorId),
-        const DeepCollectionEquality().hash(time),
-        const DeepCollectionEquality().hash(hours),
-        const DeepCollectionEquality().hash(maxMark),
-        const DeepCollectionEquality().hash(clonedId),
-        const DeepCollectionEquality().hash(hidden),
-        const DeepCollectionEquality().hash(createdAt),
-        const DeepCollectionEquality().hash(updatedAt),
-        const DeepCollectionEquality().hash(passedStatusId),
-        const DeepCollectionEquality().hash(checkpointMark),
-        const DeepCollectionEquality().hash(chapter),
-        const DeepCollectionEquality().hash(passedStatus),
+        myRole,
+        id,
+        title,
+        publicText,
+        publicTextOriginal,
+        privateText,
+        privateTextOriginal,
+        chapterId,
+        number,
+        type,
+        authorId,
+        time,
+        hours,
+        maxMark,
+        clonedId,
+        hidden,
+        createdAt,
+        updatedAt,
+        passedStatusId,
+        checkpointMark,
+        chapter,
+        passedStatus,
         const DeepCollectionEquality().hash(sections),
         const DeepCollectionEquality().hash(publicPhotos),
         const DeepCollectionEquality().hash(privatePhotos),
@@ -668,6 +678,7 @@ class _$_ShowLessonResource implements _ShowLessonResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ShowLessonResourceCopyWith<_$_ShowLessonResource> get copyWith =>
       __$$_ShowLessonResourceCopyWithImpl<_$_ShowLessonResource>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'answer_subject_resource.dart';
 
@@ -54,7 +54,8 @@ mixin _$AnswerSubjectResource {
 abstract class $AnswerSubjectResourceCopyWith<$Res> {
   factory $AnswerSubjectResourceCopyWith(AnswerSubjectResource value,
           $Res Function(AnswerSubjectResource) then) =
-      _$AnswerSubjectResourceCopyWithImpl<$Res>;
+      _$AnswerSubjectResourceCopyWithImpl<$Res, AnswerSubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -80,124 +81,127 @@ abstract class $AnswerSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AnswerSubjectResourceCopyWithImpl<$Res>
+class _$AnswerSubjectResourceCopyWithImpl<$Res,
+        $Val extends AnswerSubjectResource>
     implements $AnswerSubjectResourceCopyWith<$Res> {
   _$AnswerSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final AnswerSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(AnswerSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
     Object? type = freezed,
     Object? description = freezed,
-    Object? privacy = freezed,
+    Object? privacy = null,
     Object? hidden = freezed,
-    Object? maxPoints = freezed,
-    Object? isArchived = freezed,
+    Object? maxPoints = null,
+    Object? isArchived = null,
     Object? stepsCount = freezed,
     Object? checkpointsCount = freezed,
     Object? checkpointsMarkCount = freezed,
-    Object? isHardSkills = freezed,
-    Object? isDistant = freezed,
-    Object? halves = freezed,
+    Object? isHardSkills = null,
+    Object? isDistant = null,
+    Object? halves = null,
     Object? isOverdue = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
+    Object? teachers = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: freezed == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxPoints: maxPoints == freezed
+      maxPoints: null == maxPoints
           ? _value.maxPoints
           : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      stepsCount: stepsCount == freezed
+      stepsCount: freezed == stepsCount
           ? _value.stepsCount
           : stepsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsCount: checkpointsCount == freezed
+      checkpointsCount: freezed == checkpointsCount
           ? _value.checkpointsCount
           : checkpointsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsMarkCount: checkpointsMarkCount == freezed
+      checkpointsMarkCount: freezed == checkpointsMarkCount
           ? _value.checkpointsMarkCount
           : checkpointsMarkCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      isHardSkills: isHardSkills == freezed
+      isHardSkills: null == isHardSkills
           ? _value.isHardSkills
           : isHardSkills // ignore: cast_nullable_to_non_nullable
               as int,
-      isDistant: isDistant == freezed
+      isDistant: null == isDistant
           ? _value.isDistant
           : isDistant // ignore: cast_nullable_to_non_nullable
               as int,
-      halves: halves == freezed
+      halves: null == halves
           ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalvLocalResource>,
-      isOverdue: isOverdue == freezed
+      isOverdue: freezed == isOverdue
           ? _value.isOverdue
           : isOverdue // ignore: cast_nullable_to_non_nullable
               as int?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -208,6 +212,7 @@ abstract class _$$_AnswerSubjectResourceCopyWith<$Res>
           $Res Function(_$_AnswerSubjectResource) then) =
       __$$_AnswerSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -234,122 +239,119 @@ abstract class _$$_AnswerSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
-    extends _$AnswerSubjectResourceCopyWithImpl<$Res>
+    extends _$AnswerSubjectResourceCopyWithImpl<$Res, _$_AnswerSubjectResource>
     implements _$$_AnswerSubjectResourceCopyWith<$Res> {
   __$$_AnswerSubjectResourceCopyWithImpl(_$_AnswerSubjectResource _value,
       $Res Function(_$_AnswerSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_AnswerSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_AnswerSubjectResource get _value =>
-      super._value as _$_AnswerSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
     Object? type = freezed,
     Object? description = freezed,
-    Object? privacy = freezed,
+    Object? privacy = null,
     Object? hidden = freezed,
-    Object? maxPoints = freezed,
-    Object? isArchived = freezed,
+    Object? maxPoints = null,
+    Object? isArchived = null,
     Object? stepsCount = freezed,
     Object? checkpointsCount = freezed,
     Object? checkpointsMarkCount = freezed,
-    Object? isHardSkills = freezed,
-    Object? isDistant = freezed,
-    Object? halves = freezed,
+    Object? isHardSkills = null,
+    Object? isDistant = null,
+    Object? halves = null,
     Object? isOverdue = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
+    Object? teachers = null,
   }) {
     return _then(_$_AnswerSubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      privacy: privacy == freezed
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: freezed == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int?,
-      maxPoints: maxPoints == freezed
+      maxPoints: null == maxPoints
           ? _value.maxPoints
           : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
-      isArchived: isArchived == freezed
+      isArchived: null == isArchived
           ? _value.isArchived
           : isArchived // ignore: cast_nullable_to_non_nullable
               as int,
-      stepsCount: stepsCount == freezed
+      stepsCount: freezed == stepsCount
           ? _value.stepsCount
           : stepsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsCount: checkpointsCount == freezed
+      checkpointsCount: freezed == checkpointsCount
           ? _value.checkpointsCount
           : checkpointsCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointsMarkCount: checkpointsMarkCount == freezed
+      checkpointsMarkCount: freezed == checkpointsMarkCount
           ? _value.checkpointsMarkCount
           : checkpointsMarkCount // ignore: cast_nullable_to_non_nullable
               as int?,
-      isHardSkills: isHardSkills == freezed
+      isHardSkills: null == isHardSkills
           ? _value.isHardSkills
           : isHardSkills // ignore: cast_nullable_to_non_nullable
               as int,
-      isDistant: isDistant == freezed
+      isDistant: null == isDistant
           ? _value.isDistant
           : isDistant // ignore: cast_nullable_to_non_nullable
               as int,
-      halves: halves == freezed
+      halves: null == halves
           ? _value.halves
           : halves // ignore: cast_nullable_to_non_nullable
               as List<HalvLocalResource>,
-      isOverdue: isOverdue == freezed
+      isOverdue: freezed == isOverdue
           ? _value.isOverdue
           : isOverdue // ignore: cast_nullable_to_non_nullable
               as int?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
@@ -441,33 +443,39 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AnswerSubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.maxPoints, maxPoints) &&
-            const DeepCollectionEquality()
-                .equals(other.isArchived, isArchived) &&
-            const DeepCollectionEquality()
-                .equals(other.stepsCount, stepsCount) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsCount, checkpointsCount) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsMarkCount, checkpointsMarkCount) &&
-            const DeepCollectionEquality()
-                .equals(other.isHardSkills, isHardSkills) &&
-            const DeepCollectionEquality().equals(other.isDistant, isDistant) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.maxPoints, maxPoints) ||
+                other.maxPoints == maxPoints) &&
+            (identical(other.isArchived, isArchived) ||
+                other.isArchived == isArchived) &&
+            (identical(other.stepsCount, stepsCount) ||
+                other.stepsCount == stepsCount) &&
+            (identical(other.checkpointsCount, checkpointsCount) ||
+                other.checkpointsCount == checkpointsCount) &&
+            (identical(other.checkpointsMarkCount, checkpointsMarkCount) ||
+                other.checkpointsMarkCount == checkpointsMarkCount) &&
+            (identical(other.isHardSkills, isHardSkills) ||
+                other.isHardSkills == isHardSkills) &&
+            (identical(other.isDistant, isDistant) ||
+                other.isDistant == isDistant) &&
             const DeepCollectionEquality().equals(other.halves, halves) &&
-            const DeepCollectionEquality().equals(other.isOverdue, isOverdue) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.isOverdue, isOverdue) ||
+                other.isOverdue == isOverdue) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.teachers, teachers));
   }
 
@@ -475,31 +483,32 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(title),
-        const DeepCollectionEquality().hash(code),
-        const DeepCollectionEquality().hash(type),
-        const DeepCollectionEquality().hash(description),
-        const DeepCollectionEquality().hash(privacy),
-        const DeepCollectionEquality().hash(hidden),
-        const DeepCollectionEquality().hash(maxPoints),
-        const DeepCollectionEquality().hash(isArchived),
-        const DeepCollectionEquality().hash(stepsCount),
-        const DeepCollectionEquality().hash(checkpointsCount),
-        const DeepCollectionEquality().hash(checkpointsMarkCount),
-        const DeepCollectionEquality().hash(isHardSkills),
-        const DeepCollectionEquality().hash(isDistant),
+        id,
+        title,
+        code,
+        type,
+        description,
+        privacy,
+        hidden,
+        maxPoints,
+        isArchived,
+        stepsCount,
+        checkpointsCount,
+        checkpointsMarkCount,
+        isHardSkills,
+        isDistant,
         const DeepCollectionEquality().hash(halves),
-        const DeepCollectionEquality().hash(isOverdue),
-        const DeepCollectionEquality().hash(createdAt),
-        const DeepCollectionEquality().hash(updatedAt),
-        const DeepCollectionEquality().hash(deletedAt),
-        const DeepCollectionEquality().hash(deletePermanentlyAt),
+        isOverdue,
+        createdAt,
+        updatedAt,
+        deletedAt,
+        deletePermanentlyAt,
         const DeepCollectionEquality().hash(teachers)
       ]);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AnswerSubjectResourceCopyWith<_$_AnswerSubjectResource> get copyWith =>
       __$$_AnswerSubjectResourceCopyWithImpl<_$_AnswerSubjectResource>(
           this, _$identity);

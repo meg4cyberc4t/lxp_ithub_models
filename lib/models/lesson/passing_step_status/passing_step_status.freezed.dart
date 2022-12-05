@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'passing_step_status.dart';
 
@@ -38,7 +38,8 @@ mixin _$PassingStepStatus {
 abstract class $PassingStepStatusCopyWith<$Res> {
   factory $PassingStepStatusCopyWith(
           PassingStepStatus value, $Res Function(PassingStepStatus) then) =
-      _$PassingStepStatusCopyWithImpl<$Res>;
+      _$PassingStepStatusCopyWithImpl<$Res, PassingStepStatus>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -49,49 +50,51 @@ abstract class $PassingStepStatusCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PassingStepStatusCopyWithImpl<$Res>
+class _$PassingStepStatusCopyWithImpl<$Res, $Val extends PassingStepStatus>
     implements $PassingStepStatusCopyWith<$Res> {
   _$PassingStepStatusCopyWithImpl(this._value, this._then);
 
-  final PassingStepStatus _value;
   // ignore: unused_field
-  final $Res Function(PassingStepStatus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? canUseStudent = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? canUseStudent = null,
     Object? sort = freezed,
     Object? colorValue = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      canUseStudent: canUseStudent == freezed
+      canUseStudent: null == canUseStudent
           ? _value.canUseStudent
           : canUseStudent // ignore: cast_nullable_to_non_nullable
               as int,
-      sort: sort == freezed
+      sort: freezed == sort
           ? _value.sort
           : sort // ignore: cast_nullable_to_non_nullable
               as int?,
-      colorValue: colorValue == freezed
+      colorValue: freezed == colorValue
           ? _value.colorValue
           : colorValue // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -102,6 +105,7 @@ abstract class _$$_PassingStepStatusCopyWith<$Res>
           $Res Function(_$_PassingStepStatus) then) =
       __$$_PassingStepStatusCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -113,46 +117,44 @@ abstract class _$$_PassingStepStatusCopyWith<$Res>
 
 /// @nodoc
 class __$$_PassingStepStatusCopyWithImpl<$Res>
-    extends _$PassingStepStatusCopyWithImpl<$Res>
+    extends _$PassingStepStatusCopyWithImpl<$Res, _$_PassingStepStatus>
     implements _$$_PassingStepStatusCopyWith<$Res> {
   __$$_PassingStepStatusCopyWithImpl(
       _$_PassingStepStatus _value, $Res Function(_$_PassingStepStatus) _then)
-      : super(_value, (v) => _then(v as _$_PassingStepStatus));
+      : super(_value, _then);
 
-  @override
-  _$_PassingStepStatus get _value => super._value as _$_PassingStepStatus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
-    Object? canUseStudent = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
+    Object? canUseStudent = null,
     Object? sort = freezed,
     Object? colorValue = freezed,
   }) {
     return _then(_$_PassingStepStatus(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      canUseStudent: canUseStudent == freezed
+      canUseStudent: null == canUseStudent
           ? _value.canUseStudent
           : canUseStudent // ignore: cast_nullable_to_non_nullable
               as int,
-      sort: sort == freezed
+      sort: freezed == sort
           ? _value.sort
           : sort // ignore: cast_nullable_to_non_nullable
               as int?,
-      colorValue: colorValue == freezed
+      colorValue: freezed == colorValue
           ? _value.colorValue
           : colorValue // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -199,30 +201,25 @@ class _$_PassingStepStatus extends _PassingStepStatus {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PassingStepStatus &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.canUseStudent, canUseStudent) &&
-            const DeepCollectionEquality().equals(other.sort, sort) &&
-            const DeepCollectionEquality()
-                .equals(other.colorValue, colorValue));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.canUseStudent, canUseStudent) ||
+                other.canUseStudent == canUseStudent) &&
+            (identical(other.sort, sort) || other.sort == sort) &&
+            (identical(other.colorValue, colorValue) ||
+                other.colorValue == colorValue));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(canUseStudent),
-      const DeepCollectionEquality().hash(sort),
-      const DeepCollectionEquality().hash(colorValue));
+      runtimeType, id, title, description, canUseStudent, sort, colorValue);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PassingStepStatusCopyWith<_$_PassingStepStatus> get copyWith =>
       __$$_PassingStepStatusCopyWithImpl<_$_PassingStepStatus>(
           this, _$identity);

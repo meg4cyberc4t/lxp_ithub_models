@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'trajectory_resource.dart';
 
@@ -33,34 +33,37 @@ mixin _$TrajectoryResource {
 abstract class $TrajectoryResourceCopyWith<$Res> {
   factory $TrajectoryResourceCopyWith(
           TrajectoryResource value, $Res Function(TrajectoryResource) then) =
-      _$TrajectoryResourceCopyWithImpl<$Res>;
+      _$TrajectoryResourceCopyWithImpl<$Res, TrajectoryResource>;
+  @useResult
   $Res call({int id, String title});
 }
 
 /// @nodoc
-class _$TrajectoryResourceCopyWithImpl<$Res>
+class _$TrajectoryResourceCopyWithImpl<$Res, $Val extends TrajectoryResource>
     implements $TrajectoryResourceCopyWith<$Res> {
   _$TrajectoryResourceCopyWithImpl(this._value, this._then);
 
-  final TrajectoryResource _value;
   // ignore: unused_field
-  final $Res Function(TrajectoryResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -71,31 +74,30 @@ abstract class _$$_TrajectoryResourceCopyWith<$Res>
           $Res Function(_$_TrajectoryResource) then) =
       __$$_TrajectoryResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String title});
 }
 
 /// @nodoc
 class __$$_TrajectoryResourceCopyWithImpl<$Res>
-    extends _$TrajectoryResourceCopyWithImpl<$Res>
+    extends _$TrajectoryResourceCopyWithImpl<$Res, _$_TrajectoryResource>
     implements _$$_TrajectoryResourceCopyWith<$Res> {
   __$$_TrajectoryResourceCopyWithImpl(
       _$_TrajectoryResource _value, $Res Function(_$_TrajectoryResource) _then)
-      : super(_value, (v) => _then(v as _$_TrajectoryResource));
+      : super(_value, _then);
 
-  @override
-  _$_TrajectoryResource get _value => super._value as _$_TrajectoryResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
   }) {
     return _then(_$_TrajectoryResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
@@ -126,19 +128,17 @@ class _$_TrajectoryResource implements _TrajectoryResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TrajectoryResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title));
+  int get hashCode => Object.hash(runtimeType, id, title);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TrajectoryResourceCopyWith<_$_TrajectoryResource> get copyWith =>
       __$$_TrajectoryResourceCopyWithImpl<_$_TrajectoryResource>(
           this, _$identity);

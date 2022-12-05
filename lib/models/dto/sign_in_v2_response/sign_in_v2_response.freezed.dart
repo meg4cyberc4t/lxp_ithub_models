@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'sign_in_v2_response.dart';
 
@@ -33,42 +33,46 @@ mixin _$SignInV2Response {
 abstract class $SignInV2ResponseCopyWith<$Res> {
   factory $SignInV2ResponseCopyWith(
           SignInV2Response value, $Res Function(SignInV2Response) then) =
-      _$SignInV2ResponseCopyWithImpl<$Res>;
+      _$SignInV2ResponseCopyWithImpl<$Res, SignInV2Response>;
+  @useResult
   $Res call({String token, BaseUserResource data});
 
   $BaseUserResourceCopyWith<$Res> get data;
 }
 
 /// @nodoc
-class _$SignInV2ResponseCopyWithImpl<$Res>
+class _$SignInV2ResponseCopyWithImpl<$Res, $Val extends SignInV2Response>
     implements $SignInV2ResponseCopyWith<$Res> {
   _$SignInV2ResponseCopyWithImpl(this._value, this._then);
 
-  final SignInV2Response _value;
   // ignore: unused_field
-  final $Res Function(SignInV2Response) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? data = freezed,
+    Object? token = null,
+    Object? data = null,
   }) {
     return _then(_value.copyWith(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get data {
     return $BaseUserResourceCopyWith<$Res>(_value.data, (value) {
-      return _then(_value.copyWith(data: value));
+      return _then(_value.copyWith(data: value) as $Val);
     });
   }
 }
@@ -80,6 +84,7 @@ abstract class _$$_SignInV2ResponseCopyWith<$Res>
           _$_SignInV2Response value, $Res Function(_$_SignInV2Response) then) =
       __$$_SignInV2ResponseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String token, BaseUserResource data});
 
   @override
@@ -88,26 +93,24 @@ abstract class _$$_SignInV2ResponseCopyWith<$Res>
 
 /// @nodoc
 class __$$_SignInV2ResponseCopyWithImpl<$Res>
-    extends _$SignInV2ResponseCopyWithImpl<$Res>
+    extends _$SignInV2ResponseCopyWithImpl<$Res, _$_SignInV2Response>
     implements _$$_SignInV2ResponseCopyWith<$Res> {
   __$$_SignInV2ResponseCopyWithImpl(
       _$_SignInV2Response _value, $Res Function(_$_SignInV2Response) _then)
-      : super(_value, (v) => _then(v as _$_SignInV2Response));
+      : super(_value, _then);
 
-  @override
-  _$_SignInV2Response get _value => super._value as _$_SignInV2Response;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? data = freezed,
+    Object? token = null,
+    Object? data = null,
   }) {
     return _then(_$_SignInV2Response(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
@@ -138,19 +141,17 @@ class _$_SignInV2Response implements _SignInV2Response {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SignInV2Response &&
-            const DeepCollectionEquality().equals(other.token, token) &&
-            const DeepCollectionEquality().equals(other.data, data));
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.data, data) || other.data == data));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(token),
-      const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, token, data);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SignInV2ResponseCopyWith<_$_SignInV2Response> get copyWith =>
       __$$_SignInV2ResponseCopyWithImpl<_$_SignInV2Response>(this, _$identity);
 

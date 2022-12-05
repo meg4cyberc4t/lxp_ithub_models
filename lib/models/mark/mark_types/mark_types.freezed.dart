@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mark_types.dart';
 
@@ -37,7 +37,8 @@ mixin _$MarkTypes {
 /// @nodoc
 abstract class $MarkTypesCopyWith<$Res> {
   factory $MarkTypesCopyWith(MarkTypes value, $Res Function(MarkTypes) then) =
-      _$MarkTypesCopyWithImpl<$Res>;
+      _$MarkTypesCopyWithImpl<$Res, MarkTypes>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -49,53 +50,56 @@ abstract class $MarkTypesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MarkTypesCopyWithImpl<$Res> implements $MarkTypesCopyWith<$Res> {
+class _$MarkTypesCopyWithImpl<$Res, $Val extends MarkTypes>
+    implements $MarkTypesCopyWith<$Res> {
   _$MarkTypesCopyWithImpl(this._value, this._then);
 
-  final MarkTypes _value;
   // ignore: unused_field
-  final $Res Function(MarkTypes) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? weight = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? weight = null,
+    Object? description = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      weight: weight == freezed
+      weight: null == weight
           ? _value.weight
           : weight // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -105,6 +109,7 @@ abstract class _$$_MarkTypesCopyWith<$Res> implements $MarkTypesCopyWith<$Res> {
           _$_MarkTypes value, $Res Function(_$_MarkTypes) then) =
       __$$_MarkTypesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -116,51 +121,50 @@ abstract class _$$_MarkTypesCopyWith<$Res> implements $MarkTypesCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_MarkTypesCopyWithImpl<$Res> extends _$MarkTypesCopyWithImpl<$Res>
+class __$$_MarkTypesCopyWithImpl<$Res>
+    extends _$MarkTypesCopyWithImpl<$Res, _$_MarkTypes>
     implements _$$_MarkTypesCopyWith<$Res> {
   __$$_MarkTypesCopyWithImpl(
       _$_MarkTypes _value, $Res Function(_$_MarkTypes) _then)
-      : super(_value, (v) => _then(v as _$_MarkTypes));
+      : super(_value, _then);
 
-  @override
-  _$_MarkTypes get _value => super._value as _$_MarkTypes;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? weight = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? weight = null,
+    Object? description = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_$_MarkTypes(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      weight: weight == freezed
+      weight: null == weight
           ? _value.weight
           : weight // ignore: cast_nullable_to_non_nullable
               as int,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -208,30 +212,27 @@ class _$_MarkTypes implements _MarkTypes {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MarkTypes &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.weight, weight) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.weight, weight) || other.weight == weight) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(weight),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt));
+  int get hashCode => Object.hash(runtimeType, id, name, weight, description,
+      createdAt, updatedAt, deletedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MarkTypesCopyWith<_$_MarkTypes> get copyWith =>
       __$$_MarkTypesCopyWithImpl<_$_MarkTypes>(this, _$identity);
 
