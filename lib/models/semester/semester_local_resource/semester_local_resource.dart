@@ -12,8 +12,6 @@ class SemesterLocalResource with _$SemesterLocalResource, EquatableMixin {
     required int id,
     required int isArchived,
     required String title,
-    required DateTime startedAt,
-    required DateTime finishedAt,
   }) = _SemesterLocalResource;
 
   factory SemesterLocalResource.fromJson(Map<String, dynamic> json) =>

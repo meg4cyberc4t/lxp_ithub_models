@@ -24,8 +24,6 @@ mixin _$SemesterLocalResource {
   int get id => throw _privateConstructorUsedError;
   int get isArchived => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
-  DateTime get startedAt => throw _privateConstructorUsedError;
-  DateTime get finishedAt => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -39,12 +37,7 @@ abstract class $SemesterLocalResourceCopyWith<$Res> {
           $Res Function(SemesterLocalResource) then) =
       _$SemesterLocalResourceCopyWithImpl<$Res, SemesterLocalResource>;
   @useResult
-  $Res call(
-      {int id,
-      int isArchived,
-      String title,
-      DateTime startedAt,
-      DateTime finishedAt});
+  $Res call({int id, int isArchived, String title});
 }
 
 /// @nodoc
@@ -64,8 +57,6 @@ class _$SemesterLocalResourceCopyWithImpl<$Res,
     Object? id = null,
     Object? isArchived = null,
     Object? title = null,
-    Object? startedAt = null,
-    Object? finishedAt = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -80,14 +71,6 @@ class _$SemesterLocalResourceCopyWithImpl<$Res,
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      startedAt: null == startedAt
-          ? _value.startedAt
-          : startedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      finishedAt: null == finishedAt
-          ? _value.finishedAt
-          : finishedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
     ) as $Val);
   }
 }
@@ -100,12 +83,7 @@ abstract class _$$_SemesterLocalResourceCopyWith<$Res>
       __$$_SemesterLocalResourceCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {int id,
-      int isArchived,
-      String title,
-      DateTime startedAt,
-      DateTime finishedAt});
+  $Res call({int id, int isArchived, String title});
 }
 
 /// @nodoc
@@ -122,8 +100,6 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
     Object? id = null,
     Object? isArchived = null,
     Object? title = null,
-    Object? startedAt = null,
-    Object? finishedAt = null,
   }) {
     return _then(_$_SemesterLocalResource(
       id: null == id
@@ -138,14 +114,6 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      startedAt: null == startedAt
-          ? _value.startedAt
-          : startedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      finishedAt: null == finishedAt
-          ? _value.finishedAt
-          : finishedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime,
     ));
   }
 }
@@ -154,11 +122,7 @@ class __$$_SemesterLocalResourceCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_SemesterLocalResource extends _SemesterLocalResource {
   _$_SemesterLocalResource(
-      {required this.id,
-      required this.isArchived,
-      required this.title,
-      required this.startedAt,
-      required this.finishedAt})
+      {required this.id, required this.isArchived, required this.title})
       : super._();
 
   factory _$_SemesterLocalResource.fromJson(Map<String, dynamic> json) =>
@@ -170,10 +134,6 @@ class _$_SemesterLocalResource extends _SemesterLocalResource {
   final int isArchived;
   @override
   final String title;
-  @override
-  final DateTime startedAt;
-  @override
-  final DateTime finishedAt;
 
   @JsonKey(ignore: true)
   @override
@@ -194,9 +154,7 @@ abstract class _SemesterLocalResource extends SemesterLocalResource {
   factory _SemesterLocalResource(
       {required final int id,
       required final int isArchived,
-      required final String title,
-      required final DateTime startedAt,
-      required final DateTime finishedAt}) = _$_SemesterLocalResource;
+      required final String title}) = _$_SemesterLocalResource;
   _SemesterLocalResource._() : super._();
 
   factory _SemesterLocalResource.fromJson(Map<String, dynamic> json) =
@@ -208,10 +166,6 @@ abstract class _SemesterLocalResource extends SemesterLocalResource {
   int get isArchived;
   @override
   String get title;
-  @override
-  DateTime get startedAt;
-  @override
-  DateTime get finishedAt;
   @override
   @JsonKey(ignore: true)
   _$$_SemesterLocalResourceCopyWith<_$_SemesterLocalResource> get copyWith =>

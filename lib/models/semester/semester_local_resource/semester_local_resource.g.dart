@@ -12,8 +12,6 @@ _$_SemesterLocalResource _$$_SemesterLocalResourceFromJson(
       id: json['id'] as int,
       isArchived: json['is_archived'] as int,
       title: json['title'] as String,
-      startedAt: DateTime.parse(json['started_at'] as String),
-      finishedAt: DateTime.parse(json['finished_at'] as String),
     );
 
 Map<String, dynamic> _$$_SemesterLocalResourceToJson(
@@ -22,6 +20,4 @@ Map<String, dynamic> _$$_SemesterLocalResourceToJson(
       'id': instance.id,
       'is_archived': instance.isArchived,
       'title': instance.title,
-      'started_at': instance.startedAt.toIso8601String(),
-      'finished_at': instance.finishedAt.toIso8601String(),
     };
