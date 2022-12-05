@@ -11,7 +11,6 @@ class SubjectJounralGroupResource with _$SubjectJounralGroupResource {
   factory SubjectJounralGroupResource({
     required int id,
     required String name,
-    required String description,
     required int companyId,
     required int? halfId,
     required int labelId,

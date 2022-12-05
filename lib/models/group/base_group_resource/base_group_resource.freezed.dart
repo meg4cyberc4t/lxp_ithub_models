@@ -22,7 +22,6 @@ BaseGroupResource _$BaseGroupResourceFromJson(Map<String, dynamic> json) {
 mixin _$BaseGroupResource {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
   int? get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
   int? get labelId => throw _privateConstructorUsedError;
@@ -45,7 +44,6 @@ abstract class $BaseGroupResourceCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      String description,
       int? companyId,
       int? halfId,
       int? labelId,
@@ -69,7 +67,6 @@ class _$BaseGroupResourceCopyWithImpl<$Res, $Val extends BaseGroupResource>
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? description = null,
     Object? companyId = freezed,
     Object? halfId = freezed,
     Object? labelId = freezed,
@@ -85,10 +82,6 @@ class _$BaseGroupResourceCopyWithImpl<$Res, $Val extends BaseGroupResource>
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
               as String,
       companyId: freezed == companyId
           ? _value.companyId
@@ -129,7 +122,6 @@ abstract class _$$_BaseGroupResourceCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      String description,
       int? companyId,
       int? halfId,
       int? labelId,
@@ -151,7 +143,6 @@ class __$$_BaseGroupResourceCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? description = null,
     Object? companyId = freezed,
     Object? halfId = freezed,
     Object? labelId = freezed,
@@ -167,10 +158,6 @@ class __$$_BaseGroupResourceCopyWithImpl<$Res>
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
               as String,
       companyId: freezed == companyId
           ? _value.companyId
@@ -206,7 +193,6 @@ class _$_BaseGroupResource implements _BaseGroupResource {
   _$_BaseGroupResource(
       {required this.id,
       required this.name,
-      required this.description,
       required this.companyId,
       required this.halfId,
       required this.labelId,
@@ -222,8 +208,6 @@ class _$_BaseGroupResource implements _BaseGroupResource {
   @override
   final String name;
   @override
-  final String description;
-  @override
   final int? companyId;
   @override
   final int? halfId;
@@ -238,7 +222,7 @@ class _$_BaseGroupResource implements _BaseGroupResource {
 
   @override
   String toString() {
-    return 'BaseGroupResource(id: $id, name: $name, description: $description, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt)';
+    return 'BaseGroupResource(id: $id, name: $name, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt)';
   }
 
   @override
@@ -248,8 +232,6 @@ class _$_BaseGroupResource implements _BaseGroupResource {
             other is _$_BaseGroupResource &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
             (identical(other.companyId, companyId) ||
                 other.companyId == companyId) &&
             (identical(other.halfId, halfId) || other.halfId == halfId) &&
@@ -264,8 +246,8 @@ class _$_BaseGroupResource implements _BaseGroupResource {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, companyId,
-      halfId, labelId, externalLink, createdAt, updatedAt);
+  int get hashCode => Object.hash(runtimeType, id, name, companyId, halfId,
+      labelId, externalLink, createdAt, updatedAt);
 
   @JsonKey(ignore: true)
   @override
@@ -287,7 +269,6 @@ abstract class _BaseGroupResource
   factory _BaseGroupResource(
       {required final int id,
       required final String name,
-      required final String description,
       required final int? companyId,
       required final int? halfId,
       required final int? labelId,
@@ -302,8 +283,6 @@ abstract class _BaseGroupResource
   int get id;
   @override
   String get name;
-  @override
-  String get description;
   @override
   int? get companyId;
   @override

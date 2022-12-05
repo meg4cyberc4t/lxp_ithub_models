@@ -7,8 +7,6 @@ abstract class GroupResourceInterface implements BaseGroupResourceInterface {
   @override
   String get name;
   @override
-  String get description;
-  @override
   int get companyId;
   @override
   int? get halfId;

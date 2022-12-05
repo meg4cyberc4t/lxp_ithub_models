@@ -23,7 +23,6 @@ SubjectJounralGroupResource _$SubjectJounralGroupResourceFromJson(
 mixin _$SubjectJounralGroupResource {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
   int get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
   int get labelId => throw _privateConstructorUsedError;
@@ -49,7 +48,6 @@ abstract class $SubjectJounralGroupResourceCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      String description,
       int companyId,
       int? halfId,
       int labelId,
@@ -75,7 +73,6 @@ class _$SubjectJounralGroupResourceCopyWithImpl<$Res,
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? description = null,
     Object? companyId = null,
     Object? halfId = freezed,
     Object? labelId = null,
@@ -92,10 +89,6 @@ class _$SubjectJounralGroupResourceCopyWithImpl<$Res,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
               as String,
       companyId: null == companyId
           ? _value.companyId
@@ -141,7 +134,6 @@ abstract class _$$_SubjectJounralGroupResourceCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      String description,
       int companyId,
       int? halfId,
       int labelId,
@@ -166,7 +158,6 @@ class __$$_SubjectJounralGroupResourceCopyWithImpl<$Res>
   $Res call({
     Object? id = null,
     Object? name = null,
-    Object? description = null,
     Object? companyId = null,
     Object? halfId = freezed,
     Object? labelId = null,
@@ -183,10 +174,6 @@ class __$$_SubjectJounralGroupResourceCopyWithImpl<$Res>
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: null == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
               as String,
       companyId: null == companyId
           ? _value.companyId
@@ -226,7 +213,6 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
   _$_SubjectJounralGroupResource(
       {required this.id,
       required this.name,
-      required this.description,
       required this.companyId,
       required this.halfId,
       required this.labelId,
@@ -242,8 +228,6 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
   final int id;
   @override
   final String name;
-  @override
-  final String description;
   @override
   final int companyId;
   @override
@@ -261,7 +245,7 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
 
   @override
   String toString() {
-    return 'SubjectJounralGroupResource(id: $id, name: $name, description: $description, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt, users: $users)';
+    return 'SubjectJounralGroupResource(id: $id, name: $name, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt, users: $users)';
   }
 
   @override
@@ -271,8 +255,6 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
             other is _$_SubjectJounralGroupResource &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
             (identical(other.companyId, companyId) ||
                 other.companyId == companyId) &&
             (identical(other.halfId, halfId) || other.halfId == halfId) &&
@@ -292,7 +274,6 @@ class _$_SubjectJounralGroupResource implements _SubjectJounralGroupResource {
       runtimeType,
       id,
       name,
-      description,
       companyId,
       halfId,
       labelId,
@@ -321,7 +302,6 @@ abstract class _SubjectJounralGroupResource
   factory _SubjectJounralGroupResource(
           {required final int id,
           required final String name,
-          required final String description,
           required final int companyId,
           required final int? halfId,
           required final int labelId,
@@ -338,8 +318,6 @@ abstract class _SubjectJounralGroupResource
   int get id;
   @override
   String get name;
-  @override
-  String get description;
   @override
   int get companyId;
   @override

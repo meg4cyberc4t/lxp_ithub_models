@@ -11,7 +11,6 @@ class SubjectLocalGroupResource with _$SubjectLocalGroupResource {
   factory SubjectLocalGroupResource({
     required int id,
     required String name,
-    required String description,
     required int companyId,
     required int? halfId,
     required int labelId,
