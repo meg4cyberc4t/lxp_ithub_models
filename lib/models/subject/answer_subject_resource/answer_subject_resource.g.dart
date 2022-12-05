@@ -13,7 +13,7 @@ _$_AnswerSubjectResource _$$_AnswerSubjectResourceFromJson(
       title: json['title'] as String,
       code: json['code'] as String? ?? '',
       type: json['type'] as String?,
-      description: json['description'] as String,
+      description: json['description'] as String?,
       privacy: json['privacy'] as bool,
       hidden: json['hidden'] as int?,
       maxPoints: json['max_points'] as int,

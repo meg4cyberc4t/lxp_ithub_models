@@ -3,7 +3,7 @@ abstract class BaseSubjectResourceInterface {
   String get title;
   String get code;
   String? get type;
-  String get description;
+  String? get description;
   bool get privacy;
   int? get hidden;
   DateTime? get createdAt;

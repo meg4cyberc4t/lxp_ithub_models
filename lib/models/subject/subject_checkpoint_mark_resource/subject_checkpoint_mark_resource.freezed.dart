@@ -25,7 +25,7 @@ mixin _$SubjectCheckpointMarkResource {
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
   bool get privacy => throw _privateConstructorUsedError;
   int get hidden => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
@@ -53,7 +53,7 @@ abstract class $SubjectCheckpointMarkResourceCopyWith<$Res> {
       String title,
       String code,
       String type,
-      String description,
+      String? description,
       bool privacy,
       int hidden,
       DateTime? createdAt,
@@ -111,7 +111,7 @@ class _$SubjectCheckpointMarkResourceCopyWithImpl<$Res>
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       privacy: privacy == freezed
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
@@ -165,7 +165,7 @@ abstract class _$$SubjecCheckpointMarkResourceCopyWith<$Res>
       String title,
       String code,
       String type,
-      String description,
+      String? description,
       bool privacy,
       int hidden,
       DateTime? createdAt,
@@ -227,7 +227,7 @@ class __$$SubjecCheckpointMarkResourceCopyWithImpl<$Res>
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       privacy: privacy == freezed
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
@@ -300,7 +300,7 @@ class _$SubjecCheckpointMarkResource implements SubjecCheckpointMarkResource {
   @override
   final String type;
   @override
-  final String description;
+  final String? description;
   @override
   final bool privacy;
   @override
@@ -388,7 +388,7 @@ abstract class SubjecCheckpointMarkResource
           required final String title,
           final String code,
           required final String type,
-          required final String description,
+          required final String? description,
           required final bool privacy,
           required final int hidden,
           required final DateTime? createdAt,
@@ -412,7 +412,7 @@ abstract class SubjecCheckpointMarkResource
   @override
   String get type;
   @override
-  String get description;
+  String? get description;
   @override
   bool get privacy;
   @override

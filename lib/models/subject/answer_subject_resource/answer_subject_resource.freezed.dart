@@ -25,7 +25,7 @@ mixin _$AnswerSubjectResource {
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
   String? get type => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
   bool get privacy => throw _privateConstructorUsedError;
   int? get hidden => throw _privateConstructorUsedError;
   int get maxPoints =>
@@ -60,7 +60,7 @@ abstract class $AnswerSubjectResourceCopyWith<$Res> {
       String title,
       String code,
       String? type,
-      String description,
+      String? description,
       bool privacy,
       int? hidden,
       int maxPoints,
@@ -132,7 +132,7 @@ class _$AnswerSubjectResourceCopyWithImpl<$Res>
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       privacy: privacy == freezed
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
@@ -213,7 +213,7 @@ abstract class _$$_AnswerSubjectResourceCopyWith<$Res>
       String title,
       String code,
       String? type,
-      String description,
+      String? description,
       bool privacy,
       int? hidden,
       int maxPoints,
@@ -288,7 +288,7 @@ class __$$_AnswerSubjectResourceCopyWithImpl<$Res>
       description: description == freezed
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       privacy: privacy == freezed
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
@@ -396,7 +396,7 @@ class _$_AnswerSubjectResource implements _AnswerSubjectResource {
   @override
   final String? type;
   @override
-  final String description;
+  final String? description;
   @override
   final bool privacy;
   @override
@@ -519,7 +519,7 @@ abstract class _AnswerSubjectResource
           required final String title,
           final String code,
           required final String? type,
-          required final String description,
+          required final String? description,
           required final bool privacy,
           required final int? hidden,
           required final int maxPoints,
@@ -550,7 +550,7 @@ abstract class _AnswerSubjectResource
   @override
   String? get type;
   @override
-  String get description;
+  String? get description;
   @override
   bool get privacy;
   @override

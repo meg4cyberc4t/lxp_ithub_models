@@ -15,7 +15,7 @@ class SubjectCheckpointMarkResource with _$SubjectCheckpointMarkResource {
     required String title,
     @Default('') String code,
     required String type,
-    required String description,
+    required String? description,
     required bool privacy,
     required int hidden,
     required DateTime? createdAt,
