@@ -12,28 +12,10 @@ _$_StudentSubjectResource _$$_StudentSubjectResourceFromJson(
       id: json['id'] as int,
       title: json['title'] as String,
       code: json['code'] as String? ?? '',
-      type: json['type'] as String,
-      description: json['description'] as String?,
-      privacy: json['privacy'] as bool,
-      hidden: json['hidden'] as int,
-      createdAt: json['created_at'] == null
-          ? null
-          : DateTime.parse(json['created_at'] as String),
-      updatedAt: json['updated_at'] == null
-          ? null
-          : DateTime.parse(json['updated_at'] as String),
-      deletedAt: json['deleted_at'] == null
-          ? null
-          : DateTime.parse(json['deleted_at'] as String),
-      deletePermanentlyAt: json['delete_permanently_at'] == null
-          ? null
-          : DateTime.parse(json['delete_permanently_at'] as String),
+      isOverdue: json['is_overdue'] as bool,
+      maxPoints: json['max_points'] as int,
       teachers: (json['teachers'] as List<dynamic>)
-          .map((e) => BaseUserResource.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      chapters: (json['chapters'] as List<dynamic>)
-          .map(
-              (e) => StudentChapterResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => UserResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       attendance: StatisticsAttendanceResource.fromJson(
           json['attendance'] as Map<String, dynamic>),
@@ -47,16 +29,9 @@ Map<String, dynamic> _$$_StudentSubjectResourceToJson(
       'id': instance.id,
       'title': instance.title,
       'code': instance.code,
-      'type': instance.type,
-      'description': instance.description,
-      'privacy': instance.privacy,
-      'hidden': instance.hidden,
-      'created_at': instance.createdAt?.toIso8601String(),
-      'updated_at': instance.updatedAt?.toIso8601String(),
-      'deleted_at': instance.deletedAt?.toIso8601String(),
-      'delete_permanently_at': instance.deletePermanentlyAt?.toIso8601String(),
+      'is_overdue': instance.isOverdue,
+      'max_points': instance.maxPoints,
       'teachers': instance.teachers,
-      'chapters': instance.chapters,
       'attendance': instance.attendance,
       'checkpoints_stats': instance.checkpointsStats,
     };

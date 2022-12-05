@@ -24,6 +24,8 @@ mixin _$CheckpointsStats {
   int get checkpointsPassed => throw _privateConstructorUsedError;
   int? get checkpointsMarksTotal => throw _privateConstructorUsedError;
   int? get checkpointsMarksCollected => throw _privateConstructorUsedError;
+  int get maxPoints => throw _privateConstructorUsedError;
+  int get grade => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -41,7 +43,9 @@ abstract class $CheckpointsStatsCopyWith<$Res> {
       {int checkpointsTotal,
       int checkpointsPassed,
       int? checkpointsMarksTotal,
-      int? checkpointsMarksCollected});
+      int? checkpointsMarksCollected,
+      int maxPoints,
+      int grade});
 }
 
 /// @nodoc
@@ -61,6 +65,8 @@ class _$CheckpointsStatsCopyWithImpl<$Res, $Val extends CheckpointsStats>
     Object? checkpointsPassed = null,
     Object? checkpointsMarksTotal = freezed,
     Object? checkpointsMarksCollected = freezed,
+    Object? maxPoints = null,
+    Object? grade = null,
   }) {
     return _then(_value.copyWith(
       checkpointsTotal: null == checkpointsTotal
@@ -79,6 +85,14 @@ class _$CheckpointsStatsCopyWithImpl<$Res, $Val extends CheckpointsStats>
           ? _value.checkpointsMarksCollected
           : checkpointsMarksCollected // ignore: cast_nullable_to_non_nullable
               as int?,
+      maxPoints: null == maxPoints
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
+              as int,
+      grade: null == grade
+          ? _value.grade
+          : grade // ignore: cast_nullable_to_non_nullable
+              as int,
     ) as $Val);
   }
 }
@@ -95,7 +109,9 @@ abstract class _$$_CheckpointsStatsCopyWith<$Res>
       {int checkpointsTotal,
       int checkpointsPassed,
       int? checkpointsMarksTotal,
-      int? checkpointsMarksCollected});
+      int? checkpointsMarksCollected,
+      int maxPoints,
+      int grade});
 }
 
 /// @nodoc
@@ -113,6 +129,8 @@ class __$$_CheckpointsStatsCopyWithImpl<$Res>
     Object? checkpointsPassed = null,
     Object? checkpointsMarksTotal = freezed,
     Object? checkpointsMarksCollected = freezed,
+    Object? maxPoints = null,
+    Object? grade = null,
   }) {
     return _then(_$_CheckpointsStats(
       checkpointsTotal: null == checkpointsTotal
@@ -131,6 +149,14 @@ class __$$_CheckpointsStatsCopyWithImpl<$Res>
           ? _value.checkpointsMarksCollected
           : checkpointsMarksCollected // ignore: cast_nullable_to_non_nullable
               as int?,
+      maxPoints: null == maxPoints
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
+              as int,
+      grade: null == grade
+          ? _value.grade
+          : grade // ignore: cast_nullable_to_non_nullable
+              as int,
     ));
   }
 }
@@ -142,7 +168,9 @@ class _$_CheckpointsStats implements _CheckpointsStats {
       {required this.checkpointsTotal,
       required this.checkpointsPassed,
       required this.checkpointsMarksTotal,
-      required this.checkpointsMarksCollected});
+      required this.checkpointsMarksCollected,
+      required this.maxPoints,
+      required this.grade});
 
   factory _$_CheckpointsStats.fromJson(Map<String, dynamic> json) =>
       _$$_CheckpointsStatsFromJson(json);
@@ -155,10 +183,14 @@ class _$_CheckpointsStats implements _CheckpointsStats {
   final int? checkpointsMarksTotal;
   @override
   final int? checkpointsMarksCollected;
+  @override
+  final int maxPoints;
+  @override
+  final int grade;
 
   @override
   String toString() {
-    return 'CheckpointsStats(checkpointsTotal: $checkpointsTotal, checkpointsPassed: $checkpointsPassed, checkpointsMarksTotal: $checkpointsMarksTotal, checkpointsMarksCollected: $checkpointsMarksCollected)';
+    return 'CheckpointsStats(checkpointsTotal: $checkpointsTotal, checkpointsPassed: $checkpointsPassed, checkpointsMarksTotal: $checkpointsMarksTotal, checkpointsMarksCollected: $checkpointsMarksCollected, maxPoints: $maxPoints, grade: $grade)';
   }
 
   @override
@@ -174,13 +206,22 @@ class _$_CheckpointsStats implements _CheckpointsStats {
                 other.checkpointsMarksTotal == checkpointsMarksTotal) &&
             (identical(other.checkpointsMarksCollected,
                     checkpointsMarksCollected) ||
-                other.checkpointsMarksCollected == checkpointsMarksCollected));
+                other.checkpointsMarksCollected == checkpointsMarksCollected) &&
+            (identical(other.maxPoints, maxPoints) ||
+                other.maxPoints == maxPoints) &&
+            (identical(other.grade, grade) || other.grade == grade));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, checkpointsTotal,
-      checkpointsPassed, checkpointsMarksTotal, checkpointsMarksCollected);
+  int get hashCode => Object.hash(
+      runtimeType,
+      checkpointsTotal,
+      checkpointsPassed,
+      checkpointsMarksTotal,
+      checkpointsMarksCollected,
+      maxPoints,
+      grade);
 
   @JsonKey(ignore: true)
   @override
@@ -201,7 +242,9 @@ abstract class _CheckpointsStats implements CheckpointsStats {
       {required final int checkpointsTotal,
       required final int checkpointsPassed,
       required final int? checkpointsMarksTotal,
-      required final int? checkpointsMarksCollected}) = _$_CheckpointsStats;
+      required final int? checkpointsMarksCollected,
+      required final int maxPoints,
+      required final int grade}) = _$_CheckpointsStats;
 
   factory _CheckpointsStats.fromJson(Map<String, dynamic> json) =
       _$_CheckpointsStats.fromJson;
@@ -214,6 +257,10 @@ abstract class _CheckpointsStats implements CheckpointsStats {
   int? get checkpointsMarksTotal;
   @override
   int? get checkpointsMarksCollected;
+  @override
+  int get maxPoints;
+  @override
+  int get grade;
   @override
   @JsonKey(ignore: true)
   _$$_CheckpointsStatsCopyWith<_$_CheckpointsStats> get copyWith =>

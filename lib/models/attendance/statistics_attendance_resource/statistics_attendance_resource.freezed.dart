@@ -23,7 +23,6 @@ StatisticsAttendanceResource _$StatisticsAttendanceResourceFromJson(
 mixin _$StatisticsAttendanceResource {
   StatisticsAttendanceResourceStats get attendanceStats =>
       throw _privateConstructorUsedError;
-  List<BaseAttendanceResource> get data => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -39,9 +38,7 @@ abstract class $StatisticsAttendanceResourceCopyWith<$Res> {
       _$StatisticsAttendanceResourceCopyWithImpl<$Res,
           StatisticsAttendanceResource>;
   @useResult
-  $Res call(
-      {StatisticsAttendanceResourceStats attendanceStats,
-      List<BaseAttendanceResource> data});
+  $Res call({StatisticsAttendanceResourceStats attendanceStats});
 
   $StatisticsAttendanceResourceStatsCopyWith<$Res> get attendanceStats;
 }
@@ -61,17 +58,12 @@ class _$StatisticsAttendanceResourceCopyWithImpl<$Res,
   @override
   $Res call({
     Object? attendanceStats = null,
-    Object? data = null,
   }) {
     return _then(_value.copyWith(
       attendanceStats: null == attendanceStats
           ? _value.attendanceStats
           : attendanceStats // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResourceStats,
-      data: null == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as List<BaseAttendanceResource>,
     ) as $Val);
   }
 
@@ -94,9 +86,7 @@ abstract class _$$_StatisticsAttendanceResourceCopyWith<$Res>
       __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {StatisticsAttendanceResourceStats attendanceStats,
-      List<BaseAttendanceResource> data});
+  $Res call({StatisticsAttendanceResourceStats attendanceStats});
 
   @override
   $StatisticsAttendanceResourceStatsCopyWith<$Res> get attendanceStats;
@@ -116,17 +106,12 @@ class __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>
   @override
   $Res call({
     Object? attendanceStats = null,
-    Object? data = null,
   }) {
     return _then(_$_StatisticsAttendanceResource(
       attendanceStats: null == attendanceStats
           ? _value.attendanceStats
           : attendanceStats // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResourceStats,
-      data: null == data
-          ? _value.data
-          : data // ignore: cast_nullable_to_non_nullable
-              as List<BaseAttendanceResource>,
     ));
   }
 }
@@ -134,20 +119,17 @@ class __$$_StatisticsAttendanceResourceCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
-  _$_StatisticsAttendanceResource(
-      {required this.attendanceStats, required this.data});
+  _$_StatisticsAttendanceResource({required this.attendanceStats});
 
   factory _$_StatisticsAttendanceResource.fromJson(Map<String, dynamic> json) =>
       _$$_StatisticsAttendanceResourceFromJson(json);
 
   @override
   final StatisticsAttendanceResourceStats attendanceStats;
-  @override
-  final List<BaseAttendanceResource> data;
 
   @override
   String toString() {
-    return 'StatisticsAttendanceResource(attendanceStats: $attendanceStats, data: $data)';
+    return 'StatisticsAttendanceResource(attendanceStats: $attendanceStats)';
   }
 
   @override
@@ -156,14 +138,12 @@ class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
         (other.runtimeType == runtimeType &&
             other is _$_StatisticsAttendanceResource &&
             (identical(other.attendanceStats, attendanceStats) ||
-                other.attendanceStats == attendanceStats) &&
-            const DeepCollectionEquality().equals(other.data, data));
+                other.attendanceStats == attendanceStats));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType, attendanceStats, const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, attendanceStats);
 
   @JsonKey(ignore: true)
   @override
@@ -183,8 +163,7 @@ class _$_StatisticsAttendanceResource implements _StatisticsAttendanceResource {
 abstract class _StatisticsAttendanceResource
     implements StatisticsAttendanceResource {
   factory _StatisticsAttendanceResource(
-          {required final StatisticsAttendanceResourceStats attendanceStats,
-          required final List<BaseAttendanceResource> data}) =
+          {required final StatisticsAttendanceResourceStats attendanceStats}) =
       _$_StatisticsAttendanceResource;
 
   factory _StatisticsAttendanceResource.fromJson(Map<String, dynamic> json) =
@@ -192,8 +171,6 @@ abstract class _StatisticsAttendanceResource
 
   @override
   StatisticsAttendanceResourceStats get attendanceStats;
-  @override
-  List<BaseAttendanceResource> get data;
   @override
   @JsonKey(ignore: true)
   _$$_StatisticsAttendanceResourceCopyWith<_$_StatisticsAttendanceResource>

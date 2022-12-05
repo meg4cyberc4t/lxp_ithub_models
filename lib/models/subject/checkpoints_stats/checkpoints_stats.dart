@@ -10,6 +10,8 @@ class CheckpointsStats with _$CheckpointsStats {
     required int checkpointsPassed,
     required int? checkpointsMarksTotal,
     required int? checkpointsMarksCollected,
+    required int maxPoints,
+    required int grade,
   }) = _CheckpointsStats;
 
   factory CheckpointsStats.fromJson(Map<String, dynamic> json) =>

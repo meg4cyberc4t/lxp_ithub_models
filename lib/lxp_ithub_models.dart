@@ -24,7 +24,6 @@ export 'models/dto/main_schedule_response/main_schedule_response.dart';
 export 'models/dto/schedule_lesson_response/schedule_lesson_response.dart';
 export 'models/dto/sign_in_request/sign_in_request.dart';
 export 'models/dto/sign_in_response/sign_in_response.dart';
-export 'models/dto/student_progress_response/student_progress_response.dart';
 export 'models/errors/error_resource/error_resource.dart';
 export 'models/file/base_document_resource/base_document_resource.dart';
 export 'models/file/base_link_resource/base_link_resource.dart';
