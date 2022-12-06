@@ -13,7 +13,6 @@ class GroupListResource with _$GroupListResource {
   factory GroupListResource({
     required int id,
     required String name,
-    required String description,
     required int companyId,
     required int? halfId,
     required int labelId,

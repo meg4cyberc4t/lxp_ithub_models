@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'permission_resource.dart';
 
@@ -35,44 +35,47 @@ mixin _$PermissionResource {
 abstract class $PermissionResourceCopyWith<$Res> {
   factory $PermissionResourceCopyWith(
           PermissionResource value, $Res Function(PermissionResource) then) =
-      _$PermissionResourceCopyWithImpl<$Res>;
+      _$PermissionResourceCopyWithImpl<$Res, PermissionResource>;
+  @useResult
   $Res call({int id, String name, DateTime? createdAt, DateTime? updatedAt});
 }
 
 /// @nodoc
-class _$PermissionResourceCopyWithImpl<$Res>
+class _$PermissionResourceCopyWithImpl<$Res, $Val extends PermissionResource>
     implements $PermissionResourceCopyWith<$Res> {
   _$PermissionResourceCopyWithImpl(this._value, this._then);
 
-  final PermissionResource _value;
   // ignore: unused_field
-  final $Res Function(PermissionResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -83,41 +86,40 @@ abstract class _$$_PermissionResourceCopyWith<$Res>
           $Res Function(_$_PermissionResource) then) =
       __$$_PermissionResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String name, DateTime? createdAt, DateTime? updatedAt});
 }
 
 /// @nodoc
 class __$$_PermissionResourceCopyWithImpl<$Res>
-    extends _$PermissionResourceCopyWithImpl<$Res>
+    extends _$PermissionResourceCopyWithImpl<$Res, _$_PermissionResource>
     implements _$$_PermissionResourceCopyWith<$Res> {
   __$$_PermissionResourceCopyWithImpl(
       _$_PermissionResource _value, $Res Function(_$_PermissionResource) _then)
-      : super(_value, (v) => _then(v as _$_PermissionResource));
+      : super(_value, _then);
 
-  @override
-  _$_PermissionResource get _value => super._value as _$_PermissionResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_$_PermissionResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -156,23 +158,21 @@ class _$_PermissionResource implements _PermissionResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PermissionResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+  int get hashCode => Object.hash(runtimeType, id, name, createdAt, updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PermissionResourceCopyWith<_$_PermissionResource> get copyWith =>
       __$$_PermissionResourceCopyWithImpl<_$_PermissionResource>(
           this, _$identity);

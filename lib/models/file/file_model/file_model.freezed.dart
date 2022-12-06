@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'file_model.dart';
 
@@ -43,7 +43,8 @@ mixin _$FileModel {
 /// @nodoc
 abstract class $FileModelCopyWith<$Res> {
   factory $FileModelCopyWith(FileModel value, $Res Function(FileModel) then) =
-      _$FileModelCopyWithImpl<$Res>;
+      _$FileModelCopyWithImpl<$Res, FileModel>;
+  @useResult
   $Res call(
       {int id,
       String publicId,
@@ -61,83 +62,86 @@ abstract class $FileModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FileModelCopyWithImpl<$Res> implements $FileModelCopyWith<$Res> {
+class _$FileModelCopyWithImpl<$Res, $Val extends FileModel>
+    implements $FileModelCopyWith<$Res> {
   _$FileModelCopyWithImpl(this._value, this._then);
 
-  final FileModel _value;
   // ignore: unused_field
-  final $Res Function(FileModel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? publicId = freezed,
-    Object? ownerId = freezed,
-    Object? storage = freezed,
-    Object? originalName = freezed,
-    Object? filePath = freezed,
-    Object? format = freezed,
-    Object? type = freezed,
-    Object? modelId = freezed,
-    Object? modelType = freezed,
-    Object? size = freezed,
+    Object? id = null,
+    Object? publicId = null,
+    Object? ownerId = null,
+    Object? storage = null,
+    Object? originalName = null,
+    Object? filePath = null,
+    Object? format = null,
+    Object? type = null,
+    Object? modelId = null,
+    Object? modelType = null,
+    Object? size = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      storage: storage == freezed
+      storage: null == storage
           ? _value.storage
           : storage // ignore: cast_nullable_to_non_nullable
               as String,
-      originalName: originalName == freezed
+      originalName: null == originalName
           ? _value.originalName
           : originalName // ignore: cast_nullable_to_non_nullable
               as String,
-      filePath: filePath == freezed
+      filePath: null == filePath
           ? _value.filePath
           : filePath // ignore: cast_nullable_to_non_nullable
               as String,
-      format: format == freezed
+      format: null == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      modelId: modelId == freezed
+      modelId: null == modelId
           ? _value.modelId
           : modelId // ignore: cast_nullable_to_non_nullable
               as int,
-      modelType: modelType == freezed
+      modelType: null == modelType
           ? _value.modelType
           : modelType // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -147,6 +151,7 @@ abstract class _$$_FileModelCopyWith<$Res> implements $FileModelCopyWith<$Res> {
           _$_FileModel value, $Res Function(_$_FileModel) then) =
       __$$_FileModelCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String publicId,
@@ -164,81 +169,80 @@ abstract class _$$_FileModelCopyWith<$Res> implements $FileModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_FileModelCopyWithImpl<$Res> extends _$FileModelCopyWithImpl<$Res>
+class __$$_FileModelCopyWithImpl<$Res>
+    extends _$FileModelCopyWithImpl<$Res, _$_FileModel>
     implements _$$_FileModelCopyWith<$Res> {
   __$$_FileModelCopyWithImpl(
       _$_FileModel _value, $Res Function(_$_FileModel) _then)
-      : super(_value, (v) => _then(v as _$_FileModel));
+      : super(_value, _then);
 
-  @override
-  _$_FileModel get _value => super._value as _$_FileModel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? publicId = freezed,
-    Object? ownerId = freezed,
-    Object? storage = freezed,
-    Object? originalName = freezed,
-    Object? filePath = freezed,
-    Object? format = freezed,
-    Object? type = freezed,
-    Object? modelId = freezed,
-    Object? modelType = freezed,
-    Object? size = freezed,
+    Object? id = null,
+    Object? publicId = null,
+    Object? ownerId = null,
+    Object? storage = null,
+    Object? originalName = null,
+    Object? filePath = null,
+    Object? format = null,
+    Object? type = null,
+    Object? modelId = null,
+    Object? modelType = null,
+    Object? size = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_$_FileModel(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      storage: storage == freezed
+      storage: null == storage
           ? _value.storage
           : storage // ignore: cast_nullable_to_non_nullable
               as String,
-      originalName: originalName == freezed
+      originalName: null == originalName
           ? _value.originalName
           : originalName // ignore: cast_nullable_to_non_nullable
               as String,
-      filePath: filePath == freezed
+      filePath: null == filePath
           ? _value.filePath
           : filePath // ignore: cast_nullable_to_non_nullable
               as String,
-      format: format == freezed
+      format: null == format
           ? _value.format
           : format // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      modelId: modelId == freezed
+      modelId: null == modelId
           ? _value.modelId
           : modelId // ignore: cast_nullable_to_non_nullable
               as int,
-      modelType: modelType == freezed
+      modelType: null == modelType
           ? _value.modelType
           : modelType // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -304,42 +308,48 @@ class _$_FileModel implements _FileModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_FileModel &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.publicId, publicId) &&
-            const DeepCollectionEquality().equals(other.ownerId, ownerId) &&
-            const DeepCollectionEquality().equals(other.storage, storage) &&
-            const DeepCollectionEquality()
-                .equals(other.originalName, originalName) &&
-            const DeepCollectionEquality().equals(other.filePath, filePath) &&
-            const DeepCollectionEquality().equals(other.format, format) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.modelId, modelId) &&
-            const DeepCollectionEquality().equals(other.modelType, modelType) &&
-            const DeepCollectionEquality().equals(other.size, size) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.publicId, publicId) ||
+                other.publicId == publicId) &&
+            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
+            (identical(other.storage, storage) || other.storage == storage) &&
+            (identical(other.originalName, originalName) ||
+                other.originalName == originalName) &&
+            (identical(other.filePath, filePath) ||
+                other.filePath == filePath) &&
+            (identical(other.format, format) || other.format == format) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.modelId, modelId) || other.modelId == modelId) &&
+            (identical(other.modelType, modelType) ||
+                other.modelType == modelType) &&
+            (identical(other.size, size) || other.size == size) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(publicId),
-      const DeepCollectionEquality().hash(ownerId),
-      const DeepCollectionEquality().hash(storage),
-      const DeepCollectionEquality().hash(originalName),
-      const DeepCollectionEquality().hash(filePath),
-      const DeepCollectionEquality().hash(format),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(modelId),
-      const DeepCollectionEquality().hash(modelType),
-      const DeepCollectionEquality().hash(size),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      id,
+      publicId,
+      ownerId,
+      storage,
+      originalName,
+      filePath,
+      format,
+      type,
+      modelId,
+      modelType,
+      size,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_FileModelCopyWith<_$_FileModel> get copyWith =>
       __$$_FileModelCopyWithImpl<_$_FileModel>(this, _$identity);
 

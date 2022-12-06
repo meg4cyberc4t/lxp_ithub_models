@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'user_trajectories_resource.dart';
 
@@ -42,7 +42,8 @@ mixin _$UserTrajectoriesResource {
 abstract class $UserTrajectoriesResourceCopyWith<$Res> {
   factory $UserTrajectoriesResourceCopyWith(UserTrajectoriesResource value,
           $Res Function(UserTrajectoriesResource) then) =
-      _$UserTrajectoriesResourceCopyWithImpl<$Res>;
+      _$UserTrajectoriesResourceCopyWithImpl<$Res, UserTrajectoriesResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -55,59 +56,62 @@ abstract class $UserTrajectoriesResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserTrajectoriesResourceCopyWithImpl<$Res>
+class _$UserTrajectoriesResourceCopyWithImpl<$Res,
+        $Val extends UserTrajectoriesResource>
     implements $UserTrajectoriesResourceCopyWith<$Res> {
   _$UserTrajectoriesResourceCopyWithImpl(this._value, this._then);
 
-  final UserTrajectoriesResource _value;
   // ignore: unused_field
-  final $Res Function(UserTrajectoriesResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? educationalProgramName = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
-    Object? sections = freezed,
+    Object? sections = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      educationalProgramName: educationalProgramName == freezed
+      educationalProgramName: freezed == educationalProgramName
           ? _value.educationalProgramName
           : educationalProgramName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalvesResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -119,6 +123,7 @@ abstract class _$$_UserTrajectoriesResourceCopyWith<$Res>
           $Res Function(_$_UserTrajectoriesResource) then) =
       __$$_UserTrajectoriesResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -132,57 +137,55 @@ abstract class _$$_UserTrajectoriesResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_UserTrajectoriesResourceCopyWithImpl<$Res>
-    extends _$UserTrajectoriesResourceCopyWithImpl<$Res>
+    extends _$UserTrajectoriesResourceCopyWithImpl<$Res,
+        _$_UserTrajectoriesResource>
     implements _$$_UserTrajectoriesResourceCopyWith<$Res> {
   __$$_UserTrajectoriesResourceCopyWithImpl(_$_UserTrajectoriesResource _value,
       $Res Function(_$_UserTrajectoriesResource) _then)
-      : super(_value, (v) => _then(v as _$_UserTrajectoriesResource));
+      : super(_value, _then);
 
-  @override
-  _$_UserTrajectoriesResource get _value =>
-      super._value as _$_UserTrajectoriesResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? description = null,
     Object? educationalProgramName = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
-    Object? sections = freezed,
+    Object? sections = null,
   }) {
     return _then(_$_UserTrajectoriesResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      educationalProgramName: educationalProgramName == freezed
+      educationalProgramName: freezed == educationalProgramName
           ? _value.educationalProgramName
           : educationalProgramName // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as String?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      sections: sections == freezed
+      sections: null == sections
           ? _value.sections
           : sections // ignore: cast_nullable_to_non_nullable
               as List<UserTrajectoryHalvesResource>,
@@ -234,15 +237,18 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_UserTrajectoriesResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality()
-                .equals(other.educationalProgramName, educationalProgramName) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.educationalProgramName, educationalProgramName) ||
+                other.educationalProgramName == educationalProgramName) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
             const DeepCollectionEquality().equals(other.sections, sections));
   }
 
@@ -250,17 +256,18 @@ class _$_UserTrajectoriesResource implements _UserTrajectoriesResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(educationalProgramName),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
+      id,
+      title,
+      description,
+      educationalProgramName,
+      createdAt,
+      updatedAt,
+      deletedAt,
       const DeepCollectionEquality().hash(sections));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_UserTrajectoriesResourceCopyWith<_$_UserTrajectoriesResource>
       get copyWith => __$$_UserTrajectoriesResourceCopyWithImpl<
           _$_UserTrajectoriesResource>(this, _$identity);

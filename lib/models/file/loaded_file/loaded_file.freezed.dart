@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'loaded_file.dart';
 
@@ -35,43 +35,47 @@ mixin _$LoadedFile {
 abstract class $LoadedFileCopyWith<$Res> {
   factory $LoadedFileCopyWith(
           LoadedFile value, $Res Function(LoadedFile) then) =
-      _$LoadedFileCopyWithImpl<$Res>;
+      _$LoadedFileCopyWithImpl<$Res, LoadedFile>;
+  @useResult
   $Res call({String publicId, String originalName, int size, String url});
 }
 
 /// @nodoc
-class _$LoadedFileCopyWithImpl<$Res> implements $LoadedFileCopyWith<$Res> {
+class _$LoadedFileCopyWithImpl<$Res, $Val extends LoadedFile>
+    implements $LoadedFileCopyWith<$Res> {
   _$LoadedFileCopyWithImpl(this._value, this._then);
 
-  final LoadedFile _value;
   // ignore: unused_field
-  final $Res Function(LoadedFile) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? publicId = freezed,
-    Object? originalName = freezed,
-    Object? size = freezed,
-    Object? url = freezed,
+    Object? publicId = null,
+    Object? originalName = null,
+    Object? size = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      originalName: originalName == freezed
+      originalName: null == originalName
           ? _value.originalName
           : originalName // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -82,40 +86,40 @@ abstract class _$$_LoadedFileCopyWith<$Res>
           _$_LoadedFile value, $Res Function(_$_LoadedFile) then) =
       __$$_LoadedFileCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String publicId, String originalName, int size, String url});
 }
 
 /// @nodoc
-class __$$_LoadedFileCopyWithImpl<$Res> extends _$LoadedFileCopyWithImpl<$Res>
+class __$$_LoadedFileCopyWithImpl<$Res>
+    extends _$LoadedFileCopyWithImpl<$Res, _$_LoadedFile>
     implements _$$_LoadedFileCopyWith<$Res> {
   __$$_LoadedFileCopyWithImpl(
       _$_LoadedFile _value, $Res Function(_$_LoadedFile) _then)
-      : super(_value, (v) => _then(v as _$_LoadedFile));
+      : super(_value, _then);
 
-  @override
-  _$_LoadedFile get _value => super._value as _$_LoadedFile;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? publicId = freezed,
-    Object? originalName = freezed,
-    Object? size = freezed,
-    Object? url = freezed,
+    Object? publicId = null,
+    Object? originalName = null,
+    Object? size = null,
+    Object? url = null,
   }) {
     return _then(_$_LoadedFile(
-      publicId: publicId == freezed
+      publicId: null == publicId
           ? _value.publicId
           : publicId // ignore: cast_nullable_to_non_nullable
               as String,
-      originalName: originalName == freezed
+      originalName: null == originalName
           ? _value.originalName
           : originalName // ignore: cast_nullable_to_non_nullable
               as String,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -154,24 +158,22 @@ class _$_LoadedFile implements _LoadedFile {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LoadedFile &&
-            const DeepCollectionEquality().equals(other.publicId, publicId) &&
-            const DeepCollectionEquality()
-                .equals(other.originalName, originalName) &&
-            const DeepCollectionEquality().equals(other.size, size) &&
-            const DeepCollectionEquality().equals(other.url, url));
+            (identical(other.publicId, publicId) ||
+                other.publicId == publicId) &&
+            (identical(other.originalName, originalName) ||
+                other.originalName == originalName) &&
+            (identical(other.size, size) || other.size == size) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(publicId),
-      const DeepCollectionEquality().hash(originalName),
-      const DeepCollectionEquality().hash(size),
-      const DeepCollectionEquality().hash(url));
+  int get hashCode =>
+      Object.hash(runtimeType, publicId, originalName, size, url);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LoadedFileCopyWith<_$_LoadedFile> get copyWith =>
       __$$_LoadedFileCopyWithImpl<_$_LoadedFile>(this, _$identity);
 

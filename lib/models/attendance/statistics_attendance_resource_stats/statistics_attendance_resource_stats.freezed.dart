@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'statistics_attendance_resource_stats.dart';
 
@@ -35,34 +35,39 @@ abstract class $StatisticsAttendanceResourceStatsCopyWith<$Res> {
   factory $StatisticsAttendanceResourceStatsCopyWith(
           StatisticsAttendanceResourceStats value,
           $Res Function(StatisticsAttendanceResourceStats) then) =
-      _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res>;
+      _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res,
+          StatisticsAttendanceResourceStats>;
+  @useResult
   $Res call({int lessonsCountTotal, int lessonsCountPresent});
 }
 
 /// @nodoc
-class _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res>
+class _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res,
+        $Val extends StatisticsAttendanceResourceStats>
     implements $StatisticsAttendanceResourceStatsCopyWith<$Res> {
   _$StatisticsAttendanceResourceStatsCopyWithImpl(this._value, this._then);
 
-  final StatisticsAttendanceResourceStats _value;
   // ignore: unused_field
-  final $Res Function(StatisticsAttendanceResourceStats) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? lessonsCountTotal = freezed,
-    Object? lessonsCountPresent = freezed,
+    Object? lessonsCountTotal = null,
+    Object? lessonsCountPresent = null,
   }) {
     return _then(_value.copyWith(
-      lessonsCountTotal: lessonsCountTotal == freezed
+      lessonsCountTotal: null == lessonsCountTotal
           ? _value.lessonsCountTotal
           : lessonsCountTotal // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonsCountPresent: lessonsCountPresent == freezed
+      lessonsCountPresent: null == lessonsCountPresent
           ? _value.lessonsCountPresent
           : lessonsCountPresent // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -74,33 +79,32 @@ abstract class _$$_StatisticsAttendanceResourceStatsCopyWith<$Res>
           $Res Function(_$_StatisticsAttendanceResourceStats) then) =
       __$$_StatisticsAttendanceResourceStatsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int lessonsCountTotal, int lessonsCountPresent});
 }
 
 /// @nodoc
 class __$$_StatisticsAttendanceResourceStatsCopyWithImpl<$Res>
-    extends _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res>
+    extends _$StatisticsAttendanceResourceStatsCopyWithImpl<$Res,
+        _$_StatisticsAttendanceResourceStats>
     implements _$$_StatisticsAttendanceResourceStatsCopyWith<$Res> {
   __$$_StatisticsAttendanceResourceStatsCopyWithImpl(
       _$_StatisticsAttendanceResourceStats _value,
       $Res Function(_$_StatisticsAttendanceResourceStats) _then)
-      : super(_value, (v) => _then(v as _$_StatisticsAttendanceResourceStats));
+      : super(_value, _then);
 
-  @override
-  _$_StatisticsAttendanceResourceStats get _value =>
-      super._value as _$_StatisticsAttendanceResourceStats;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? lessonsCountTotal = freezed,
-    Object? lessonsCountPresent = freezed,
+    Object? lessonsCountTotal = null,
+    Object? lessonsCountPresent = null,
   }) {
     return _then(_$_StatisticsAttendanceResourceStats(
-      lessonsCountTotal: lessonsCountTotal == freezed
+      lessonsCountTotal: null == lessonsCountTotal
           ? _value.lessonsCountTotal
           : lessonsCountTotal // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonsCountPresent: lessonsCountPresent == freezed
+      lessonsCountPresent: null == lessonsCountPresent
           ? _value.lessonsCountPresent
           : lessonsCountPresent // ignore: cast_nullable_to_non_nullable
               as int,
@@ -134,21 +138,20 @@ class _$_StatisticsAttendanceResourceStats
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StatisticsAttendanceResourceStats &&
-            const DeepCollectionEquality()
-                .equals(other.lessonsCountTotal, lessonsCountTotal) &&
-            const DeepCollectionEquality()
-                .equals(other.lessonsCountPresent, lessonsCountPresent));
+            (identical(other.lessonsCountTotal, lessonsCountTotal) ||
+                other.lessonsCountTotal == lessonsCountTotal) &&
+            (identical(other.lessonsCountPresent, lessonsCountPresent) ||
+                other.lessonsCountPresent == lessonsCountPresent));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(lessonsCountTotal),
-      const DeepCollectionEquality().hash(lessonsCountPresent));
+  int get hashCode =>
+      Object.hash(runtimeType, lessonsCountTotal, lessonsCountPresent);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StatisticsAttendanceResourceStatsCopyWith<
           _$_StatisticsAttendanceResourceStats>
       get copyWith => __$$_StatisticsAttendanceResourceStatsCopyWithImpl<

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_journal_step_user_process_resource.dart';
 
@@ -42,7 +42,9 @@ abstract class $SubjectJournalStepUserProcessResourceCopyWith<$Res> {
   factory $SubjectJournalStepUserProcessResourceCopyWith(
           SubjectJournalStepUserProcessResource value,
           $Res Function(SubjectJournalStepUserProcessResource) then) =
-      _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res>;
+      _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res,
+          SubjectJournalStepUserProcessResource>;
+  @useResult
   $Res call(
       {int stepId,
       int userId,
@@ -54,54 +56,57 @@ abstract class $SubjectJournalStepUserProcessResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res>
+class _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res,
+        $Val extends SubjectJournalStepUserProcessResource>
     implements $SubjectJournalStepUserProcessResourceCopyWith<$Res> {
   _$SubjectJournalStepUserProcessResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectJournalStepUserProcessResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectJournalStepUserProcessResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stepId = freezed,
-    Object? userId = freezed,
-    Object? timestamp = freezed,
-    Object? status = freezed,
-    Object? passedStatus = freezed,
-    Object? passedStatusId = freezed,
-    Object? haveAnswers = freezed,
+    Object? stepId = null,
+    Object? userId = null,
+    Object? timestamp = null,
+    Object? status = null,
+    Object? passedStatus = null,
+    Object? passedStatusId = null,
+    Object? haveAnswers = null,
   }) {
     return _then(_value.copyWith(
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as int,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: null == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int,
-      haveAnswers: haveAnswers == freezed
+      haveAnswers: null == haveAnswers
           ? _value.haveAnswers
           : haveAnswers // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
@@ -113,6 +118,7 @@ abstract class _$$_SubjectJournalStepUserProcessResourceCopyWith<$Res>
           $Res Function(_$_SubjectJournalStepUserProcessResource) then) =
       __$$_SubjectJournalStepUserProcessResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int stepId,
       int userId,
@@ -125,54 +131,51 @@ abstract class _$$_SubjectJournalStepUserProcessResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_SubjectJournalStepUserProcessResourceCopyWithImpl<$Res>
-    extends _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res>
+    extends _$SubjectJournalStepUserProcessResourceCopyWithImpl<$Res,
+        _$_SubjectJournalStepUserProcessResource>
     implements _$$_SubjectJournalStepUserProcessResourceCopyWith<$Res> {
   __$$_SubjectJournalStepUserProcessResourceCopyWithImpl(
       _$_SubjectJournalStepUserProcessResource _value,
       $Res Function(_$_SubjectJournalStepUserProcessResource) _then)
-      : super(_value,
-            (v) => _then(v as _$_SubjectJournalStepUserProcessResource));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectJournalStepUserProcessResource get _value =>
-      super._value as _$_SubjectJournalStepUserProcessResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stepId = freezed,
-    Object? userId = freezed,
-    Object? timestamp = freezed,
-    Object? status = freezed,
-    Object? passedStatus = freezed,
-    Object? passedStatusId = freezed,
-    Object? haveAnswers = freezed,
+    Object? stepId = null,
+    Object? userId = null,
+    Object? timestamp = null,
+    Object? status = null,
+    Object? passedStatus = null,
+    Object? passedStatusId = null,
+    Object? haveAnswers = null,
   }) {
     return _then(_$_SubjectJournalStepUserProcessResource(
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as int,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: null == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int,
-      haveAnswers: haveAnswers == freezed
+      haveAnswers: null == haveAnswers
           ? _value.haveAnswers
           : haveAnswers // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -223,32 +226,27 @@ class _$_SubjectJournalStepUserProcessResource
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectJournalStepUserProcessResource &&
-            const DeepCollectionEquality().equals(other.stepId, stepId) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
-            const DeepCollectionEquality().equals(other.status, status) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatus, passedStatus) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatusId, passedStatusId) &&
-            const DeepCollectionEquality()
-                .equals(other.haveAnswers, haveAnswers));
+            (identical(other.stepId, stepId) || other.stepId == stepId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp) &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.passedStatus, passedStatus) ||
+                other.passedStatus == passedStatus) &&
+            (identical(other.passedStatusId, passedStatusId) ||
+                other.passedStatusId == passedStatusId) &&
+            (identical(other.haveAnswers, haveAnswers) ||
+                other.haveAnswers == haveAnswers));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(stepId),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(timestamp),
-      const DeepCollectionEquality().hash(status),
-      const DeepCollectionEquality().hash(passedStatus),
-      const DeepCollectionEquality().hash(passedStatusId),
-      const DeepCollectionEquality().hash(haveAnswers));
+  int get hashCode => Object.hash(runtimeType, stepId, userId, timestamp,
+      status, passedStatus, passedStatusId, haveAnswers);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectJournalStepUserProcessResourceCopyWith<
           _$_SubjectJournalStepUserProcessResource>
       get copyWith => __$$_SubjectJournalStepUserProcessResourceCopyWithImpl<

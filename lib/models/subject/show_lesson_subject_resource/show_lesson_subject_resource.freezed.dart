@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'show_lesson_subject_resource.dart';
 
@@ -28,7 +28,7 @@ mixin _$ShowLessonSubjectResource {
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
+  String? get description => throw _privateConstructorUsedError;
   bool get privacy => throw _privateConstructorUsedError;
   int get hidden => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
@@ -46,7 +46,8 @@ mixin _$ShowLessonSubjectResource {
 abstract class $ShowLessonSubjectResourceCopyWith<$Res> {
   factory $ShowLessonSubjectResourceCopyWith(ShowLessonSubjectResource value,
           $Res Function(ShowLessonSubjectResource) then) =
-      _$ShowLessonSubjectResourceCopyWithImpl<$Res>;
+      _$ShowLessonSubjectResourceCopyWithImpl<$Res, ShowLessonSubjectResource>;
+  @useResult
   $Res call(
       {List<BaseUserResource> teachers,
       BasePhotoResource? cover,
@@ -55,7 +56,7 @@ abstract class $ShowLessonSubjectResourceCopyWith<$Res> {
       String title,
       String code,
       String type,
-      String description,
+      String? description,
       bool privacy,
       int hidden,
       DateTime? createdAt,
@@ -67,99 +68,103 @@ abstract class $ShowLessonSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ShowLessonSubjectResourceCopyWithImpl<$Res>
+class _$ShowLessonSubjectResourceCopyWithImpl<$Res,
+        $Val extends ShowLessonSubjectResource>
     implements $ShowLessonSubjectResourceCopyWith<$Res> {
   _$ShowLessonSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final ShowLessonSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(ShowLessonSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teachers = freezed,
+    Object? teachers = null,
     Object? cover = freezed,
-    Object? groups = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? groups = null,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
   }) {
     return _then(_value.copyWith(
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
+              as String?,
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BasePhotoResourceCopyWith<$Res>? get cover {
     if (_value.cover == null) {
       return null;
     }
 
     return $BasePhotoResourceCopyWith<$Res>(_value.cover!, (value) {
-      return _then(_value.copyWith(cover: value));
+      return _then(_value.copyWith(cover: value) as $Val);
     });
   }
 }
@@ -172,6 +177,7 @@ abstract class _$$_ShowLessonSubjectResourceCopyWith<$Res>
           $Res Function(_$_ShowLessonSubjectResource) then) =
       __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<BaseUserResource> teachers,
       BasePhotoResource? cover,
@@ -180,7 +186,7 @@ abstract class _$$_ShowLessonSubjectResourceCopyWith<$Res>
       String title,
       String code,
       String type,
-      String description,
+      String? description,
       bool privacy,
       int hidden,
       DateTime? createdAt,
@@ -194,88 +200,86 @@ abstract class _$$_ShowLessonSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_ShowLessonSubjectResourceCopyWithImpl<$Res>
-    extends _$ShowLessonSubjectResourceCopyWithImpl<$Res>
+    extends _$ShowLessonSubjectResourceCopyWithImpl<$Res,
+        _$_ShowLessonSubjectResource>
     implements _$$_ShowLessonSubjectResourceCopyWith<$Res> {
   __$$_ShowLessonSubjectResourceCopyWithImpl(
       _$_ShowLessonSubjectResource _value,
       $Res Function(_$_ShowLessonSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_ShowLessonSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_ShowLessonSubjectResource get _value =>
-      super._value as _$_ShowLessonSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? teachers = freezed,
+    Object? teachers = null,
     Object? cover = freezed,
-    Object? groups = freezed,
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
+    Object? groups = null,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
     Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? privacy = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
   }) {
     return _then(_$_ShowLessonSubjectResource(
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
+              as String?,
+      privacy: null == privacy
           ? _value.privacy
           : privacy // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -321,7 +325,7 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
   @override
   final String type;
   @override
-  final String description;
+  final String? description;
   @override
   final bool privacy;
   @override
@@ -346,21 +350,24 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
         (other.runtimeType == runtimeType &&
             other is _$_ShowLessonSubjectResource &&
             const DeepCollectionEquality().equals(other.teachers, teachers) &&
-            const DeepCollectionEquality().equals(other.cover, cover) &&
+            (identical(other.cover, cover) || other.cover == cover) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.privacy, privacy) || other.privacy == privacy) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt));
   }
 
   @JsonKey(ignore: true)
@@ -368,22 +375,23 @@ class _$_ShowLessonSubjectResource implements _ShowLessonSubjectResource {
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(teachers),
-      const DeepCollectionEquality().hash(cover),
+      cover,
       const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt));
+      id,
+      title,
+      code,
+      type,
+      description,
+      privacy,
+      hidden,
+      createdAt,
+      updatedAt,
+      deletedAt,
+      deletePermanentlyAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ShowLessonSubjectResourceCopyWith<_$_ShowLessonSubjectResource>
       get copyWith => __$$_ShowLessonSubjectResourceCopyWithImpl<
           _$_ShowLessonSubjectResource>(this, _$identity);
@@ -406,7 +414,7 @@ abstract class _ShowLessonSubjectResource
           required final String title,
           final String code,
           required final String type,
-          required final String description,
+          required final String? description,
           required final bool privacy,
           required final int hidden,
           required final DateTime? createdAt,
@@ -433,7 +441,7 @@ abstract class _ShowLessonSubjectResource
   @override
   String get type;
   @override
-  String get description;
+  String? get description;
   @override
   bool get privacy;
   @override

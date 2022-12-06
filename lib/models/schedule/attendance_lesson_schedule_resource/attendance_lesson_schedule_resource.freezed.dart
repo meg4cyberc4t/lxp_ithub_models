@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'attendance_lesson_schedule_resource.dart';
 
@@ -45,7 +45,9 @@ abstract class $AttendanceLessonScheduleResourceCopyWith<$Res> {
   factory $AttendanceLessonScheduleResourceCopyWith(
           AttendanceLessonScheduleResource value,
           $Res Function(AttendanceLessonScheduleResource) then) =
-      _$AttendanceLessonScheduleResourceCopyWithImpl<$Res>;
+      _$AttendanceLessonScheduleResourceCopyWithImpl<$Res,
+          AttendanceLessonScheduleResource>;
+  @useResult
   $Res call(
       {int id,
       int lessonId,
@@ -61,74 +63,77 @@ abstract class $AttendanceLessonScheduleResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AttendanceLessonScheduleResourceCopyWithImpl<$Res>
+class _$AttendanceLessonScheduleResourceCopyWithImpl<$Res,
+        $Val extends AttendanceLessonScheduleResource>
     implements $AttendanceLessonScheduleResourceCopyWith<$Res> {
   _$AttendanceLessonScheduleResourceCopyWithImpl(this._value, this._then);
 
-  final AttendanceLessonScheduleResource _value;
   // ignore: unused_field
-  final $Res Function(AttendanceLessonScheduleResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? lessonId = freezed,
-    Object? userId = freezed,
-    Object? teacherId = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? subjectIds = freezed,
-    Object? status = freezed,
+    Object? id = null,
+    Object? lessonId = null,
+    Object? userId = null,
+    Object? teacherId = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? subjectIds = null,
+    Object? status = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonId: lessonId == freezed
+      lessonId: null == lessonId
           ? _value.lessonId
           : lessonId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectIds: subjectIds == freezed
+      subjectIds: null == subjectIds
           ? _value.subjectIds
           : subjectIds // ignore: cast_nullable_to_non_nullable
               as List<int>,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -140,6 +145,7 @@ abstract class _$$_AttendanceLessonScheduleResourceCopyWith<$Res>
           $Res Function(_$_AttendanceLessonScheduleResource) then) =
       __$$_AttendanceLessonScheduleResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int lessonId,
@@ -156,73 +162,71 @@ abstract class _$$_AttendanceLessonScheduleResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_AttendanceLessonScheduleResourceCopyWithImpl<$Res>
-    extends _$AttendanceLessonScheduleResourceCopyWithImpl<$Res>
+    extends _$AttendanceLessonScheduleResourceCopyWithImpl<$Res,
+        _$_AttendanceLessonScheduleResource>
     implements _$$_AttendanceLessonScheduleResourceCopyWith<$Res> {
   __$$_AttendanceLessonScheduleResourceCopyWithImpl(
       _$_AttendanceLessonScheduleResource _value,
       $Res Function(_$_AttendanceLessonScheduleResource) _then)
-      : super(_value, (v) => _then(v as _$_AttendanceLessonScheduleResource));
+      : super(_value, _then);
 
-  @override
-  _$_AttendanceLessonScheduleResource get _value =>
-      super._value as _$_AttendanceLessonScheduleResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? lessonId = freezed,
-    Object? userId = freezed,
-    Object? teacherId = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? subjectIds = freezed,
-    Object? status = freezed,
+    Object? id = null,
+    Object? lessonId = null,
+    Object? userId = null,
+    Object? teacherId = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? subjectIds = null,
+    Object? status = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_$_AttendanceLessonScheduleResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonId: lessonId == freezed
+      lessonId: null == lessonId
           ? _value.lessonId
           : lessonId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectIds: subjectIds == freezed
+      subjectIds: null == subjectIds
           ? _value.subjectIds
           : subjectIds // ignore: cast_nullable_to_non_nullable
               as List<int>,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -285,39 +289,45 @@ class _$_AttendanceLessonScheduleResource
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AttendanceLessonScheduleResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.lessonId, lessonId) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.teacherId, teacherId) &&
-            const DeepCollectionEquality().equals(other.date, date) &&
-            const DeepCollectionEquality()
-                .equals(other.classNumber, classNumber) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.lessonId, lessonId) ||
+                other.lessonId == lessonId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.teacherId, teacherId) ||
+                other.teacherId == teacherId) &&
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.classNumber, classNumber) ||
+                other.classNumber == classNumber) &&
             const DeepCollectionEquality()
                 .equals(other.subjectIds, subjectIds) &&
-            const DeepCollectionEquality().equals(other.status, status) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(lessonId),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(teacherId),
-      const DeepCollectionEquality().hash(date),
-      const DeepCollectionEquality().hash(classNumber),
+      id,
+      lessonId,
+      userId,
+      teacherId,
+      date,
+      classNumber,
       const DeepCollectionEquality().hash(subjectIds),
-      const DeepCollectionEquality().hash(status),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt));
+      status,
+      createdAt,
+      updatedAt,
+      deletedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AttendanceLessonScheduleResourceCopyWith<
           _$_AttendanceLessonScheduleResource>
       get copyWith => __$$_AttendanceLessonScheduleResourceCopyWithImpl<

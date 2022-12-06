@@ -11,7 +11,6 @@ _$_SubjectLocalGroupResource _$$_SubjectLocalGroupResourceFromJson(
     _$_SubjectLocalGroupResource(
       id: json['id'] as int,
       name: json['name'] as String,
-      description: json['description'] as String,
       companyId: json['company_id'] as int,
       halfId: json['half_id'] as int?,
       labelId: json['label_id'] as int,
@@ -32,7 +31,6 @@ Map<String, dynamic> _$$_SubjectLocalGroupResourceToJson(
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'description': instance.description,
       'company_id': instance.companyId,
       'half_id': instance.halfId,
       'label_id': instance.labelId,

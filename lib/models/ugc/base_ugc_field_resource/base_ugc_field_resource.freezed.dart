@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_ugc_field_resource.dart';
 
@@ -37,7 +37,8 @@ mixin _$BaseUgcFieldResource {
 abstract class $BaseUgcFieldResourceCopyWith<$Res> {
   factory $BaseUgcFieldResourceCopyWith(BaseUgcFieldResource value,
           $Res Function(BaseUgcFieldResource) then) =
-      _$BaseUgcFieldResourceCopyWithImpl<$Res>;
+      _$BaseUgcFieldResourceCopyWithImpl<$Res, BaseUgcFieldResource>;
+  @useResult
   $Res call(
       {int id,
       int answerId,
@@ -48,49 +49,52 @@ abstract class $BaseUgcFieldResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseUgcFieldResourceCopyWithImpl<$Res>
+class _$BaseUgcFieldResourceCopyWithImpl<$Res,
+        $Val extends BaseUgcFieldResource>
     implements $BaseUgcFieldResourceCopyWith<$Res> {
   _$BaseUgcFieldResourceCopyWithImpl(this._value, this._then);
 
-  final BaseUgcFieldResource _value;
   // ignore: unused_field
-  final $Res Function(BaseUgcFieldResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? formId = freezed,
-    Object? value = freezed,
-    Object? formTitle = freezed,
-    Object? formLink = freezed,
+    Object? id = null,
+    Object? answerId = null,
+    Object? formId = null,
+    Object? value = null,
+    Object? formTitle = null,
+    Object? formLink = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      formId: formId == freezed
+      formId: null == formId
           ? _value.formId
           : formId // ignore: cast_nullable_to_non_nullable
               as int,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-      formTitle: formTitle == freezed
+      formTitle: null == formTitle
           ? _value.formTitle
           : formTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      formLink: formLink == freezed
+      formLink: null == formLink
           ? _value.formLink
           : formLink // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -101,6 +105,7 @@ abstract class _$$_BaseUgcFieldResourceCopyWith<$Res>
           $Res Function(_$_BaseUgcFieldResource) then) =
       __$$_BaseUgcFieldResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int answerId,
@@ -112,46 +117,44 @@ abstract class _$$_BaseUgcFieldResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseUgcFieldResourceCopyWithImpl<$Res>
-    extends _$BaseUgcFieldResourceCopyWithImpl<$Res>
+    extends _$BaseUgcFieldResourceCopyWithImpl<$Res, _$_BaseUgcFieldResource>
     implements _$$_BaseUgcFieldResourceCopyWith<$Res> {
   __$$_BaseUgcFieldResourceCopyWithImpl(_$_BaseUgcFieldResource _value,
       $Res Function(_$_BaseUgcFieldResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseUgcFieldResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseUgcFieldResource get _value => super._value as _$_BaseUgcFieldResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? answerId = freezed,
-    Object? formId = freezed,
-    Object? value = freezed,
-    Object? formTitle = freezed,
-    Object? formLink = freezed,
+    Object? id = null,
+    Object? answerId = null,
+    Object? formId = null,
+    Object? value = null,
+    Object? formTitle = null,
+    Object? formLink = null,
   }) {
     return _then(_$_BaseUgcFieldResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      answerId: answerId == freezed
+      answerId: null == answerId
           ? _value.answerId
           : answerId // ignore: cast_nullable_to_non_nullable
               as int,
-      formId: formId == freezed
+      formId: null == formId
           ? _value.formId
           : formId // ignore: cast_nullable_to_non_nullable
               as int,
-      value: value == freezed
+      value: null == value
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
               as String,
-      formTitle: formTitle == freezed
+      formTitle: null == formTitle
           ? _value.formTitle
           : formTitle // ignore: cast_nullable_to_non_nullable
               as String,
-      formLink: formLink == freezed
+      formLink: null == formLink
           ? _value.formLink
           : formLink // ignore: cast_nullable_to_non_nullable
               as String,
@@ -196,27 +199,25 @@ class _$_BaseUgcFieldResource implements _BaseUgcFieldResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseUgcFieldResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.answerId, answerId) &&
-            const DeepCollectionEquality().equals(other.formId, formId) &&
-            const DeepCollectionEquality().equals(other.value, value) &&
-            const DeepCollectionEquality().equals(other.formTitle, formTitle) &&
-            const DeepCollectionEquality().equals(other.formLink, formLink));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.answerId, answerId) ||
+                other.answerId == answerId) &&
+            (identical(other.formId, formId) || other.formId == formId) &&
+            (identical(other.value, value) || other.value == value) &&
+            (identical(other.formTitle, formTitle) ||
+                other.formTitle == formTitle) &&
+            (identical(other.formLink, formLink) ||
+                other.formLink == formLink));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(answerId),
-      const DeepCollectionEquality().hash(formId),
-      const DeepCollectionEquality().hash(value),
-      const DeepCollectionEquality().hash(formTitle),
-      const DeepCollectionEquality().hash(formLink));
+      runtimeType, id, answerId, formId, value, formTitle, formLink);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseUgcFieldResourceCopyWith<_$_BaseUgcFieldResource> get copyWith =>
       __$$_BaseUgcFieldResourceCopyWithImpl<_$_BaseUgcFieldResource>(
           this, _$identity);

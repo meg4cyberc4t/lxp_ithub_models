@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_resource.dart';
 
@@ -24,15 +24,15 @@ mixin _$SubjectResource {
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  bool get privacy => throw _privateConstructorUsedError;
   int get hidden => throw _privateConstructorUsedError;
   DateTime? get createdAt => throw _privateConstructorUsedError;
   DateTime? get updatedAt => throw _privateConstructorUsedError;
   DateTime? get deletedAt => throw _privateConstructorUsedError;
   DateTime? get deletePermanentlyAt => throw _privateConstructorUsedError;
   List<BaseGroupResource> get groups => throw _privateConstructorUsedError;
-  List<BaseUserResource> get teachers => throw _privateConstructorUsedError;
+  List<UserResource> get teachers => throw _privateConstructorUsedError;
+  List<SemesterLocalResource> get semesters =>
+      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -44,102 +44,99 @@ mixin _$SubjectResource {
 abstract class $SubjectResourceCopyWith<$Res> {
   factory $SubjectResourceCopyWith(
           SubjectResource value, $Res Function(SubjectResource) then) =
-      _$SubjectResourceCopyWithImpl<$Res>;
+      _$SubjectResourceCopyWithImpl<$Res, SubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
       String type,
-      String description,
-      bool privacy,
       int hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers});
+      List<UserResource> teachers,
+      List<SemesterLocalResource> semesters});
 }
 
 /// @nodoc
-class _$SubjectResourceCopyWithImpl<$Res>
+class _$SubjectResourceCopyWithImpl<$Res, $Val extends SubjectResource>
     implements $SubjectResourceCopyWith<$Res> {
   _$SubjectResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? groups = freezed,
-    Object? teachers = freezed,
+    Object? groups = null,
+    Object? teachers = null,
+    Object? semesters = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
-              as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
-    ));
+              as List<UserResource>,
+      semesters: null == semesters
+          ? _value.semesters
+          : semesters // ignore: cast_nullable_to_non_nullable
+              as List<SemesterLocalResource>,
+    ) as $Val);
   }
 }
 
@@ -150,102 +147,95 @@ abstract class _$$_SubjectResourceCopyWith<$Res>
           _$_SubjectResource value, $Res Function(_$_SubjectResource) then) =
       __$$_SubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
       String type,
-      String description,
-      bool privacy,
       int hidden,
       DateTime? createdAt,
       DateTime? updatedAt,
       DateTime? deletedAt,
       DateTime? deletePermanentlyAt,
       List<BaseGroupResource> groups,
-      List<BaseUserResource> teachers});
+      List<UserResource> teachers,
+      List<SemesterLocalResource> semesters});
 }
 
 /// @nodoc
 class __$$_SubjectResourceCopyWithImpl<$Res>
-    extends _$SubjectResourceCopyWithImpl<$Res>
+    extends _$SubjectResourceCopyWithImpl<$Res, _$_SubjectResource>
     implements _$$_SubjectResourceCopyWith<$Res> {
   __$$_SubjectResourceCopyWithImpl(
       _$_SubjectResource _value, $Res Function(_$_SubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_SubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectResource get _value => super._value as _$_SubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? type = null,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
     Object? deletePermanentlyAt = freezed,
-    Object? groups = freezed,
-    Object? teachers = freezed,
+    Object? groups = null,
+    Object? teachers = null,
+    Object? semesters = null,
   }) {
     return _then(_$_SubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
-              as bool,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
+      deletePermanentlyAt: freezed == deletePermanentlyAt
           ? _value.deletePermanentlyAt
           : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
+              as List<UserResource>,
+      semesters: null == semesters
+          ? _value.semesters
+          : semesters // ignore: cast_nullable_to_non_nullable
+              as List<SemesterLocalResource>,
     ));
   }
 }
@@ -258,15 +248,14 @@ class _$_SubjectResource implements _SubjectResource {
       required this.title,
       this.code = '',
       required this.type,
-      required this.description,
-      required this.privacy,
       required this.hidden,
       required this.createdAt,
       required this.updatedAt,
       required this.deletedAt,
       required this.deletePermanentlyAt,
       required this.groups,
-      required this.teachers});
+      required this.teachers,
+      required this.semesters});
 
   factory _$_SubjectResource.fromJson(Map<String, dynamic> json) =>
       _$$_SubjectResourceFromJson(json);
@@ -281,10 +270,6 @@ class _$_SubjectResource implements _SubjectResource {
   @override
   final String type;
   @override
-  final String description;
-  @override
-  final bool privacy;
-  @override
   final int hidden;
   @override
   final DateTime? createdAt;
@@ -297,11 +282,13 @@ class _$_SubjectResource implements _SubjectResource {
   @override
   final List<BaseGroupResource> groups;
   @override
-  final List<BaseUserResource> teachers;
+  final List<UserResource> teachers;
+  @override
+  final List<SemesterLocalResource> semesters;
 
   @override
   String toString() {
-    return 'SubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, groups: $groups, teachers: $teachers)';
+    return 'SubjectResource(id: $id, title: $title, code: $code, type: $type, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, groups: $groups, teachers: $teachers, semesters: $semesters)';
   }
 
   @override
@@ -309,43 +296,44 @@ class _$_SubjectResource implements _SubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt) &&
+            (identical(other.deletePermanentlyAt, deletePermanentlyAt) ||
+                other.deletePermanentlyAt == deletePermanentlyAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality().equals(other.teachers, teachers));
+            const DeepCollectionEquality().equals(other.teachers, teachers) &&
+            const DeepCollectionEquality().equals(other.semesters, semesters));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt),
+      id,
+      title,
+      code,
+      type,
+      hidden,
+      createdAt,
+      updatedAt,
+      deletedAt,
+      deletePermanentlyAt,
       const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(teachers));
+      const DeepCollectionEquality().hash(teachers),
+      const DeepCollectionEquality().hash(semesters));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectResourceCopyWith<_$_SubjectResource> get copyWith =>
       __$$_SubjectResourceCopyWithImpl<_$_SubjectResource>(this, _$identity);
 
@@ -360,19 +348,19 @@ class _$_SubjectResource implements _SubjectResource {
 abstract class _SubjectResource
     implements SubjectResource, BaseSubjectResourceInterface {
   factory _SubjectResource(
-      {required final int id,
-      required final String title,
-      final String code,
-      required final String type,
-      required final String description,
-      required final bool privacy,
-      required final int hidden,
-      required final DateTime? createdAt,
-      required final DateTime? updatedAt,
-      required final DateTime? deletedAt,
-      required final DateTime? deletePermanentlyAt,
-      required final List<BaseGroupResource> groups,
-      required final List<BaseUserResource> teachers}) = _$_SubjectResource;
+          {required final int id,
+          required final String title,
+          final String code,
+          required final String type,
+          required final int hidden,
+          required final DateTime? createdAt,
+          required final DateTime? updatedAt,
+          required final DateTime? deletedAt,
+          required final DateTime? deletePermanentlyAt,
+          required final List<BaseGroupResource> groups,
+          required final List<UserResource> teachers,
+          required final List<SemesterLocalResource> semesters}) =
+      _$_SubjectResource;
 
   factory _SubjectResource.fromJson(Map<String, dynamic> json) =
       _$_SubjectResource.fromJson;
@@ -386,10 +374,6 @@ abstract class _SubjectResource
   @override
   String get type;
   @override
-  String get description;
-  @override
-  bool get privacy;
-  @override
   int get hidden;
   @override
   DateTime? get createdAt;
@@ -402,7 +386,9 @@ abstract class _SubjectResource
   @override
   List<BaseGroupResource> get groups;
   @override
-  List<BaseUserResource> get teachers;
+  List<UserResource> get teachers;
+  @override
+  List<SemesterLocalResource> get semesters;
   @override
   @JsonKey(ignore: true)
   _$$_SubjectResourceCopyWith<_$_SubjectResource> get copyWith =>

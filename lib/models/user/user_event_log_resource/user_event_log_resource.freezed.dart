@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'user_event_log_resource.dart';
 
@@ -46,7 +46,8 @@ mixin _$UserEventLogResourse {
 abstract class $UserEventLogResourseCopyWith<$Res> {
   factory $UserEventLogResourseCopyWith(UserEventLogResourse value,
           $Res Function(UserEventLogResourse) then) =
-      _$UserEventLogResourseCopyWithImpl<$Res>;
+      _$UserEventLogResourseCopyWithImpl<$Res, UserEventLogResourse>;
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -66,94 +67,97 @@ abstract class $UserEventLogResourseCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserEventLogResourseCopyWithImpl<$Res>
+class _$UserEventLogResourseCopyWithImpl<$Res,
+        $Val extends UserEventLogResourse>
     implements $UserEventLogResourseCopyWith<$Res> {
   _$UserEventLogResourseCopyWithImpl(this._value, this._then);
 
-  final UserEventLogResourse _value;
   // ignore: unused_field
-  final $Res Function(UserEventLogResourse) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
-    Object? photoSrc = freezed,
+    Object? photoSrc = null,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
+    Object? photoSrcSmall = null,
+    Object? isSkillfolioReg = null,
+    Object? isOnline = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? isTeacher = freezed,
-    Object? isAdmin = freezed,
-    Object? isStudent = freezed,
+    Object? isTeacher = null,
+    Object? isAdmin = null,
+    Object? isStudent = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: null == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      isTeacher: isTeacher == freezed
+      isTeacher: null == isTeacher
           ? _value.isTeacher
           : isTeacher // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAdmin: isAdmin == freezed
+      isAdmin: null == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool,
-      isStudent: isStudent == freezed
+      isStudent: null == isStudent
           ? _value.isStudent
           : isStudent // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
@@ -164,6 +168,7 @@ abstract class _$$_UserEventLogResourseCopyWith<$Res>
           $Res Function(_$_UserEventLogResourse) then) =
       __$$_UserEventLogResourseCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -184,91 +189,89 @@ abstract class _$$_UserEventLogResourseCopyWith<$Res>
 
 /// @nodoc
 class __$$_UserEventLogResourseCopyWithImpl<$Res>
-    extends _$UserEventLogResourseCopyWithImpl<$Res>
+    extends _$UserEventLogResourseCopyWithImpl<$Res, _$_UserEventLogResourse>
     implements _$$_UserEventLogResourseCopyWith<$Res> {
   __$$_UserEventLogResourseCopyWithImpl(_$_UserEventLogResourse _value,
       $Res Function(_$_UserEventLogResourse) _then)
-      : super(_value, (v) => _then(v as _$_UserEventLogResourse));
+      : super(_value, _then);
 
-  @override
-  _$_UserEventLogResourse get _value => super._value as _$_UserEventLogResourse;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
-    Object? photoSrc = freezed,
+    Object? photoSrc = null,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
+    Object? photoSrcSmall = null,
+    Object? isSkillfolioReg = null,
+    Object? isOnline = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? isTeacher = freezed,
-    Object? isAdmin = freezed,
-    Object? isStudent = freezed,
+    Object? isTeacher = null,
+    Object? isAdmin = null,
+    Object? isStudent = null,
   }) {
     return _then(_$_UserEventLogResourse(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: null == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      isTeacher: isTeacher == freezed
+      isTeacher: null == isTeacher
           ? _value.isTeacher
           : isTeacher // ignore: cast_nullable_to_non_nullable
               as bool,
-      isAdmin: isAdmin == freezed
+      isAdmin: null == isAdmin
           ? _value.isAdmin
           : isAdmin // ignore: cast_nullable_to_non_nullable
               as bool,
-      isStudent: isStudent == freezed
+      isStudent: null == isStudent
           ? _value.isStudent
           : isStudent // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -340,48 +343,57 @@ class _$_UserEventLogResourse implements _UserEventLogResourse {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_UserEventLogResourse &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality()
-                .equals(other.middleName, middleName) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
+            (identical(other.middleName, middleName) ||
+                other.middleName == middleName) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.photoSrc, photoSrc) ||
+                other.photoSrc == photoSrc) &&
             const DeepCollectionEquality().equals(other.phone, phone) &&
-            const DeepCollectionEquality()
-                .equals(other.photoSrcSmall, photoSrcSmall) &&
-            const DeepCollectionEquality()
-                .equals(other.isSkillfolioReg, isSkillfolioReg) &&
-            const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.isTeacher, isTeacher) &&
-            const DeepCollectionEquality().equals(other.isAdmin, isAdmin) &&
-            const DeepCollectionEquality().equals(other.isStudent, isStudent));
+            (identical(other.photoSrcSmall, photoSrcSmall) ||
+                other.photoSrcSmall == photoSrcSmall) &&
+            (identical(other.isSkillfolioReg, isSkillfolioReg) ||
+                other.isSkillfolioReg == isSkillfolioReg) &&
+            (identical(other.isOnline, isOnline) ||
+                other.isOnline == isOnline) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.isTeacher, isTeacher) ||
+                other.isTeacher == isTeacher) &&
+            (identical(other.isAdmin, isAdmin) || other.isAdmin == isAdmin) &&
+            (identical(other.isStudent, isStudent) ||
+                other.isStudent == isStudent));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(firstName),
-      const DeepCollectionEquality().hash(lastName),
-      const DeepCollectionEquality().hash(middleName),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrc),
+      id,
+      firstName,
+      lastName,
+      middleName,
+      email,
+      photoSrc,
       const DeepCollectionEquality().hash(phone),
-      const DeepCollectionEquality().hash(photoSrcSmall),
-      const DeepCollectionEquality().hash(isSkillfolioReg),
-      const DeepCollectionEquality().hash(isOnline),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(isTeacher),
-      const DeepCollectionEquality().hash(isAdmin),
-      const DeepCollectionEquality().hash(isStudent));
+      photoSrcSmall,
+      isSkillfolioReg,
+      isOnline,
+      createdAt,
+      updatedAt,
+      isTeacher,
+      isAdmin,
+      isStudent);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_UserEventLogResourseCopyWith<_$_UserEventLogResourse> get copyWith =>
       __$$_UserEventLogResourseCopyWithImpl<_$_UserEventLogResourse>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'user_list_resource.dart';
 
@@ -46,7 +46,8 @@ mixin _$UserListResource {
 abstract class $UserListResourceCopyWith<$Res> {
   factory $UserListResourceCopyWith(
           UserListResource value, $Res Function(UserListResource) then) =
-      _$UserListResourceCopyWithImpl<$Res>;
+      _$UserListResourceCopyWithImpl<$Res, UserListResource>;
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -68,100 +69,103 @@ abstract class $UserListResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserListResourceCopyWithImpl<$Res>
+class _$UserListResourceCopyWithImpl<$Res, $Val extends UserListResource>
     implements $UserListResourceCopyWith<$Res> {
   _$UserListResourceCopyWithImpl(this._value, this._then);
 
-  final UserListResource _value;
   // ignore: unused_field
-  final $Res Function(UserListResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
-    Object? photoSrc = freezed,
+    Object? photoSrc = null,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
+    Object? photoSrcSmall = null,
+    Object? isSkillfolioReg = null,
+    Object? isOnline = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? roles = freezed,
-    Object? relatedUsers = freezed,
+    Object? groups = null,
+    Object? roles = null,
+    Object? relatedUsers = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: null == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      roles: roles == freezed
+      roles: null == roles
           ? _value.roles
           : roles // ignore: cast_nullable_to_non_nullable
               as RolesResource,
-      relatedUsers: relatedUsers == freezed
+      relatedUsers: null == relatedUsers
           ? _value.relatedUsers
           : relatedUsers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $RolesResourceCopyWith<$Res> get roles {
     return $RolesResourceCopyWith<$Res>(_value.roles, (value) {
-      return _then(_value.copyWith(roles: value));
+      return _then(_value.copyWith(roles: value) as $Val);
     });
   }
 }
@@ -173,6 +177,7 @@ abstract class _$$_UserListResourceCopyWith<$Res>
           _$_UserListResource value, $Res Function(_$_UserListResource) then) =
       __$$_UserListResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -196,91 +201,89 @@ abstract class _$$_UserListResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_UserListResourceCopyWithImpl<$Res>
-    extends _$UserListResourceCopyWithImpl<$Res>
+    extends _$UserListResourceCopyWithImpl<$Res, _$_UserListResource>
     implements _$$_UserListResourceCopyWith<$Res> {
   __$$_UserListResourceCopyWithImpl(
       _$_UserListResource _value, $Res Function(_$_UserListResource) _then)
-      : super(_value, (v) => _then(v as _$_UserListResource));
+      : super(_value, _then);
 
-  @override
-  _$_UserListResource get _value => super._value as _$_UserListResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
     Object? email = freezed,
-    Object? photoSrc = freezed,
+    Object? photoSrc = null,
     Object? phone = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? isSkillfolioReg = freezed,
-    Object? isOnline = freezed,
+    Object? photoSrcSmall = null,
+    Object? isSkillfolioReg = null,
+    Object? isOnline = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? groups = freezed,
-    Object? roles = freezed,
-    Object? relatedUsers = freezed,
+    Object? groups = null,
+    Object? roles = null,
+    Object? relatedUsers = null,
   }) {
     return _then(_$_UserListResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: freezed == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String?,
-      photoSrc: photoSrc == freezed
+      photoSrc: null == photoSrc
           ? _value.photoSrc
           : photoSrc // ignore: cast_nullable_to_non_nullable
               as String,
-      phone: phone == freezed
+      phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      isSkillfolioReg: isSkillfolioReg == freezed
+      isSkillfolioReg: null == isSkillfolioReg
           ? _value.isSkillfolioReg
           : isSkillfolioReg // ignore: cast_nullable_to_non_nullable
               as bool,
-      isOnline: isOnline == freezed
+      isOnline: null == isOnline
           ? _value.isOnline
           : isOnline // ignore: cast_nullable_to_non_nullable
               as bool,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<BaseGroupResource>,
-      roles: roles == freezed
+      roles: null == roles
           ? _value.roles
           : roles // ignore: cast_nullable_to_non_nullable
               as RolesResource,
-      relatedUsers: relatedUsers == freezed
+      relatedUsers: null == relatedUsers
           ? _value.relatedUsers
           : relatedUsers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
@@ -352,23 +355,29 @@ class _$_UserListResource implements _UserListResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_UserListResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality()
-                .equals(other.middleName, middleName) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality().equals(other.photoSrc, photoSrc) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
+            (identical(other.middleName, middleName) ||
+                other.middleName == middleName) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.photoSrc, photoSrc) ||
+                other.photoSrc == photoSrc) &&
             const DeepCollectionEquality().equals(other.phone, phone) &&
-            const DeepCollectionEquality()
-                .equals(other.photoSrcSmall, photoSrcSmall) &&
-            const DeepCollectionEquality()
-                .equals(other.isSkillfolioReg, isSkillfolioReg) &&
-            const DeepCollectionEquality().equals(other.isOnline, isOnline) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.photoSrcSmall, photoSrcSmall) ||
+                other.photoSrcSmall == photoSrcSmall) &&
+            (identical(other.isSkillfolioReg, isSkillfolioReg) ||
+                other.isSkillfolioReg == isSkillfolioReg) &&
+            (identical(other.isOnline, isOnline) ||
+                other.isOnline == isOnline) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
-            const DeepCollectionEquality().equals(other.roles, roles) &&
+            (identical(other.roles, roles) || other.roles == roles) &&
             const DeepCollectionEquality()
                 .equals(other.relatedUsers, relatedUsers));
   }
@@ -377,24 +386,25 @@ class _$_UserListResource implements _UserListResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(firstName),
-      const DeepCollectionEquality().hash(lastName),
-      const DeepCollectionEquality().hash(middleName),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrc),
+      id,
+      firstName,
+      lastName,
+      middleName,
+      email,
+      photoSrc,
       const DeepCollectionEquality().hash(phone),
-      const DeepCollectionEquality().hash(photoSrcSmall),
-      const DeepCollectionEquality().hash(isSkillfolioReg),
-      const DeepCollectionEquality().hash(isOnline),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
+      photoSrcSmall,
+      isSkillfolioReg,
+      isOnline,
+      createdAt,
+      updatedAt,
       const DeepCollectionEquality().hash(groups),
-      const DeepCollectionEquality().hash(roles),
+      roles,
       const DeepCollectionEquality().hash(relatedUsers));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_UserListResourceCopyWith<_$_UserListResource> get copyWith =>
       __$$_UserListResourceCopyWithImpl<_$_UserListResource>(this, _$identity);
 

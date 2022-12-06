@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'simple_checkpoint_mark_resource.dart';
 
@@ -35,34 +35,39 @@ abstract class $SimpleCheckpointMarkResourceCopyWith<$Res> {
   factory $SimpleCheckpointMarkResourceCopyWith(
           SimpleCheckpointMarkResource value,
           $Res Function(SimpleCheckpointMarkResource) then) =
-      _$SimpleCheckpointMarkResourceCopyWithImpl<$Res>;
+      _$SimpleCheckpointMarkResourceCopyWithImpl<$Res,
+          SimpleCheckpointMarkResource>;
+  @useResult
   $Res call({int id, int points});
 }
 
 /// @nodoc
-class _$SimpleCheckpointMarkResourceCopyWithImpl<$Res>
+class _$SimpleCheckpointMarkResourceCopyWithImpl<$Res,
+        $Val extends SimpleCheckpointMarkResource>
     implements $SimpleCheckpointMarkResourceCopyWith<$Res> {
   _$SimpleCheckpointMarkResourceCopyWithImpl(this._value, this._then);
 
-  final SimpleCheckpointMarkResource _value;
   // ignore: unused_field
-  final $Res Function(SimpleCheckpointMarkResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? points = freezed,
+    Object? id = null,
+    Object? points = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      points: points == freezed
+      points: null == points
           ? _value.points
           : points // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -74,33 +79,32 @@ abstract class _$$_SimpleCheckpointMarkResourceCopyWith<$Res>
           $Res Function(_$_SimpleCheckpointMarkResource) then) =
       __$$_SimpleCheckpointMarkResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, int points});
 }
 
 /// @nodoc
 class __$$_SimpleCheckpointMarkResourceCopyWithImpl<$Res>
-    extends _$SimpleCheckpointMarkResourceCopyWithImpl<$Res>
+    extends _$SimpleCheckpointMarkResourceCopyWithImpl<$Res,
+        _$_SimpleCheckpointMarkResource>
     implements _$$_SimpleCheckpointMarkResourceCopyWith<$Res> {
   __$$_SimpleCheckpointMarkResourceCopyWithImpl(
       _$_SimpleCheckpointMarkResource _value,
       $Res Function(_$_SimpleCheckpointMarkResource) _then)
-      : super(_value, (v) => _then(v as _$_SimpleCheckpointMarkResource));
+      : super(_value, _then);
 
-  @override
-  _$_SimpleCheckpointMarkResource get _value =>
-      super._value as _$_SimpleCheckpointMarkResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? points = freezed,
+    Object? id = null,
+    Object? points = null,
   }) {
     return _then(_$_SimpleCheckpointMarkResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      points: points == freezed
+      points: null == points
           ? _value.points
           : points // ignore: cast_nullable_to_non_nullable
               as int,
@@ -131,19 +135,17 @@ class _$_SimpleCheckpointMarkResource implements _SimpleCheckpointMarkResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SimpleCheckpointMarkResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.points, points));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.points, points) || other.points == points));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(points));
+  int get hashCode => Object.hash(runtimeType, id, points);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SimpleCheckpointMarkResourceCopyWith<_$_SimpleCheckpointMarkResource>
       get copyWith => __$$_SimpleCheckpointMarkResourceCopyWithImpl<
           _$_SimpleCheckpointMarkResource>(this, _$identity);

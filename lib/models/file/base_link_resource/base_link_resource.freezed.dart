@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_link_resource.dart';
 
@@ -38,7 +38,8 @@ mixin _$BaseLinkResource {
 abstract class $BaseLinkResourceCopyWith<$Res> {
   factory $BaseLinkResourceCopyWith(
           BaseLinkResource value, $Res Function(BaseLinkResource) then) =
-      _$BaseLinkResourceCopyWithImpl<$Res>;
+      _$BaseLinkResourceCopyWithImpl<$Res, BaseLinkResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -53,75 +54,79 @@ abstract class $BaseLinkResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseLinkResourceCopyWithImpl<$Res>
+class _$BaseLinkResourceCopyWithImpl<$Res, $Val extends BaseLinkResource>
     implements $BaseLinkResourceCopyWith<$Res> {
   _$BaseLinkResourceCopyWithImpl(this._value, this._then);
 
-  final BaseLinkResource _value;
   // ignore: unused_field
-  final $Res Function(BaseLinkResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? description = freezed,
-    Object? url = freezed,
+    Object? url = null,
     Object? ownerId = freezed,
     Object? cover = freezed,
     Object? favicon = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: freezed == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int?,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BasePhotoResourceCopyWith<$Res>? get cover {
     if (_value.cover == null) {
       return null;
     }
 
     return $BasePhotoResourceCopyWith<$Res>(_value.cover!, (value) {
-      return _then(_value.copyWith(cover: value));
+      return _then(_value.copyWith(cover: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BasePhotoResourceCopyWith<$Res>? get favicon {
     if (_value.favicon == null) {
       return null;
     }
 
     return $BasePhotoResourceCopyWith<$Res>(_value.favicon!, (value) {
-      return _then(_value.copyWith(favicon: value));
+      return _then(_value.copyWith(favicon: value) as $Val);
     });
   }
 }
@@ -133,6 +138,7 @@ abstract class _$$_BaseLinkResourceCopyWith<$Res>
           _$_BaseLinkResource value, $Res Function(_$_BaseLinkResource) then) =
       __$$_BaseLinkResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -150,51 +156,49 @@ abstract class _$$_BaseLinkResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseLinkResourceCopyWithImpl<$Res>
-    extends _$BaseLinkResourceCopyWithImpl<$Res>
+    extends _$BaseLinkResourceCopyWithImpl<$Res, _$_BaseLinkResource>
     implements _$$_BaseLinkResourceCopyWith<$Res> {
   __$$_BaseLinkResourceCopyWithImpl(
       _$_BaseLinkResource _value, $Res Function(_$_BaseLinkResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseLinkResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseLinkResource get _value => super._value as _$_BaseLinkResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? description = freezed,
-    Object? url = freezed,
+    Object? url = null,
     Object? ownerId = freezed,
     Object? cover = freezed,
     Object? favicon = freezed,
   }) {
     return _then(_$_BaseLinkResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: freezed == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String?,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-      ownerId: ownerId == freezed
+      ownerId: freezed == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int?,
-      cover: cover == freezed
+      cover: freezed == cover
           ? _value.cover
           : cover // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
-      favicon: favicon == freezed
+      favicon: freezed == favicon
           ? _value.favicon
           : favicon // ignore: cast_nullable_to_non_nullable
               as BasePhotoResource?,
@@ -242,30 +246,24 @@ class _$_BaseLinkResource implements _BaseLinkResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseLinkResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.url, url) &&
-            const DeepCollectionEquality().equals(other.ownerId, ownerId) &&
-            const DeepCollectionEquality().equals(other.cover, cover) &&
-            const DeepCollectionEquality().equals(other.favicon, favicon));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
+            (identical(other.cover, cover) || other.cover == cover) &&
+            (identical(other.favicon, favicon) || other.favicon == favicon));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(url),
-      const DeepCollectionEquality().hash(ownerId),
-      const DeepCollectionEquality().hash(cover),
-      const DeepCollectionEquality().hash(favicon));
+      runtimeType, id, title, description, url, ownerId, cover, favicon);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseLinkResourceCopyWith<_$_BaseLinkResource> get copyWith =>
       __$$_BaseLinkResourceCopyWithImpl<_$_BaseLinkResource>(this, _$identity);
 

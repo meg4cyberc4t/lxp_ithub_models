@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'bulgakov_platform_model.dart';
 
@@ -35,39 +35,43 @@ mixin _$BulgakovPlatformModel {
 abstract class $BulgakovPlatformModelCopyWith<$Res> {
   factory $BulgakovPlatformModelCopyWith(BulgakovPlatformModel value,
           $Res Function(BulgakovPlatformModel) then) =
-      _$BulgakovPlatformModelCopyWithImpl<$Res>;
+      _$BulgakovPlatformModelCopyWithImpl<$Res, BulgakovPlatformModel>;
+  @useResult
   $Res call({int id, String name, String shortname});
 }
 
 /// @nodoc
-class _$BulgakovPlatformModelCopyWithImpl<$Res>
+class _$BulgakovPlatformModelCopyWithImpl<$Res,
+        $Val extends BulgakovPlatformModel>
     implements $BulgakovPlatformModelCopyWith<$Res> {
   _$BulgakovPlatformModelCopyWithImpl(this._value, this._then);
 
-  final BulgakovPlatformModel _value;
   // ignore: unused_field
-  final $Res Function(BulgakovPlatformModel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? shortname = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? shortname = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      shortname: shortname == freezed
+      shortname: null == shortname
           ? _value.shortname
           : shortname // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -78,37 +82,35 @@ abstract class _$$_BulgakovPlatformModelCopyWith<$Res>
           $Res Function(_$_BulgakovPlatformModel) then) =
       __$$_BulgakovPlatformModelCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String name, String shortname});
 }
 
 /// @nodoc
 class __$$_BulgakovPlatformModelCopyWithImpl<$Res>
-    extends _$BulgakovPlatformModelCopyWithImpl<$Res>
+    extends _$BulgakovPlatformModelCopyWithImpl<$Res, _$_BulgakovPlatformModel>
     implements _$$_BulgakovPlatformModelCopyWith<$Res> {
   __$$_BulgakovPlatformModelCopyWithImpl(_$_BulgakovPlatformModel _value,
       $Res Function(_$_BulgakovPlatformModel) _then)
-      : super(_value, (v) => _then(v as _$_BulgakovPlatformModel));
+      : super(_value, _then);
 
-  @override
-  _$_BulgakovPlatformModel get _value =>
-      super._value as _$_BulgakovPlatformModel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? shortname = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? shortname = null,
   }) {
     return _then(_$_BulgakovPlatformModel(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      shortname: shortname == freezed
+      shortname: null == shortname
           ? _value.shortname
           : shortname // ignore: cast_nullable_to_non_nullable
               as String,
@@ -142,21 +144,19 @@ class _$_BulgakovPlatformModel implements _BulgakovPlatformModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BulgakovPlatformModel &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.shortname, shortname));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.shortname, shortname) ||
+                other.shortname == shortname));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(shortname));
+  int get hashCode => Object.hash(runtimeType, id, name, shortname);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BulgakovPlatformModelCopyWith<_$_BulgakovPlatformModel> get copyWith =>
       __$$_BulgakovPlatformModelCopyWithImpl<_$_BulgakovPlatformModel>(
           this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_step_user_process_resource.dart';
 
@@ -40,7 +40,9 @@ abstract class $BaseStepUserProcessResourceCopyWith<$Res> {
   factory $BaseStepUserProcessResourceCopyWith(
           BaseStepUserProcessResource value,
           $Res Function(BaseStepUserProcessResource) then) =
-      _$BaseStepUserProcessResourceCopyWithImpl<$Res>;
+      _$BaseStepUserProcessResourceCopyWithImpl<$Res,
+          BaseStepUserProcessResource>;
+  @useResult
   $Res call(
       {int stepId,
       int userId,
@@ -51,49 +53,52 @@ abstract class $BaseStepUserProcessResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseStepUserProcessResourceCopyWithImpl<$Res>
+class _$BaseStepUserProcessResourceCopyWithImpl<$Res,
+        $Val extends BaseStepUserProcessResource>
     implements $BaseStepUserProcessResourceCopyWith<$Res> {
   _$BaseStepUserProcessResourceCopyWithImpl(this._value, this._then);
 
-  final BaseStepUserProcessResource _value;
   // ignore: unused_field
-  final $Res Function(BaseStepUserProcessResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stepId = freezed,
-    Object? userId = freezed,
-    Object? timestamp = freezed,
+    Object? stepId = null,
+    Object? userId = null,
+    Object? timestamp = null,
     Object? status = freezed,
-    Object? passedStatus = freezed,
+    Object? passedStatus = null,
     Object? passedStatusId = freezed,
   }) {
     return _then(_value.copyWith(
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as int,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -105,6 +110,7 @@ abstract class _$$_BaseStepUserProcessResourceCopyWith<$Res>
           $Res Function(_$_BaseStepUserProcessResource) then) =
       __$$_BaseStepUserProcessResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int stepId,
       int userId,
@@ -116,48 +122,46 @@ abstract class _$$_BaseStepUserProcessResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseStepUserProcessResourceCopyWithImpl<$Res>
-    extends _$BaseStepUserProcessResourceCopyWithImpl<$Res>
+    extends _$BaseStepUserProcessResourceCopyWithImpl<$Res,
+        _$_BaseStepUserProcessResource>
     implements _$$_BaseStepUserProcessResourceCopyWith<$Res> {
   __$$_BaseStepUserProcessResourceCopyWithImpl(
       _$_BaseStepUserProcessResource _value,
       $Res Function(_$_BaseStepUserProcessResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseStepUserProcessResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseStepUserProcessResource get _value =>
-      super._value as _$_BaseStepUserProcessResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stepId = freezed,
-    Object? userId = freezed,
-    Object? timestamp = freezed,
+    Object? stepId = null,
+    Object? userId = null,
+    Object? timestamp = null,
     Object? status = freezed,
-    Object? passedStatus = freezed,
+    Object? passedStatus = null,
     Object? passedStatusId = freezed,
   }) {
     return _then(_$_BaseStepUserProcessResource(
-      stepId: stepId == freezed
+      stepId: null == stepId
           ? _value.stepId
           : stepId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      timestamp: timestamp == freezed
+      timestamp: null == timestamp
           ? _value.timestamp
           : timestamp // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: freezed == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String?,
-      passedStatus: passedStatus == freezed
+      passedStatus: null == passedStatus
           ? _value.passedStatus
           : passedStatus // ignore: cast_nullable_to_non_nullable
               as int,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
@@ -203,29 +207,25 @@ class _$_BaseStepUserProcessResource implements _BaseStepUserProcessResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseStepUserProcessResource &&
-            const DeepCollectionEquality().equals(other.stepId, stepId) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.timestamp, timestamp) &&
-            const DeepCollectionEquality().equals(other.status, status) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatus, passedStatus) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatusId, passedStatusId));
+            (identical(other.stepId, stepId) || other.stepId == stepId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.timestamp, timestamp) ||
+                other.timestamp == timestamp) &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.passedStatus, passedStatus) ||
+                other.passedStatus == passedStatus) &&
+            (identical(other.passedStatusId, passedStatusId) ||
+                other.passedStatusId == passedStatusId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(stepId),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(timestamp),
-      const DeepCollectionEquality().hash(status),
-      const DeepCollectionEquality().hash(passedStatus),
-      const DeepCollectionEquality().hash(passedStatusId));
+  int get hashCode => Object.hash(runtimeType, stepId, userId, timestamp,
+      status, passedStatus, passedStatusId);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseStepUserProcessResourceCopyWith<_$_BaseStepUserProcessResource>
       get copyWith => __$$_BaseStepUserProcessResourceCopyWithImpl<
           _$_BaseStepUserProcessResource>(this, _$identity);

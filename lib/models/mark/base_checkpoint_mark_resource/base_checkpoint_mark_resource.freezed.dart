@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_checkpoint_mark_resource.dart';
 
@@ -44,7 +44,9 @@ mixin _$BaseCheckpointMarkResource {
 abstract class $BaseCheckpointMarkResourceCopyWith<$Res> {
   factory $BaseCheckpointMarkResourceCopyWith(BaseCheckpointMarkResource value,
           $Res Function(BaseCheckpointMarkResource) then) =
-      _$BaseCheckpointMarkResourceCopyWithImpl<$Res>;
+      _$BaseCheckpointMarkResourceCopyWithImpl<$Res,
+          BaseCheckpointMarkResource>;
+  @useResult
   $Res call(
       {int id,
       int teacherId,
@@ -61,79 +63,82 @@ abstract class $BaseCheckpointMarkResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseCheckpointMarkResourceCopyWithImpl<$Res>
+class _$BaseCheckpointMarkResourceCopyWithImpl<$Res,
+        $Val extends BaseCheckpointMarkResource>
     implements $BaseCheckpointMarkResourceCopyWith<$Res> {
   _$BaseCheckpointMarkResourceCopyWithImpl(this._value, this._then);
 
-  final BaseCheckpointMarkResource _value;
   // ignore: unused_field
-  final $Res Function(BaseCheckpointMarkResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? teacherId = freezed,
-    Object? studentId = freezed,
-    Object? topicId = freezed,
-    Object? parentTopicId = freezed,
-    Object? subjectId = freezed,
-    Object? parentSubjectId = freezed,
-    Object? mark = freezed,
-    Object? comment = freezed,
+    Object? id = null,
+    Object? teacherId = null,
+    Object? studentId = null,
+    Object? topicId = null,
+    Object? parentTopicId = null,
+    Object? subjectId = null,
+    Object? parentSubjectId = null,
+    Object? mark = null,
+    Object? comment = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      studentId: studentId == freezed
+      studentId: null == studentId
           ? _value.studentId
           : studentId // ignore: cast_nullable_to_non_nullable
               as int,
-      topicId: topicId == freezed
+      topicId: null == topicId
           ? _value.topicId
           : topicId // ignore: cast_nullable_to_non_nullable
               as int,
-      parentTopicId: parentTopicId == freezed
+      parentTopicId: null == parentTopicId
           ? _value.parentTopicId
           : parentTopicId // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      parentSubjectId: parentSubjectId == freezed
+      parentSubjectId: null == parentSubjectId
           ? _value.parentSubjectId
           : parentSubjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      mark: mark == freezed
+      mark: null == mark
           ? _value.mark
           : mark // ignore: cast_nullable_to_non_nullable
               as int,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -145,6 +150,7 @@ abstract class _$$_BaseCheckpointMarkResourceCopyWith<$Res>
           $Res Function(_$_BaseCheckpointMarkResource) then) =
       __$$_BaseCheckpointMarkResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int teacherId,
@@ -162,78 +168,76 @@ abstract class _$$_BaseCheckpointMarkResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseCheckpointMarkResourceCopyWithImpl<$Res>
-    extends _$BaseCheckpointMarkResourceCopyWithImpl<$Res>
+    extends _$BaseCheckpointMarkResourceCopyWithImpl<$Res,
+        _$_BaseCheckpointMarkResource>
     implements _$$_BaseCheckpointMarkResourceCopyWith<$Res> {
   __$$_BaseCheckpointMarkResourceCopyWithImpl(
       _$_BaseCheckpointMarkResource _value,
       $Res Function(_$_BaseCheckpointMarkResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseCheckpointMarkResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseCheckpointMarkResource get _value =>
-      super._value as _$_BaseCheckpointMarkResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? teacherId = freezed,
-    Object? studentId = freezed,
-    Object? topicId = freezed,
-    Object? parentTopicId = freezed,
-    Object? subjectId = freezed,
-    Object? parentSubjectId = freezed,
-    Object? mark = freezed,
-    Object? comment = freezed,
+    Object? id = null,
+    Object? teacherId = null,
+    Object? studentId = null,
+    Object? topicId = null,
+    Object? parentTopicId = null,
+    Object? subjectId = null,
+    Object? parentSubjectId = null,
+    Object? mark = null,
+    Object? comment = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? deletedAt = freezed,
   }) {
     return _then(_$_BaseCheckpointMarkResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      studentId: studentId == freezed
+      studentId: null == studentId
           ? _value.studentId
           : studentId // ignore: cast_nullable_to_non_nullable
               as int,
-      topicId: topicId == freezed
+      topicId: null == topicId
           ? _value.topicId
           : topicId // ignore: cast_nullable_to_non_nullable
               as int,
-      parentTopicId: parentTopicId == freezed
+      parentTopicId: null == parentTopicId
           ? _value.parentTopicId
           : parentTopicId // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectId: subjectId == freezed
+      subjectId: null == subjectId
           ? _value.subjectId
           : subjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      parentSubjectId: parentSubjectId == freezed
+      parentSubjectId: null == parentSubjectId
           ? _value.parentSubjectId
           : parentSubjectId // ignore: cast_nullable_to_non_nullable
               as int,
-      mark: mark == freezed
+      mark: null == mark
           ? _value.mark
           : mark // ignore: cast_nullable_to_non_nullable
               as int,
-      comment: comment == freezed
+      comment: null == comment
           ? _value.comment
           : comment // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      deletedAt: deletedAt == freezed
+      deletedAt: freezed == deletedAt
           ? _value.deletedAt
           : deletedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -296,41 +300,48 @@ class _$_BaseCheckpointMarkResource implements _BaseCheckpointMarkResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseCheckpointMarkResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.teacherId, teacherId) &&
-            const DeepCollectionEquality().equals(other.studentId, studentId) &&
-            const DeepCollectionEquality().equals(other.topicId, topicId) &&
-            const DeepCollectionEquality()
-                .equals(other.parentTopicId, parentTopicId) &&
-            const DeepCollectionEquality().equals(other.subjectId, subjectId) &&
-            const DeepCollectionEquality()
-                .equals(other.parentSubjectId, parentSubjectId) &&
-            const DeepCollectionEquality().equals(other.mark, mark) &&
-            const DeepCollectionEquality().equals(other.comment, comment) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.teacherId, teacherId) ||
+                other.teacherId == teacherId) &&
+            (identical(other.studentId, studentId) ||
+                other.studentId == studentId) &&
+            (identical(other.topicId, topicId) || other.topicId == topicId) &&
+            (identical(other.parentTopicId, parentTopicId) ||
+                other.parentTopicId == parentTopicId) &&
+            (identical(other.subjectId, subjectId) ||
+                other.subjectId == subjectId) &&
+            (identical(other.parentSubjectId, parentSubjectId) ||
+                other.parentSubjectId == parentSubjectId) &&
+            (identical(other.mark, mark) || other.mark == mark) &&
+            (identical(other.comment, comment) || other.comment == comment) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.deletedAt, deletedAt) ||
+                other.deletedAt == deletedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(teacherId),
-      const DeepCollectionEquality().hash(studentId),
-      const DeepCollectionEquality().hash(topicId),
-      const DeepCollectionEquality().hash(parentTopicId),
-      const DeepCollectionEquality().hash(subjectId),
-      const DeepCollectionEquality().hash(parentSubjectId),
-      const DeepCollectionEquality().hash(mark),
-      const DeepCollectionEquality().hash(comment),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt));
+      id,
+      teacherId,
+      studentId,
+      topicId,
+      parentTopicId,
+      subjectId,
+      parentSubjectId,
+      mark,
+      comment,
+      createdAt,
+      updatedAt,
+      deletedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseCheckpointMarkResourceCopyWith<_$_BaseCheckpointMarkResource>
       get copyWith => __$$_BaseCheckpointMarkResourceCopyWithImpl<
           _$_BaseCheckpointMarkResource>(this, _$identity);

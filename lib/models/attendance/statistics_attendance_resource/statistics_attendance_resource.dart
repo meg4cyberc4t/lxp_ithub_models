@@ -9,7 +9,6 @@ part 'statistics_attendance_resource.g.dart';
 class StatisticsAttendanceResource with _$StatisticsAttendanceResource {
   factory StatisticsAttendanceResource({
     required StatisticsAttendanceResourceStats attendanceStats,
-    required List<BaseAttendanceResource> data,
   }) = _StatisticsAttendanceResource;
 
   factory StatisticsAttendanceResource.fromJson(Map<String, dynamic> json) =>

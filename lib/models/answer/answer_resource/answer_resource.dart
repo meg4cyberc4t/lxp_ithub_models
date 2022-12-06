@@ -1,4 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:lxp_ithub_models/models/answer/answer_expertise_resource/answer_expertise_resource.dart';
+import 'package:lxp_ithub_models/models/answer/answer_field_resource/answer_field_resource.dart';
+import 'package:lxp_ithub_models/models/answer/comment_answer_resource/comment_answer_resource.dart';
 import 'package:lxp_ithub_models/models/file/base_document_resource/base_document_resource.dart';
 import 'package:lxp_ithub_models/models/file/base_link_resource/base_link_resource.dart';
 import 'package:lxp_ithub_models/models/file/base_photo_resource/base_photo_resource.dart';
@@ -28,14 +31,14 @@ class AnswerResource with _$AnswerResource {
     required CheckpointMark? checkpointMark,
     required int id,
     required int userId,
-    required String title,
+    @Deprecated("Broken field") required String title,
     required int timestamp, // Дата создания
     required int patternId,
     required int? updated, // Дата изменения
     required int privacy,
-    // final List<CommentAnswerResource> comments;
-    // final List<AnswerExpertiseResource> expertises;
-    // final List<AnswerFieldResource> questions;
+    required List<CommentAnswerResource> comments,
+    required List<AnswerExpertiseResource> expertises,
+    required List<AnswerFieldResource> questions,
   }) = _AnswerResource;
 
   factory AnswerResource.fromJson(Map<String, dynamic> json) =>

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_attendance_resource.dart';
 
@@ -43,7 +43,8 @@ mixin _$BaseAttendanceResource {
 abstract class $BaseAttendanceResourceCopyWith<$Res> {
   factory $BaseAttendanceResourceCopyWith(BaseAttendanceResource value,
           $Res Function(BaseAttendanceResource) then) =
-      _$BaseAttendanceResourceCopyWithImpl<$Res>;
+      _$BaseAttendanceResourceCopyWithImpl<$Res, BaseAttendanceResource>;
+  @useResult
   $Res call(
       {int id,
       int lessonId,
@@ -58,69 +59,72 @@ abstract class $BaseAttendanceResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseAttendanceResourceCopyWithImpl<$Res>
+class _$BaseAttendanceResourceCopyWithImpl<$Res,
+        $Val extends BaseAttendanceResource>
     implements $BaseAttendanceResourceCopyWith<$Res> {
   _$BaseAttendanceResourceCopyWithImpl(this._value, this._then);
 
-  final BaseAttendanceResource _value;
   // ignore: unused_field
-  final $Res Function(BaseAttendanceResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? lessonId = freezed,
-    Object? userId = freezed,
-    Object? teacherId = freezed,
-    Object? subjectIds = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? status = freezed,
+    Object? id = null,
+    Object? lessonId = null,
+    Object? userId = null,
+    Object? teacherId = null,
+    Object? subjectIds = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? status = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonId: lessonId == freezed
+      lessonId: null == lessonId
           ? _value.lessonId
           : lessonId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectIds: subjectIds == freezed
+      subjectIds: null == subjectIds
           ? _value.subjectIds
           : subjectIds // ignore: cast_nullable_to_non_nullable
               as List<int>,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -131,6 +135,7 @@ abstract class _$$_BaseAttendanceResourceCopyWith<$Res>
           $Res Function(_$_BaseAttendanceResource) then) =
       __$$_BaseAttendanceResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int lessonId,
@@ -146,67 +151,65 @@ abstract class _$$_BaseAttendanceResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseAttendanceResourceCopyWithImpl<$Res>
-    extends _$BaseAttendanceResourceCopyWithImpl<$Res>
+    extends _$BaseAttendanceResourceCopyWithImpl<$Res,
+        _$_BaseAttendanceResource>
     implements _$$_BaseAttendanceResourceCopyWith<$Res> {
   __$$_BaseAttendanceResourceCopyWithImpl(_$_BaseAttendanceResource _value,
       $Res Function(_$_BaseAttendanceResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseAttendanceResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseAttendanceResource get _value =>
-      super._value as _$_BaseAttendanceResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? lessonId = freezed,
-    Object? userId = freezed,
-    Object? teacherId = freezed,
-    Object? subjectIds = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? status = freezed,
+    Object? id = null,
+    Object? lessonId = null,
+    Object? userId = null,
+    Object? teacherId = null,
+    Object? subjectIds = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? status = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseAttendanceResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      lessonId: lessonId == freezed
+      lessonId: null == lessonId
           ? _value.lessonId
           : lessonId // ignore: cast_nullable_to_non_nullable
               as int,
-      userId: userId == freezed
+      userId: null == userId
           ? _value.userId
           : userId // ignore: cast_nullable_to_non_nullable
               as int,
-      teacherId: teacherId == freezed
+      teacherId: null == teacherId
           ? _value.teacherId
           : teacherId // ignore: cast_nullable_to_non_nullable
               as int,
-      subjectIds: subjectIds == freezed
+      subjectIds: null == subjectIds
           ? _value.subjectIds
           : subjectIds // ignore: cast_nullable_to_non_nullable
               as List<int>,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      status: status == freezed
+      status: null == status
           ? _value.status
           : status // ignore: cast_nullable_to_non_nullable
               as String,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -264,37 +267,42 @@ class _$_BaseAttendanceResource implements _BaseAttendanceResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseAttendanceResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.lessonId, lessonId) &&
-            const DeepCollectionEquality().equals(other.userId, userId) &&
-            const DeepCollectionEquality().equals(other.teacherId, teacherId) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.lessonId, lessonId) ||
+                other.lessonId == lessonId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.teacherId, teacherId) ||
+                other.teacherId == teacherId) &&
             const DeepCollectionEquality()
                 .equals(other.subjectIds, subjectIds) &&
-            const DeepCollectionEquality().equals(other.date, date) &&
-            const DeepCollectionEquality()
-                .equals(other.classNumber, classNumber) &&
-            const DeepCollectionEquality().equals(other.status, status) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.classNumber, classNumber) ||
+                other.classNumber == classNumber) &&
+            (identical(other.status, status) || other.status == status) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(lessonId),
-      const DeepCollectionEquality().hash(userId),
-      const DeepCollectionEquality().hash(teacherId),
+      id,
+      lessonId,
+      userId,
+      teacherId,
       const DeepCollectionEquality().hash(subjectIds),
-      const DeepCollectionEquality().hash(date),
-      const DeepCollectionEquality().hash(classNumber),
-      const DeepCollectionEquality().hash(status),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      date,
+      classNumber,
+      status,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseAttendanceResourceCopyWith<_$_BaseAttendanceResource> get copyWith =>
       __$$_BaseAttendanceResourceCopyWithImpl<_$_BaseAttendanceResource>(
           this, _$identity);

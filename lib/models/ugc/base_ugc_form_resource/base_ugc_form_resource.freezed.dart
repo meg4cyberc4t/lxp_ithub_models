@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_ugc_form_resource.dart';
 
@@ -24,11 +24,11 @@ mixin _$BaseUgcFormResource {
   int get patternId => throw _privateConstructorUsedError;
   int get number => throw _privateConstructorUsedError;
   int? get type => throw _privateConstructorUsedError;
-  bool get required => throw _privateConstructorUsedError;
+  int get required => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   @JsonKey(name: "default")
   String get defaultField => throw _privateConstructorUsedError;
-  String get link => throw _privateConstructorUsedError;
+  String? get link => throw _privateConstructorUsedError;
   List<BaseLinkResource> get links => throw _privateConstructorUsedError;
   List<BaseDocumentResource> get documents =>
       throw _privateConstructorUsedError;
@@ -45,16 +45,17 @@ mixin _$BaseUgcFormResource {
 abstract class $BaseUgcFormResourceCopyWith<$Res> {
   factory $BaseUgcFormResourceCopyWith(
           BaseUgcFormResource value, $Res Function(BaseUgcFormResource) then) =
-      _$BaseUgcFormResourceCopyWithImpl<$Res>;
+      _$BaseUgcFormResourceCopyWithImpl<$Res, BaseUgcFormResource>;
+  @useResult
   $Res call(
       {int id,
       int patternId,
       int number,
       int? type,
-      bool required,
+      int required,
       String title,
       @JsonKey(name: "default") String defaultField,
-      String link,
+      String? link,
       List<BaseLinkResource> links,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
@@ -62,79 +63,81 @@ abstract class $BaseUgcFormResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseUgcFormResourceCopyWithImpl<$Res>
+class _$BaseUgcFormResourceCopyWithImpl<$Res, $Val extends BaseUgcFormResource>
     implements $BaseUgcFormResourceCopyWith<$Res> {
   _$BaseUgcFormResourceCopyWithImpl(this._value, this._then);
 
-  final BaseUgcFormResource _value;
   // ignore: unused_field
-  final $Res Function(BaseUgcFormResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? patternId = freezed,
-    Object? number = freezed,
+    Object? id = null,
+    Object? patternId = null,
+    Object? number = null,
     Object? type = freezed,
-    Object? required = freezed,
-    Object? title = freezed,
-    Object? defaultField = freezed,
+    Object? required = null,
+    Object? title = null,
+    Object? defaultField = null,
     Object? link = freezed,
-    Object? links = freezed,
-    Object? documents = freezed,
-    Object? videos = freezed,
-    Object? photos = freezed,
+    Object? links = null,
+    Object? documents = null,
+    Object? videos = null,
+    Object? photos = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int?,
-      required: required == freezed
+      required: null == required
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
-              as bool,
-      title: title == freezed
+              as int,
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultField: defaultField == freezed
+      defaultField: null == defaultField
           ? _value.defaultField
           : defaultField // ignore: cast_nullable_to_non_nullable
               as String,
-      link: link == freezed
+      link: freezed == link
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
-              as String,
-      links: links == freezed
+              as String?,
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -145,15 +148,16 @@ abstract class _$$_BaseUgcFormResourceCopyWith<$Res>
           $Res Function(_$_BaseUgcFormResource) then) =
       __$$_BaseUgcFormResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int patternId,
       int number,
       int? type,
-      bool required,
+      int required,
       String title,
       @JsonKey(name: "default") String defaultField,
-      String link,
+      String? link,
       List<BaseLinkResource> links,
       List<BaseDocumentResource> documents,
       List<BaseVideoResource> videos,
@@ -162,76 +166,74 @@ abstract class _$$_BaseUgcFormResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseUgcFormResourceCopyWithImpl<$Res>
-    extends _$BaseUgcFormResourceCopyWithImpl<$Res>
+    extends _$BaseUgcFormResourceCopyWithImpl<$Res, _$_BaseUgcFormResource>
     implements _$$_BaseUgcFormResourceCopyWith<$Res> {
   __$$_BaseUgcFormResourceCopyWithImpl(_$_BaseUgcFormResource _value,
       $Res Function(_$_BaseUgcFormResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseUgcFormResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseUgcFormResource get _value => super._value as _$_BaseUgcFormResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? patternId = freezed,
-    Object? number = freezed,
+    Object? id = null,
+    Object? patternId = null,
+    Object? number = null,
     Object? type = freezed,
-    Object? required = freezed,
-    Object? title = freezed,
-    Object? defaultField = freezed,
+    Object? required = null,
+    Object? title = null,
+    Object? defaultField = null,
     Object? link = freezed,
-    Object? links = freezed,
-    Object? documents = freezed,
-    Object? videos = freezed,
-    Object? photos = freezed,
+    Object? links = null,
+    Object? documents = null,
+    Object? videos = null,
+    Object? photos = null,
   }) {
     return _then(_$_BaseUgcFormResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      patternId: patternId == freezed
+      patternId: null == patternId
           ? _value.patternId
           : patternId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int?,
-      required: required == freezed
+      required: null == required
           ? _value.required
           : required // ignore: cast_nullable_to_non_nullable
-              as bool,
-      title: title == freezed
+              as int,
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultField: defaultField == freezed
+      defaultField: null == defaultField
           ? _value.defaultField
           : defaultField // ignore: cast_nullable_to_non_nullable
               as String,
-      link: link == freezed
+      link: freezed == link
           ? _value.link
           : link // ignore: cast_nullable_to_non_nullable
-              as String,
-      links: links == freezed
+              as String?,
+      links: null == links
           ? _value.links
           : links // ignore: cast_nullable_to_non_nullable
               as List<BaseLinkResource>,
-      documents: documents == freezed
+      documents: null == documents
           ? _value.documents
           : documents // ignore: cast_nullable_to_non_nullable
               as List<BaseDocumentResource>,
-      videos: videos == freezed
+      videos: null == videos
           ? _value.videos
           : videos // ignore: cast_nullable_to_non_nullable
               as List<BaseVideoResource>,
-      photos: photos == freezed
+      photos: null == photos
           ? _value.photos
           : photos // ignore: cast_nullable_to_non_nullable
               as List<BasePhotoResource>,
@@ -268,14 +270,14 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
   @override
   final int? type;
   @override
-  final bool required;
+  final int required;
   @override
   final String title;
   @override
   @JsonKey(name: "default")
   final String defaultField;
   @override
-  final String link;
+  final String? link;
   @override
   final List<BaseLinkResource> links;
   @override
@@ -295,15 +297,17 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseUgcFormResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.patternId, patternId) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.required, required) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.defaultField, defaultField) &&
-            const DeepCollectionEquality().equals(other.link, link) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.patternId, patternId) ||
+                other.patternId == patternId) &&
+            (identical(other.number, number) || other.number == number) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.required, required) ||
+                other.required == required) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.defaultField, defaultField) ||
+                other.defaultField == defaultField) &&
+            (identical(other.link, link) || other.link == link) &&
             const DeepCollectionEquality().equals(other.links, links) &&
             const DeepCollectionEquality().equals(other.documents, documents) &&
             const DeepCollectionEquality().equals(other.videos, videos) &&
@@ -314,14 +318,14 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(patternId),
-      const DeepCollectionEquality().hash(number),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(required),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(defaultField),
-      const DeepCollectionEquality().hash(link),
+      id,
+      patternId,
+      number,
+      type,
+      required,
+      title,
+      defaultField,
+      link,
       const DeepCollectionEquality().hash(links),
       const DeepCollectionEquality().hash(documents),
       const DeepCollectionEquality().hash(videos),
@@ -329,6 +333,7 @@ class _$_BaseUgcFormResource implements _BaseUgcFormResource {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseUgcFormResourceCopyWith<_$_BaseUgcFormResource> get copyWith =>
       __$$_BaseUgcFormResourceCopyWithImpl<_$_BaseUgcFormResource>(
           this, _$identity);
@@ -347,10 +352,10 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
       required final int patternId,
       required final int number,
       required final int? type,
-      required final bool required,
+      required final int required,
       required final String title,
       @JsonKey(name: "default") required final String defaultField,
-      required final String link,
+      required final String? link,
       required final List<BaseLinkResource> links,
       required final List<BaseDocumentResource> documents,
       required final List<BaseVideoResource> videos,
@@ -368,14 +373,14 @@ abstract class _BaseUgcFormResource implements BaseUgcFormResource {
   @override
   int? get type;
   @override
-  bool get required;
+  int get required;
   @override
   String get title;
   @override
   @JsonKey(name: "default")
   String get defaultField;
   @override
-  String get link;
+  String? get link;
   @override
   List<BaseLinkResource> get links;
   @override

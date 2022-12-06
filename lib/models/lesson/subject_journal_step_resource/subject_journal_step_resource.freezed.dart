@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'subject_journal_step_resource.dart';
 
@@ -54,7 +54,9 @@ mixin _$SubjectJournalStepResource {
 abstract class $SubjectJournalStepResourceCopyWith<$Res> {
   factory $SubjectJournalStepResourceCopyWith(SubjectJournalStepResource value,
           $Res Function(SubjectJournalStepResource) then) =
-      _$SubjectJournalStepResourceCopyWithImpl<$Res>;
+      _$SubjectJournalStepResourceCopyWithImpl<$Res,
+          SubjectJournalStepResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -80,124 +82,127 @@ abstract class $SubjectJournalStepResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SubjectJournalStepResourceCopyWithImpl<$Res>
+class _$SubjectJournalStepResourceCopyWithImpl<$Res,
+        $Val extends SubjectJournalStepResource>
     implements $SubjectJournalStepResourceCopyWith<$Res> {
   _$SubjectJournalStepResourceCopyWithImpl(this._value, this._then);
 
-  final SubjectJournalStepResource _value;
   // ignore: unused_field
-  final $Res Function(SubjectJournalStepResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? publicText = freezed,
-    Object? publicTextOriginal = freezed,
-    Object? privateText = freezed,
-    Object? privateTextOriginal = freezed,
-    Object? chapterId = freezed,
-    Object? number = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? publicText = null,
+    Object? publicTextOriginal = null,
+    Object? privateText = null,
+    Object? privateTextOriginal = null,
+    Object? chapterId = null,
+    Object? number = null,
+    Object? type = null,
     Object? authorId = freezed,
-    Object? time = freezed,
-    Object? hours = freezed,
+    Object? time = null,
+    Object? hours = null,
     Object? maxMark = freezed,
     Object? clonedId = freezed,
-    Object? hidden = freezed,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? passedStatusId = freezed,
     Object? checkpointMark = freezed,
-    Object? havePatterns = freezed,
-    Object? answers = freezed,
+    Object? havePatterns = null,
+    Object? answers = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      publicText: publicText == freezed
+      publicText: null == publicText
           ? _value.publicText
           : publicText // ignore: cast_nullable_to_non_nullable
               as String,
-      publicTextOriginal: publicTextOriginal == freezed
+      publicTextOriginal: null == publicTextOriginal
           ? _value.publicTextOriginal
           : publicTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      privateText: privateText == freezed
+      privateText: null == privateText
           ? _value.privateText
           : privateText // ignore: cast_nullable_to_non_nullable
               as String,
-      privateTextOriginal: privateTextOriginal == freezed
+      privateTextOriginal: null == privateTextOriginal
           ? _value.privateTextOriginal
           : privateTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      chapterId: chapterId == freezed
+      chapterId: null == chapterId
           ? _value.chapterId
           : chapterId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      authorId: authorId == freezed
+      authorId: freezed == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int?,
-      time: time == freezed
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as int,
-      hours: hours == freezed
+      hours: null == hours
           ? _value.hours
           : hours // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMark: maxMark == freezed
+      maxMark: freezed == maxMark
           ? _value.maxMark
           : maxMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      clonedId: clonedId == freezed
+      clonedId: freezed == clonedId
           ? _value.clonedId
           : clonedId // ignore: cast_nullable_to_non_nullable
               as int?,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointMark: checkpointMark == freezed
+      checkpointMark: freezed == checkpointMark
           ? _value.checkpointMark
           : checkpointMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      havePatterns: havePatterns == freezed
+      havePatterns: null == havePatterns
           ? _value.havePatterns
           : havePatterns // ignore: cast_nullable_to_non_nullable
               as bool,
-      answers: answers == freezed
+      answers: null == answers
           ? _value.answers
           : answers // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcAnswerResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -209,6 +214,7 @@ abstract class _$$_SubjectJournalStepResourceCopyWith<$Res>
           $Res Function(_$_SubjectJournalStepResource) then) =
       __$$_SubjectJournalStepResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
@@ -235,123 +241,121 @@ abstract class _$$_SubjectJournalStepResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_SubjectJournalStepResourceCopyWithImpl<$Res>
-    extends _$SubjectJournalStepResourceCopyWithImpl<$Res>
+    extends _$SubjectJournalStepResourceCopyWithImpl<$Res,
+        _$_SubjectJournalStepResource>
     implements _$$_SubjectJournalStepResourceCopyWith<$Res> {
   __$$_SubjectJournalStepResourceCopyWithImpl(
       _$_SubjectJournalStepResource _value,
       $Res Function(_$_SubjectJournalStepResource) _then)
-      : super(_value, (v) => _then(v as _$_SubjectJournalStepResource));
+      : super(_value, _then);
 
-  @override
-  _$_SubjectJournalStepResource get _value =>
-      super._value as _$_SubjectJournalStepResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? publicText = freezed,
-    Object? publicTextOriginal = freezed,
-    Object? privateText = freezed,
-    Object? privateTextOriginal = freezed,
-    Object? chapterId = freezed,
-    Object? number = freezed,
-    Object? type = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? publicText = null,
+    Object? publicTextOriginal = null,
+    Object? privateText = null,
+    Object? privateTextOriginal = null,
+    Object? chapterId = null,
+    Object? number = null,
+    Object? type = null,
     Object? authorId = freezed,
-    Object? time = freezed,
-    Object? hours = freezed,
+    Object? time = null,
+    Object? hours = null,
     Object? maxMark = freezed,
     Object? clonedId = freezed,
-    Object? hidden = freezed,
+    Object? hidden = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
     Object? passedStatusId = freezed,
     Object? checkpointMark = freezed,
-    Object? havePatterns = freezed,
-    Object? answers = freezed,
+    Object? havePatterns = null,
+    Object? answers = null,
   }) {
     return _then(_$_SubjectJournalStepResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      publicText: publicText == freezed
+      publicText: null == publicText
           ? _value.publicText
           : publicText // ignore: cast_nullable_to_non_nullable
               as String,
-      publicTextOriginal: publicTextOriginal == freezed
+      publicTextOriginal: null == publicTextOriginal
           ? _value.publicTextOriginal
           : publicTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      privateText: privateText == freezed
+      privateText: null == privateText
           ? _value.privateText
           : privateText // ignore: cast_nullable_to_non_nullable
               as String,
-      privateTextOriginal: privateTextOriginal == freezed
+      privateTextOriginal: null == privateTextOriginal
           ? _value.privateTextOriginal
           : privateTextOriginal // ignore: cast_nullable_to_non_nullable
               as String,
-      chapterId: chapterId == freezed
+      chapterId: null == chapterId
           ? _value.chapterId
           : chapterId // ignore: cast_nullable_to_non_nullable
               as int,
-      number: number == freezed
+      number: null == number
           ? _value.number
           : number // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as int,
-      authorId: authorId == freezed
+      authorId: freezed == authorId
           ? _value.authorId
           : authorId // ignore: cast_nullable_to_non_nullable
               as int?,
-      time: time == freezed
+      time: null == time
           ? _value.time
           : time // ignore: cast_nullable_to_non_nullable
               as int,
-      hours: hours == freezed
+      hours: null == hours
           ? _value.hours
           : hours // ignore: cast_nullable_to_non_nullable
               as int,
-      maxMark: maxMark == freezed
+      maxMark: freezed == maxMark
           ? _value.maxMark
           : maxMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      clonedId: clonedId == freezed
+      clonedId: freezed == clonedId
           ? _value.clonedId
           : clonedId // ignore: cast_nullable_to_non_nullable
               as int?,
-      hidden: hidden == freezed
+      hidden: null == hidden
           ? _value.hidden
           : hidden // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      passedStatusId: passedStatusId == freezed
+      passedStatusId: freezed == passedStatusId
           ? _value.passedStatusId
           : passedStatusId // ignore: cast_nullable_to_non_nullable
               as int?,
-      checkpointMark: checkpointMark == freezed
+      checkpointMark: freezed == checkpointMark
           ? _value.checkpointMark
           : checkpointMark // ignore: cast_nullable_to_non_nullable
               as int?,
-      havePatterns: havePatterns == freezed
+      havePatterns: null == havePatterns
           ? _value.havePatterns
           : havePatterns // ignore: cast_nullable_to_non_nullable
               as bool,
-      answers: answers == freezed
+      answers: null == answers
           ? _value.answers
           : answers // ignore: cast_nullable_to_non_nullable
               as List<BaseUgcAnswerResource>,
@@ -442,33 +446,38 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubjectJournalStepResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality()
-                .equals(other.publicText, publicText) &&
-            const DeepCollectionEquality()
-                .equals(other.publicTextOriginal, publicTextOriginal) &&
-            const DeepCollectionEquality()
-                .equals(other.privateText, privateText) &&
-            const DeepCollectionEquality()
-                .equals(other.privateTextOriginal, privateTextOriginal) &&
-            const DeepCollectionEquality().equals(other.chapterId, chapterId) &&
-            const DeepCollectionEquality().equals(other.number, number) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality().equals(other.authorId, authorId) &&
-            const DeepCollectionEquality().equals(other.time, time) &&
-            const DeepCollectionEquality().equals(other.hours, hours) &&
-            const DeepCollectionEquality().equals(other.maxMark, maxMark) &&
-            const DeepCollectionEquality().equals(other.clonedId, clonedId) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.passedStatusId, passedStatusId) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointMark, checkpointMark) &&
-            const DeepCollectionEquality()
-                .equals(other.havePatterns, havePatterns) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.publicText, publicText) ||
+                other.publicText == publicText) &&
+            (identical(other.publicTextOriginal, publicTextOriginal) ||
+                other.publicTextOriginal == publicTextOriginal) &&
+            (identical(other.privateText, privateText) ||
+                other.privateText == privateText) &&
+            (identical(other.privateTextOriginal, privateTextOriginal) ||
+                other.privateTextOriginal == privateTextOriginal) &&
+            (identical(other.chapterId, chapterId) ||
+                other.chapterId == chapterId) &&
+            (identical(other.number, number) || other.number == number) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.authorId, authorId) ||
+                other.authorId == authorId) &&
+            (identical(other.time, time) || other.time == time) &&
+            (identical(other.hours, hours) || other.hours == hours) &&
+            (identical(other.maxMark, maxMark) || other.maxMark == maxMark) &&
+            (identical(other.clonedId, clonedId) ||
+                other.clonedId == clonedId) &&
+            (identical(other.hidden, hidden) || other.hidden == hidden) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.passedStatusId, passedStatusId) ||
+                other.passedStatusId == passedStatusId) &&
+            (identical(other.checkpointMark, checkpointMark) ||
+                other.checkpointMark == checkpointMark) &&
+            (identical(other.havePatterns, havePatterns) ||
+                other.havePatterns == havePatterns) &&
             const DeepCollectionEquality().equals(other.answers, answers));
   }
 
@@ -476,31 +485,32 @@ class _$_SubjectJournalStepResource implements _SubjectJournalStepResource {
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(title),
-        const DeepCollectionEquality().hash(publicText),
-        const DeepCollectionEquality().hash(publicTextOriginal),
-        const DeepCollectionEquality().hash(privateText),
-        const DeepCollectionEquality().hash(privateTextOriginal),
-        const DeepCollectionEquality().hash(chapterId),
-        const DeepCollectionEquality().hash(number),
-        const DeepCollectionEquality().hash(type),
-        const DeepCollectionEquality().hash(authorId),
-        const DeepCollectionEquality().hash(time),
-        const DeepCollectionEquality().hash(hours),
-        const DeepCollectionEquality().hash(maxMark),
-        const DeepCollectionEquality().hash(clonedId),
-        const DeepCollectionEquality().hash(hidden),
-        const DeepCollectionEquality().hash(createdAt),
-        const DeepCollectionEquality().hash(updatedAt),
-        const DeepCollectionEquality().hash(passedStatusId),
-        const DeepCollectionEquality().hash(checkpointMark),
-        const DeepCollectionEquality().hash(havePatterns),
+        id,
+        title,
+        publicText,
+        publicTextOriginal,
+        privateText,
+        privateTextOriginal,
+        chapterId,
+        number,
+        type,
+        authorId,
+        time,
+        hours,
+        maxMark,
+        clonedId,
+        hidden,
+        createdAt,
+        updatedAt,
+        passedStatusId,
+        checkpointMark,
+        havePatterns,
         const DeepCollectionEquality().hash(answers)
       ]);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SubjectJournalStepResourceCopyWith<_$_SubjectJournalStepResource>
       get copyWith => __$$_SubjectJournalStepResourceCopyWithImpl<
           _$_SubjectJournalStepResource>(this, _$identity);

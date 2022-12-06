@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'lesson_schedule_for_user_attendance_resource.dart';
 
@@ -25,14 +25,6 @@ mixin _$LessonScheduleForUserAttendanceResource {
   String? get attendanceStatus => throw _privateConstructorUsedError;
   int get id => throw _privateConstructorUsedError;
   DateTime get date => throw _privateConstructorUsedError;
-  BulgakovPlatformModel get platform =>
-      throw _privateConstructorUsedError; // final teacher_platform;
-  BulgakovClassroomModel get classroom =>
-      throw _privateConstructorUsedError; // final teacher_classroom;
-  String? get subjectText => throw _privateConstructorUsedError;
-  String? get teacherText => throw _privateConstructorUsedError;
-  BaseAttendanceResource? get studentAttendance =>
-      throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -46,103 +38,45 @@ abstract class $LessonScheduleForUserAttendanceResourceCopyWith<$Res> {
   factory $LessonScheduleForUserAttendanceResourceCopyWith(
           LessonScheduleForUserAttendanceResource value,
           $Res Function(LessonScheduleForUserAttendanceResource) then) =
-      _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>;
-  $Res call(
-      {String? attendanceStatus,
-      int id,
-      DateTime date,
-      BulgakovPlatformModel platform,
-      BulgakovClassroomModel classroom,
-      String? subjectText,
-      String? teacherText,
-      BaseAttendanceResource? studentAttendance});
-
-  $BulgakovPlatformModelCopyWith<$Res> get platform;
-  $BulgakovClassroomModelCopyWith<$Res> get classroom;
-  $BaseAttendanceResourceCopyWith<$Res>? get studentAttendance;
+      _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res,
+          LessonScheduleForUserAttendanceResource>;
+  @useResult
+  $Res call({String? attendanceStatus, int id, DateTime date});
 }
 
 /// @nodoc
-class _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>
+class _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res,
+        $Val extends LessonScheduleForUserAttendanceResource>
     implements $LessonScheduleForUserAttendanceResourceCopyWith<$Res> {
   _$LessonScheduleForUserAttendanceResourceCopyWithImpl(
       this._value, this._then);
 
-  final LessonScheduleForUserAttendanceResource _value;
   // ignore: unused_field
-  final $Res Function(LessonScheduleForUserAttendanceResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? attendanceStatus = freezed,
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? platform = freezed,
-    Object? classroom = freezed,
-    Object? subjectText = freezed,
-    Object? teacherText = freezed,
-    Object? studentAttendance = freezed,
+    Object? id = null,
+    Object? date = null,
   }) {
     return _then(_value.copyWith(
-      attendanceStatus: attendanceStatus == freezed
+      attendanceStatus: freezed == attendanceStatus
           ? _value.attendanceStatus
           : attendanceStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      platform: platform == freezed
-          ? _value.platform
-          : platform // ignore: cast_nullable_to_non_nullable
-              as BulgakovPlatformModel,
-      classroom: classroom == freezed
-          ? _value.classroom
-          : classroom // ignore: cast_nullable_to_non_nullable
-              as BulgakovClassroomModel,
-      subjectText: subjectText == freezed
-          ? _value.subjectText
-          : subjectText // ignore: cast_nullable_to_non_nullable
-              as String?,
-      teacherText: teacherText == freezed
-          ? _value.teacherText
-          : teacherText // ignore: cast_nullable_to_non_nullable
-              as String?,
-      studentAttendance: studentAttendance == freezed
-          ? _value.studentAttendance
-          : studentAttendance // ignore: cast_nullable_to_non_nullable
-              as BaseAttendanceResource?,
-    ));
-  }
-
-  @override
-  $BulgakovPlatformModelCopyWith<$Res> get platform {
-    return $BulgakovPlatformModelCopyWith<$Res>(_value.platform, (value) {
-      return _then(_value.copyWith(platform: value));
-    });
-  }
-
-  @override
-  $BulgakovClassroomModelCopyWith<$Res> get classroom {
-    return $BulgakovClassroomModelCopyWith<$Res>(_value.classroom, (value) {
-      return _then(_value.copyWith(classroom: value));
-    });
-  }
-
-  @override
-  $BaseAttendanceResourceCopyWith<$Res>? get studentAttendance {
-    if (_value.studentAttendance == null) {
-      return null;
-    }
-
-    return $BaseAttendanceResourceCopyWith<$Res>(_value.studentAttendance!,
-        (value) {
-      return _then(_value.copyWith(studentAttendance: value));
-    });
+    ) as $Val);
   }
 }
 
@@ -154,82 +88,40 @@ abstract class _$$_LessonScheduleForUserAttendanceResourceCopyWith<$Res>
           $Res Function(_$_LessonScheduleForUserAttendanceResource) then) =
       __$$_LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>;
   @override
-  $Res call(
-      {String? attendanceStatus,
-      int id,
-      DateTime date,
-      BulgakovPlatformModel platform,
-      BulgakovClassroomModel classroom,
-      String? subjectText,
-      String? teacherText,
-      BaseAttendanceResource? studentAttendance});
-
-  @override
-  $BulgakovPlatformModelCopyWith<$Res> get platform;
-  @override
-  $BulgakovClassroomModelCopyWith<$Res> get classroom;
-  @override
-  $BaseAttendanceResourceCopyWith<$Res>? get studentAttendance;
+  @useResult
+  $Res call({String? attendanceStatus, int id, DateTime date});
 }
 
 /// @nodoc
 class __$$_LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>
-    extends _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>
+    extends _$LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res,
+        _$_LessonScheduleForUserAttendanceResource>
     implements _$$_LessonScheduleForUserAttendanceResourceCopyWith<$Res> {
   __$$_LessonScheduleForUserAttendanceResourceCopyWithImpl(
       _$_LessonScheduleForUserAttendanceResource _value,
       $Res Function(_$_LessonScheduleForUserAttendanceResource) _then)
-      : super(_value,
-            (v) => _then(v as _$_LessonScheduleForUserAttendanceResource));
+      : super(_value, _then);
 
-  @override
-  _$_LessonScheduleForUserAttendanceResource get _value =>
-      super._value as _$_LessonScheduleForUserAttendanceResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? attendanceStatus = freezed,
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? platform = freezed,
-    Object? classroom = freezed,
-    Object? subjectText = freezed,
-    Object? teacherText = freezed,
-    Object? studentAttendance = freezed,
+    Object? id = null,
+    Object? date = null,
   }) {
     return _then(_$_LessonScheduleForUserAttendanceResource(
-      attendanceStatus: attendanceStatus == freezed
+      attendanceStatus: freezed == attendanceStatus
           ? _value.attendanceStatus
           : attendanceStatus // ignore: cast_nullable_to_non_nullable
               as String?,
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      platform: platform == freezed
-          ? _value.platform
-          : platform // ignore: cast_nullable_to_non_nullable
-              as BulgakovPlatformModel,
-      classroom: classroom == freezed
-          ? _value.classroom
-          : classroom // ignore: cast_nullable_to_non_nullable
-              as BulgakovClassroomModel,
-      subjectText: subjectText == freezed
-          ? _value.subjectText
-          : subjectText // ignore: cast_nullable_to_non_nullable
-              as String?,
-      teacherText: teacherText == freezed
-          ? _value.teacherText
-          : teacherText // ignore: cast_nullable_to_non_nullable
-              as String?,
-      studentAttendance: studentAttendance == freezed
-          ? _value.studentAttendance
-          : studentAttendance // ignore: cast_nullable_to_non_nullable
-              as BaseAttendanceResource?,
     ));
   }
 }
@@ -239,14 +131,7 @@ class __$$_LessonScheduleForUserAttendanceResourceCopyWithImpl<$Res>
 class _$_LessonScheduleForUserAttendanceResource
     implements _LessonScheduleForUserAttendanceResource {
   _$_LessonScheduleForUserAttendanceResource(
-      {required this.attendanceStatus,
-      required this.id,
-      required this.date,
-      required this.platform,
-      required this.classroom,
-      required this.subjectText,
-      required this.teacherText,
-      required this.studentAttendance});
+      {required this.attendanceStatus, required this.id, required this.date});
 
   factory _$_LessonScheduleForUserAttendanceResource.fromJson(
           Map<String, dynamic> json) =>
@@ -258,22 +143,10 @@ class _$_LessonScheduleForUserAttendanceResource
   final int id;
   @override
   final DateTime date;
-  @override
-  final BulgakovPlatformModel platform;
-// final teacher_platform;
-  @override
-  final BulgakovClassroomModel classroom;
-// final teacher_classroom;
-  @override
-  final String? subjectText;
-  @override
-  final String? teacherText;
-  @override
-  final BaseAttendanceResource? studentAttendance;
 
   @override
   String toString() {
-    return 'LessonScheduleForUserAttendanceResource(attendanceStatus: $attendanceStatus, id: $id, date: $date, platform: $platform, classroom: $classroom, subjectText: $subjectText, teacherText: $teacherText, studentAttendance: $studentAttendance)';
+    return 'LessonScheduleForUserAttendanceResource(attendanceStatus: $attendanceStatus, id: $id, date: $date)';
   }
 
   @override
@@ -281,35 +154,19 @@ class _$_LessonScheduleForUserAttendanceResource
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LessonScheduleForUserAttendanceResource &&
-            const DeepCollectionEquality()
-                .equals(other.attendanceStatus, attendanceStatus) &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.date, date) &&
-            const DeepCollectionEquality().equals(other.platform, platform) &&
-            const DeepCollectionEquality().equals(other.classroom, classroom) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectText, subjectText) &&
-            const DeepCollectionEquality()
-                .equals(other.teacherText, teacherText) &&
-            const DeepCollectionEquality()
-                .equals(other.studentAttendance, studentAttendance));
+            (identical(other.attendanceStatus, attendanceStatus) ||
+                other.attendanceStatus == attendanceStatus) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.date, date) || other.date == date));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(attendanceStatus),
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(date),
-      const DeepCollectionEquality().hash(platform),
-      const DeepCollectionEquality().hash(classroom),
-      const DeepCollectionEquality().hash(subjectText),
-      const DeepCollectionEquality().hash(teacherText),
-      const DeepCollectionEquality().hash(studentAttendance));
+  int get hashCode => Object.hash(runtimeType, attendanceStatus, id, date);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LessonScheduleForUserAttendanceResourceCopyWith<
           _$_LessonScheduleForUserAttendanceResource>
       get copyWith => __$$_LessonScheduleForUserAttendanceResourceCopyWithImpl<
@@ -328,12 +185,7 @@ abstract class _LessonScheduleForUserAttendanceResource
   factory _LessonScheduleForUserAttendanceResource(
           {required final String? attendanceStatus,
           required final int id,
-          required final DateTime date,
-          required final BulgakovPlatformModel platform,
-          required final BulgakovClassroomModel classroom,
-          required final String? subjectText,
-          required final String? teacherText,
-          required final BaseAttendanceResource? studentAttendance}) =
+          required final DateTime date}) =
       _$_LessonScheduleForUserAttendanceResource;
 
   factory _LessonScheduleForUserAttendanceResource.fromJson(
@@ -346,16 +198,6 @@ abstract class _LessonScheduleForUserAttendanceResource
   int get id;
   @override
   DateTime get date;
-  @override
-  BulgakovPlatformModel get platform;
-  @override // final teacher_platform;
-  BulgakovClassroomModel get classroom;
-  @override // final teacher_classroom;
-  String? get subjectText;
-  @override
-  String? get teacherText;
-  @override
-  BaseAttendanceResource? get studentAttendance;
   @override
   @JsonKey(ignore: true)
   _$$_LessonScheduleForUserAttendanceResourceCopyWith<

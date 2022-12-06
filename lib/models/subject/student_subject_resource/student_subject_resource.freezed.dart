@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'student_subject_resource.dart';
 
@@ -24,17 +24,9 @@ mixin _$StudentSubjectResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
-  String get type => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
-  bool get privacy => throw _privateConstructorUsedError;
-  int get hidden => throw _privateConstructorUsedError;
-  DateTime? get createdAt => throw _privateConstructorUsedError;
-  DateTime? get updatedAt => throw _privateConstructorUsedError;
-  DateTime? get deletedAt => throw _privateConstructorUsedError;
-  DateTime? get deletePermanentlyAt => throw _privateConstructorUsedError;
-  List<BaseUserResource> get teachers => throw _privateConstructorUsedError;
-  List<StudentChapterResource> get chapters =>
-      throw _privateConstructorUsedError;
+  bool get isOverdue => throw _privateConstructorUsedError;
+  int get maxPoints => throw _privateConstructorUsedError;
+  List<UserResource> get teachers => throw _privateConstructorUsedError;
   StatisticsAttendanceResource get attendance =>
       throw _privateConstructorUsedError;
   CheckpointsStats get checkpointsStats => throw _privateConstructorUsedError;
@@ -49,21 +41,15 @@ mixin _$StudentSubjectResource {
 abstract class $StudentSubjectResourceCopyWith<$Res> {
   factory $StudentSubjectResourceCopyWith(StudentSubjectResource value,
           $Res Function(StudentSubjectResource) then) =
-      _$StudentSubjectResourceCopyWithImpl<$Res>;
+      _$StudentSubjectResourceCopyWithImpl<$Res, StudentSubjectResource>;
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
-      String type,
-      String description,
-      bool privacy,
-      int hidden,
-      DateTime? createdAt,
-      DateTime? updatedAt,
-      DateTime? deletedAt,
-      DateTime? deletePermanentlyAt,
-      List<BaseUserResource> teachers,
-      List<StudentChapterResource> chapters,
+      bool isOverdue,
+      int maxPoints,
+      List<UserResource> teachers,
       StatisticsAttendanceResource attendance,
       CheckpointsStats checkpointsStats});
 
@@ -72,108 +58,78 @@ abstract class $StudentSubjectResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StudentSubjectResourceCopyWithImpl<$Res>
+class _$StudentSubjectResourceCopyWithImpl<$Res,
+        $Val extends StudentSubjectResource>
     implements $StudentSubjectResourceCopyWith<$Res> {
   _$StudentSubjectResourceCopyWithImpl(this._value, this._then);
 
-  final StudentSubjectResource _value;
   // ignore: unused_field
-  final $Res Function(StudentSubjectResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
-    Object? createdAt = freezed,
-    Object? updatedAt = freezed,
-    Object? deletedAt = freezed,
-    Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
-    Object? chapters = freezed,
-    Object? attendance = freezed,
-    Object? checkpointsStats = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? isOverdue = null,
+    Object? maxPoints = null,
+    Object? teachers = null,
+    Object? attendance = null,
+    Object? checkpointsStats = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
+      isOverdue: null == isOverdue
+          ? _value.isOverdue
+          : isOverdue // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
-          ? _value.hidden
-          : hidden // ignore: cast_nullable_to_non_nullable
+      maxPoints: null == maxPoints
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      updatedAt: updatedAt == freezed
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      deletedAt: deletedAt == freezed
-          ? _value.deletedAt
-          : deletedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
-          ? _value.deletePermanentlyAt
-          : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
-      chapters: chapters == freezed
-          ? _value.chapters
-          : chapters // ignore: cast_nullable_to_non_nullable
-              as List<StudentChapterResource>,
-      attendance: attendance == freezed
+              as List<UserResource>,
+      attendance: null == attendance
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResource,
-      checkpointsStats: checkpointsStats == freezed
+      checkpointsStats: null == checkpointsStats
           ? _value.checkpointsStats
           : checkpointsStats // ignore: cast_nullable_to_non_nullable
               as CheckpointsStats,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $StatisticsAttendanceResourceCopyWith<$Res> get attendance {
     return $StatisticsAttendanceResourceCopyWith<$Res>(_value.attendance,
         (value) {
-      return _then(_value.copyWith(attendance: value));
+      return _then(_value.copyWith(attendance: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $CheckpointsStatsCopyWith<$Res> get checkpointsStats {
     return $CheckpointsStatsCopyWith<$Res>(_value.checkpointsStats, (value) {
-      return _then(_value.copyWith(checkpointsStats: value));
+      return _then(_value.copyWith(checkpointsStats: value) as $Val);
     });
   }
 }
@@ -185,20 +141,14 @@ abstract class _$$_StudentSubjectResourceCopyWith<$Res>
           $Res Function(_$_StudentSubjectResource) then) =
       __$$_StudentSubjectResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String title,
       String code,
-      String type,
-      String description,
-      bool privacy,
-      int hidden,
-      DateTime? createdAt,
-      DateTime? updatedAt,
-      DateTime? deletedAt,
-      DateTime? deletePermanentlyAt,
-      List<BaseUserResource> teachers,
-      List<StudentChapterResource> chapters,
+      bool isOverdue,
+      int maxPoints,
+      List<UserResource> teachers,
       StatisticsAttendanceResource attendance,
       CheckpointsStats checkpointsStats});
 
@@ -210,92 +160,55 @@ abstract class _$$_StudentSubjectResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_StudentSubjectResourceCopyWithImpl<$Res>
-    extends _$StudentSubjectResourceCopyWithImpl<$Res>
+    extends _$StudentSubjectResourceCopyWithImpl<$Res,
+        _$_StudentSubjectResource>
     implements _$$_StudentSubjectResourceCopyWith<$Res> {
   __$$_StudentSubjectResourceCopyWithImpl(_$_StudentSubjectResource _value,
       $Res Function(_$_StudentSubjectResource) _then)
-      : super(_value, (v) => _then(v as _$_StudentSubjectResource));
+      : super(_value, _then);
 
-  @override
-  _$_StudentSubjectResource get _value =>
-      super._value as _$_StudentSubjectResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
-    Object? code = freezed,
-    Object? type = freezed,
-    Object? description = freezed,
-    Object? privacy = freezed,
-    Object? hidden = freezed,
-    Object? createdAt = freezed,
-    Object? updatedAt = freezed,
-    Object? deletedAt = freezed,
-    Object? deletePermanentlyAt = freezed,
-    Object? teachers = freezed,
-    Object? chapters = freezed,
-    Object? attendance = freezed,
-    Object? checkpointsStats = freezed,
+    Object? id = null,
+    Object? title = null,
+    Object? code = null,
+    Object? isOverdue = null,
+    Object? maxPoints = null,
+    Object? teachers = null,
+    Object? attendance = null,
+    Object? checkpointsStats = null,
   }) {
     return _then(_$_StudentSubjectResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      privacy: privacy == freezed
-          ? _value.privacy
-          : privacy // ignore: cast_nullable_to_non_nullable
+      isOverdue: null == isOverdue
+          ? _value.isOverdue
+          : isOverdue // ignore: cast_nullable_to_non_nullable
               as bool,
-      hidden: hidden == freezed
-          ? _value.hidden
-          : hidden // ignore: cast_nullable_to_non_nullable
+      maxPoints: null == maxPoints
+          ? _value.maxPoints
+          : maxPoints // ignore: cast_nullable_to_non_nullable
               as int,
-      createdAt: createdAt == freezed
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      updatedAt: updatedAt == freezed
-          ? _value.updatedAt
-          : updatedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      deletedAt: deletedAt == freezed
-          ? _value.deletedAt
-          : deletedAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      deletePermanentlyAt: deletePermanentlyAt == freezed
-          ? _value.deletePermanentlyAt
-          : deletePermanentlyAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
-              as List<BaseUserResource>,
-      chapters: chapters == freezed
-          ? _value.chapters
-          : chapters // ignore: cast_nullable_to_non_nullable
-              as List<StudentChapterResource>,
-      attendance: attendance == freezed
+              as List<UserResource>,
+      attendance: null == attendance
           ? _value.attendance
           : attendance // ignore: cast_nullable_to_non_nullable
               as StatisticsAttendanceResource,
-      checkpointsStats: checkpointsStats == freezed
+      checkpointsStats: null == checkpointsStats
           ? _value.checkpointsStats
           : checkpointsStats // ignore: cast_nullable_to_non_nullable
               as CheckpointsStats,
@@ -310,16 +223,9 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
       {required this.id,
       required this.title,
       this.code = '',
-      required this.type,
-      required this.description,
-      required this.privacy,
-      required this.hidden,
-      required this.createdAt,
-      required this.updatedAt,
-      required this.deletedAt,
-      required this.deletePermanentlyAt,
+      required this.isOverdue,
+      required this.maxPoints,
       required this.teachers,
-      required this.chapters,
       required this.attendance,
       required this.checkpointsStats});
 
@@ -334,25 +240,11 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
   @JsonKey()
   final String code;
   @override
-  final String type;
+  final bool isOverdue;
   @override
-  final String description;
+  final int maxPoints;
   @override
-  final bool privacy;
-  @override
-  final int hidden;
-  @override
-  final DateTime? createdAt;
-  @override
-  final DateTime? updatedAt;
-  @override
-  final DateTime? deletedAt;
-  @override
-  final DateTime? deletePermanentlyAt;
-  @override
-  final List<BaseUserResource> teachers;
-  @override
-  final List<StudentChapterResource> chapters;
+  final List<UserResource> teachers;
   @override
   final StatisticsAttendanceResource attendance;
   @override
@@ -360,7 +252,7 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
 
   @override
   String toString() {
-    return 'StudentSubjectResource(id: $id, title: $title, code: $code, type: $type, description: $description, privacy: $privacy, hidden: $hidden, createdAt: $createdAt, updatedAt: $updatedAt, deletedAt: $deletedAt, deletePermanentlyAt: $deletePermanentlyAt, teachers: $teachers, chapters: $chapters, attendance: $attendance, checkpointsStats: $checkpointsStats)';
+    return 'StudentSubjectResource(id: $id, title: $title, code: $code, isOverdue: $isOverdue, maxPoints: $maxPoints, teachers: $teachers, attendance: $attendance, checkpointsStats: $checkpointsStats)';
   }
 
   @override
@@ -368,49 +260,36 @@ class _$_StudentSubjectResource implements _StudentSubjectResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StudentSubjectResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.privacy, privacy) &&
-            const DeepCollectionEquality().equals(other.hidden, hidden) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality().equals(other.deletedAt, deletedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.deletePermanentlyAt, deletePermanentlyAt) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.isOverdue, isOverdue) ||
+                other.isOverdue == isOverdue) &&
+            (identical(other.maxPoints, maxPoints) ||
+                other.maxPoints == maxPoints) &&
             const DeepCollectionEquality().equals(other.teachers, teachers) &&
-            const DeepCollectionEquality().equals(other.chapters, chapters) &&
-            const DeepCollectionEquality()
-                .equals(other.attendance, attendance) &&
-            const DeepCollectionEquality()
-                .equals(other.checkpointsStats, checkpointsStats));
+            (identical(other.attendance, attendance) ||
+                other.attendance == attendance) &&
+            (identical(other.checkpointsStats, checkpointsStats) ||
+                other.checkpointsStats == checkpointsStats));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(privacy),
-      const DeepCollectionEquality().hash(hidden),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(deletedAt),
-      const DeepCollectionEquality().hash(deletePermanentlyAt),
+      id,
+      title,
+      code,
+      isOverdue,
+      maxPoints,
       const DeepCollectionEquality().hash(teachers),
-      const DeepCollectionEquality().hash(chapters),
-      const DeepCollectionEquality().hash(attendance),
-      const DeepCollectionEquality().hash(checkpointsStats));
+      attendance,
+      checkpointsStats);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StudentSubjectResourceCopyWith<_$_StudentSubjectResource> get copyWith =>
       __$$_StudentSubjectResourceCopyWithImpl<_$_StudentSubjectResource>(
           this, _$identity);
@@ -429,16 +308,9 @@ abstract class _StudentSubjectResource
           {required final int id,
           required final String title,
           final String code,
-          required final String type,
-          required final String description,
-          required final bool privacy,
-          required final int hidden,
-          required final DateTime? createdAt,
-          required final DateTime? updatedAt,
-          required final DateTime? deletedAt,
-          required final DateTime? deletePermanentlyAt,
-          required final List<BaseUserResource> teachers,
-          required final List<StudentChapterResource> chapters,
+          required final bool isOverdue,
+          required final int maxPoints,
+          required final List<UserResource> teachers,
           required final StatisticsAttendanceResource attendance,
           required final CheckpointsStats checkpointsStats}) =
       _$_StudentSubjectResource;
@@ -453,25 +325,11 @@ abstract class _StudentSubjectResource
   @override
   String get code;
   @override
-  String get type;
+  bool get isOverdue;
   @override
-  String get description;
+  int get maxPoints;
   @override
-  bool get privacy;
-  @override
-  int get hidden;
-  @override
-  DateTime? get createdAt;
-  @override
-  DateTime? get updatedAt;
-  @override
-  DateTime? get deletedAt;
-  @override
-  DateTime? get deletePermanentlyAt;
-  @override
-  List<BaseUserResource> get teachers;
-  @override
-  List<StudentChapterResource> get chapters;
+  List<UserResource> get teachers;
   @override
   StatisticsAttendanceResource get attendance;
   @override

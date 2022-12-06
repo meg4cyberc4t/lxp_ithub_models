@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'call_password_code_resource.dart';
 
@@ -34,42 +34,47 @@ mixin _$CallPasswordCodeResource {
 abstract class $CallPasswordCodeResourceCopyWith<$Res> {
   factory $CallPasswordCodeResourceCopyWith(CallPasswordCodeResource value,
           $Res Function(CallPasswordCodeResource) then) =
-      _$CallPasswordCodeResourceCopyWithImpl<$Res>;
+      _$CallPasswordCodeResourceCopyWithImpl<$Res, CallPasswordCodeResource>;
+  @useResult
   $Res call({String token, BaseUserResource data});
 
   $BaseUserResourceCopyWith<$Res> get data;
 }
 
 /// @nodoc
-class _$CallPasswordCodeResourceCopyWithImpl<$Res>
+class _$CallPasswordCodeResourceCopyWithImpl<$Res,
+        $Val extends CallPasswordCodeResource>
     implements $CallPasswordCodeResourceCopyWith<$Res> {
   _$CallPasswordCodeResourceCopyWithImpl(this._value, this._then);
 
-  final CallPasswordCodeResource _value;
   // ignore: unused_field
-  final $Res Function(CallPasswordCodeResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? data = freezed,
+    Object? token = null,
+    Object? data = null,
   }) {
     return _then(_value.copyWith(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get data {
     return $BaseUserResourceCopyWith<$Res>(_value.data, (value) {
-      return _then(_value.copyWith(data: value));
+      return _then(_value.copyWith(data: value) as $Val);
     });
   }
 }
@@ -82,6 +87,7 @@ abstract class _$$_CallPasswordCodeResourceCopyWith<$Res>
           $Res Function(_$_CallPasswordCodeResource) then) =
       __$$_CallPasswordCodeResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String token, BaseUserResource data});
 
   @override
@@ -90,27 +96,25 @@ abstract class _$$_CallPasswordCodeResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_CallPasswordCodeResourceCopyWithImpl<$Res>
-    extends _$CallPasswordCodeResourceCopyWithImpl<$Res>
+    extends _$CallPasswordCodeResourceCopyWithImpl<$Res,
+        _$_CallPasswordCodeResource>
     implements _$$_CallPasswordCodeResourceCopyWith<$Res> {
   __$$_CallPasswordCodeResourceCopyWithImpl(_$_CallPasswordCodeResource _value,
       $Res Function(_$_CallPasswordCodeResource) _then)
-      : super(_value, (v) => _then(v as _$_CallPasswordCodeResource));
+      : super(_value, _then);
 
-  @override
-  _$_CallPasswordCodeResource get _value =>
-      super._value as _$_CallPasswordCodeResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? token = freezed,
-    Object? data = freezed,
+    Object? token = null,
+    Object? data = null,
   }) {
     return _then(_$_CallPasswordCodeResource(
-      token: token == freezed
+      token: null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      data: data == freezed
+      data: null == data
           ? _value.data
           : data // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
@@ -141,19 +145,17 @@ class _$_CallPasswordCodeResource implements _CallPasswordCodeResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CallPasswordCodeResource &&
-            const DeepCollectionEquality().equals(other.token, token) &&
-            const DeepCollectionEquality().equals(other.data, data));
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.data, data) || other.data == data));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(token),
-      const DeepCollectionEquality().hash(data));
+  int get hashCode => Object.hash(runtimeType, token, data);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CallPasswordCodeResourceCopyWith<_$_CallPasswordCodeResource>
       get copyWith => __$$_CallPasswordCodeResourceCopyWithImpl<
           _$_CallPasswordCodeResource>(this, _$identity);

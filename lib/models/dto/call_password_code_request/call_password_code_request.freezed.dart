@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'call_password_code_request.dart';
 
@@ -34,34 +34,38 @@ mixin _$CallPasswordCodeRequest {
 abstract class $CallPasswordCodeRequestCopyWith<$Res> {
   factory $CallPasswordCodeRequestCopyWith(CallPasswordCodeRequest value,
           $Res Function(CallPasswordCodeRequest) then) =
-      _$CallPasswordCodeRequestCopyWithImpl<$Res>;
+      _$CallPasswordCodeRequestCopyWithImpl<$Res, CallPasswordCodeRequest>;
+  @useResult
   $Res call({int code, int phone});
 }
 
 /// @nodoc
-class _$CallPasswordCodeRequestCopyWithImpl<$Res>
+class _$CallPasswordCodeRequestCopyWithImpl<$Res,
+        $Val extends CallPasswordCodeRequest>
     implements $CallPasswordCodeRequestCopyWith<$Res> {
   _$CallPasswordCodeRequestCopyWithImpl(this._value, this._then);
 
-  final CallPasswordCodeRequest _value;
   // ignore: unused_field
-  final $Res Function(CallPasswordCodeRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
-    Object? phone = freezed,
+    Object? code = null,
+    Object? phone = null,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      phone: phone == freezed
+      phone: null == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -72,32 +76,31 @@ abstract class _$$_CallPasswordCodeRequestCopyWith<$Res>
           $Res Function(_$_CallPasswordCodeRequest) then) =
       __$$_CallPasswordCodeRequestCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int code, int phone});
 }
 
 /// @nodoc
 class __$$_CallPasswordCodeRequestCopyWithImpl<$Res>
-    extends _$CallPasswordCodeRequestCopyWithImpl<$Res>
+    extends _$CallPasswordCodeRequestCopyWithImpl<$Res,
+        _$_CallPasswordCodeRequest>
     implements _$$_CallPasswordCodeRequestCopyWith<$Res> {
   __$$_CallPasswordCodeRequestCopyWithImpl(_$_CallPasswordCodeRequest _value,
       $Res Function(_$_CallPasswordCodeRequest) _then)
-      : super(_value, (v) => _then(v as _$_CallPasswordCodeRequest));
+      : super(_value, _then);
 
-  @override
-  _$_CallPasswordCodeRequest get _value =>
-      super._value as _$_CallPasswordCodeRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
-    Object? phone = freezed,
+    Object? code = null,
+    Object? phone = null,
   }) {
     return _then(_$_CallPasswordCodeRequest(
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      phone: phone == freezed
+      phone: null == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
               as int,
@@ -128,19 +131,17 @@ class _$_CallPasswordCodeRequest implements _CallPasswordCodeRequest {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_CallPasswordCodeRequest &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.phone, phone));
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.phone, phone) || other.phone == phone));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(phone));
+  int get hashCode => Object.hash(runtimeType, code, phone);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CallPasswordCodeRequestCopyWith<_$_CallPasswordCodeRequest>
       get copyWith =>
           __$$_CallPasswordCodeRequestCopyWithImpl<_$_CallPasswordCodeRequest>(

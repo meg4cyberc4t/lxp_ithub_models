@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'group_list_resource.dart';
 
@@ -22,7 +22,6 @@ GroupListResource _$GroupListResourceFromJson(Map<String, dynamic> json) {
 mixin _$GroupListResource {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  String get description => throw _privateConstructorUsedError;
   int get companyId => throw _privateConstructorUsedError;
   int? get halfId => throw _privateConstructorUsedError;
   int get labelId => throw _privateConstructorUsedError;
@@ -45,11 +44,11 @@ mixin _$GroupListResource {
 abstract class $GroupListResourceCopyWith<$Res> {
   factory $GroupListResourceCopyWith(
           GroupListResource value, $Res Function(GroupListResource) then) =
-      _$GroupListResourceCopyWithImpl<$Res>;
+      _$GroupListResourceCopyWithImpl<$Res, GroupListResource>;
+  @useResult
   $Res call(
       {int id,
       String name,
-      String description,
       int companyId,
       int? halfId,
       int labelId,
@@ -67,110 +66,109 @@ abstract class $GroupListResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GroupListResourceCopyWithImpl<$Res>
+class _$GroupListResourceCopyWithImpl<$Res, $Val extends GroupListResource>
     implements $GroupListResourceCopyWith<$Res> {
   _$GroupListResourceCopyWithImpl(this._value, this._then);
 
-  final GroupListResource _value;
   // ignore: unused_field
-  final $Res Function(GroupListResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? companyId = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? companyId = null,
     Object? halfId = freezed,
-    Object? labelId = freezed,
+    Object? labelId = null,
     Object? externalLink = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? subjectsCount = freezed,
-    Object? usersCount = freezed,
-    Object? users = freezed,
+    Object? subjectsCount = null,
+    Object? usersCount = null,
+    Object? users = null,
     Object? half = freezed,
     Object? trajectory = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      companyId: companyId == freezed
+      companyId: null == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: null == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      subjectsCount: subjectsCount == freezed
+      subjectsCount: null == subjectsCount
           ? _value.subjectsCount
           : subjectsCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: usersCount == freezed
+      usersCount: null == usersCount
           ? _value.usersCount
           : usersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      half: half == freezed
+      half: freezed == half
           ? _value.half
           : half // ignore: cast_nullable_to_non_nullable
               as BaseHalfResource?,
-      trajectory: trajectory == freezed
+      trajectory: freezed == trajectory
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
               as BaseTrajectoryResource?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseHalfResourceCopyWith<$Res>? get half {
     if (_value.half == null) {
       return null;
     }
 
     return $BaseHalfResourceCopyWith<$Res>(_value.half!, (value) {
-      return _then(_value.copyWith(half: value));
+      return _then(_value.copyWith(half: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseTrajectoryResourceCopyWith<$Res>? get trajectory {
     if (_value.trajectory == null) {
       return null;
     }
 
     return $BaseTrajectoryResourceCopyWith<$Res>(_value.trajectory!, (value) {
-      return _then(_value.copyWith(trajectory: value));
+      return _then(_value.copyWith(trajectory: value) as $Val);
     });
   }
 }
@@ -182,10 +180,10 @@ abstract class _$$_GroupListResourceCopyWith<$Res>
           $Res Function(_$_GroupListResource) then) =
       __$$_GroupListResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
-      String description,
       int companyId,
       int? halfId,
       int labelId,
@@ -206,86 +204,79 @@ abstract class _$$_GroupListResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_GroupListResourceCopyWithImpl<$Res>
-    extends _$GroupListResourceCopyWithImpl<$Res>
+    extends _$GroupListResourceCopyWithImpl<$Res, _$_GroupListResource>
     implements _$$_GroupListResourceCopyWith<$Res> {
   __$$_GroupListResourceCopyWithImpl(
       _$_GroupListResource _value, $Res Function(_$_GroupListResource) _then)
-      : super(_value, (v) => _then(v as _$_GroupListResource));
+      : super(_value, _then);
 
-  @override
-  _$_GroupListResource get _value => super._value as _$_GroupListResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? companyId = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? companyId = null,
     Object? halfId = freezed,
-    Object? labelId = freezed,
+    Object? labelId = null,
     Object? externalLink = freezed,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? subjectsCount = freezed,
-    Object? usersCount = freezed,
-    Object? users = freezed,
+    Object? subjectsCount = null,
+    Object? usersCount = null,
+    Object? users = null,
     Object? half = freezed,
     Object? trajectory = freezed,
   }) {
     return _then(_$_GroupListResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String,
-      companyId: companyId == freezed
+      companyId: null == companyId
           ? _value.companyId
           : companyId // ignore: cast_nullable_to_non_nullable
               as int,
-      halfId: halfId == freezed
+      halfId: freezed == halfId
           ? _value.halfId
           : halfId // ignore: cast_nullable_to_non_nullable
               as int?,
-      labelId: labelId == freezed
+      labelId: null == labelId
           ? _value.labelId
           : labelId // ignore: cast_nullable_to_non_nullable
               as int,
-      externalLink: externalLink == freezed
+      externalLink: freezed == externalLink
           ? _value.externalLink
           : externalLink // ignore: cast_nullable_to_non_nullable
               as String?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      subjectsCount: subjectsCount == freezed
+      subjectsCount: null == subjectsCount
           ? _value.subjectsCount
           : subjectsCount // ignore: cast_nullable_to_non_nullable
               as int,
-      usersCount: usersCount == freezed
+      usersCount: null == usersCount
           ? _value.usersCount
           : usersCount // ignore: cast_nullable_to_non_nullable
               as int,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-      half: half == freezed
+      half: freezed == half
           ? _value.half
           : half // ignore: cast_nullable_to_non_nullable
               as BaseHalfResource?,
-      trajectory: trajectory == freezed
+      trajectory: freezed == trajectory
           ? _value.trajectory
           : trajectory // ignore: cast_nullable_to_non_nullable
               as BaseTrajectoryResource?,
@@ -299,7 +290,6 @@ class _$_GroupListResource implements _GroupListResource {
   _$_GroupListResource(
       {required this.id,
       required this.name,
-      required this.description,
       required this.companyId,
       required this.halfId,
       required this.labelId,
@@ -319,8 +309,6 @@ class _$_GroupListResource implements _GroupListResource {
   final int id;
   @override
   final String name;
-  @override
-  final String description;
   @override
   final int companyId;
   @override
@@ -346,7 +334,7 @@ class _$_GroupListResource implements _GroupListResource {
 
   @override
   String toString() {
-    return 'GroupListResource(id: $id, name: $name, description: $description, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt, subjectsCount: $subjectsCount, usersCount: $usersCount, users: $users, half: $half, trajectory: $trajectory)';
+    return 'GroupListResource(id: $id, name: $name, companyId: $companyId, halfId: $halfId, labelId: $labelId, externalLink: $externalLink, createdAt: $createdAt, updatedAt: $updatedAt, subjectsCount: $subjectsCount, usersCount: $usersCount, users: $users, half: $half, trajectory: $trajectory)';
   }
 
   @override
@@ -354,48 +342,49 @@ class _$_GroupListResource implements _GroupListResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_GroupListResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.companyId, companyId) &&
-            const DeepCollectionEquality().equals(other.halfId, halfId) &&
-            const DeepCollectionEquality().equals(other.labelId, labelId) &&
-            const DeepCollectionEquality()
-                .equals(other.externalLink, externalLink) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectsCount, subjectsCount) &&
-            const DeepCollectionEquality()
-                .equals(other.usersCount, usersCount) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.companyId, companyId) ||
+                other.companyId == companyId) &&
+            (identical(other.halfId, halfId) || other.halfId == halfId) &&
+            (identical(other.labelId, labelId) || other.labelId == labelId) &&
+            (identical(other.externalLink, externalLink) ||
+                other.externalLink == externalLink) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.subjectsCount, subjectsCount) ||
+                other.subjectsCount == subjectsCount) &&
+            (identical(other.usersCount, usersCount) ||
+                other.usersCount == usersCount) &&
             const DeepCollectionEquality().equals(other.users, users) &&
-            const DeepCollectionEquality().equals(other.half, half) &&
-            const DeepCollectionEquality()
-                .equals(other.trajectory, trajectory));
+            (identical(other.half, half) || other.half == half) &&
+            (identical(other.trajectory, trajectory) ||
+                other.trajectory == trajectory));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(companyId),
-      const DeepCollectionEquality().hash(halfId),
-      const DeepCollectionEquality().hash(labelId),
-      const DeepCollectionEquality().hash(externalLink),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
-      const DeepCollectionEquality().hash(subjectsCount),
-      const DeepCollectionEquality().hash(usersCount),
+      id,
+      name,
+      companyId,
+      halfId,
+      labelId,
+      externalLink,
+      createdAt,
+      updatedAt,
+      subjectsCount,
+      usersCount,
       const DeepCollectionEquality().hash(users),
-      const DeepCollectionEquality().hash(half),
-      const DeepCollectionEquality().hash(trajectory));
+      half,
+      trajectory);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GroupListResourceCopyWith<_$_GroupListResource> get copyWith =>
       __$$_GroupListResourceCopyWithImpl<_$_GroupListResource>(
           this, _$identity);
@@ -413,7 +402,6 @@ abstract class _GroupListResource
   factory _GroupListResource(
           {required final int id,
           required final String name,
-          required final String description,
           required final int companyId,
           required final int? halfId,
           required final int labelId,
@@ -434,8 +422,6 @@ abstract class _GroupListResource
   int get id;
   @override
   String get name;
-  @override
-  String get description;
   @override
   int get companyId;
   @override

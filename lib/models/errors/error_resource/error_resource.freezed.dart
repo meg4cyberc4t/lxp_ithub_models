@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'error_resource.dart';
 
@@ -39,7 +39,8 @@ mixin _$ErrorResource {
 abstract class $ErrorResourceCopyWith<$Res> {
   factory $ErrorResourceCopyWith(
           ErrorResource value, $Res Function(ErrorResource) then) =
-      _$ErrorResourceCopyWithImpl<$Res>;
+      _$ErrorResourceCopyWithImpl<$Res, ErrorResource>;
+  @useResult
   $Res call(
       {int code,
       String message,
@@ -50,49 +51,51 @@ abstract class $ErrorResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ErrorResourceCopyWithImpl<$Res>
+class _$ErrorResourceCopyWithImpl<$Res, $Val extends ErrorResource>
     implements $ErrorResourceCopyWith<$Res> {
   _$ErrorResourceCopyWithImpl(this._value, this._then);
 
-  final ErrorResource _value;
   // ignore: unused_field
-  final $Res Function(ErrorResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
-    Object? message = freezed,
-    Object? causeClass = freezed,
-    Object? parameters = freezed,
-    Object? errors = freezed,
-    Object? traceId = freezed,
+    Object? code = null,
+    Object? message = null,
+    Object? causeClass = null,
+    Object? parameters = null,
+    Object? errors = null,
+    Object? traceId = null,
   }) {
     return _then(_value.copyWith(
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String,
-      causeClass: causeClass == freezed
+      causeClass: null == causeClass
           ? _value.causeClass
           : causeClass // ignore: cast_nullable_to_non_nullable
               as String,
-      parameters: parameters == freezed
+      parameters: null == parameters
           ? _value.parameters
           : parameters // ignore: cast_nullable_to_non_nullable
               as Map<String, List>,
-      errors: errors == freezed
+      errors: null == errors
           ? _value.errors
           : errors // ignore: cast_nullable_to_non_nullable
               as Map<String, List>,
-      traceId: traceId == freezed
+      traceId: null == traceId
           ? _value.traceId
           : traceId // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -103,6 +106,7 @@ abstract class _$$_ErrorResourceCopyWith<$Res>
           _$_ErrorResource value, $Res Function(_$_ErrorResource) then) =
       __$$_ErrorResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int code,
       String message,
@@ -114,46 +118,44 @@ abstract class _$$_ErrorResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_ErrorResourceCopyWithImpl<$Res>
-    extends _$ErrorResourceCopyWithImpl<$Res>
+    extends _$ErrorResourceCopyWithImpl<$Res, _$_ErrorResource>
     implements _$$_ErrorResourceCopyWith<$Res> {
   __$$_ErrorResourceCopyWithImpl(
       _$_ErrorResource _value, $Res Function(_$_ErrorResource) _then)
-      : super(_value, (v) => _then(v as _$_ErrorResource));
+      : super(_value, _then);
 
-  @override
-  _$_ErrorResource get _value => super._value as _$_ErrorResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? code = freezed,
-    Object? message = freezed,
-    Object? causeClass = freezed,
-    Object? parameters = freezed,
-    Object? errors = freezed,
-    Object? traceId = freezed,
+    Object? code = null,
+    Object? message = null,
+    Object? causeClass = null,
+    Object? parameters = null,
+    Object? errors = null,
+    Object? traceId = null,
   }) {
     return _then(_$_ErrorResource(
-      code: code == freezed
+      code: null == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
               as int,
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String,
-      causeClass: causeClass == freezed
+      causeClass: null == causeClass
           ? _value.causeClass
           : causeClass // ignore: cast_nullable_to_non_nullable
               as String,
-      parameters: parameters == freezed
+      parameters: null == parameters
           ? _value.parameters
           : parameters // ignore: cast_nullable_to_non_nullable
               as Map<String, List>,
-      errors: errors == freezed
+      errors: null == errors
           ? _value.errors
           : errors // ignore: cast_nullable_to_non_nullable
               as Map<String, List>,
-      traceId: traceId == freezed
+      traceId: null == traceId
           ? _value.traceId
           : traceId // ignore: cast_nullable_to_non_nullable
               as String,
@@ -200,29 +202,30 @@ class _$_ErrorResource implements _ErrorResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ErrorResource &&
-            const DeepCollectionEquality().equals(other.code, code) &&
-            const DeepCollectionEquality().equals(other.message, message) &&
-            const DeepCollectionEquality()
-                .equals(other.causeClass, causeClass) &&
+            (identical(other.code, code) || other.code == code) &&
+            (identical(other.message, message) || other.message == message) &&
+            (identical(other.causeClass, causeClass) ||
+                other.causeClass == causeClass) &&
             const DeepCollectionEquality()
                 .equals(other.parameters, parameters) &&
             const DeepCollectionEquality().equals(other.errors, errors) &&
-            const DeepCollectionEquality().equals(other.traceId, traceId));
+            (identical(other.traceId, traceId) || other.traceId == traceId));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(code),
-      const DeepCollectionEquality().hash(message),
-      const DeepCollectionEquality().hash(causeClass),
+      code,
+      message,
+      causeClass,
       const DeepCollectionEquality().hash(parameters),
       const DeepCollectionEquality().hash(errors),
-      const DeepCollectionEquality().hash(traceId));
+      traceId);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ErrorResourceCopyWith<_$_ErrorResource> get copyWith =>
       __$$_ErrorResourceCopyWithImpl<_$_ErrorResource>(this, _$identity);
 

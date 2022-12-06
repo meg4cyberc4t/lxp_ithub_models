@@ -12,8 +12,6 @@ _$_SubjectResource _$$_SubjectResourceFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       code: json['code'] as String? ?? '',
       type: json['type'] as String,
-      description: json['description'] as String,
-      privacy: json['privacy'] as bool,
       hidden: json['hidden'] as int,
       createdAt: json['created_at'] == null
           ? null
@@ -31,7 +29,10 @@ _$_SubjectResource _$$_SubjectResourceFromJson(Map<String, dynamic> json) =>
           .map((e) => BaseGroupResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       teachers: (json['teachers'] as List<dynamic>)
-          .map((e) => BaseUserResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => UserResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
+      semesters: (json['semesters'] as List<dynamic>)
+          .map((e) => SemesterLocalResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -41,8 +42,6 @@ Map<String, dynamic> _$$_SubjectResourceToJson(_$_SubjectResource instance) =>
       'title': instance.title,
       'code': instance.code,
       'type': instance.type,
-      'description': instance.description,
-      'privacy': instance.privacy,
       'hidden': instance.hidden,
       'created_at': instance.createdAt?.toIso8601String(),
       'updated_at': instance.updatedAt?.toIso8601String(),
@@ -50,4 +49,5 @@ Map<String, dynamic> _$$_SubjectResourceToJson(_$_SubjectResource instance) =>
       'delete_permanently_at': instance.deletePermanentlyAt?.toIso8601String(),
       'groups': instance.groups,
       'teachers': instance.teachers,
+      'semesters': instance.semesters,
     };

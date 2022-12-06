@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_notification_resource.dart';
 
@@ -47,7 +47,8 @@ mixin _$BaseNotificationResource {
 abstract class $BaseNotificationResourceCopyWith<$Res> {
   factory $BaseNotificationResourceCopyWith(BaseNotificationResource value,
           $Res Function(BaseNotificationResource) then) =
-      _$BaseNotificationResourceCopyWithImpl<$Res>;
+      _$BaseNotificationResourceCopyWithImpl<$Res, BaseNotificationResource>;
+  @useResult
   $Res call(
       {String id,
       String type,
@@ -74,24 +75,27 @@ abstract class $BaseNotificationResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BaseNotificationResourceCopyWithImpl<$Res>
+class _$BaseNotificationResourceCopyWithImpl<$Res,
+        $Val extends BaseNotificationResource>
     implements $BaseNotificationResourceCopyWith<$Res> {
   _$BaseNotificationResourceCopyWithImpl(this._value, this._then);
 
-  final BaseNotificationResource _value;
   // ignore: unused_field
-  final $Res Function(BaseNotificationResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? type = freezed,
-    Object? notifiableType = freezed,
-    Object? notifiable = freezed,
-    Object? actor = freezed,
-    Object? subject = freezed,
-    Object? lesson = freezed,
-    Object? task = freezed,
+    Object? id = null,
+    Object? type = null,
+    Object? notifiableType = null,
+    Object? notifiable = null,
+    Object? actor = null,
+    Object? subject = null,
+    Object? lesson = null,
+    Object? task = null,
     Object? answer = freezed,
     Object? lessonStatusIdBefore = freezed,
     Object? lessonStatusIdAfter = freezed,
@@ -101,112 +105,118 @@ class _$BaseNotificationResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      notifiableType: notifiableType == freezed
+      notifiableType: null == notifiableType
           ? _value.notifiableType
           : notifiableType // ignore: cast_nullable_to_non_nullable
               as String,
-      notifiable: notifiable == freezed
+      notifiable: null == notifiable
           ? _value.notifiable
           : notifiable // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      actor: actor == freezed
+      actor: null == actor
           ? _value.actor
           : actor // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as BaseSubjectResource,
-      lesson: lesson == freezed
+      lesson: null == lesson
           ? _value.lesson
           : lesson // ignore: cast_nullable_to_non_nullable
               as BaseStepResource,
-      task: task == freezed
+      task: null == task
           ? _value.task
           : task // ignore: cast_nullable_to_non_nullable
               as BaseUgcPatternResource,
-      answer: answer == freezed
+      answer: freezed == answer
           ? _value.answer
           : answer // ignore: cast_nullable_to_non_nullable
               as BaseUgcAnswerResource?,
-      lessonStatusIdBefore: lessonStatusIdBefore == freezed
+      lessonStatusIdBefore: freezed == lessonStatusIdBefore
           ? _value.lessonStatusIdBefore
           : lessonStatusIdBefore // ignore: cast_nullable_to_non_nullable
               as int?,
-      lessonStatusIdAfter: lessonStatusIdAfter == freezed
+      lessonStatusIdAfter: freezed == lessonStatusIdAfter
           ? _value.lessonStatusIdAfter
           : lessonStatusIdAfter // ignore: cast_nullable_to_non_nullable
               as int?,
-      firstReadAt: firstReadAt == freezed
+      firstReadAt: freezed == firstReadAt
           ? _value.firstReadAt
           : firstReadAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      readAt: readAt == freezed
+      readAt: freezed == readAt
           ? _value.readAt
           : readAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get notifiable {
     return $BaseUserResourceCopyWith<$Res>(_value.notifiable, (value) {
-      return _then(_value.copyWith(notifiable: value));
+      return _then(_value.copyWith(notifiable: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUserResourceCopyWith<$Res> get actor {
     return $BaseUserResourceCopyWith<$Res>(_value.actor, (value) {
-      return _then(_value.copyWith(actor: value));
+      return _then(_value.copyWith(actor: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseSubjectResourceCopyWith<$Res> get subject {
     return $BaseSubjectResourceCopyWith<$Res>(_value.subject, (value) {
-      return _then(_value.copyWith(subject: value));
+      return _then(_value.copyWith(subject: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseStepResourceCopyWith<$Res> get lesson {
     return $BaseStepResourceCopyWith<$Res>(_value.lesson, (value) {
-      return _then(_value.copyWith(lesson: value));
+      return _then(_value.copyWith(lesson: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUgcPatternResourceCopyWith<$Res> get task {
     return $BaseUgcPatternResourceCopyWith<$Res>(_value.task, (value) {
-      return _then(_value.copyWith(task: value));
+      return _then(_value.copyWith(task: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseUgcAnswerResourceCopyWith<$Res>? get answer {
     if (_value.answer == null) {
       return null;
     }
 
     return $BaseUgcAnswerResourceCopyWith<$Res>(_value.answer!, (value) {
-      return _then(_value.copyWith(answer: value));
+      return _then(_value.copyWith(answer: value) as $Val);
     });
   }
 }
@@ -219,6 +229,7 @@ abstract class _$$_BaseNotificationResourceCopyWith<$Res>
           $Res Function(_$_BaseNotificationResource) then) =
       __$$_BaseNotificationResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String id,
       String type,
@@ -252,26 +263,24 @@ abstract class _$$_BaseNotificationResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BaseNotificationResourceCopyWithImpl<$Res>
-    extends _$BaseNotificationResourceCopyWithImpl<$Res>
+    extends _$BaseNotificationResourceCopyWithImpl<$Res,
+        _$_BaseNotificationResource>
     implements _$$_BaseNotificationResourceCopyWith<$Res> {
   __$$_BaseNotificationResourceCopyWithImpl(_$_BaseNotificationResource _value,
       $Res Function(_$_BaseNotificationResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseNotificationResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseNotificationResource get _value =>
-      super._value as _$_BaseNotificationResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? type = freezed,
-    Object? notifiableType = freezed,
-    Object? notifiable = freezed,
-    Object? actor = freezed,
-    Object? subject = freezed,
-    Object? lesson = freezed,
-    Object? task = freezed,
+    Object? id = null,
+    Object? type = null,
+    Object? notifiableType = null,
+    Object? notifiable = null,
+    Object? actor = null,
+    Object? subject = null,
+    Object? lesson = null,
+    Object? task = null,
     Object? answer = freezed,
     Object? lessonStatusIdBefore = freezed,
     Object? lessonStatusIdAfter = freezed,
@@ -281,63 +290,63 @@ class __$$_BaseNotificationResourceCopyWithImpl<$Res>
     Object? updatedAt = freezed,
   }) {
     return _then(_$_BaseNotificationResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as String,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String,
-      notifiableType: notifiableType == freezed
+      notifiableType: null == notifiableType
           ? _value.notifiableType
           : notifiableType // ignore: cast_nullable_to_non_nullable
               as String,
-      notifiable: notifiable == freezed
+      notifiable: null == notifiable
           ? _value.notifiable
           : notifiable // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      actor: actor == freezed
+      actor: null == actor
           ? _value.actor
           : actor // ignore: cast_nullable_to_non_nullable
               as BaseUserResource,
-      subject: subject == freezed
+      subject: null == subject
           ? _value.subject
           : subject // ignore: cast_nullable_to_non_nullable
               as BaseSubjectResource,
-      lesson: lesson == freezed
+      lesson: null == lesson
           ? _value.lesson
           : lesson // ignore: cast_nullable_to_non_nullable
               as BaseStepResource,
-      task: task == freezed
+      task: null == task
           ? _value.task
           : task // ignore: cast_nullable_to_non_nullable
               as BaseUgcPatternResource,
-      answer: answer == freezed
+      answer: freezed == answer
           ? _value.answer
           : answer // ignore: cast_nullable_to_non_nullable
               as BaseUgcAnswerResource?,
-      lessonStatusIdBefore: lessonStatusIdBefore == freezed
+      lessonStatusIdBefore: freezed == lessonStatusIdBefore
           ? _value.lessonStatusIdBefore
           : lessonStatusIdBefore // ignore: cast_nullable_to_non_nullable
               as int?,
-      lessonStatusIdAfter: lessonStatusIdAfter == freezed
+      lessonStatusIdAfter: freezed == lessonStatusIdAfter
           ? _value.lessonStatusIdAfter
           : lessonStatusIdAfter // ignore: cast_nullable_to_non_nullable
               as int?,
-      firstReadAt: firstReadAt == freezed
+      firstReadAt: freezed == firstReadAt
           ? _value.firstReadAt
           : firstReadAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      readAt: readAt == freezed
+      readAt: freezed == readAt
           ? _value.readAt
           : readAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
@@ -409,50 +418,53 @@ class _$_BaseNotificationResource implements _BaseNotificationResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseNotificationResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.type, type) &&
-            const DeepCollectionEquality()
-                .equals(other.notifiableType, notifiableType) &&
-            const DeepCollectionEquality()
-                .equals(other.notifiable, notifiable) &&
-            const DeepCollectionEquality().equals(other.actor, actor) &&
-            const DeepCollectionEquality().equals(other.subject, subject) &&
-            const DeepCollectionEquality().equals(other.lesson, lesson) &&
-            const DeepCollectionEquality().equals(other.task, task) &&
-            const DeepCollectionEquality().equals(other.answer, answer) &&
-            const DeepCollectionEquality()
-                .equals(other.lessonStatusIdBefore, lessonStatusIdBefore) &&
-            const DeepCollectionEquality()
-                .equals(other.lessonStatusIdAfter, lessonStatusIdAfter) &&
-            const DeepCollectionEquality()
-                .equals(other.firstReadAt, firstReadAt) &&
-            const DeepCollectionEquality().equals(other.readAt, readAt) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.notifiableType, notifiableType) ||
+                other.notifiableType == notifiableType) &&
+            (identical(other.notifiable, notifiable) ||
+                other.notifiable == notifiable) &&
+            (identical(other.actor, actor) || other.actor == actor) &&
+            (identical(other.subject, subject) || other.subject == subject) &&
+            (identical(other.lesson, lesson) || other.lesson == lesson) &&
+            (identical(other.task, task) || other.task == task) &&
+            (identical(other.answer, answer) || other.answer == answer) &&
+            (identical(other.lessonStatusIdBefore, lessonStatusIdBefore) ||
+                other.lessonStatusIdBefore == lessonStatusIdBefore) &&
+            (identical(other.lessonStatusIdAfter, lessonStatusIdAfter) ||
+                other.lessonStatusIdAfter == lessonStatusIdAfter) &&
+            (identical(other.firstReadAt, firstReadAt) ||
+                other.firstReadAt == firstReadAt) &&
+            (identical(other.readAt, readAt) || other.readAt == readAt) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(type),
-      const DeepCollectionEquality().hash(notifiableType),
-      const DeepCollectionEquality().hash(notifiable),
-      const DeepCollectionEquality().hash(actor),
-      const DeepCollectionEquality().hash(subject),
-      const DeepCollectionEquality().hash(lesson),
-      const DeepCollectionEquality().hash(task),
-      const DeepCollectionEquality().hash(answer),
-      const DeepCollectionEquality().hash(lessonStatusIdBefore),
-      const DeepCollectionEquality().hash(lessonStatusIdAfter),
-      const DeepCollectionEquality().hash(firstReadAt),
-      const DeepCollectionEquality().hash(readAt),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt));
+      id,
+      type,
+      notifiableType,
+      notifiable,
+      actor,
+      subject,
+      lesson,
+      task,
+      answer,
+      lessonStatusIdBefore,
+      lessonStatusIdAfter,
+      firstReadAt,
+      readAt,
+      createdAt,
+      updatedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseNotificationResourceCopyWith<_$_BaseNotificationResource>
       get copyWith => __$$_BaseNotificationResourceCopyWithImpl<
           _$_BaseNotificationResource>(this, _$identity);

@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'attendance_schedule_lesson_request.dart';
 
@@ -36,31 +36,36 @@ abstract class $AttendanceScheduleLessonRequestCopyWith<$Res> {
   factory $AttendanceScheduleLessonRequestCopyWith(
           AttendanceScheduleLessonRequest value,
           $Res Function(AttendanceScheduleLessonRequest) then) =
-      _$AttendanceScheduleLessonRequestCopyWithImpl<$Res>;
+      _$AttendanceScheduleLessonRequestCopyWithImpl<$Res,
+          AttendanceScheduleLessonRequest>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'attendanceData')
           List<AttendanceScheduleLessonRequestItem> attendanceData});
 }
 
 /// @nodoc
-class _$AttendanceScheduleLessonRequestCopyWithImpl<$Res>
+class _$AttendanceScheduleLessonRequestCopyWithImpl<$Res,
+        $Val extends AttendanceScheduleLessonRequest>
     implements $AttendanceScheduleLessonRequestCopyWith<$Res> {
   _$AttendanceScheduleLessonRequestCopyWithImpl(this._value, this._then);
 
-  final AttendanceScheduleLessonRequest _value;
   // ignore: unused_field
-  final $Res Function(AttendanceScheduleLessonRequest) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? attendanceData = freezed,
+    Object? attendanceData = null,
   }) {
     return _then(_value.copyWith(
-      attendanceData: attendanceData == freezed
+      attendanceData: null == attendanceData
           ? _value.attendanceData
           : attendanceData // ignore: cast_nullable_to_non_nullable
               as List<AttendanceScheduleLessonRequestItem>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -72,6 +77,7 @@ abstract class _$$_AttendanceScheduleLessonRequestCopyWith<$Res>
           $Res Function(_$_AttendanceScheduleLessonRequest) then) =
       __$$_AttendanceScheduleLessonRequestCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'attendanceData')
           List<AttendanceScheduleLessonRequestItem> attendanceData});
@@ -79,23 +85,21 @@ abstract class _$$_AttendanceScheduleLessonRequestCopyWith<$Res>
 
 /// @nodoc
 class __$$_AttendanceScheduleLessonRequestCopyWithImpl<$Res>
-    extends _$AttendanceScheduleLessonRequestCopyWithImpl<$Res>
+    extends _$AttendanceScheduleLessonRequestCopyWithImpl<$Res,
+        _$_AttendanceScheduleLessonRequest>
     implements _$$_AttendanceScheduleLessonRequestCopyWith<$Res> {
   __$$_AttendanceScheduleLessonRequestCopyWithImpl(
       _$_AttendanceScheduleLessonRequest _value,
       $Res Function(_$_AttendanceScheduleLessonRequest) _then)
-      : super(_value, (v) => _then(v as _$_AttendanceScheduleLessonRequest));
+      : super(_value, _then);
 
-  @override
-  _$_AttendanceScheduleLessonRequest get _value =>
-      super._value as _$_AttendanceScheduleLessonRequest;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? attendanceData = freezed,
+    Object? attendanceData = null,
   }) {
     return _then(_$_AttendanceScheduleLessonRequest(
-      attendanceData: attendanceData == freezed
+      attendanceData: null == attendanceData
           ? _value._attendanceData
           : attendanceData // ignore: cast_nullable_to_non_nullable
               as List<AttendanceScheduleLessonRequestItem>,
@@ -121,6 +125,7 @@ class _$_AttendanceScheduleLessonRequest
   @override
   @JsonKey(name: 'attendanceData')
   List<AttendanceScheduleLessonRequestItem> get attendanceData {
+    if (_attendanceData is EqualUnmodifiableListView) return _attendanceData;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_attendanceData);
   }
@@ -146,6 +151,7 @@ class _$_AttendanceScheduleLessonRequest
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AttendanceScheduleLessonRequestCopyWith<
           _$_AttendanceScheduleLessonRequest>
       get copyWith => __$$_AttendanceScheduleLessonRequestCopyWithImpl<

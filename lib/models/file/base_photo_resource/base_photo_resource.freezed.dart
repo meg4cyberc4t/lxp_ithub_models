@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_photo_resource.dart';
 
@@ -37,7 +37,8 @@ mixin _$BasePhotoResource {
 abstract class $BasePhotoResourceCopyWith<$Res> {
   factory $BasePhotoResourceCopyWith(
           BasePhotoResource value, $Res Function(BasePhotoResource) then) =
-      _$BasePhotoResourceCopyWithImpl<$Res>;
+      _$BasePhotoResourceCopyWithImpl<$Res, BasePhotoResource>;
+  @useResult
   $Res call(
       {int id,
       int ownerId,
@@ -48,49 +49,51 @@ abstract class $BasePhotoResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BasePhotoResourceCopyWithImpl<$Res>
+class _$BasePhotoResourceCopyWithImpl<$Res, $Val extends BasePhotoResource>
     implements $BasePhotoResourceCopyWith<$Res> {
   _$BasePhotoResourceCopyWithImpl(this._value, this._then);
 
-  final BasePhotoResource _value;
   // ignore: unused_field
-  final $Res Function(BasePhotoResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? ownerId = freezed,
-    Object? original = freezed,
-    Object? normal = freezed,
-    Object? small = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? ownerId = null,
+    Object? original = null,
+    Object? normal = null,
+    Object? small = null,
+    Object? description = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      original: original == freezed
+      original: null == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as String,
-      normal: normal == freezed
+      normal: null == normal
           ? _value.normal
           : normal // ignore: cast_nullable_to_non_nullable
               as String,
-      small: small == freezed
+      small: null == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -101,6 +104,7 @@ abstract class _$$_BasePhotoResourceCopyWith<$Res>
           $Res Function(_$_BasePhotoResource) then) =
       __$$_BasePhotoResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int ownerId,
@@ -112,46 +116,44 @@ abstract class _$$_BasePhotoResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_BasePhotoResourceCopyWithImpl<$Res>
-    extends _$BasePhotoResourceCopyWithImpl<$Res>
+    extends _$BasePhotoResourceCopyWithImpl<$Res, _$_BasePhotoResource>
     implements _$$_BasePhotoResourceCopyWith<$Res> {
   __$$_BasePhotoResourceCopyWithImpl(
       _$_BasePhotoResource _value, $Res Function(_$_BasePhotoResource) _then)
-      : super(_value, (v) => _then(v as _$_BasePhotoResource));
+      : super(_value, _then);
 
-  @override
-  _$_BasePhotoResource get _value => super._value as _$_BasePhotoResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? ownerId = freezed,
-    Object? original = freezed,
-    Object? normal = freezed,
-    Object? small = freezed,
-    Object? description = freezed,
+    Object? id = null,
+    Object? ownerId = null,
+    Object? original = null,
+    Object? normal = null,
+    Object? small = null,
+    Object? description = null,
   }) {
     return _then(_$_BasePhotoResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      ownerId: ownerId == freezed
+      ownerId: null == ownerId
           ? _value.ownerId
           : ownerId // ignore: cast_nullable_to_non_nullable
               as int,
-      original: original == freezed
+      original: null == original
           ? _value.original
           : original // ignore: cast_nullable_to_non_nullable
               as String,
-      normal: normal == freezed
+      normal: null == normal
           ? _value.normal
           : normal // ignore: cast_nullable_to_non_nullable
               as String,
-      small: small == freezed
+      small: null == small
           ? _value.small
           : small // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
@@ -196,28 +198,24 @@ class _$_BasePhotoResource implements _BasePhotoResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BasePhotoResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.ownerId, ownerId) &&
-            const DeepCollectionEquality().equals(other.original, original) &&
-            const DeepCollectionEquality().equals(other.normal, normal) &&
-            const DeepCollectionEquality().equals(other.small, small) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
+            (identical(other.original, original) ||
+                other.original == original) &&
+            (identical(other.normal, normal) || other.normal == normal) &&
+            (identical(other.small, small) || other.small == small) &&
+            (identical(other.description, description) ||
+                other.description == description));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(ownerId),
-      const DeepCollectionEquality().hash(original),
-      const DeepCollectionEquality().hash(normal),
-      const DeepCollectionEquality().hash(small),
-      const DeepCollectionEquality().hash(description));
+      runtimeType, id, ownerId, original, normal, small, description);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BasePhotoResourceCopyWith<_$_BasePhotoResource> get copyWith =>
       __$$_BasePhotoResourceCopyWithImpl<_$_BasePhotoResource>(
           this, _$identity);

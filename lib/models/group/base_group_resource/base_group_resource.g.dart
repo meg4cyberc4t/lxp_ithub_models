@@ -10,10 +10,9 @@ _$_BaseGroupResource _$$_BaseGroupResourceFromJson(Map<String, dynamic> json) =>
     _$_BaseGroupResource(
       id: json['id'] as int,
       name: json['name'] as String,
-      description: json['description'] as String,
-      companyId: json['company_id'] as int,
+      companyId: json['company_id'] as int?,
       halfId: json['half_id'] as int?,
-      labelId: json['label_id'] as int,
+      labelId: json['label_id'] as int?,
       externalLink: json['external_link'] as String?,
       createdAt: json['created_at'] == null
           ? null
@@ -28,7 +27,6 @@ Map<String, dynamic> _$$_BaseGroupResourceToJson(
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'description': instance.description,
       'company_id': instance.companyId,
       'half_id': instance.halfId,
       'label_id': instance.labelId,

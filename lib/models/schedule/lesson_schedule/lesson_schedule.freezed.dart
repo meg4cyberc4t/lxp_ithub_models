@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'lesson_schedule.dart';
 
@@ -46,7 +46,8 @@ mixin _$LessonSchedule {
 abstract class $LessonScheduleCopyWith<$Res> {
   factory $LessonScheduleCopyWith(
           LessonSchedule value, $Res Function(LessonSchedule) then) =
-      _$LessonScheduleCopyWithImpl<$Res>;
+      _$LessonScheduleCopyWithImpl<$Res, LessonSchedule>;
+  @useResult
   $Res call(
       {int id,
       DateTime date,
@@ -66,91 +67,96 @@ abstract class $LessonScheduleCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LessonScheduleCopyWithImpl<$Res>
+class _$LessonScheduleCopyWithImpl<$Res, $Val extends LessonSchedule>
     implements $LessonScheduleCopyWith<$Res> {
   _$LessonScheduleCopyWithImpl(this._value, this._then);
 
-  final LessonSchedule _value;
   // ignore: unused_field
-  final $Res Function(LessonSchedule) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? platform = freezed,
-    Object? classroom = freezed,
+    Object? id = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? platform = null,
+    Object? classroom = null,
     Object? subjectText = freezed,
     Object? teacherText = freezed,
     Object? studentAttendance = freezed,
-    Object? subjects = freezed,
-    Object? groups = freezed,
-    Object? teachers = freezed,
+    Object? subjects = null,
+    Object? groups = null,
+    Object? teachers = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      platform: platform == freezed
+      platform: null == platform
           ? _value.platform
           : platform // ignore: cast_nullable_to_non_nullable
               as BulgakovPlatformModel,
-      classroom: classroom == freezed
+      classroom: null == classroom
           ? _value.classroom
           : classroom // ignore: cast_nullable_to_non_nullable
               as BulgakovClassroomModel,
-      subjectText: subjectText == freezed
+      subjectText: freezed == subjectText
           ? _value.subjectText
           : subjectText // ignore: cast_nullable_to_non_nullable
               as String?,
-      teacherText: teacherText == freezed
+      teacherText: freezed == teacherText
           ? _value.teacherText
           : teacherText // ignore: cast_nullable_to_non_nullable
               as String?,
-      studentAttendance: studentAttendance == freezed
+      studentAttendance: freezed == studentAttendance
           ? _value.studentAttendance
           : studentAttendance // ignore: cast_nullable_to_non_nullable
               as BaseAttendanceResource?,
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<SubjectLessonScheduleResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<GroupLessonScheduleResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BulgakovPlatformModelCopyWith<$Res> get platform {
     return $BulgakovPlatformModelCopyWith<$Res>(_value.platform, (value) {
-      return _then(_value.copyWith(platform: value));
+      return _then(_value.copyWith(platform: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BulgakovClassroomModelCopyWith<$Res> get classroom {
     return $BulgakovClassroomModelCopyWith<$Res>(_value.classroom, (value) {
-      return _then(_value.copyWith(classroom: value));
+      return _then(_value.copyWith(classroom: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $BaseAttendanceResourceCopyWith<$Res>? get studentAttendance {
     if (_value.studentAttendance == null) {
       return null;
@@ -158,7 +164,7 @@ class _$LessonScheduleCopyWithImpl<$Res>
 
     return $BaseAttendanceResourceCopyWith<$Res>(_value.studentAttendance!,
         (value) {
-      return _then(_value.copyWith(studentAttendance: value));
+      return _then(_value.copyWith(studentAttendance: value) as $Val);
     });
   }
 }
@@ -170,6 +176,7 @@ abstract class _$$_LessonScheduleCopyWith<$Res>
           _$_LessonSchedule value, $Res Function(_$_LessonSchedule) then) =
       __$$_LessonScheduleCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       DateTime date,
@@ -193,71 +200,69 @@ abstract class _$$_LessonScheduleCopyWith<$Res>
 
 /// @nodoc
 class __$$_LessonScheduleCopyWithImpl<$Res>
-    extends _$LessonScheduleCopyWithImpl<$Res>
+    extends _$LessonScheduleCopyWithImpl<$Res, _$_LessonSchedule>
     implements _$$_LessonScheduleCopyWith<$Res> {
   __$$_LessonScheduleCopyWithImpl(
       _$_LessonSchedule _value, $Res Function(_$_LessonSchedule) _then)
-      : super(_value, (v) => _then(v as _$_LessonSchedule));
+      : super(_value, _then);
 
-  @override
-  _$_LessonSchedule get _value => super._value as _$_LessonSchedule;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? date = freezed,
-    Object? classNumber = freezed,
-    Object? platform = freezed,
-    Object? classroom = freezed,
+    Object? id = null,
+    Object? date = null,
+    Object? classNumber = null,
+    Object? platform = null,
+    Object? classroom = null,
     Object? subjectText = freezed,
     Object? teacherText = freezed,
     Object? studentAttendance = freezed,
-    Object? subjects = freezed,
-    Object? groups = freezed,
-    Object? teachers = freezed,
+    Object? subjects = null,
+    Object? groups = null,
+    Object? teachers = null,
   }) {
     return _then(_$_LessonSchedule(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      date: date == freezed
+      date: null == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      classNumber: classNumber == freezed
+      classNumber: null == classNumber
           ? _value.classNumber
           : classNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      platform: platform == freezed
+      platform: null == platform
           ? _value.platform
           : platform // ignore: cast_nullable_to_non_nullable
               as BulgakovPlatformModel,
-      classroom: classroom == freezed
+      classroom: null == classroom
           ? _value.classroom
           : classroom // ignore: cast_nullable_to_non_nullable
               as BulgakovClassroomModel,
-      subjectText: subjectText == freezed
+      subjectText: freezed == subjectText
           ? _value.subjectText
           : subjectText // ignore: cast_nullable_to_non_nullable
               as String?,
-      teacherText: teacherText == freezed
+      teacherText: freezed == teacherText
           ? _value.teacherText
           : teacherText // ignore: cast_nullable_to_non_nullable
               as String?,
-      studentAttendance: studentAttendance == freezed
+      studentAttendance: freezed == studentAttendance
           ? _value.studentAttendance
           : studentAttendance // ignore: cast_nullable_to_non_nullable
               as BaseAttendanceResource?,
-      subjects: subjects == freezed
+      subjects: null == subjects
           ? _value.subjects
           : subjects // ignore: cast_nullable_to_non_nullable
               as List<SubjectLessonScheduleResource>,
-      groups: groups == freezed
+      groups: null == groups
           ? _value.groups
           : groups // ignore: cast_nullable_to_non_nullable
               as List<GroupLessonScheduleResource>,
-      teachers: teachers == freezed
+      teachers: null == teachers
           ? _value.teachers
           : teachers // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
@@ -318,18 +323,20 @@ class _$_LessonSchedule implements _LessonSchedule {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LessonSchedule &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.date, date) &&
-            const DeepCollectionEquality()
-                .equals(other.classNumber, classNumber) &&
-            const DeepCollectionEquality().equals(other.platform, platform) &&
-            const DeepCollectionEquality().equals(other.classroom, classroom) &&
-            const DeepCollectionEquality()
-                .equals(other.subjectText, subjectText) &&
-            const DeepCollectionEquality()
-                .equals(other.teacherText, teacherText) &&
-            const DeepCollectionEquality()
-                .equals(other.studentAttendance, studentAttendance) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.classNumber, classNumber) ||
+                other.classNumber == classNumber) &&
+            (identical(other.platform, platform) ||
+                other.platform == platform) &&
+            (identical(other.classroom, classroom) ||
+                other.classroom == classroom) &&
+            (identical(other.subjectText, subjectText) ||
+                other.subjectText == subjectText) &&
+            (identical(other.teacherText, teacherText) ||
+                other.teacherText == teacherText) &&
+            (identical(other.studentAttendance, studentAttendance) ||
+                other.studentAttendance == studentAttendance) &&
             const DeepCollectionEquality().equals(other.subjects, subjects) &&
             const DeepCollectionEquality().equals(other.groups, groups) &&
             const DeepCollectionEquality().equals(other.teachers, teachers));
@@ -339,20 +346,21 @@ class _$_LessonSchedule implements _LessonSchedule {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(date),
-      const DeepCollectionEquality().hash(classNumber),
-      const DeepCollectionEquality().hash(platform),
-      const DeepCollectionEquality().hash(classroom),
-      const DeepCollectionEquality().hash(subjectText),
-      const DeepCollectionEquality().hash(teacherText),
-      const DeepCollectionEquality().hash(studentAttendance),
+      id,
+      date,
+      classNumber,
+      platform,
+      classroom,
+      subjectText,
+      teacherText,
+      studentAttendance,
       const DeepCollectionEquality().hash(subjects),
       const DeepCollectionEquality().hash(groups),
       const DeepCollectionEquality().hash(teachers));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LessonScheduleCopyWith<_$_LessonSchedule> get copyWith =>
       __$$_LessonScheduleCopyWithImpl<_$_LessonSchedule>(this, _$identity);
 

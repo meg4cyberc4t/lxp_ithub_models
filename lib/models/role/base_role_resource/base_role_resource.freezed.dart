@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'base_role_resource.dart';
 
@@ -22,7 +22,7 @@ BaseRoleResource _$BaseRoleResourceFromJson(Map<String, dynamic> json) {
 mixin _$BaseRoleResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
-  int get access => throw _privateConstructorUsedError;
+  int? get access => throw _privateConstructorUsedError;
   String get objectType => throw _privateConstructorUsedError;
   int get objectId => throw _privateConstructorUsedError;
 
@@ -36,50 +36,53 @@ mixin _$BaseRoleResource {
 abstract class $BaseRoleResourceCopyWith<$Res> {
   factory $BaseRoleResourceCopyWith(
           BaseRoleResource value, $Res Function(BaseRoleResource) then) =
-      _$BaseRoleResourceCopyWithImpl<$Res>;
+      _$BaseRoleResourceCopyWithImpl<$Res, BaseRoleResource>;
+  @useResult
   $Res call(
-      {int id, String title, int access, String objectType, int objectId});
+      {int id, String title, int? access, String objectType, int objectId});
 }
 
 /// @nodoc
-class _$BaseRoleResourceCopyWithImpl<$Res>
+class _$BaseRoleResourceCopyWithImpl<$Res, $Val extends BaseRoleResource>
     implements $BaseRoleResourceCopyWith<$Res> {
   _$BaseRoleResourceCopyWithImpl(this._value, this._then);
 
-  final BaseRoleResource _value;
   // ignore: unused_field
-  final $Res Function(BaseRoleResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? access = freezed,
-    Object? objectType = freezed,
-    Object? objectId = freezed,
+    Object? objectType = null,
+    Object? objectId = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      access: access == freezed
+      access: freezed == access
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
-              as int,
-      objectType: objectType == freezed
+              as int?,
+      objectType: null == objectType
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
               as String,
-      objectId: objectId == freezed
+      objectId: null == objectId
           ? _value.objectId
           : objectId // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -90,47 +93,46 @@ abstract class _$$_BaseRoleResourceCopyWith<$Res>
           _$_BaseRoleResource value, $Res Function(_$_BaseRoleResource) then) =
       __$$_BaseRoleResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {int id, String title, int access, String objectType, int objectId});
+      {int id, String title, int? access, String objectType, int objectId});
 }
 
 /// @nodoc
 class __$$_BaseRoleResourceCopyWithImpl<$Res>
-    extends _$BaseRoleResourceCopyWithImpl<$Res>
+    extends _$BaseRoleResourceCopyWithImpl<$Res, _$_BaseRoleResource>
     implements _$$_BaseRoleResourceCopyWith<$Res> {
   __$$_BaseRoleResourceCopyWithImpl(
       _$_BaseRoleResource _value, $Res Function(_$_BaseRoleResource) _then)
-      : super(_value, (v) => _then(v as _$_BaseRoleResource));
+      : super(_value, _then);
 
-  @override
-  _$_BaseRoleResource get _value => super._value as _$_BaseRoleResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? title = freezed,
+    Object? id = null,
+    Object? title = null,
     Object? access = freezed,
-    Object? objectType = freezed,
-    Object? objectId = freezed,
+    Object? objectType = null,
+    Object? objectId = null,
   }) {
     return _then(_$_BaseRoleResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      title: title == freezed
+      title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      access: access == freezed
+      access: freezed == access
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
-              as int,
-      objectType: objectType == freezed
+              as int?,
+      objectType: null == objectType
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
               as String,
-      objectId: objectId == freezed
+      objectId: null == objectId
           ? _value.objectId
           : objectId // ignore: cast_nullable_to_non_nullable
               as int,
@@ -156,7 +158,7 @@ class _$_BaseRoleResource implements _BaseRoleResource {
   @override
   final String title;
   @override
-  final int access;
+  final int? access;
   @override
   final String objectType;
   @override
@@ -172,26 +174,23 @@ class _$_BaseRoleResource implements _BaseRoleResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BaseRoleResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.title, title) &&
-            const DeepCollectionEquality().equals(other.access, access) &&
-            const DeepCollectionEquality()
-                .equals(other.objectType, objectType) &&
-            const DeepCollectionEquality().equals(other.objectId, objectId));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.access, access) || other.access == access) &&
+            (identical(other.objectType, objectType) ||
+                other.objectType == objectType) &&
+            (identical(other.objectId, objectId) ||
+                other.objectId == objectId));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(title),
-      const DeepCollectionEquality().hash(access),
-      const DeepCollectionEquality().hash(objectType),
-      const DeepCollectionEquality().hash(objectId));
+  int get hashCode =>
+      Object.hash(runtimeType, id, title, access, objectType, objectId);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BaseRoleResourceCopyWith<_$_BaseRoleResource> get copyWith =>
       __$$_BaseRoleResourceCopyWithImpl<_$_BaseRoleResource>(this, _$identity);
 
@@ -207,7 +206,7 @@ abstract class _BaseRoleResource implements BaseRoleResource {
   factory _BaseRoleResource(
       {required final int id,
       required final String title,
-      required final int access,
+      required final int? access,
       required final String objectType,
       required final int objectId}) = _$_BaseRoleResource;
 
@@ -219,7 +218,7 @@ abstract class _BaseRoleResource implements BaseRoleResource {
   @override
   String get title;
   @override
-  int get access;
+  int? get access;
   @override
   String get objectType;
   @override

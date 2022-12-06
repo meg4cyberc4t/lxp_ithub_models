@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'mark_student_resource.dart';
 
@@ -38,7 +38,8 @@ mixin _$MarkStudentResource {
 abstract class $MarkStudentResourceCopyWith<$Res> {
   factory $MarkStudentResourceCopyWith(
           MarkStudentResource value, $Res Function(MarkStudentResource) then) =
-      _$MarkStudentResourceCopyWithImpl<$Res>;
+      _$MarkStudentResourceCopyWithImpl<$Res, MarkStudentResource>;
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -50,54 +51,56 @@ abstract class $MarkStudentResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MarkStudentResourceCopyWithImpl<$Res>
+class _$MarkStudentResourceCopyWithImpl<$Res, $Val extends MarkStudentResource>
     implements $MarkStudentResourceCopyWith<$Res> {
   _$MarkStudentResourceCopyWithImpl(this._value, this._then);
 
-  final MarkStudentResource _value;
   // ignore: unused_field
-  final $Res Function(MarkStudentResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
-    Object? email = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? online = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
+    Object? email = null,
+    Object? photoSrcSmall = null,
+    Object? online = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      online: online == freezed
+      online: null == online
           ? _value.online
           : online // ignore: cast_nullable_to_non_nullable
               as bool,
-    ));
+    ) as $Val);
   }
 }
 
@@ -108,6 +111,7 @@ abstract class _$$_MarkStudentResourceCopyWith<$Res>
           $Res Function(_$_MarkStudentResource) then) =
       __$$_MarkStudentResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String firstName,
@@ -120,51 +124,49 @@ abstract class _$$_MarkStudentResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_MarkStudentResourceCopyWithImpl<$Res>
-    extends _$MarkStudentResourceCopyWithImpl<$Res>
+    extends _$MarkStudentResourceCopyWithImpl<$Res, _$_MarkStudentResource>
     implements _$$_MarkStudentResourceCopyWith<$Res> {
   __$$_MarkStudentResourceCopyWithImpl(_$_MarkStudentResource _value,
       $Res Function(_$_MarkStudentResource) _then)
-      : super(_value, (v) => _then(v as _$_MarkStudentResource));
+      : super(_value, _then);
 
-  @override
-  _$_MarkStudentResource get _value => super._value as _$_MarkStudentResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? firstName = freezed,
-    Object? lastName = freezed,
-    Object? middleName = freezed,
-    Object? email = freezed,
-    Object? photoSrcSmall = freezed,
-    Object? online = freezed,
+    Object? id = null,
+    Object? firstName = null,
+    Object? lastName = null,
+    Object? middleName = null,
+    Object? email = null,
+    Object? photoSrcSmall = null,
+    Object? online = null,
   }) {
     return _then(_$_MarkStudentResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      firstName: firstName == freezed
+      firstName: null == firstName
           ? _value.firstName
           : firstName // ignore: cast_nullable_to_non_nullable
               as String,
-      lastName: lastName == freezed
+      lastName: null == lastName
           ? _value.lastName
           : lastName // ignore: cast_nullable_to_non_nullable
               as String,
-      middleName: middleName == freezed
+      middleName: null == middleName
           ? _value.middleName
           : middleName // ignore: cast_nullable_to_non_nullable
               as String,
-      email: email == freezed
+      email: null == email
           ? _value.email
           : email // ignore: cast_nullable_to_non_nullable
               as String,
-      photoSrcSmall: photoSrcSmall == freezed
+      photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
               as String,
-      online: online == freezed
+      online: null == online
           ? _value.online
           : online // ignore: cast_nullable_to_non_nullable
               as bool,
@@ -212,31 +214,27 @@ class _$_MarkStudentResource implements _MarkStudentResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MarkStudentResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.firstName, firstName) &&
-            const DeepCollectionEquality().equals(other.lastName, lastName) &&
-            const DeepCollectionEquality()
-                .equals(other.middleName, middleName) &&
-            const DeepCollectionEquality().equals(other.email, email) &&
-            const DeepCollectionEquality()
-                .equals(other.photoSrcSmall, photoSrcSmall) &&
-            const DeepCollectionEquality().equals(other.online, online));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.firstName, firstName) ||
+                other.firstName == firstName) &&
+            (identical(other.lastName, lastName) ||
+                other.lastName == lastName) &&
+            (identical(other.middleName, middleName) ||
+                other.middleName == middleName) &&
+            (identical(other.email, email) || other.email == email) &&
+            (identical(other.photoSrcSmall, photoSrcSmall) ||
+                other.photoSrcSmall == photoSrcSmall) &&
+            (identical(other.online, online) || other.online == online));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(firstName),
-      const DeepCollectionEquality().hash(lastName),
-      const DeepCollectionEquality().hash(middleName),
-      const DeepCollectionEquality().hash(email),
-      const DeepCollectionEquality().hash(photoSrcSmall),
-      const DeepCollectionEquality().hash(online));
+  int get hashCode => Object.hash(runtimeType, id, firstName, lastName,
+      middleName, email, photoSrcSmall, online);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MarkStudentResourceCopyWith<_$_MarkStudentResource> get copyWith =>
       __$$_MarkStudentResourceCopyWithImpl<_$_MarkStudentResource>(
           this, _$identity);

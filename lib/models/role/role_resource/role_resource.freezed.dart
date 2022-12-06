@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'role_resource.dart';
 
@@ -38,7 +38,8 @@ mixin _$RoleResource {
 abstract class $RoleResourceCopyWith<$Res> {
   factory $RoleResourceCopyWith(
           RoleResource value, $Res Function(RoleResource) then) =
-      _$RoleResourceCopyWithImpl<$Res>;
+      _$RoleResourceCopyWithImpl<$Res, RoleResource>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -50,53 +51,56 @@ abstract class $RoleResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RoleResourceCopyWithImpl<$Res> implements $RoleResourceCopyWith<$Res> {
+class _$RoleResourceCopyWithImpl<$Res, $Val extends RoleResource>
+    implements $RoleResourceCopyWith<$Res> {
   _$RoleResourceCopyWithImpl(this._value, this._then);
 
-  final RoleResource _value;
   // ignore: unused_field
-  final $Res Function(RoleResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? permissions = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
+    Object? permissions = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? users = freezed,
+    Object? users = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      permissions: permissions == freezed
+      permissions: null == permissions
           ? _value.permissions
           : permissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -107,6 +111,7 @@ abstract class _$$_RoleResourceCopyWith<$Res>
           _$_RoleResource value, $Res Function(_$_RoleResource) then) =
       __$$_RoleResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -119,51 +124,49 @@ abstract class _$$_RoleResourceCopyWith<$Res>
 
 /// @nodoc
 class __$$_RoleResourceCopyWithImpl<$Res>
-    extends _$RoleResourceCopyWithImpl<$Res>
+    extends _$RoleResourceCopyWithImpl<$Res, _$_RoleResource>
     implements _$$_RoleResourceCopyWith<$Res> {
   __$$_RoleResourceCopyWithImpl(
       _$_RoleResource _value, $Res Function(_$_RoleResource) _then)
-      : super(_value, (v) => _then(v as _$_RoleResource));
+      : super(_value, _then);
 
-  @override
-  _$_RoleResource get _value => super._value as _$_RoleResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? description = freezed,
-    Object? permissions = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? description = null,
+    Object? permissions = null,
     Object? createdAt = freezed,
     Object? updatedAt = freezed,
-    Object? users = freezed,
+    Object? users = null,
   }) {
     return _then(_$_RoleResource(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      permissions: permissions == freezed
+      permissions: null == permissions
           ? _value.permissions
           : permissions // ignore: cast_nullable_to_non_nullable
               as List<String>,
-      createdAt: createdAt == freezed
+      createdAt: freezed == createdAt
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      updatedAt: updatedAt == freezed
+      updatedAt: freezed == updatedAt
           ? _value.updatedAt
           : updatedAt // ignore: cast_nullable_to_non_nullable
               as DateTime?,
-      users: users == freezed
+      users: null == users
           ? _value.users
           : users // ignore: cast_nullable_to_non_nullable
               as List<BaseUserResource>,
@@ -211,14 +214,16 @@ class _$_RoleResource implements _RoleResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_RoleResource &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
             const DeepCollectionEquality()
                 .equals(other.permissions, permissions) &&
-            const DeepCollectionEquality().equals(other.createdAt, createdAt) &&
-            const DeepCollectionEquality().equals(other.updatedAt, updatedAt) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
             const DeepCollectionEquality().equals(other.users, users));
   }
 
@@ -226,16 +231,17 @@ class _$_RoleResource implements _RoleResource {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(description),
+      id,
+      name,
+      description,
       const DeepCollectionEquality().hash(permissions),
-      const DeepCollectionEquality().hash(createdAt),
-      const DeepCollectionEquality().hash(updatedAt),
+      createdAt,
+      updatedAt,
       const DeepCollectionEquality().hash(users));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_RoleResourceCopyWith<_$_RoleResource> get copyWith =>
       __$$_RoleResourceCopyWithImpl<_$_RoleResource>(this, _$identity);
 

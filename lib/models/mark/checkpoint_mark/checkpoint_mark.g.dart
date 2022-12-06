@@ -13,8 +13,8 @@ _$_CheckpointMark _$$_CheckpointMarkFromJson(Map<String, dynamic> json) =>
       studentId: json['student_id'] as int?,
       topicId: json['topic_id'],
       points: json['points'] as int,
-      maxPoints: json['max_points'] as int,
-      grade: json['grade'] as int,
+      maxPoints: json['max_points'] as int?,
+      grade: json['grade'] as int?,
       comment: json['comment'] as String?,
       createdAt: json['created_at'] == null
           ? null
