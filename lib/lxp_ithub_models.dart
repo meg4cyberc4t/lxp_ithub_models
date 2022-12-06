@@ -2,7 +2,12 @@ library lxp_ithub_models;
 
 export 'package:lxp_ithub_models/lxp_ithub_models.dart';
 
+export 'models/answer/answer_expertise_resource/answer_expertise_resource.dart';
+export 'models/answer/answer_field_resource/answer_field_resource.dart';
 export 'models/answer/answer_resource/answer_resource.dart';
+export 'models/answer/answer_resource/answer_resource.dart';
+export 'models/answer/comment_answer_resource/comment_answer_resource.dart';
+export 'models/answer/local_answer_resource/local_answer_resource.dart';
 export 'models/answer/local_answer_resource/local_answer_resource.dart';
 export 'models/attendance/base_attendance_resource/base_attendance_resource.dart';
 export 'models/attendance/statistics_attendance_resource/statistics_attendance_resource.dart';

@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:lxp_ithub_models/lxp_ithub_models.dart';
-import 'package:lxp_ithub_models/models/answer/comment_answer_resource/comment_answer_resource.dart';
 
 part 'answer_field_resource.freezed.dart';
 part 'answer_field_resource.g.dart';
