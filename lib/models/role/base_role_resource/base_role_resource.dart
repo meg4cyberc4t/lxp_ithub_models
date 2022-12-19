@@ -9,8 +9,8 @@ class BaseRoleResource with _$BaseRoleResource {
     required int id,
     required String title,
     required int? access,
-    required String objectType,
-    required int objectId,
+    required String? objectType,
+    required int? objectId,
   }) = _BaseRoleResource;
 
   factory BaseRoleResource.fromJson(Map<String, dynamic> json) =>

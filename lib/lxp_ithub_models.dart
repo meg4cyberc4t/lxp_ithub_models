@@ -26,6 +26,7 @@ export 'models/dto/call_password_request/call_password_request.dart';
 export 'models/dto/call_password_request/call_password_request.dart';
 export 'models/dto/change_password_request/change_password_request.dart';
 export 'models/dto/main_schedule_response/main_schedule_response.dart';
+export 'models/dto/passed_status_set_dto/passed_status_set_dto.dart';
 export 'models/dto/schedule_lesson_response/schedule_lesson_response.dart';
 export 'models/dto/sign_in_request/sign_in_request.dart';
 export 'models/dto/sign_in_response/sign_in_response.dart';

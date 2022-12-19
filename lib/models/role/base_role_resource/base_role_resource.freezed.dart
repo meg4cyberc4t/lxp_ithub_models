@@ -23,8 +23,8 @@ mixin _$BaseRoleResource {
   int get id => throw _privateConstructorUsedError;
   String get title => throw _privateConstructorUsedError;
   int? get access => throw _privateConstructorUsedError;
-  String get objectType => throw _privateConstructorUsedError;
-  int get objectId => throw _privateConstructorUsedError;
+  String? get objectType => throw _privateConstructorUsedError;
+  int? get objectId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -39,7 +39,7 @@ abstract class $BaseRoleResourceCopyWith<$Res> {
       _$BaseRoleResourceCopyWithImpl<$Res, BaseRoleResource>;
   @useResult
   $Res call(
-      {int id, String title, int? access, String objectType, int objectId});
+      {int id, String title, int? access, String? objectType, int? objectId});
 }
 
 /// @nodoc
@@ -58,8 +58,8 @@ class _$BaseRoleResourceCopyWithImpl<$Res, $Val extends BaseRoleResource>
     Object? id = null,
     Object? title = null,
     Object? access = freezed,
-    Object? objectType = null,
-    Object? objectId = null,
+    Object? objectType = freezed,
+    Object? objectId = freezed,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -74,14 +74,14 @@ class _$BaseRoleResourceCopyWithImpl<$Res, $Val extends BaseRoleResource>
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
               as int?,
-      objectType: null == objectType
+      objectType: freezed == objectType
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
-              as String,
-      objectId: null == objectId
+              as String?,
+      objectId: freezed == objectId
           ? _value.objectId
           : objectId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ) as $Val);
   }
 }
@@ -95,7 +95,7 @@ abstract class _$$_BaseRoleResourceCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int id, String title, int? access, String objectType, int objectId});
+      {int id, String title, int? access, String? objectType, int? objectId});
 }
 
 /// @nodoc
@@ -112,8 +112,8 @@ class __$$_BaseRoleResourceCopyWithImpl<$Res>
     Object? id = null,
     Object? title = null,
     Object? access = freezed,
-    Object? objectType = null,
-    Object? objectId = null,
+    Object? objectType = freezed,
+    Object? objectId = freezed,
   }) {
     return _then(_$_BaseRoleResource(
       id: null == id
@@ -128,14 +128,14 @@ class __$$_BaseRoleResourceCopyWithImpl<$Res>
           ? _value.access
           : access // ignore: cast_nullable_to_non_nullable
               as int?,
-      objectType: null == objectType
+      objectType: freezed == objectType
           ? _value.objectType
           : objectType // ignore: cast_nullable_to_non_nullable
-              as String,
-      objectId: null == objectId
+              as String?,
+      objectId: freezed == objectId
           ? _value.objectId
           : objectId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
     ));
   }
 }
@@ -160,9 +160,9 @@ class _$_BaseRoleResource implements _BaseRoleResource {
   @override
   final int? access;
   @override
-  final String objectType;
+  final String? objectType;
   @override
-  final int objectId;
+  final int? objectId;
 
   @override
   String toString() {
@@ -207,8 +207,8 @@ abstract class _BaseRoleResource implements BaseRoleResource {
       {required final int id,
       required final String title,
       required final int? access,
-      required final String objectType,
-      required final int objectId}) = _$_BaseRoleResource;
+      required final String? objectType,
+      required final int? objectId}) = _$_BaseRoleResource;
 
   factory _BaseRoleResource.fromJson(Map<String, dynamic> json) =
       _$_BaseRoleResource.fromJson;
@@ -220,9 +220,9 @@ abstract class _BaseRoleResource implements BaseRoleResource {
   @override
   int? get access;
   @override
-  String get objectType;
+  String? get objectType;
   @override
-  int get objectId;
+  int? get objectId;
   @override
   @JsonKey(ignore: true)
   _$$_BaseRoleResourceCopyWith<_$_BaseRoleResource> get copyWith =>
