@@ -26,7 +26,8 @@ mixin _$UserShowResource {
   String get middleName => throw _privateConstructorUsedError;
   String? get email => throw _privateConstructorUsedError;
   String get photoSrc => throw _privateConstructorUsedError;
-  dynamic get phone => throw _privateConstructorUsedError;
+  String? get phone => throw _privateConstructorUsedError;
+  String get phone2 => throw _privateConstructorUsedError;
   String get photoSrcSmall => throw _privateConstructorUsedError;
   bool get isSkillfolioReg => throw _privateConstructorUsedError;
   bool get isOnline => throw _privateConstructorUsedError;
@@ -53,7 +54,8 @@ abstract class $UserShowResourceCopyWith<$Res> {
       String middleName,
       String? email,
       String photoSrc,
-      dynamic phone,
+      String? phone,
+      String phone2,
       String photoSrcSmall,
       bool isSkillfolioReg,
       bool isOnline,
@@ -82,6 +84,7 @@ class _$UserShowResourceCopyWithImpl<$Res, $Val extends UserShowResource>
     Object? email = freezed,
     Object? photoSrc = null,
     Object? phone = freezed,
+    Object? phone2 = null,
     Object? photoSrcSmall = null,
     Object? isSkillfolioReg = null,
     Object? isOnline = null,
@@ -117,7 +120,11 @@ class _$UserShowResourceCopyWithImpl<$Res, $Val extends UserShowResource>
       phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
+      phone2: null == phone2
+          ? _value.phone2
+          : phone2 // ignore: cast_nullable_to_non_nullable
+              as String,
       photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
@@ -161,7 +168,8 @@ abstract class _$$_UserShowResourceCopyWith<$Res>
       String middleName,
       String? email,
       String photoSrc,
-      dynamic phone,
+      String? phone,
+      String phone2,
       String photoSrcSmall,
       bool isSkillfolioReg,
       bool isOnline,
@@ -188,6 +196,7 @@ class __$$_UserShowResourceCopyWithImpl<$Res>
     Object? email = freezed,
     Object? photoSrc = null,
     Object? phone = freezed,
+    Object? phone2 = null,
     Object? photoSrcSmall = null,
     Object? isSkillfolioReg = null,
     Object? isOnline = null,
@@ -223,7 +232,11 @@ class __$$_UserShowResourceCopyWithImpl<$Res>
       phone: freezed == phone
           ? _value.phone
           : phone // ignore: cast_nullable_to_non_nullable
-              as dynamic,
+              as String?,
+      phone2: null == phone2
+          ? _value.phone2
+          : phone2 // ignore: cast_nullable_to_non_nullable
+              as String,
       photoSrcSmall: null == photoSrcSmall
           ? _value.photoSrcSmall
           : photoSrcSmall // ignore: cast_nullable_to_non_nullable
@@ -263,6 +276,7 @@ class _$_UserShowResource implements _UserShowResource {
       required this.email,
       required this.photoSrc,
       required this.phone,
+      required this.phone2,
       required this.photoSrcSmall,
       required this.isSkillfolioReg,
       required this.isOnline,
@@ -286,7 +300,9 @@ class _$_UserShowResource implements _UserShowResource {
   @override
   final String photoSrc;
   @override
-  final dynamic phone;
+  final String? phone;
+  @override
+  final String phone2;
   @override
   final String photoSrcSmall;
   @override
@@ -302,7 +318,7 @@ class _$_UserShowResource implements _UserShowResource {
 
   @override
   String toString() {
-    return 'UserShowResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, phone: $phone, photoSrcSmall: $photoSrcSmall, isSkillfolioReg: $isSkillfolioReg, isOnline: $isOnline, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups)';
+    return 'UserShowResource(id: $id, firstName: $firstName, lastName: $lastName, middleName: $middleName, email: $email, photoSrc: $photoSrc, phone: $phone, phone2: $phone2, photoSrcSmall: $photoSrcSmall, isSkillfolioReg: $isSkillfolioReg, isOnline: $isOnline, createdAt: $createdAt, updatedAt: $updatedAt, groups: $groups)';
   }
 
   @override
@@ -320,7 +336,8 @@ class _$_UserShowResource implements _UserShowResource {
             (identical(other.email, email) || other.email == email) &&
             (identical(other.photoSrc, photoSrc) ||
                 other.photoSrc == photoSrc) &&
-            const DeepCollectionEquality().equals(other.phone, phone) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.phone2, phone2) || other.phone2 == phone2) &&
             (identical(other.photoSrcSmall, photoSrcSmall) ||
                 other.photoSrcSmall == photoSrcSmall) &&
             (identical(other.isSkillfolioReg, isSkillfolioReg) ||
@@ -344,7 +361,8 @@ class _$_UserShowResource implements _UserShowResource {
       middleName,
       email,
       photoSrc,
-      const DeepCollectionEquality().hash(phone),
+      phone,
+      phone2,
       photoSrcSmall,
       isSkillfolioReg,
       isOnline,
@@ -375,7 +393,8 @@ abstract class _UserShowResource
       required final String middleName,
       required final String? email,
       required final String photoSrc,
-      required final dynamic phone,
+      required final String? phone,
+      required final String phone2,
       required final String photoSrcSmall,
       required final bool isSkillfolioReg,
       required final bool isOnline,
@@ -399,7 +418,9 @@ abstract class _UserShowResource
   @override
   String get photoSrc;
   @override
-  dynamic get phone;
+  String? get phone;
+  @override
+  String get phone2;
   @override
   String get photoSrcSmall;
   @override
